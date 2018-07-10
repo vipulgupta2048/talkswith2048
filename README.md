@@ -9,6 +9,7 @@ This repository acts as a showcase of all talks/workshops that Vipul Gupta (vipu
 | Introduction to Git     | [Link for proposal](https://github.com/ILUGD/talks/issues/45) | [Delivered] [Repo Vanilla](https://github.com/vipulgupta2048/vanilla) used for tutorial.  |
 | CSE essentials     | [Link for proposal](https://github.com/asetalias/Logistics-and-Event-Contributions/issues/1)  | [Delivered] Basic content covered - IRC, Shell commands, git, mailing list guidelines, communtiy guidelines; for juniors in Amity University | 
 | Fish: The terminal     | Flash Talks  | [Delivered] @ Women who Go meetup - IIIT-D - What is Fish, showing my configuration. How it's better and more productive. | 
+| Mentored DevSprints for org: PyDelhi and once for Sugar Labs | Once a month at PyDelhi DevSprints | PyDelhi Meetups |
 | Plymouth 101: Bootloader's Frontend     | [Link for proposal](https://github.com/ILUGD/talks/issues/80)  | [Proposed] - ILUG-D| 
 | Scraping 101: Essential tool in every data scientist's toolkit     | No Link for proposal  | [Proposed] Google I/O Extended 2018 | 
 | Keeping your Dotfiles in check with Python     | [Link for proposal](https://in.pycon.org/cfp/2018/proposals/keeping-your-dotfiles-in-check-with-python~dw7Xd/)  | [Proposed] - PyCon India 2018 | 
