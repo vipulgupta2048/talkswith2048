@@ -2,7 +2,7 @@
 
 [![HitCount](http://hits.dwyl.io/vipulgupta2048/talkswith2048.svg)](http://hits.dwyl.io/vipulgupta2048/talkswith2048)[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
-This repository acts as a showcase of all talks/workshops that Vipul Gupta (vipulgupta2048) took over the years along with acting as a backup of all resources and material shown for anyone to use, referance and as a guide. Adding on to it, it is also a tracker of conferences that is attended, volunteered by him.   
+This repository acts as a showcase of all talks/workshops that Vipul Gupta (vipulgupta2048) took over the years along with acting as a backup of all resources and material shown for anyone to use, referance and as a guide. I just love to give back to the community in whatever way i can, hence adding on to it, this repo is also a tracker of conferences that I attended/invited/volunteered for. From 2018 I have added a new section for hackathons that I am selected/invited to attend and participate alongwith specific project details. 
 
 | Title of the talk       | Link for Proposal| Status - Other Comments |
 | --- |:---:|---|
