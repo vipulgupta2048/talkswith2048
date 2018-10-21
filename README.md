@@ -25,14 +25,14 @@ At last, I am thankful for everyone with the opportunity and the motivation that
 | Google Summer of Code - Headstart Session | Spontaneous | [Delivered] Invited for a talk about my experience with Google Summer of Code alongwith Ajay Garg and the coding blocks team at Amity University by IUCEE Club - Addressed about 80 Students based on my popular [blog](https://mixstersite.wordpress.com/2018/04/25/123gsoc/) |  
 | Green dots doesn't matter contributing does | [Link for proposal](https://github.com/MozillaFestival/mozfest-program-2018/issues/106) | [Selected] Mozfest 2018 |
 | FSoSS 2018 New York | [Proposal](https://imgur.com/a/ftfRFQ1) | [Couldn't go] Community Talks - Managing dotfiles with Homely | 
-| Sugar Port - My GSoC project with Sugar Labs |  Lightening talk | [Selected] At Google London Office for a lightening talk on my Google Summer of Code project, Sugar Port. Slides coming soon. | 
+| Sugar Port - My GSoC project with Sugar Labs |  Lightening talk | [Selected] At Google London Office for a lightening talk on my Google Summer of Code project, Sugar Port. Slides coming soon. |
 |||
 
 ***
 
 # Conferences with 2048
 
-| Conference       | Website / Link for event | Comments |
+| Conference       | Website/Link for event | Comments |
 | --- |:---:|---|
 | PyDelhi Conference 2017 | [Website](https://conference.pydelhi.org) | Attendee - My first tech conference |
 | PyCon India 2017 | [Website](https://in.pycon.org/2017/) | Contributed to the Pycon India 2017 official website, wrote 10+ blogs and volunteered onsite for the event. I re-designed sections of the website, fixed bugs and wrote blog posts for the various sponsors and keynote speakers + GitHub links - https://goo.gl/EiPRN2 and https://goo.gl/acgrf9  |
@@ -40,8 +40,11 @@ At last, I am thankful for everyone with the opportunity and the motivation that
 | Google I/O Extended 2018 | [Website](https://www.meetup.com/GDGNewDelhi/events/250303488/) | Attendee - Session Proposed - Led a small discussion on Google Summer of Code |
 | Google Cloud Summit 2018 : Delhi | [Website](https://cloudplatformonline.com/2018-Summit-India-Reg.html | Invited on behalf of Sugar Labs to participate and learn about Google Cloud Platform and meet fellow googlers |
 | PyCon India 2018 | [Website](https://in.pycon.org/2018/) | Proposed Talk and Development Manager - Supervising, and reviewing all work and development regarding the Official PyCon India 2018 Website, Blog, Twitter bots, Social Media Outreach, Apps and more. |
-| Linux Foundation's Open Source Summit | [Website](https://events.linuxfoundation.org/events/open-source-summit-europe-2018/) | Awarded scholarship a travel stipend and full-access ticket to the conference worth 1000$ happening in Edinburgh, UK |
+| Mytrah Talks 2018 | [Website](mytrahtalks.com) | Presented Case Study at Mytrah Talks 2018 Noida infront of hundreds of panelists and experts of the sustainable development field, case Study won the first prize |
+| Linux Foundation's Open Source Summit 2018 | [Website](https://events.linuxfoundation.org/events/open-source-summit-europe-2018/) | Awarded scholarship a travel stipend and full-access ticket to the conference worth 1000$ happening in Edinburgh, UK |
 | Mozfest 2018 | [Website](https://mozillafestival.org/) | Facilitator and volunteer in the Youth Zone of the 8 track mega festival of Mozilla at Ravensbourne College, London, UK |
+| Sustain Summit 2018 | [Website](https://sustainoss.org) |  Invited to represent as a sustainer to represent Sugar Labs and ALiAS |
+| TechDay London 2018 | [Website](https://techdayhq.com/london) | Attended to explore opportunities with London's best startups |
 |||
 
 ***
