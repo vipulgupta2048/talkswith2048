@@ -30,7 +30,7 @@ At last, I am thankful for everyone who gave their feedback, shared opportunitie
 | Green dots doesn't matter contributing does | [Delivered](https://github.com/MozillaFestival/mozfest-program-2018/issues/106) | [Selected] Mozfest 2018 - [Slides](https://docs.google.com/presentation/d/1HlBf3QgFz9sR00gmuB2LWEi7mLhyJ8qVOlT3gq_vcm0/edit?usp=sharing)|
 | FSoSS 2018 New York | [Proposal](https://imgur.com/a/ftfRFQ1) | [Couldn't go] Community Talks - Managing dotfiles with Homely | 
 | Sugar Port - My GSoC project with Sugar Labs |  Lightening talk | [Delivered] At Google London Office for a lightening talk on my Google Summer of Code project, Sugar Port. [Slides](https://docs.google.com/presentation/d/12B2vPtcm5OhNYSIVNCZqrU-HiA04X7LjDpdSFSWQAbI/edit?usp=sharing) |
-| Mytrah talks 2018 | Selected among 100+ case studies to present at Amity University | [Delivered] At Amity University in front of diverse crowd of scientists, reaserchers and students working on renewable energy and sustainable environment. Video Coming soon. [Slides](https://docs.google.com/presentation/d/1wsHJvKbGeR-0jaTYETqjPx87VThNT3oz8RDxN45xblY/edit?usp=sharing) |
+| Mytrah talks 2018 | Selected among 100+ case studies to present at Amity University | [Delivered] At Amity University in front of diverse crowd of scientists, reaserchers and students working on renewable energy and sustainable environment. [Video](https://photos.app.goo.gl/HHQ8C5MsS7MFsj8w7) !@! [Slides](https://docs.google.com/presentation/d/1wsHJvKbGeR-0jaTYETqjPx87VThNT3oz8RDxN45xblY/edit?usp=sharing) |
 |||
 
 ***
