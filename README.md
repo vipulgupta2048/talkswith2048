@@ -52,6 +52,7 @@ At last, I am thankful for everyone who gave their feedback, shared opportunitie
 | Mozfest 2018 | [Website](https://mozillafestival.org/) | Facilitator and volunteer in the Youth Zone of the 8 track mega festival of Mozilla at Ravensbourne College, London, UK |
 | Sustain Summit 2018 | [Website](https://sustainoss.org) |  Invited to represent as a sustainer to represent Sugar Labs and ALiAS |
 | TechDay London 2018 | [Website](https://techdayhq.com/london) | Attended to explore opportunities with London's best startups |
+| Digital Ocean Tide 2018 : New Delhi | [Website](https://www.meetup.com/DigitalOceanDelhi/events/256140664/) | Attended to explore opportunities with Digital Ocean, instead got opportunities with Hasura and TheServerGuy |
 |||
 
 ***
@@ -62,4 +63,4 @@ At last, I am thankful for everyone who gave their feedback, shared opportunitie
 | HackIIIT 2018 | [Website](http://esya.iiitd.edu.in/hackiiitd/) | 3rd Prize and best woman participant - Made the emotion-based Music Player, called StacksFX by team StacksFX, [blog post for reference](https://mixstersite.wordpress.com/2018/08/20/stacksfx-at-hackiiit-my-1-hackathon/) |
 | HackMIT 2018 | [Website](https://hackmit.org) | Project Wats'on The Roof selected for IBM: Call for Code - Global Challenge [blog post for reference](https://mixstersite.wordpress.com/2018/09/28/hackmit-2018/) |
 | Hack Moscow 2018 | [Website](https://hack.moscow/) | Selected as a Lonewolf |
-| MSHack 2018 | [http://mshack.devpost.com] | Team of 4, StacksFX was selected out of 2000 team submission in the online round, to hack at Microsoft Gurugram to create [InsightsFX](https://devpost.com/software/insightsfx), a unique air pollution management solution with insights that help make everyday life easier |
+| MSHack 2018 | [Website](http://mshack.devpost.com] | Team of 4, StacksFX was selected out of 2000 team submission in the online round, to hack at Microsoft Gurugram to create [InsightsFX](https://devpost.com/software/insightsfx), a unique air pollution management solution with insights that help make everyday life easier |
