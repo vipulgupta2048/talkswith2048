@@ -8,7 +8,9 @@ _This repository acts as a showcase... of just about everything I enjoyed doing 
 
 I love giving back to the open-source community in whatever way I can. Therefore all talk resource, slides, code that I create is open-source and public for anyone to use and view in whatever capacity they see fit. Adding on to it, this repository is also a tracker of conferences that I attended/was invited/volunteered for. Networking and listening to people has always been the one activity that sparks my interests. Maybe that's my DevRel side.   
 
-Update#2 - From 2018, I added a new section for hackathons. I think hackathons are a great way to learn fast, implement faster, and learn from mistakes of the past. A ideology that I throroughly believe in. 
+Update#2 - From 2018, I added a new section for hackathons. I think hackathons are a great way to learn fast, implement faster, and learn from mistakes of the past. A ideology that I throroughly believe in.
+
+Update#3 - From 2019, added Podcasts.
 
 At last, I am thankful for everyone who gave their feedback, shared opportunities and asked questions. Every bit of my Bachelor's helped me in my growth essentially. I hope this information is useful and inspiring, for people looking to contribute and expose themselves for everything that is out there and make the most of it. For the road might look tough in the beginning, but it be worth your while when you reach the highway.
 
@@ -32,7 +34,8 @@ At last, I am thankful for everyone who gave their feedback, shared opportunitie
 | Sugar Port - My GSoC project with Sugar Labs |  Lightening talk | [Delivered] At Google London Office for a lightening talk on my Google Summer of Code project, Sugar Port. [Slides](https://docs.google.com/presentation/d/12B2vPtcm5OhNYSIVNCZqrU-HiA04X7LjDpdSFSWQAbI/edit?usp=sharing) |
 | Mytrah talks 2018 | Selected among 100+ case studies to present at Amity University | [Delivered] At Amity University in front of diverse crowd of scientists, reaserchers and students working on renewable energy and sustainable environment. [Video](https://photos.app.goo.gl/HHQ8C5MsS7MFsj8w7) !@! [Slides](https://docs.google.com/presentation/d/1wsHJvKbGeR-0jaTYETqjPx87VThNT3oz8RDxN45xblY/edit?usp=sharing) |
 |~ 2019 ~|||
-| PyCon US: Cleveland, Ohio 2019 | [Selected as speaker](https://us.pycon.org/2019/proposals/432/) | Talk on Reinventing Education with Python in 2019 representing PyDelhi and Sugar Labs in the biggest Python conference in the world. [Tweet](https://twitter.com/vipulgupta2048/status/1096062549877899264) |
+| PyCon US: Cleveland, Ohio 2019 | [Proposal](https://us.pycon.org/2019/proposals/432/) | Talk on Reinventing Education with Python in 2019 representing PyDelhi and Sugar Labs in the biggest Python conference in the world. [Tweet](https://twitter.com/vipulgupta2048/status/1096062549877899264) |
+| DebUtsav Delhi 2019 | [Proposal](https://debutsav.in) | [Delivered] Talk on importance of digging opportunities in Open-Source, to attendees of DebUtsav at National Institute of Public Finance and Policy (NIFPP) [Slides](http://slides.com/vipulgupta2048/finding-foss) |
 |||
 
 ***
@@ -53,6 +56,9 @@ At last, I am thankful for everyone who gave their feedback, shared opportunitie
 | Sustain Summit 2018 | [Website](https://sustainoss.org) |  Invited to represent as a sustainer to represent Sugar Labs and ALiAS |
 | TechDay London 2018 | [Website](https://techdayhq.com/london) | Attended to explore opportunities with London's best startups |
 | Digital Ocean Tide 2018 : New Delhi | [Website](https://www.meetup.com/DigitalOceanDelhi/events/256140664/) | Attended to explore opportunities with Digital Ocean, instead got opportunities with Hasura and TheServerGuy |
+| DebUtsav 2018 | [Website](https://debutsav.in) | Attended this awesome mini-conf from 9-10 March 2019, to learn Debian packaging and participate in bug squashing party over the weekend at NIFPP, gave a small talk on digging opportunities as well |
+|PyCon US|||
+|PyCon Jaipur|||
 |||
 
 ***
@@ -64,3 +70,8 @@ At last, I am thankful for everyone who gave their feedback, shared opportunitie
 | HackMIT 2018 | [Website](https://hackmit.org) | Project Wats'on The Roof selected for IBM: Call for Code - Global Challenge [blog post for reference](https://mixstersite.wordpress.com/2018/09/28/hackmit-2018/) |
 | Hack Moscow 2018 | [Website](https://hack.moscow/) | Selected as a Lonewolf |
 | MSHack 2018 | [Website](http://mshack.devpost.com) | Team of 4, StacksFX was selected out of 2000 team submission in the online round, to hack at Microsoft Gurugram to create [InsightsFX](https://devpost.com/software/insightsfx), a unique air pollution management solution with insights that help make everyday life easier |
+
+# Podcasts with 2048
+| Podcasts  | Links | Comments |
+| --- |:---:|---|
+| Decompiled : Google Summer of Code | [Website](https://decompiled.in/) | Was invited for a fun insightful episode with the host Ayan Pahwa and Prakhar Srivastva on Decomplied to talk about Sugar Labs, Open-Source and Google Summer of Code. Episode coming out soon. |
