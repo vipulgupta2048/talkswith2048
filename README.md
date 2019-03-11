@@ -70,8 +70,9 @@ At last, I am thankful for everyone who gave their feedback, shared opportunitie
 | HackMIT 2018 | [Website](https://hackmit.org) | Project Wats'on The Roof selected for IBM: Call for Code - Global Challenge [blog post for reference](https://mixstersite.wordpress.com/2018/09/28/hackmit-2018/) |
 | Hack Moscow 2018 | [Website](https://hack.moscow/) | Selected as a Lonewolf |
 | MSHack 2018 | [Website](http://mshack.devpost.com) | Team of 4, StacksFX was selected out of 2000 team submission in the online round, to hack at Microsoft Gurugram to create [InsightsFX](https://devpost.com/software/insightsfx), a unique air pollution management solution with insights that help make everyday life easier |
+| Smart India Hackathon 2019 | [Website](https://www.sih.gov.in) | Participated in World's biggest hackathon on problem statement of Environment Engineering solving problems that benefit our entire community. Inspired over 50 teams from ALiAS to participate with their innovative statements. Facilitated 2 teams with reimbursements for their travel which cleared the national rounds. Go ALiAS! |
 
 # Podcasts with 2048
 | Podcasts  | Links | Comments |
 | --- |:---:|---|
-| Decompiled : Google Summer of Code | [Website](https://decompiled.in/) | Was invited for a fun insightful episode with the host Ayan Pahwa and Prakhar Srivastva on Decomplied to talk about Sugar Labs, Open-Source and Google Summer of Code. Episode coming out soon. |
+| Decompiled : Google Summer of Code Edition | [Website](https://decompiled.in/) | Was invited for a fun insightful episode with the host Ayan Pahwa and Prakhar Srivastva on Decomplied to talk about Sugar Labs, Open-Source and Google Summer of Code. Episode coming out soon. |
