@@ -4,15 +4,17 @@
 
 ### About 2048 
 
-_This repository acts as a showcase... of just about everything I enjoyed doing in my college years (Thankfully, I ain't done yet) It's a gauge I keep for progress, personal development and most importantly, because it reminds me of one thing that I try to create, impact._
+_This repository acts as a showcase... of just about everything I enjoyed doing in my college years (Thankfully, I ain't done yet) It's a gauge I keep for progress, personal development and most importantly, because it reminds me of one thing that I always try to create in life for all the beautiful around me is, impact._
 
-I love giving back to the open-source community in whatever way I can. Therefore all talk resource, slides, code that I create is open-source and public for anyone to use and view in whatever capacity they see fit. Adding on to it, this repository is also a tracker of conferences that I attended/was invited/volunteered for. Networking and listening to people has always been the one activity that sparks my interests. Maybe that's my DevRel side.   
+I have been working Outreach for years now, and actually know the importance of having the right impact on your viewers early. That's why I love giving back to the open-source community in whatever way I can. Each figment of contribution had a purpose and therefore all talk resource, slides, code that I create is open-source and public for anyone to use and view in whatever capacity they see fit. Adding on to it, this repository is also a tracker of conferences that I attended/was invited/volunteered for. Networking and listening to people has always been the one activity that fuels my enthusiasm. Maybe that's my DevRel side speaking right now. Who knows?   
 
 **Update#2** - From 2018, I added a new section for hackathons. I think hackathons are a great way to learn fast, implement faster, and learn from mistakes of the past. A ideology that I throroughly believe in.
 
-**Update#3** - From 2019, added Podcasts.
+**Update#3** - From 2019, added Podcasts as well :hatching_chick:
 
-At last, I am thankful for everyone who gave their feedback, shared opportunities and asked questions. Every bit of my Bachelor's helped me in my growth essentially. I hope this information is useful and inspiring, for people looking to contribute and expose themselves for everything that is out there and make the most of it. For the road might look tough in the beginning, but it be worth your while when you reach the highway.
+At last, I am thankful for each and every person who waited till my talk finished to share their valuable feedback, shared opportunities and asked the right questions that made me learn more. The people who kept me soaring in high regards and also kept me close to the ground. Every bit of my Bachelor's helped me in my growth essentially. Be is personal, academic, professional. I hope this information is useful and inspiring, for people looking to contribute and expose themselves for everything that is out there and make the most of it. 
+
+> ### For the roads might look tough in the beginning, but it be worth your while when you reach that highway.
 
 ## Talks with 2048
 
