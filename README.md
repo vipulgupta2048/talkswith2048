@@ -34,7 +34,7 @@ At last, I am thankful for everyone who gave their feedback, shared opportunitie
 | Sugar Port - My GSoC project with Sugar Labs |  Lightening talk | [Delivered] At Google London Office for a lightening talk on my Google Summer of Code project, Sugar Port. [Slides](https://docs.google.com/presentation/d/12B2vPtcm5OhNYSIVNCZqrU-HiA04X7LjDpdSFSWQAbI/edit?usp=sharing) |
 | Mytrah talks 2018 | Selected among 100+ case studies to present at Amity University | [Delivered] At Amity University in front of diverse crowd of scientists, reaserchers and students working on renewable energy and sustainable environment. [Video](https://photos.app.goo.gl/HHQ8C5MsS7MFsj8w7) !@! [Slides](https://docs.google.com/presentation/d/1wsHJvKbGeR-0jaTYETqjPx87VThNT3oz8RDxN45xblY/edit?usp=sharing) |
 |~ 2019 ~|||
-| PyCon US: Cleveland, Ohio 2019 | [Proposal](https://us.pycon.org/2019/proposals/432/) | Talk on Reinventing Education with Python in 2019 representing PyDelhi and Sugar Labs in the biggest Python conference in the world. [Tweet](https://twitter.com/vipulgupta2048/status/1096062549877899264) |
+| PyCon US: Cleveland, Ohio 2019 | [Proposal](https://us.pycon.org/2019/proposals/432/) | [Selected] Talk on Reinventing Education with Python in 2019 representing PyDelhi and Sugar Labs in the biggest Python conference in the world. [Tweet](https://twitter.com/vipulgupta2048/status/1096062549877899264) |
 | DebUtsav Delhi 2019 | [Proposal](https://debutsav.in) | [Delivered] Talk on importance of digging opportunities in Open-Source, to attendees of DebUtsav at National Institute of Public Finance and Policy (NIFPP) [Slides](http://slides.com/vipulgupta2048/finding-foss) |
 |||
 
@@ -57,8 +57,6 @@ At last, I am thankful for everyone who gave their feedback, shared opportunitie
 | TechDay London 2018 | [Website](https://techdayhq.com/london) | Attended to explore opportunities with London's best startups |
 | Digital Ocean Tide 2018 : New Delhi | [Website](https://www.meetup.com/DigitalOceanDelhi/events/256140664/) | Attended to explore opportunities with Digital Ocean, instead got opportunities with Hasura and TheServerGuy |
 | DebUtsav 2018 | [Website](https://debutsav.in) | Attended this awesome mini-conf from 9-10 March 2019, to learn Debian packaging and participate in bug squashing party over the weekend at NIFPP, gave a small talk on digging opportunities as well |
-|PyCon US|||
-|PyCon Jaipur|||
 |||
 
 ***
@@ -75,4 +73,4 @@ At last, I am thankful for everyone who gave their feedback, shared opportunitie
 # Podcasts with 2048
 | Podcasts  | Links | Comments |
 | --- |:---:|---|
-| Decompiled : Google Summer of Code Edition | [Website](https://decompiled.in/) | Was invited for a fun insightful episode with the host Ayan Pahwa and Prakhar Srivastva on Decomplied to talk about Sugar Labs, Open-Source and Google Summer of Code. Episode coming out soon. |
+| Decompiled : Google Summer of Code Edition | [Website](https://decompiled.in/) | Was invited for a fun insightful episode with the host Ayan Pahwa and Prakhar Srivastva on Decomplied to talk about Sugar Labs, Open-Source and Google Summer of Code. Episode out now, check it out [here](https://www.youtube.com/watch?v=CFAT_X84zJM). |
