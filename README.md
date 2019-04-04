@@ -8,9 +8,9 @@ _This repository acts as a showcase... of just about everything I enjoyed doing 
 
 I love giving back to the open-source community in whatever way I can. Therefore all talk resource, slides, code that I create is open-source and public for anyone to use and view in whatever capacity they see fit. Adding on to it, this repository is also a tracker of conferences that I attended/was invited/volunteered for. Networking and listening to people has always been the one activity that sparks my interests. Maybe that's my DevRel side.   
 
-Update#2 - From 2018, I added a new section for hackathons. I think hackathons are a great way to learn fast, implement faster, and learn from mistakes of the past. A ideology that I throroughly believe in.
+**Update#2** - From 2018, I added a new section for hackathons. I think hackathons are a great way to learn fast, implement faster, and learn from mistakes of the past. A ideology that I throroughly believe in.
 
-Update#3 - From 2019, added Podcasts.
+**Update#3** - From 2019, added Podcasts.
 
 At last, I am thankful for everyone who gave their feedback, shared opportunities and asked questions. Every bit of my Bachelor's helped me in my growth essentially. I hope this information is useful and inspiring, for people looking to contribute and expose themselves for everything that is out there and make the most of it. For the road might look tough in the beginning, but it be worth your while when you reach the highway.
 
@@ -53,7 +53,7 @@ At last, I am thankful for everyone who gave their feedback, shared opportunitie
 | Mytrah Talks 2018 | [Website](mytrahtalks.com) | Presented Case Study at Mytrah Talks 2018 Noida infront of hundreds of panelists and experts of the sustainable development field, case Study won the first prize |
 | Linux Foundation's Open Source Summit 2018 | [Website](https://events.linuxfoundation.org/events/open-source-summit-europe-2018/) | Awarded scholarship a travel stipend and full-access ticket to the conference worth 1000$ happening in Edinburgh, UK |
 | Mozfest 2018 | [Website](https://mozillafestival.org/) | Facilitator and volunteer in the Youth Zone of the 8 track mega festival of Mozilla at Ravensbourne College, London, UK |
-| Sustain Summit 2018 | [Website](https://sustainoss.org) |  Invited to represent as a sustainer to represent Sugar Labs and ALiAS |
+| Sustain Summit 2018 | [Website](https://sustainoss.org) |  Invited as a sustainer to represent Sugar Labs and ALiAS globally in between the biggest communities in the world including that of Google, Microsoft, StackOverflow ,GitHub and more|
 | TechDay London 2018 | [Website](https://techdayhq.com/london) | Attended to explore opportunities with London's best startups |
 | Digital Ocean Tide 2018 : New Delhi | [Website](https://www.meetup.com/DigitalOceanDelhi/events/256140664/) | Attended to explore opportunities with Digital Ocean, instead got opportunities with Hasura and TheServerGuy |
 | DebUtsav 2018 | [Website](https://debutsav.in) | Attended this awesome mini-conf from 9-10 March 2019, to learn Debian packaging and participate in bug squashing party over the weekend at NIFPP, gave a small talk on digging opportunities as well |
