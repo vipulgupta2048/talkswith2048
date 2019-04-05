@@ -14,7 +14,8 @@ I have been working Outreach for years now, and actually know the importance of 
 
 At last, I am thankful for each and every person who waited till my talk finished to share their valuable feedback, shared opportunities and asked the right questions that made me learn more. The people who kept me soaring in high regards and also kept me close to the ground. Every bit of my Bachelor's helped me in my growth essentially. Be is personal, academic, professional. I hope this information is useful and inspiring, for people looking to contribute and expose themselves for everything that is out there and make the most of it. 
 
-> ### For the roads might look tough in the beginning, but it be worth your while when you reach that highway.
+![image](https://www.salesforce.com/content/dam/blogs/ca/Blog%20Posts/The%20Most%20Important%20Factors%20for%20Startup%20Success_Open%20Graph%20Image.png)
+> ### because for some, maybe the sky is the limit, for others its just the starting point.
 
 ## Talks with 2048
 
