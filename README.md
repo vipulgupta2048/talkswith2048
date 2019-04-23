@@ -37,7 +37,7 @@ At last, I am thankful for each and every person who waited till my talk finishe
 | Sugar Port - My GSoC project with Sugar Labs |  Lightening talk | [Delivered] At Google London Office for a lightening talk on my Google Summer of Code project, Sugar Port. [Slides](https://docs.google.com/presentation/d/12B2vPtcm5OhNYSIVNCZqrU-HiA04X7LjDpdSFSWQAbI/edit?usp=sharing) |
 | Mytrah talks 2018 | Selected among 100+ case studies to present at Amity University | [Delivered] At Amity University in front of diverse crowd of scientists, reaserchers and students working on renewable energy and sustainable environment. [Video](https://photos.app.goo.gl/HHQ8C5MsS7MFsj8w7) !@! [Slides](https://docs.google.com/presentation/d/1wsHJvKbGeR-0jaTYETqjPx87VThNT3oz8RDxN45xblY/edit?usp=sharing) |
 |~ 2019 ~|||
-| PyCon US: Cleveland, Ohio 2019 | [Proposal](https://us.pycon.org/2019/proposals/432/) | [Selected](https://us.pycon.org/2019/schedule/presentation/415/?fbclid=IwAR1c34BedXNB3mw7hG5_zbQxx001gGL6NFdVSXj6UDlk1xpFCeESDQXmcdo) Talk on Reinventing Education with Python in 2019 representing PyDelhi and Sugar Labs in the biggest Python conference in the world. [Tweet](https://twitter.com/vipulgupta2048/status/1096062549877899264) ![]()|
+| PyCon US: Cleveland, Ohio 2019 | [Proposal](https://us.pycon.org/2019/proposals/432/) | [Selected](https://us.pycon.org/2019/schedule/presentation/415/?fbclid=IwAR1c34BedXNB3mw7hG5_zbQxx001gGL6NFdVSXj6UDlk1xpFCeESDQXmcdo) Talk on Reinventing Education with Python in 2019 representing PyDelhi and Sugar Labs in the biggest Python conference in the world. [Tweet](https://twitter.com/vipulgupta2048/status/1096062549877899264) <img src="./Screenshot.png" height="200">|
 | DebUtsav Delhi 2019 | [Proposal](https://debutsav.in) | [Delivered] Talk on importance of digging opportunities in Open-Source, to attendees of DebUtsav at National Institute of Public Finance and Policy (NIFPP) [Slides](http://slides.com/vipulgupta2048/finding-foss) |
 |||
 
@@ -58,7 +58,7 @@ At last, I am thankful for each and every person who waited till my talk finishe
 | Mozfest 2018 | [Website](https://mozillafestival.org/) | Facilitator and volunteer in the Youth Zone of the 8 track mega festival of Mozilla at Ravensbourne College, London, UK |
 | Sustain Summit 2018 | [Website](https://sustainoss.org) |  Invited as a sustainer to represent Sugar Labs and ALiAS globally in between the biggest communities in the world including that of Google, Microsoft, StackOverflow ,GitHub and more|
 | TechDay London 2018 | [Website](https://techdayhq.com/london) | Attended to explore opportunities with London's best startups |
-| Digital Ocean Tide 2018 : New Delhi | [Website](https://www.meetup.com/DigitalOceanDelhi/events/256140664/) | Attended to explore opportunities with Digital Ocean, instead got opportunities with Hasura and TheServerGuy |
+| Digital Ocean Tide 2018 : New Delhi | [Website](https://www.meetup.com/DigitalOceanDelhi/events/256140664/) | Attended to explore opportunities with Digital Ocean, instead got opportunities with Hasura as SDE intern. So thrilled to join them in May 2019. |
 | DebUtsav 2018 | [Website](https://debutsav.in) | Attended this awesome mini-conf from 9-10 March 2019, to learn Debian packaging and participate in bug squashing party over the weekend at NIFPP, gave a small talk on digging opportunities as well |
 |||
 
