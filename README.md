@@ -40,9 +40,7 @@ At last, I am thankful for each and every person who waited till my talk finishe
 | PyCon US: Cleveland, Ohio 2019 | [Proposal](https://us.pycon.org/2019/proposals/432/) | [Selected](https://us.pycon.org/2019/schedule/presentation/415/?fbclid=IwAR1c34BedXNB3mw7hG5_zbQxx001gGL6NFdVSXj6UDlk1xpFCeESDQXmcdo) Talk on Reinventing Education with Python in 2019 representing PyDelhi and Sugar Labs in the biggest Python conference in the world. [Tweet](https://twitter.com/vipulgupta2048/status/1096062549877899264) <img src="./Screenshot.png" height="200">|
 | DebUtsav Delhi 2019 | [Proposal](https://debutsav.in/#speakers) | [Delivered](https://blog.shanky.xyz/event-report-for-debutsav-delhi-2019.html) Talk on importance of digging opportunities in Open-Source, to attendees of DebUtsav at National Institute of Public Finance and Policy (NIFPP) [Slides](http://slides.com/vipulgupta2048/finding-foss) |
 | PyCon Singapore 2019 | Lightning talk | [Delivered](https://pycon.sg/edu-summit/) Spreading awareness about Sugar Labs's aim to transforming pedagogy with Python, showcasing our work over the years, contributions and impact created to improve the overall education scenario at the Education Summit. In line with Outreach efforts of Sugar Labs in the APAC region, and how it helps remodel the current education system with its free and open-source Python tools. [Screenshot](./2.png) |
-|||
-
-***
+| PyCon UK 2019 | Proposal to be published | [Selected] Will update!! Very excited for it. |
 
 # Conferences with 2048
 
@@ -61,7 +59,6 @@ At last, I am thankful for each and every person who waited till my talk finishe
 | TechDay London 2018 | [Website](https://techdayhq.com/london) | Attended to explore opportunities with London's best startups |
 | Digital Ocean Tide 2018 : New Delhi | [Website](https://www.meetup.com/DigitalOceanDelhi/events/256140664/) | Attended to explore opportunities with Digital Ocean, instead got opportunities with Hasura as SDE intern. So thrilled to join them in May 2019. |
 | DebUtsav 2018 | [Website](https://debutsav.in) | Attended this awesome mini-conf from 9-10 March 2019, to learn Debian packaging and participate in bug squashing party over the weekend at NIFPP, gave a small talk on digging opportunities as well |
-|||
 
 ***
 
@@ -78,3 +75,4 @@ At last, I am thankful for each and every person who waited till my talk finishe
 | Podcasts  | Links | Comments |
 | --- |:---:|---|
 | Decompiled : Google Summer of Code Edition | [Website](https://decompiled.in/) | Was invited for a fun insightful episode with the host Ayan Pahwa and Prakhar Srivastva on Decomplied to talk about Sugar Labs, Open-Source and Google Summer of Code. Episode out now, check it out [here](https://www.youtube.com/watch?v=CFAT_X84zJM). |
+| Sustain Our Software Podcast with Vipul Gupta | [Website](https://devchat.tv/) | Will be updated soon as the episode goes live!! |
