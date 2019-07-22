@@ -2,6 +2,7 @@
 
 [![HitCount](http://hits.dwyl.io/vipulgupta2048/talkswith2048.svg)](http://hits.dwyl.io/vipulgupta2048/talkswith2048) [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
+Hey, if you like to hire me. You can [mail me](mailto:vipulgupta2048@gmail.com) or reach me anywhere on the web by [`vipulgupta2048`](https://lmgtfy.com/?q=vipulgupta2048&iie=1) all over the web.
 ### About 2048 
 
 _This repository acts as a showcase... of just about everything I enjoyed doing in my college years (Thankfully, I ain't done yet) It's a gauge I keep for progress, personal development and most importantly, because it reminds me of one thing that I always try to create in life for all the beautiful around me is, impact._
@@ -11,6 +12,8 @@ I have been working Outreach for years now, and actually know the importance of 
 **Update#2** - From 2018, I added a new section for hackathons. I think hackathons are a great way to learn fast, implement faster, and learn from mistakes of the past. A ideology that I throroughly believe in.
 
 **Update#3** - From 2019, added Podcasts as well :hatching_chick:
+
+**Update#4** - From July'19, I am adding posters as well. Something I like dearly is creating good content, no matter how hard it might be. Meetup posters hold quite a special place in my mind as that always help me think towards design, UI/UX as well as mixing up different techniques. These are Canva made, ain't special. I like them so why not show them. :hatching_chick:
 
 At last, I am thankful for each and every person who waited till my talk finished to share their valuable feedback, shared opportunities and asked the right questions that made me learn more. The people who kept me soaring in high regards and also kept me close to the ground. Every bit of my Bachelor's helped me in my growth essentially. Be is personal, academic, professional. I hope this information is useful and inspiring, for people looking to contribute and expose themselves for everything that is out there and make the most of it. 
 
@@ -76,3 +79,9 @@ At last, I am thankful for each and every person who waited till my talk finishe
 | --- |:---:|---|
 | Decompiled : Google Summer of Code Edition | [Website](https://decompiled.in/) | Was invited for a fun insightful episode with the host Ayan Pahwa and Prakhar Srivastva on Decomplied to talk about Sugar Labs, Open-Source and Google Summer of Code. Episode out now, check it out [here](https://www.youtube.com/watch?v=CFAT_X84zJM). |
 | Sustain Our Software Podcast with Vipul Gupta | [Website](https://devchat.tv/) | Will be updated soon as the episode goes live!! |
+
+# Posters by 2048
+| Posters  | Links | My thoughts |
+| --- |:---:|---|
+|![](https://user-images.githubusercontent.com/22801822/61649091-65a40800-acce-11e9-9c32-6b7bc55f3eaa.png)| [Meetup](https://www.meetup.com/pydelhi/events/263185692/) | Thought of making a meetup about Quantum RNGs, to be one of the coolest in New Delhi by making the brain attaining thug life in this blend of black and white poster. |
+|![](https://user-images.githubusercontent.com/22801822/61649830-d697ef80-accf-11e9-81f1-e3085cc84302.jpg)| Un-Meetup | Loved this poster, just because of the bright blends with the fusion of hindi and english giving a modern, funky look! |
