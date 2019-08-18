@@ -70,9 +70,11 @@ At last, I am thankful for each and every person who waited till my talk finishe
 | Hack Moscow 2018 | [Website](https://hack.moscow/) | Selected as a Lonewolf |
 | MSHack 2018 | [Website](http://mshack.devpost.com) | Team of 4, StacksFX was selected out of 2000 team submission in the online round, to hack at Microsoft Gurugram to create [InsightsFX](https://devpost.com/software/insightsfx), a unique air pollution management solution with insights that help make everyday life easier |
 | Smart India Hackathon 2019 | [Website](https://www.sih.gov.in) | Participated in World's biggest hackathon on problem statement of Environment Engineering solving problems that benefit our entire community. Inspired over 50 teams from ALiAS to participate with their innovative statements. Facilitated 2 teams with reimbursements for their travel which cleared the national rounds. Go ALiAS! |
+| PenApps 2019 | [Website](http://pennapps.com) | Selected with my team StacksFX |
+
 
 # Podcasts with 2048
 | Podcasts  | Links | Comments |
 | --- |:---:|---|
 | Decompiled : Google Summer of Code Edition | [Website](https://decompiled.in/) | Was invited for a fun insightful episode with the host Ayan Pahwa and Prakhar Srivastva on Decomplied to talk about Sugar Labs, Open-Source and Google Summer of Code. Episode out now, check it out [here](https://www.youtube.com/watch?v=CFAT_X84zJM). |
-| Sustain Our Software Podcast with Vipul Gupta | [Website](https://devchat.tv/) | Will be updated soon as the episode goes live!! |
+| Sustain Our Software Podcast with Vipul Gupta | [Website](https://devchat.tv/sustain-our-software/sos-004-samson-goddy-vipul-gupta/) | Samson Goddy and Vipul Gupta join the panelists Pia Mancini and Richard Littauer to talk about open source activities in Nigeria and India. Vipul is the Global Outreach Team Lead at Sugar Labs. Sugar Labs is an activity-focused open-source software learning platform for children. Both Samson and Vipul agree that a lot of developers they talk to are not very familiar with open source and the most common question they receive in meet-up groups is how one can start to contribute to open source. |
