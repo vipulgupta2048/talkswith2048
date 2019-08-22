@@ -43,6 +43,7 @@ At last, I am thankful for each and every person who waited till my talk finishe
 | PyCon US: Cleveland, Ohio 2019 | [Proposal](https://us.pycon.org/2019/proposals/432/) | [Selected](https://us.pycon.org/2019/schedule/presentation/415/?fbclid=IwAR1c34BedXNB3mw7hG5_zbQxx001gGL6NFdVSXj6UDlk1xpFCeESDQXmcdo) Talk on Reinventing Education with Python in 2019 representing PyDelhi and Sugar Labs in the biggest Python conference in the world. [Tweet](https://twitter.com/vipulgupta2048/status/1096062549877899264) <img src="./Screenshot.png" height="200">|
 | DebUtsav Delhi 2019 | [Proposal](https://debutsav.in/#speakers) | [Delivered](https://blog.shanky.xyz/event-report-for-debutsav-delhi-2019.html) Talk on importance of digging opportunities in Open-Source, to attendees of DebUtsav at National Institute of Public Finance and Policy (NIFPP) [Slides](http://slides.com/vipulgupta2048/finding-foss) |
 | PyCon Singapore 2019 | Lightning talk | [Delivered](https://pycon.sg/edu-summit/) Spreading awareness about Sugar Labs's aim to transforming pedagogy with Python, showcasing our work over the years, contributions and impact created to improve the overall education scenario at the Education Summit. In line with Outreach efforts of Sugar Labs in the APAC region, and how it helps remodel the current education system with its free and open-source Python tools. [Screenshot](./2.png) |
+| PyCon UK 2019, PyCon ZA 2019 | talk on Sugar Labs | [Accepted] Spreading awareness about Sugar Labs's aim to transforming pedagogy with Python, showcasing our work over the years, contributions and impact created. |
 
 # Conferences with 2048
 
@@ -61,7 +62,8 @@ At last, I am thankful for each and every person who waited till my talk finishe
 | TechDay London 2018 | [Website](https://techdayhq.com/london) | Attended to explore opportunities with London's best startups |
 | Digital Ocean Tide 2018 : New Delhi | [Website](https://www.meetup.com/DigitalOceanDelhi/events/256140664/) | Attended to explore opportunities with Digital Ocean, instead got opportunities with Hasura as SDE intern. So thrilled to join them in May 2019. |
 | DebUtsav 2018 | [Website](https://debutsav.in) | Attended this awesome mini-conf from 9-10 March 2019, to learn Debian packaging and participate in bug squashing party over the weekend at NIFPP, gave a small talk on digging opportunities as well |
-
+| GraphQL Summit ASIA 2019 | [Website](https://www.graphql-asia.org) | Handled bit of Community Outreach |
+| React India 2019 | [Website](https://reactindia.io) | One of the 10 React India Scholarship awardees to be accepted into the largest React conference in India by the React Community and Geekabyte. Held in Goa on 26-28 September 2019. |
 ***
 
 # Hackathons with 2048
@@ -74,6 +76,10 @@ At last, I am thankful for each and every person who waited till my talk finishe
 | Smart India Hackathon 2019 | [Website](https://www.sih.gov.in) | Participated in World's biggest hackathon on problem statement of Environment Engineering solving problems that benefit our entire community. Inspired over 50 teams from ALiAS to participate with their innovative statements. Facilitated 2 teams with reimbursements for their travel which cleared the national rounds. Go ALiAS! |
 | PenApps 2019 | [Website](http://pennapps.com) | Selected with my team StacksFX |
 
+# Best Blogs on Mixster by 2048 (Top 10 all time)
+Always wanted to do this. Coming soon.
+
+# Google Summer of Code with 2048
 
 # Podcasts with 2048
 | Podcasts  | Links | Comments |
@@ -86,3 +92,8 @@ At last, I am thankful for each and every person who waited till my talk finishe
 | --- |:---:|---|
 |![](https://user-images.githubusercontent.com/22801822/61649091-65a40800-acce-11e9-9c32-6b7bc55f3eaa.png)| [Meetup](https://www.meetup.com/pydelhi/events/263185692/) | Thought of making a meetup about Quantum RNGs, to be one of the coolest in New Delhi by making the brain attaining thug life in this blend of black and white poster. |
 |![](https://user-images.githubusercontent.com/22801822/61649830-d697ef80-accf-11e9-81f1-e3085cc84302.jpg)| Un-Meetup | Loved this poster, just because of the bright blends with the fusion of hindi and english giving a modern, funky look! |
+
+# Failures of 2048
+Unfortunately, that list will take way too long to compile. You would have better chances of escaping the gravitational pull of a small blackhole than getting that list. What I mean by that for people reading this is, I could have achieved nothing of this sort without failing a thousand times first, and then getting up just to fail again. You (The Reader) my advice for you is to dig deep, don't lost hope and give your best shot to everything from this moment on. Life's got something nice in store for all of you. Trust me and if you think you are medicore. 
+
+Then, `fork` `mediocrity`
