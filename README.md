@@ -2,7 +2,8 @@
 
 [![HitCount](http://hits.dwyl.io/vipulgupta2048/talkswith2048.svg)](http://hits.dwyl.io/vipulgupta2048/talkswith2048) [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
-Hey, if you like to hire me. You can [mail me](mailto:vipulgupta2048@gmail.com) or reach me anywhere on the web by [`vipulgupta2048`](https://lmgtfy.com/?q=vipulgupta2048&iie=1) all over the web.
+Hey, if you like to hire me. You can [mail me](mailto:vipulgupta2048@gmail.com) or reach me anywhere on the web by [`vipulgupta2048`](https://lmgtfy.com/?q=vipulgupta2048&iie=1) all over the web or just read more on [whoami](https://mixstersite.wordpress.com/aboutvipulgupta2048).
+
 ### About 2048 
 
 _This repository acts as a showcase... of just about everything I enjoyed doing in my college years (Thankfully, I ain't done yet) It's a gauge I keep for progress, personal development and most importantly, because it reminds me that I have impacted a people around me, while my time on Earth. However less or more they might be._
@@ -14,6 +15,8 @@ I have been working Outreach for years now, and actually know the importance of 
 **Update#3** - From 2019, added Podcasts as well :hatching_chick:
 
 **Update#4** - From July'19, I am adding posters as well. Something I like dearly is creating good content, no matter how hard it might be. Meetup posters hold quite a special place in my mind as that always help me think towards design, UI/UX as well as mixing up different techniques. These are Canva made, ain't special. I like them so why not show them. :hatching_chick:
+
+**Update #5** - I have stopped updating. New content all the time. **YOLO**.
 
 At last, I am thankful for each and every person who waited till my talk finished to share their valuable feedback, shared opportunities and asked the right questions that made me learn more. The people who kept me soaring in high regards and also kept me close to the ground. Every bit of my Bachelor's helped me in my growth essentially. Be it personal, academic, professional. I hope this information is useful and inspiring, for people looking to contribute and expose themselves for everything that is out there and make the most of it. I for one, have always loved to do that.
 
