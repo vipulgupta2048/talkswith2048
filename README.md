@@ -80,7 +80,9 @@ At last, I am thankful for each and every person who waited till my talk finishe
 Always wanted to do this. Coming soon.
 
 # Google Summer of Code with 2048
-Coming soon as well.
+In my college years, I had the pleasure of contributing and participating in Google Summer of Code 2018 with Sugar Labs[Google Summer of Code 2018 with Sugar Labs](https://github.com/vipulgupta2048/mygsoc) and in 2019 with The Scrapy Project[2019 with The Scrapy Project](https://github.com/vipulgupta2048/mygsoc) . These projects have taught, helped and made me who I am. I still work with Sugar Labs focusing on Outreach efforts and contribute frequently to ScrapingHub. Good times indeed. 
+
+<img src="https://scontent-bom1-1.xx.fbcdn.net/v/t1.0-9/44810185_1707660292677887_540675003188772864_o.jpg?_nc_cat=111&_nc_oc=AQl3uBoHrkKxzrzun79L3I3Yp7RIJaPkAsyxg3CKwajvO-52xG2wL-rp71_04DvY0LY&_nc_ht=scontent-bom1-1.xx&oh=67e10d1a3d614fbaaa6a639fd87cde16&oe=5DC9D7A4" height=380 width=540 align="middle">
 
 # Podcasts with 2048
 | Podcasts  | Links | Comments |
