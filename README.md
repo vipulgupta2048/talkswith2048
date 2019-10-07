@@ -93,9 +93,9 @@ In my college years, I had the pleasure of contributing and participating in Goo
 
 Who knew? I love working on product design so much. It all started from this take home assignment, I received from a PM interview. Now, I work on product design creating wireframes on AdobeXD whenever I feel like it. It feels liberating to let my ideas flow on a 770x340Px artboard with nothing but me and my prototypes. 
 
-| Products  | Behance Link | Comments |
+| Products  | Project Link | Comments |
 | --- |:---:|---|
-|![](https://user-images.githubusercontent.com/22801822/66336903-a4576f00-e95b-11e9-82ff-a64c8f30954c.png)| [Behance](https://www.behance.net/gallery/86486979/The-BookHustler-Project) [Adobe XD Project file](https://drive.google.com/uc?export=download&id=1z-wf3OHqc2CAsAOl8eHVXJsBojeRp8d8)| The BookHustler Project was my first project. It's an e-commerce app for buying, selling and renting second-hand books online. I have [documented the idea](https://docs.google.com/document/d/1Ppgt6Pk2n0Mdp2YpBTtIym8Nx4ugAlAz92r067DDsEU/edit?usp=sharing) as well behind the project if you like to read. It has all information from logistics of how books are bought and sold to the renting model involved. |
+|![](https://user-images.githubusercontent.com/22801822/66336903-a4576f00-e95b-11e9-82ff-a64c8f30954c.png)| [Behance](https://www.behance.net/gallery/86486979/The-BookHustler-Project) | The BookHustler Project was my first project. It's an e-commerce app for buying, selling and renting second-hand books online. I have [documented the idea](https://docs.google.com/document/d/1Ppgt6Pk2n0Mdp2YpBTtIym8Nx4ugAlAz92r067DDsEU/edit?usp=sharing) as well behind the project if you like to read. It has all information from logistics of how books are bought and sold to the renting model involved. [Adobe XD Project file](https://drive.google.com/uc?export=download&id=1z-wf3OHqc2CAsAOl8eHVXJsBojeRp8d8) |
 
 
 # Podcasts with 2048
