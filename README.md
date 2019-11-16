@@ -111,7 +111,7 @@ Who knew? I love working on product design so much. It all started with this tak
 |![](https://user-images.githubusercontent.com/22801822/61649830-d697ef80-accf-11e9-81f1-e3085cc84302.jpg)| Un-Meetup | Loved this poster, just because of the bright blends with the fusion of Hindi and English giving a modern, funky look! |
 |![](https://user-images.githubusercontent.com/22801822/67877443-91514c80-fb5f-11e9-8ea1-579003b784c8.png)| [Meetup](https://www.meetup.com/ilugdelhi/events/jkbtdqyznbqb/) | Took a wanted poster & remodeled it to work it as a treasure hunt advert for ILuGD's Anniversary meetup. Using Digital Ocean's wallpapers and Linux terminal symbols gives it an elegant, bold look. |
 |![](https://user-images.githubusercontent.com/22801822/67877442-91514c80-fb5f-11e9-8888-fe3174a5f81e.png)| [Meetup](https://www.meetup.com/ilugdelhi/events/jkbtdqyznbqb/) | Had tons of fun designing this black beauty using Canva Pro, picked a fashion design template and added few quirky elements like the polaroid and glimmer circle in the background. Hindi just to re-introduce the funk back into design. |
-
+|![](https://user-images.githubusercontent.com/22801822/68994072-ac80c380-08a4-11ea-847e-091c70f1eab0.png)| [Blog](https://mixstersite.wordpress.com/2019/11/16/insync-onedrive-client-for-linux/) | A sweet and simple poster designed for a sponsor on their new OneDrive Linux client release blog |
 
 
 # Failures of 2048
