@@ -47,7 +47,7 @@ At last, I am thankful for each and every person who waited till my talk finishe
 | DebUtsav Delhi 2019 | [Proposal](https://debutsav.in/#speakers) | [Delivered](https://blog.shanky.xyz/event-report-for-debutsav-delhi-2019.html) Talk on importance of digging opportunities in Open-Source, to attendees of DebUtsav at National Institute of Public Finance and Policy (NIFPP) [Slides](http://slides.com/vipulgupta2048/finding-foss) |
 | PyCon Singapore 2019 | Lightning talk | [Delivered](https://pycon.sg/edu-summit/) Spreading awareness about Sugar Labs's aim to transforming pedagogy with Python, showcasing our work over the years, contributions and impact created to improve the overall education scenario at the Education Summit. In line with Outreach efforts of Sugar Labs in the APAC region, and how it helps remodel the current education system with its free and open-source Python tools. [Screenshot](./2.png) |
 | PyCon UK 2019, PyCon ZA 2019 | talks on Sugar Labs | [Accepted] Spreading awareness about Sugar Labs's aim to transforming pedagogy with Python, showcasing our work over the years, contributions and impact created. |
-| Open Source Festival Lagos | First Workshop | [Proposed] Building real command-line applications that click |
+| Open Source Festival Lagos | Talk | [Selected] Forge your future with open-source: A primer for freelancers to grow with FOSS. With everyone looking for jobs, internships or opportunities, I, a full-time student from the age of 18 have been leveraging open-source to find the right breaks, grow my community, and build my persona both personally & professionally. After this talk, you can do it too. |
 
 
 # Conferences with 2048
