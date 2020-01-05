@@ -87,7 +87,7 @@ I always wanted to do this. Coming soon.
 # Google Summer of Code with 2048
 In my college years, I had the pleasure of contributing and participating in Google Summer of Code 2018 with Sugar Labs[Google Summer of Code 2018 with Sugar Labs](https://github.com/vipulgupta2048/mygsoc) and in 2019 with The Scrapy Project[2019 with The Scrapy Project](https://github.com/vipulgupta2048/mygsoc). These projects have taught, helped and made me who I am. I still work with Sugar Labs focusing on Outreach efforts and contribute frequently to ScrapingHub. Good times indeed. 
 
-<img src="https://scontent-bom1-1.xx.fbcdn.net/v/t1.0-9/44810185_1707660292677887_540675003188772864_o.jpg?_nc_cat=111&_nc_oc=AQl3uBoHrkKxzrzun79L3I3Yp7RIJaPkAsyxg3CKwajvO-52xG2wL-rp71_04DvY0LY&_nc_ht=scontent-bom1-1.xx&oh=67e10d1a3d614fbaaa6a639fd87cde16&oe=5DC9D7A4" height=380 width=540 align="middle">
+<img src="gsoc.jpg" height=380 width=540 align="middle">
 
 # Products by 2048
 
@@ -112,7 +112,6 @@ Who knew? I love working on product design so much. It all started with this tak
 |![](https://user-images.githubusercontent.com/22801822/67877443-91514c80-fb5f-11e9-8ea1-579003b784c8.png)| [Meetup](https://www.meetup.com/ilugdelhi/events/jkbtdqyznbqb/) | Took a wanted poster & remodeled it to work it as a treasure hunt advert for ILuGD's Anniversary meetup. Using Digital Ocean's wallpapers and Linux terminal symbols gives it an elegant, bold look. |
 |![](https://user-images.githubusercontent.com/22801822/67877442-91514c80-fb5f-11e9-8888-fe3174a5f81e.png)| [Meetup](https://www.meetup.com/ilugdelhi/events/jkbtdqyznbqb/) | Had tons of fun designing this black beauty using Canva Pro, picked a fashion design template and added few quirky elements like the polaroid and glimmer circle in the background. Hindi just to re-introduce the funk back into design. |
 |![](https://user-images.githubusercontent.com/22801822/68994072-ac80c380-08a4-11ea-847e-091c70f1eab0.png)| [Blog](https://mixstersite.wordpress.com/2019/11/16/insync-onedrive-client-for-linux/) | A sweet and simple poster designed for a sponsor on their new OneDrive Linux client release blog |
-
 
 # Failures of 2048
 Unfortunately, that list will take way too long to compile. You would have better chances of escaping the gravitational pull of a small black hole than getting that list. What I mean by that for people reading this is, I could have achieved nothing of this sort without failing a thousand times first, and then getting up just to fail again. You (The Reader) my advice for you is to dig deep, don't lose hope and give your best shot to everything from this moment on. Life's got something nice in store for all of you. Trust me and if you think you are mediocre. 
