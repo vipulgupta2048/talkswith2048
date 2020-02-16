@@ -80,7 +80,9 @@ At last, I am thankful for each and every person who waited till my talk finishe
 | MSHack 2018 | [Website](http://mshack.devpost.com) | Team of 4, StacksFX was selected out of 2000 team submission in the online round, to hack at Microsoft Gurugram to create [InsightsFX](https://devpost.com/software/insightsfx), a unique air pollution management solution with insights that help make everyday life easier |
 | Smart India Hackathon 2019 | [Website](https://www.sih.gov.in) | Participated in the World's biggest hackathon on problem statement of Environment Engineering solving problems that benefit our entire community. Inspired over 50 teams from ALiAS to participate with their innovative statements. Facilitated 2 teams with reimbursements for their travel which cleared the national rounds. Go ALiAS! |
 | PenApps 2019 | [Website](http://pennapps.com) | Selected with my team StacksFX |
+| HackBMU 2020 | [Website](http://hackbmu.com) | Judged the 3rd Iteration of HackBMU at BML Munjal College. Was my first time as judge and a fiting end to an era of hackathons|
 
+L
 # Best Blogs on Mixster by 2048 (Top 10 all-time)
 I always wanted to do this. Coming soon.
 
