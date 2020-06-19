@@ -4,11 +4,11 @@
 
 Hey, if you like to hire me. You can [mail me](mailto:vipulgupta2048@gmail.com) or reach me anywhere on the web by [`vipulgupta2048`](https://lmgtfy.com/?q=vipulgupta2048&iie=1) all over the web or just read more on [whoami](https://mixstersite.wordpress.com/aboutvipulgupta2048).
 
-### About 2048 
+### About 2048
 
 _This repository acts as a showcase... of just about everything I enjoyed doing in my college years (Thankfully, I ain't done yet) It's a gauge I keep for progress, personal development and most importantly, because it reminds me that I have impacted a people around me, while my time on Earth. However less or more they might be._
 
-I have been working Outreach for years now, and actually, know the importance of having the right impact on your viewers early. That's why I love giving back to the open-source community in whatever way I can. Each figment of contribution had a purpose and therefore all talk resource, slides, code that I create is open-source and public for anyone to use and view in whatever capacity they see fit. Adding on to it, this repository is also a tracker of conferences that I attended/was invited/volunteered for. Networking and listening to people has always been the one activity that fuels my enthusiasm. Maybe that's my DevRel side speaking right now. Who knows? 
+I have been working Outreach for years now, and actually, know the importance of having the right impact on your viewers early. That's why I love giving back to the open-source community in whatever way I can. Each figment of contribution had a purpose and therefore all talk resource, slides, code that I create is open-source and public for anyone to use and view in whatever capacity they see fit. Adding on to it, this repository is also a tracker of conferences that I attended/was invited/volunteered for. Networking and listening to people has always been the one activity that fuels my enthusiasm. Maybe that's my DevRel side speaking right now. Who knows?
 
 **Update#2** - From 2018, I added a new section for hackathons. I think hackathons are a great way to learn fast, implement faster, and learn from mistakes of the past. An ideology that I thoroughly believe to practice in my day-to-day.
 
@@ -28,18 +28,18 @@ At last, I am thankful for each and every person who waited till my talk finishe
 | Title of the talk       | Link for Proposal  | Status - Other Comments |
 | --- |:---:|---|
 | Introduction to Git     | [Link for proposal](https://github.com/ILUGD/talks/issues/45) | [Delivered] [Repo Vanilla](https://github.com/vipulgupta2048/vanilla) used for tutorial.  |
-| CSE essentials     | [Link for proposal](https://github.com/asetalias/Logistics-and-Event-Contributions/issues/1)  | [Delivered] Basic content covered - IRC, Shell commands, git, mailing list guidelines, community guidelines; for juniors in Amity University | 
-| Fish: The terminal     | Flash Talks  | [Delivered] @ Women who Go meetup - IIIT-D - What is Fish, showing my configuration. How it's better and more productive. | 
+| CSE essentials     | [Link for proposal](https://github.com/asetalias/Logistics-and-Event-Contributions/issues/1)  | [Delivered] Basic content covered - IRC, Shell commands, git, mailing list guidelines, community guidelines; for juniors in Amity University |
+| Fish: The terminal     | Flash Talks  | [Delivered] @ Women who Go meetup - IIIT-D - What is Fish, showing my configuration. How it's better and more productive. |
 | Mentored Dev-Sprints for PyDelhi, Sugar Labs | No links  | [Delivered] Once a month at PyDelhi meetups, in which many organization mentors come together to contribute and solve issues  |
-| Plymouth 101: Bootloader's Frontend     | [Link for proposal](https://github.com/ILUGD/talks/issues/80)  | [Delivered] - ILUG-D - WeWork Meetup, [Slides](https://slides.com/vipulgupta2048/vplymouth) | 
-| Keeping your Dotfiles in check with Python     | [Link for proposal](https://in.pycon.org/cfp/2018/proposals/keeping-your-dotfiles-in-check-with-python~dw7Xd/)  | [Proposed] - PyCon India 2018 | 
+| Plymouth 101: Bootloader's Frontend     | [Link for proposal](https://github.com/ILUGD/talks/issues/80)  | [Delivered] - ILUG-D - WeWork Meetup, [Slides](https://slides.com/vipulgupta2048/vplymouth) |
+| Keeping your Dotfiles in check with Python     | [Link for proposal](https://in.pycon.org/cfp/2018/proposals/keeping-your-dotfiles-in-check-with-python~dw7Xd/)  | [Proposed] - PyCon India 2018 |
 | Understanding GitHub Flow: Conquering Conflicts  | Spontaneous | [Delivered] [Repo Vanilla](https://github.com/vipulgupta2048/vanilla) used for tutorial : [Slides](http://sanyamkhurana.com/git-intro/) at PyDelhi Devsprints |
-| DotFiles 101 and maintaining them with Python    | [Link for proposal](https://github.com/pydelhi/talks/issues/99)  | [Delivered] [Slides](https://slides.com/vipulgupta2048/dotpython-3/fullscreen)- PyDelhi Meetup @ Microsoft Corp, Gurugram : Check out the [BLOG](https://pydelhi.org/blog/pydelhi-meetup-08-july-2018.html) | 
+| DotFiles 101 and maintaining them with Python    | [Link for proposal](https://github.com/pydelhi/talks/issues/99)  | [Delivered] [Slides](https://slides.com/vipulgupta2048/dotpython-3/fullscreen)- PyDelhi Meetup @ Microsoft Corp, Gurugram : Check out the [BLOG](https://pydelhi.org/blog/pydelhi-meetup-08-july-2018.html) |
 | Bot Creation BootCamp | [Link for proposal](https://github.com/linuxchixin/talks/issues/46) | [Delivered] [Slides](https://slides.com/vipulgupta2048/2itterbots/) SocialCops, Saket, New Delhi @ LinuxChix India Meetup - 2 September 2018 |
 | How to contribute to Open-Source | Lightening talk | [Delivered] E2E Networks @ PyDelhi Meetup - 1 September 2018, [Blog Post for reference](https://pydelhi.org/blog/pydelhi-first-visit-e2enetworks.html) |
-| Google Summer of Code - Headstart Session | Spontaneous | [Delivered] Invited for a talk about my experience with Google Summer of Code along with Ajay Garg and the coding blocks team at Amity University by IUCEE Club - Addressed about 80 Students based on my popular [blog](https://mixstersite.wordpress.com/2018/04/25/123gsoc/) | 
+| Google Summer of Code - Headstart Session | Spontaneous | [Delivered] Invited for a talk about my experience with Google Summer of Code along with Ajay Garg and the coding blocks team at Amity University by IUCEE Club - Addressed about 80 Students based on my popular [blog](https://mixstersite.wordpress.com/2018/04/25/123gsoc/) |
 | Green dots doesn't matter contributing does | [Delivered](https://github.com/MozillaFestival/mozfest-program-2018/issues/106) | [Selected] Mozfest 2018 - [Slides](https://docs.google.com/presentation/d/1HlBf3QgFz9sR00gmuB2LWEi7mLhyJ8qVOlT3gq_vcm0/edit?usp=sharing) [Got a nice blog](https://mixstersite.wordpress.com/2018/11/20/mozfest2018/) Had a great talk at Mozfest, I even got featured in the newsletter. <img src="./a.png" height="358" width="400"> |
-| FSoSS 2018 New York | [Proposal](https://imgur.com/a/ftfRFQ1) | [Couldn't go] Community Talks - Managing dotfiles with Homely | 
+| FSoSS 2018 New York | [Proposal](https://imgur.com/a/ftfRFQ1) | [Couldn't go] Community Talks - Managing dotfiles with Homely |
 | Sugar Port - My GSoC project with Sugar Labs |  Lightening talk | [Delivered] At Google London Office for a lightning talk on my Google Summer of Code project, Sugar Port. [Slides](https://docs.google.com/presentation/d/12B2vPtcm5OhNYSIVNCZqrU-HiA04X7LjDpdSFSWQAbI/edit?usp=sharing) |
 | Mytrah talks 2018 | Selected among 100+ case studies to present at Amity University | [Delivered] At Amity University in front of a diverse crowd of scientists, researchers, and students working on renewable energy and sustainable environment. [Video](https://photos.app.goo.gl/HHQ8C5MsS7MFsj8w7) !@! [Slides](https://docs.google.com/presentation/d/1wsHJvKbGeR-0jaTYETqjPx87VThNT3oz8RDxN45xblY/edit?usp=sharing) |
 |~ 2019 ~|||
@@ -48,6 +48,8 @@ At last, I am thankful for each and every person who waited till my talk finishe
 | PyCon Singapore 2019 | Lightning talk | [Delivered](https://pycon.sg/edu-summit/) Spreading awareness about Sugar Labs's aim to transforming pedagogy with Python, showcasing our work over the years, contributions and impact created to improve the overall education scenario at the Education Summit. In line with Outreach efforts of Sugar Labs in the APAC region, and how it helps remodel the current education system with its free and open-source Python tools. [Screenshot](./2.png) |
 | PyCon UK 2019, PyCon ZA 2019 | talks on Sugar Labs | [Accepted] Spreading awareness about Sugar Labs's aim to transforming pedagogy with Python, showcasing our work over the years, contributions and impact created. |
 | Open Source Festival Lagos | Talk | [Selected] Forge your future with open-source: A primer for freelancers to grow with FOSS. With everyone looking for jobs, internships or opportunities, I, a full-time student from the age of 18 have been leveraging open-source to find the right breaks, grow my community, and build my persona both personally & professionally. After this talk, you can do it too. |
+| ALiAS GSoC AMA 2020 | Webinar | [Done] Took a webinar on crafting the perfect proposal for Google Summer of Code and what to keep in mind. |
+
 
 
 # Conferences with 2048
@@ -69,6 +71,7 @@ At last, I am thankful for each and every person who waited till my talk finishe
 | DebUtsav 2018 | [Website](https://debutsav.in) | Attended this awesome mini-conf from 9-10 March 2019, to learn Debian packaging and participate in bug squashing party over the weekend at NIFPP, gave a small talk on digging opportunities as well |
 | GraphQL Summit ASIA 2019 | [Website](https://www.graphql-asia.org) | Handled bit of Community Outreach |
 | React India 2019 | [Website](https://reactindia.io) | One of the 10 React India Scholarship awardees to be accepted into the largest React conference in India by the React Community and Geekabyte. Held in Goa on 26-28 September 2019. |
+| KubeCon Europe 2020 | [Website](https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/) | Awarded the Diversity scholarship to attend KubeCon this year, due to my documentation contribution to Prometheus related projects and releasing AquaSec's KubeHunter for PyPi |
 ***
 
 # Hackathons with 2048
@@ -83,15 +86,16 @@ At last, I am thankful for each and every person who waited till my talk finishe
 
 # Best Blogs on Mixster by 2048 (Top 10 all-time)
 I always wanted to do this. Coming soon.
+I instead releasted a newsletter, [Mixster x Mixtapes](https://buttondown.email/vipulgupta2048)
 
 # Google Summer of Code with 2048
-In my college years, I had the pleasure of contributing and participating in Google Summer of Code 2018 with Sugar Labs[Google Summer of Code 2018 with Sugar Labs](https://github.com/vipulgupta2048/mygsoc) and with The Scrapy Project in [2019](https://github.com/vipulgupta2048/mygsoc). These projects have taught, helped make me who I am. Even after the projects have finished, I still continue to volunteer with Sugar Labs focusing on Outreach efforts and playing active part in their Google OSS programs. I contribute code frequently to ScrapingHub and The Scrapy Project. These were good times indeed. 
+In my college years, I had the pleasure of contributing and participating in Google Summer of Code 2018 with Sugar Labs[Google Summer of Code 2018 with Sugar Labs](https://github.com/vipulgupta2048/mygsoc) and with The Scrapy Project in [2019](https://github.com/vipulgupta2048/mygsoc). These projects have taught, helped make me who I am. Even after the projects have finished, I still continue to volunteer with Sugar Labs focusing on Outreach efforts and playing active part in their Google OSS programs. I contribute code frequently to ScrapingHub and The Scrapy Project. These were good times indeed.
 
 <img src="gsoc.jpg" height=380 width=540 align="middle">
 
 # Products by 2048
 
-Who knew? I love working on product design so much. It all started with this take-home assignment, I received from a PM interview. Now, I work on product design creating wireframes on AdobeXD whenever I feel like it. It feels liberating to let my ideas flow on a 770x340Px artboard with nothing but me and my prototypes. 
+Who knew? I love working on product design so much. It all started with this take-home assignment, I received from a PM interview. Now, I work on product design creating wireframes on AdobeXD whenever I feel like it. It feels liberating to let my ideas flow on a 770x340Px artboard with nothing but me and my prototypes.
 
 | Products  | Project Link | Comments |
 | --- |:---:|---|
@@ -101,8 +105,10 @@ Who knew? I love working on product design so much. It all started with this tak
 # Podcasts with 2048
 | Podcasts  | Links | Comments |
 | --- |:---:|---|
-| Decompiled: Google Summer of Code Edition | [Website](https://decompiled.in/) | Was invited for a fun insightful episode with the host Ayan Pahwa and Prakhar Srivastava on Decomplied to talk about Sugar Labs, Open-Source and Google Summer of Code. Episode out now, check it out [here](https://www.youtube.com/watch?v=CFAT_X84zJM). |
-| Sustain Our Software Podcast with Vipul Gupta | [Website](https://devchat.tv/sustain-our-software/sos-004-samson-goddy-vipul-gupta/) | Samson Goddy and Vipul Gupta join the panelists Pia Mancini and Richard Littauer to talk about open source activities in Nigeria and India. Vipul is the Global Outreach Team Lead at Sugar Labs. Sugar Labs is an activity-focused open-source software learning platform for children. Both Samson and Vipul agree that a lot of developers they talk to are not very familiar with open source and the most common question they receive in meet-up groups is how one can start to contribute to open source. |
+| Decompiled: Google Summer of Code Edition | [Link to the episode](https://www.youtube.com/watch?v=CFAT_X84zJM) | Was invited for a fun insightful episode with the host Ayan Pahwa and Prakhar Srivastava on Decomplied to talk about Sugar Labs, Open-Source and Google Summer of Code. Episode out now, check it out [here](https://www.youtube.com/watch?v=CFAT_X84zJM). |
+| Sustain Our Software Podcast with Vipul Gupta | [Link to the episode](https://devchat.tv/sustain-our-software/sos-004-samson-goddy-vipul-gupta/) | Samson Goddy and Vipul Gupta join the panelists Pia Mancini and Richard Littauer to talk about open source activities in Nigeria and India. Vipul is the Global Outreach Team Lead at Sugar Labs. Sugar Labs is an activity-focused open-source software learning platform for children. Both Samson and Vipul agree that a lot of developers they talk to are not very familiar with open source and the most common question they receive in meet-up groups is how one can start to contribute to open source. |
+| Vipul Gupta, Open-Source, Freelancing, and Financial Independence by CodeCast Zambia | [Link to the episode](https://open.spotify.com/episode/6gvXFnMUTDx6ceUUrGR03M?si=ad9NZrMSTSScdSlUhQL_CQ) | Daniel talks to Vipul about alternative sources of income and the stigma behind freelance work as well as tips to freeelancing effectively and using open source contributions to up-skill yourself. |
+| How to get a Remote Job as a fresher with RemoteIndian | [Link to the episode](https://share.descript.com/view/25c3e54f-48bb-4dea-9b5d-78acfe0d1d88) | Podcast with RemoteIndian having an amazing discussion discussing importance of open-source, challenges of a junior dev and red flags in application process. Hope this helps folks going forward. |
 
 # Posters by 2048
 | Posters  | Links | My thoughts |
@@ -114,6 +120,6 @@ Who knew? I love working on product design so much. It all started with this tak
 |![](https://user-images.githubusercontent.com/22801822/68994072-ac80c380-08a4-11ea-847e-091c70f1eab0.png)| [Blog](https://mixstersite.wordpress.com/2019/11/16/insync-onedrive-client-for-linux/) | A sweet and simple poster designed for a sponsor on their new OneDrive Linux client release blog |
 
 # Failures of 2048
-Unfortunately, that list will take way too long to compile. You would have better chances of escaping the gravitational pull of a small black hole than getting that list. What I mean by that for people reading this is, I could have achieved nothing of this sort without failing a thousand times first, and then getting up just to fail again. You (The Reader) my advice for you is to dig deep, don't lose hope and give your best shot to everything from this moment on. Life's got something nice in store for all of you. Trust me and if you think you are mediocre. 
+Unfortunately, that list will take way too long to compile. You would have better chances of escaping the gravitational pull of a small black hole than getting that list. What I mean by that for people reading this is, I could have achieved nothing of this sort without failing a thousand times first, and then getting up just to fail again. You (The Reader) my advice for you is to dig deep, don't lose hope and give your best shot to everything from this moment on. Life's got something nice in store for all of you. Trust me and if you think you are mediocre.
 
 Then, `fuck` `mediocrity`
