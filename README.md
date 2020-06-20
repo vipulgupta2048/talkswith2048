@@ -76,15 +76,20 @@ This repository has gone through a lot of updates. [Check them out at the end](#
 | PenApps 2019 | [Website](http://pennapps.com) | Selected with my team StacksFX |
 | HackBMU 2020 | [Website](http://hackbmu.com) | Judged the 3rd Iteration of HackBMU at BML Munjal College. Was my first time as a  judge and a fitting end to an era of participating at hackathons as a student |
 
-L
+!()[https://user-images.githubusercontent.com/22801822/85212462-b43fa380-b370-11ea-9ef9-4333684d32f8.png]
+
+---
+
 # Best Blogs on Mixster by 2048 (Top 10 all-time)
 I always wanted to do this. Coming soon.
 I instead released a newsletter, [Mixster x Mixtapes](https://buttondown.email/vipulgupta2048)
 
 # Google Summer of Code with 2048
-In my college years, I had the pleasure of contributing and participating in Google Summer of Code 2018 with Sugar Labs[Google Summer of Code 2018 with Sugar Labs](https://github.com/vipulgupta2048/mygsoc) and with The Scrapy Project in [2019](https://github.com/vipulgupta2048/mygsoc). These projects have taught, helped make me who I am. Even after the projects have finished, I still continue to volunteer with Sugar Labs focusing on Outreach efforts and playing an active part in their Google OSS programs. I contribute code frequently to ScrapingHub and The Scrapy Project. These were good times indeed.
+In my college years, I had the pleasure of contributing and participating in [Google Summer of Code 2018 with Sugar Labs](https://github.com/vipulgupta2048/mygsoc) and with [The Scrapy Project in 2019](https://github.com/vipulgupta2048/mygsoc). These projects have taught, helped make me who I am. Even after the projects have finished, I still continue to volunteer with Sugar Labs focusing on Outreach efforts and playing an active part in their Google OSS programs. I contribute code frequently to ScrapingHub and The Scrapy Project. These were good times indeed.
 
 <img src="gsoc.jpg" height=380 width=540 align="middle">
+
+---
 
 # Products by 2048
 
@@ -94,6 +99,7 @@ Who knew? I love working on product design so much. It all started with this tak
 | --- |:---:|---|
 |![](https://user-images.githubusercontent.com/22801822/66336903-a4576f00-e95b-11e9-82ff-a64c8f30954c.png)| [Behance](https://www.behance.net/gallery/86486979/The-BookHustler-Project) | The BookHustler Project was my first project. It's an e-commerce app for buying, selling, and renting second-hand books online. I have [documented the idea](https://docs.google.com/document/d/1Ppgt6Pk2n0Mdp2YpBTtIym8Nx4ugAlAz92r067DDsEU/edit?usp=sharing) as well behind the project if you like to read. It has all the information from the logistics of how books are bought and sold to the renting model involved. [Adobe XD Project file](https://drive.google.com/uc?export=download&id=1z-wf3OHqc2CAsAOl8eHVXJsBojeRp8d8) |
 
+---
 
 # Podcasts with 2048
 | Podcasts  | Links | Comments |
@@ -102,6 +108,8 @@ Who knew? I love working on product design so much. It all started with this tak
 | Sustain Our Software Podcast with Vipul Gupta | [Link to the episode](https://devchat.tv/sustain-our-software/sos-004-samson-goddy-vipul-gupta/) | Samson Goddy and Vipul Gupta join the panelists' Pia Mancini and Richard Littauer to talk about open source activities in Nigeria and India. Vipul is the Global Outreach Team Lead at Sugar Labs. Sugar Labs is an activity-focused open-source software learning platform for children. Both Samson and Vipul agree that a lot of developers they talk to are not very familiar with open source and the most common question they receive in meet-up groups is how one can start to contribute to open source. |
 | Vipul Gupta, Open-Source, Freelancing, and Financial Independence by CodeCast Zambia | [Link to the episode](https://open.spotify.com/episode/6gvXFnMUTDx6ceUUrGR03M?si=ad9NZrMSTSScdSlUhQL_CQ) | Daniel talks to Vipul about alternative sources of income and the stigma behind freelance work as well as tips to freelancing effectively and using open source contributions to up-skill yourself. |
 | How to get a Remote Job as a fresher with RemoteIndian | [Link to the episode](https://share.descript.com/view/25c3e54f-48bb-4dea-9b5d-78acfe0d1d88) | Podcast with RemoteIndian having an amazing discussion discussing the importance of open-source, challenges of a junior dev and red flags in the application process. I hope this helps folks going forward. |
+
+---
 
 # Posters by 2048
 | Posters  | Links | My thoughts |
