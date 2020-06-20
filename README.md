@@ -40,6 +40,7 @@ This repository has gone through a lot of updates. [Check them out at the end](#
 | PyCon Singapore 2019 | Lightning talk | [Delivered](https://pycon.sg/edu-summit/) Spreading awareness about Sugar Labs's aim to transforming pedagogy with Python, showcasing our work over the years, contributions and impact created to improve the overall education scenario at the Education Summit. In line with Outreach efforts of Sugar Labs in the APAC region, and how it helps remodel the current education system with its free and open-source Python tools. [Screenshot](./2.png) |
 | PyCon UK 2019, PyCon ZA 2019 | talks on Sugar Labs | [Accepted] Spreading awareness about Sugar Labs's aim to transforming pedagogy with Python, showcasing our work over the years, contributions and impact created. |
 | Open Source Festival Lagos + Sustain Africa 2020 | Talk | [Selected] Forge your future with open-source: A primer for freelancers to grow with FOSS. With everyone looking for jobs, internships, or opportunities, I, a full-time student from the age of 18 have been leveraging open-source to find the right breaks, grow my community, and build my persona both personally & professionally. After this talk, you can do it too. |
+|~ 2020 ~|||
 | FOSSASIA Summit 2020 | Talk | [Selected] A topic I have been researching for quite some while. Couldn't go due to recent developments on Coronavirus |
 | PyCon US: Pittsburgh 2020 | Talk | [Selected] Conference shifted to online mode. Lightning talk at the Education Summit. |
 
@@ -130,12 +131,12 @@ Then, `fuck` `mediocrity`
 
 ## Updates
 
-**Update#2** - From 2018, I added a new section for hackathons. I think hackathons are a great way to learn fast, implement faster, and learn from mistakes of the past. An ideology that I thoroughly believe to practice in my day-to-day.
+**#1** - From 2018, I added a new section for hackathons. I think hackathons are a great way to learn fast, implement faster, and learn from mistakes of the past. An ideology that I thoroughly believe to practice in my day-to-day.
 
-**Update#3** - From 2019, added Podcasts as well :hatching_chick:
+**#2** - From 2019, added Podcasts as well :hatching_chick:
 
-**Update#4** - From July'19, I am adding posters as well. Something I like dearly is creating good content, no matter how hard it might be. Meetup posters hold quite a special place in my mind as that always helps me think towards design, UI/UX as well as mixing up different techniques. These are Canva made, ain't special. I like them so why not show them. :hatching_chick:
+**#3** - From July'19, I am adding posters as well. Something I like dearly is creating good content, no matter how hard it might be. Meetup posters hold quite a special place in my mind as that always helps me think towards design, UI/UX as well as mixing up different techniques. These are Canva made, ain't special. I like them so why not show them.
 
-**Update #5** - I have stopped updating. New content all the time. **YOLO**.
+**#4** - I have stopped logging updates. New content all the time. **YOLO**.
 
-At last, I am thankful for each and every person who waited till my talk finished to share their valuable feedback, shared opportunities, and asked the right questions that made me learn more. The people who kept me soaring in high regard and also kept me close to the ground. Every bit of my Bachelor's helped me in my growth essentially. Be it personal, academic, professional. I hope this information is useful and inspiring, for people looking to contribute and expose themselves to everything that is out there and make the most of it. I for one, have always loved to do that.
+At last, I am thankful for each and every person who waited till my talk finished to share their valuable feedback, shared opportunities, and asked the right questions that made me learn more. The people who kept me soaring in high regard and also kept me close to the ground. Every bit of my Bachelor's helped me in my growth essentially. Be it personal, academic, professional. I hope this information is useful and inspiring, for people looking to contribute and expose themselves to everything that is out there and make the most of it. I for one, have always loved to do that. Read more good things about these [people in my life](https://mixstersite.wordpress.com/2020/03/19/thankyou2020/#more-2367).
