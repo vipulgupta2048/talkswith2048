@@ -2,7 +2,7 @@
 
 [![HitCount](http://hits.dwyl.io/vipulgupta2048/talkswith2048.svg)](http://hits.dwyl.io/vipulgupta2048/talkswith2048) [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
-Hey, if you like what I do and want to hire me as the [Dev](https://github.com/vipulgupta2048), [Docs](https://bit.ly/whatmixster), or [open-source](https://github.com/vipulgupta2048/talkswith2048/) human at your venture. Then, feel free to drop me a message over on [@vipulgupta2048](https://twitter.com/vipulgupta2048) or reach me anywhere on the web by [`vipulgupta2048`](https://lmgtfy.com/?q=vipulgupta2048&iie=1). If you like to know me personally as human, I suggest reading this fresh brewed post about [Who Really is Vipul Gupta?](https://mixstersite.wordpress.com/aboutvipulgupta2048).
+Hey, if you like what I do and want to hire me as the [Dev](https://github.com/vipulgupta2048), [Docs](https://bit.ly/whatmixster), or [open-source](https://github.com/vipulgupta2048/talkswith2048/) human at your venture. Then, feel free to drop me a message over on [@vipulgupta2048](https://twitter.com/vipulgupta2048) or reach me anywhere on the web by [`vipulgupta2048`](https://lmgtfy.com/?q=vipulgupta2048&iie=1). If you like to know me personally as a person, I suggest reading this freshly brewed post about [Who Really is Vipul Gupta?](https://mixstersite.wordpress.com/aboutvipulgupta2048).
 
 ## Contents
   * [About 2048](#about-2048)
@@ -88,9 +88,7 @@ This repository has gone through a lot of updates. [Check them out at the end](#
 | MSHack 2018 | [Website](http://mshack.devpost.com) | Team of 4, StacksFX was selected out of 2000 team submission in the online round, to hack at Microsoft Gurugram to create [InsightsFX](https://devpost.com/software/insightsfx), a unique air pollution management solution with insights that help make everyday life easier |
 | Smart India Hackathon 2019 | [Website](https://www.sih.gov.in) | Participated in the World's biggest hackathon on problem statement of Environment Engineering solving problems that benefit our entire community. Inspired over 50 teams from ALiAS to participate with their innovative statements. Facilitated 2 teams with reimbursements for their travel which cleared the national rounds. Go ALiAS! |
 | PenApps 2019 | [Website](http://pennapps.com) | Selected with my team StacksFX |
-| HackBMU 2020 | [Website](http://hackbmu.com) | Judged the 3rd Iteration of HackBMU at BML Munjal College. Was my first time as a  judge and a fitting end to an era of participating at hackathons as a student |
-
-![](https://user-images.githubusercontent.com/22801822/85212462-b43fa380-b370-11ea-9ef9-4333684d32f8.png)
+| HackBMU 2020 | [Website](http://hackbmu.com) | Judged the 3rd Iteration of HackBMU at BML Munjal College. Was my first time as a  judge and a fitting end to an era of participating at hackathons as a student  <p align="center"><img src="https://user-images.githubusercontent.com/22801822/85212462-b43fa380-b370-11ea-9ef9-4333684d32f8.png" height="350" style="max-width:100%;"></p> |
 
 ---
 
@@ -99,7 +97,7 @@ I always wanted to do this. Coming soon.
 I instead released a newsletter, [Mixster x Mixtapes](https://buttondown.email/vipulgupta2048)
 
 # Google Summer of Code with 2048
-In my college years, I had the pleasure of contributing and participating in [Google Summer of Code 2018 with Sugar Labs](https://github.com/vipulgupta2048/mygsoc) and with [The Scrapy Project in 2019](https://github.com/vipulgupta2048/mygsoc). These projects have taught, helped make me who I am. Even after the projects have finished, I still continue to volunteer with Sugar Labs focusing on Outreach efforts and playing an active part in their Google OSS programs. I contribute code frequently to ScrapingHub and The Scrapy Project. These were good times indeed.
+In my college years, I had the pleasure of contributing and participating in [Google Summer of Code 2018 with Sugar Labs](https://github.com/vipulgupta2048/mygsoc) and with [The Scrapy Project in 2019](https://github.com/vipulgupta2048/mygsoc). These projects have taught, helped make me who I am. Even after the projects have finished, I continue to volunteer with Sugar Labs focusing on Outreach efforts and playing an active part in their Google OSS programs. I contribute code frequently to ScrapingHub and The Scrapy Project. These were good times indeed.
 
 <img src="gsoc.jpg" height=380 width=540 align="middle">
 
@@ -181,4 +179,4 @@ Then, `fuck` `mediocrity`
 
 **#4** - I have stopped logging updates. New content all the time. **YOLO**.
 
-At last, I am thankful for each and every person who waited till my talk finished to share their valuable feedback, shared opportunities, and asked the right questions that made me learn more. The people who kept me soaring in high regard and also kept me close to the ground. Every bit of my Bachelor's helped me in my growth essentially. Be it personal, academic, professional. I hope this information is useful and inspiring, for people looking to contribute and expose themselves to everything that is out there and make the most of it. I for one, have always loved to do that. Read more good things about these [people in my life](https://mixstersite.wordpress.com/2020/03/19/thankyou2020/#more-2367).
+At last, I am thankful for each person who waited till my talk finished to share their valuable feedback, shared opportunities, and asked the right questions that made me learn more. The people who kept me soaring in high regard and also kept me close to the ground. Every bit of my Bachelor's helped me in my growth essentially. Be it personal, academic, professional. I hope this information is useful and inspiring, for people looking to contribute and expose themselves to everything that is out there and make the most of it. I for one, have always loved to do that. Read more good things about these [people in my life](https://mixstersite.wordpress.com/2020/03/19/thankyou2020/#more-2367).
