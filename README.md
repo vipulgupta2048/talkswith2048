@@ -2,7 +2,20 @@
 
 [![HitCount](http://hits.dwyl.io/vipulgupta2048/talkswith2048.svg)](http://hits.dwyl.io/vipulgupta2048/talkswith2048) [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
-Hey, if you like what I do and want to hire me as the [Dev](https://github.com/vipulgupta2048), [Docs](https://bit.ly/whatmixster), or [open-source](https://github.com/vipulgupta2048/talkswith2048/). Then, feel free to drop me a message over on [@vipulgupta2048](https://twitter.com/vipulgupta2048) or reach me anywhere on the web by [`vipulgupta2048`](https://lmgtfy.com/?q=vipulgupta2048&iie=1). If you like to know me personally as human, I suggest reading this fresh brewed post about [Who Really is Vipul Gupta?](https://mixstersite.wordpress.com/aboutvipulgupta2048).
+Hey, if you like what I do and want to hire me as the [Dev](https://github.com/vipulgupta2048), [Docs](https://bit.ly/whatmixster), or [open-source](https://github.com/vipulgupta2048/talkswith2048/) human at your venture. Then, feel free to drop me a message over on [@vipulgupta2048](https://twitter.com/vipulgupta2048) or reach me anywhere on the web by [`vipulgupta2048`](https://lmgtfy.com/?q=vipulgupta2048&iie=1). If you like to know me personally as human, I suggest reading this fresh brewed post about [Who Really is Vipul Gupta?](https://mixstersite.wordpress.com/aboutvipulgupta2048).
+
+## Contents
+  * [About 2048](#about-2048)
+  * [Talks with 2048](#talks-with-2048)
+  * [Conferences with 2048](#conferences-with-2048)
+  * [Hackathons with 2048](#hackathons-with-2048)
+  * [Best Blogs on Mixster by 2048 (Top 10 all-time)](#best-blogs-on-mixster-by-2048--top-10-all-time-)
+  * [Google Summer of Code with 2048](#google-summer-of-code-with-2048)
+  * [Products by 2048](#products-by-2048)
+  * [Podcasts with 2048](#podcasts-with-2048)
+  * [Design by 2048](#design-by-2048)
+  * [Failures of 2048](#failures-of-2048)
+  * [Updates](#updates)
 
 ## About 2048
 
