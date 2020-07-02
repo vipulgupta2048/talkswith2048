@@ -116,23 +116,25 @@ Who knew? I love working on product design so much. It all started with this tak
 
 <table>
   <tr>
-    <td align="center">
-      <img src="https://user-images.githubusercontent.com/22801822/61649091-65a40800-acce-11e9-9c32-6b7bc55f3eaa.png" style="max-width:100%;" width=270 height=382.3><p><a href="https://www.meetup.com/pydelhi/events/263185692/">[Meetup]</a> Thought of making a meetup about Quantum RNGs, to be one of the coolest in New Delhi by making the brain attaining thug life in this blend of black and white poster.</p>  
+    <td align="center" width="33%">
+      <img src="https://user-images.githubusercontent.com/22801822/61649091-65a40800-acce-11e9-9c32-6b7bc55f3eaa.png" style="max-width:100%;" ><p><a href="https://www.meetup.com/pydelhi/events/263185692/">[Meetup]</a> about Quantum random number generators by making the brain attaining thug life in this b&w poster.</p>  
     </td>
-    <td align="center">
-      <img src="https://user-images.githubusercontent.com/22801822/61649830-d697ef80-accf-11e9-81f1-e3085cc84302.jpg" style="max-width:100%;" width=270 height=382.3 ><p><a href=#>[UnMeetup]</a> Loved this poster, just because of the bright blends with the fusion of Hindi and English giving a modern, funky look!.</p>
+    <td align="center" width="33%">
+      <img src="https://user-images.githubusercontent.com/22801822/61649830-d697ef80-accf-11e9-81f1-e3085cc84302.jpg" style="max-width:100%;" ><p><a href=#>[UnMeetup]</a> Loved this poster, just because of the bright pallete of colors and fusion of Hindi & English giving a modern, funky look!.</p>
     </td>
-    <td align="center">
-      <img src="https://user-images.githubusercontent.com/22801822/67877443-91514c80-fb5f-11e9-8ea1-579003b784c8.png" style="max-width:100%;" width=270 height=382.3 > <p><a href="https://www.meetup.com/ilugdelhi/events/jkbtdqyznbqb/">[Meetup]</a> Took a wanted poster & remodeled it to work it as a treasure hunt advert for ILuGD's Anniversary meetup. Using Digital Ocean's wallpapers and Linux terminal symbols give it an elegant, bold look.</p>
+    <td align="center" width="33%">
+      <img src="https://user-images.githubusercontent.com/22801822/67877443-91514c80-fb5f-11e9-8ea1-579003b784c8.png" style="max-width:100%;"> <p><a href="https://www.meetup.com/ilugdelhi/events/jkbtdqyznbqb/">[Meetup]</a>Took a wanted poster, used Digital Ocean's wallpapers and Linux terminal as a treasure hunt advert for ILuGD's Anniversary meetup.</p>
     </td>
-    <td align="center">
-      <img src="https://user-images.githubusercontent.com/22801822/67877442-91514c80-fb5f-11e9-8888-fe3174a5f81e.png" style="max-width:100%;" width=270 height=382.3 > <p><a href="https://www.meetup.com/ilugdelhi/events/jkbtdqyznbqb/">[Meetup]</a> Had tons of fun designing this black beauty using Canva Pro, picked a fashion design template and added few quirky elements like the polaroid and glimmer circle in the background. Hindi just to re-introduce the funk back into design. </p>
+  </tr>
+  <tr>
+    <td align="center" >
+      <img src="https://user-images.githubusercontent.com/22801822/67877442-91514c80-fb5f-11e9-8888-fe3174a5f81e.png"><p><a href="https://www.meetup.com/ilugdelhi/events/jkbtdqyznbqb/">[Meetup]</a> Had tons of fun designing this black beauty using Canva Pro, picked a fashion design template, added polaroid and glimmer circle. Used Hindi to re-introduce the funk back into design.</p>
     </td>
-    <td align="center">[Blog]() | A sweet and simple poster designed for a sponsor on their new OneDrive Linux client release blog |
-      <img src="https://user-images.githubusercontent.com/22801822/68994072-ac80c380-08a4-11ea-847e-091c70f1eab0.png)" style="max-width:100%;" width=270 height=382.3 ><p><a href="https://mixstersite.wordpress.com/2019/11/16/insync-onedrive-client-for-linux/">[Blog]</a> A sweet and simple poster designed for a sponsor on their new OneDrive Linux client release blog.</p>
+    <td align="center" >
+      <img src="https://user-images.githubusercontent.com/22801822/68994072-ac80c380-08a4-11ea-847e-091c70f1eab0.png"><a href="https://mixstersite.wordpress.com/2019/11/16/insync-onedrive-client-for-linux/">[Blog]</a> A sweet & simple poster designed for a sponsor on their new OneDrive Linux client release blog.</p>
     </td>
-    <td align="center">
-      <img src="https://user-images.githubusercontent.com/22801822/73104649-e7464e00-3f1c-11ea-834d-3b85c5fa52d5.png " style="max-width:100%;" width=270 height=382.3 ><p><a href="https://www.meetup.com/pydelhi/events/267949805/">[Meetup]</a>| Saw this poster design, tweaked color pallete and fonts to represent Python syntax and highlighting making it special for a PyDelhi meetup. Originally made for the 9th Anniversary of PyDelhi. </p>
+    <td align="center" >
+      <img src="https://user-images.githubusercontent.com/22801822/73104649-e7464e00-3f1c-11ea-834d-3b85c5fa52d5.png"><p><a href="https://www.meetup.com/pydelhi/events/267949805/">[Meetup]</a> Saw this poster design, tweaked color pallete and fonts to represent Python syntax with highlighting, originally for 9th Anniversary of PyDelhi.</p>
     </td>
   </tr>
 </table>
