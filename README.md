@@ -137,6 +137,22 @@ Who knew? I love working on product design so much. It all started with this tak
       <img src="https://user-images.githubusercontent.com/22801822/73104649-e7464e00-3f1c-11ea-834d-3b85c5fa52d5.png"><p><a href="https://www.meetup.com/pydelhi/events/267949805/">[Meetup]</a> Saw this poster design, tweaked color pallete and fonts to represent Python syntax with highlighting, originally for 9th Anniversary of PyDelhi.</p>
     </td>
   </tr>
+  
+  <tr>
+    <td align="center" >
+      <img src="https://user-images.githubusercontent.com/22801822/86318843-afbc9a00-bc50-11ea-8f42-da7d19a11118.png"><p>Created the base image. Sticker design by StickerMule Design Team. Please buy from them only!</p>
+    </td>
+    <td align="center" >
+      <img src="https://user-images.githubusercontent.com/22801822/86318847-b21ef400-bc50-11ea-80f7-889b1ca3997e.png">Created the base image. Sticker design by StickerMule Design Team. Please buy from them only!</p>
+    </td>
+    <td align="center">
+      <img src="https://user-images.githubusercontent.com/22801822/86318850-b2b78a80-bc50-11ea-8e85-594a23733104.png"><p>Created the base image. Sticker design by StickerMule Design Team. Please buy from them only!</p>
+    </td>
+  </tr>
+  
+  
+  
+  
 </table>
 
 
