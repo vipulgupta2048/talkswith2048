@@ -2,13 +2,26 @@
 
 [![HitCount](http://hits.dwyl.io/vipulgupta2048/talkswith2048.svg)](http://hits.dwyl.io/vipulgupta2048/talkswith2048) [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
-Hey, if you like to hire me. You can [mail me](mailto:vipulgupta2048@gmail.com) or reach me anywhere on the web by [`vipulgupta2048`](https://lmgtfy.com/?q=vipulgupta2048&iie=1) all over the web or just read more on [whoami](https://mixstersite.wordpress.com/aboutvipulgupta2048).
+Hey, if you like what I do and want to hire me as the [Dev](https://github.com/vipulgupta2048), [Docs](https://bit.ly/whatmixster), or [open-source](https://github.com/vipulgupta2048/talkswith2048/) human at your venture. Then, feel free to drop me a message over on [@vipulgupta2048](https://twitter.com/vipulgupta2048) or reach me anywhere on the web by [`vipulgupta2048`](https://lmgtfy.com/?q=vipulgupta2048&iie=1). If you like to know me personally as human, I suggest reading this fresh brewed post about [Who Really is Vipul Gupta?](https://mixstersite.wordpress.com/aboutvipulgupta2048).
 
-### About 2048
+## Contents
+  * [About 2048](#about-2048)
+  * [Talks with 2048](#talks-with-2048)
+  * [Conferences with 2048](#conferences-with-2048)
+  * [Hackathons with 2048](#hackathons-with-2048)
+  * [Best Blogs on Mixster by 2048 (Top 10 all-time)](#best-blogs-on-mixster-by-2048--top-10-all-time-)
+  * [Google Summer of Code with 2048](#google-summer-of-code-with-2048)
+  * [Products by 2048](#products-by-2048)
+  * [Podcasts with 2048](#podcasts-with-2048)
+  * [Design by 2048](#design-by-2048)
+  * [Failures of 2048](#failures-of-2048)
+  * [Updates](#updates)
 
-_This repository acts as a showcase... of just about everything I enjoyed doing in my college years (Thankfully, I ain't done yet) It's a gauge I keep for progress, personal development and most importantly because it reminds me that I have impacted a people around me, while my time on Earth. However less or more they might be._
+## About 2048
 
-I have been working Outreach for years now, and actually, know the importance of having the right impact on your viewers early. That's why I love giving back to the open-source community in whatever way I can. Each figment of contribution had a purpose and therefore all talk resource, slides, code that I create is open-source and public for anyone to use and view in whatever capacity they see fit. Adding on to it, this repository is also a tracker of conferences that I attended/was invited/volunteered for. Networking and listening to people has always been the one activity that fuels my enthusiasm. Maybe that's my DevRel side speaking right now. Who knows?
+_This repository acts as a showcase... of just about everything I enjoyed doing in my college years and kept doing (Thankfully, I ~ain't~ am done, no thanks to 2020) It's a personal gauge I keep for progress, personal development and most importantly to remind me of impact I have on people around me, while my time on Earth. To be frank, I visit this corner of the web when the imposter syndrome hits.._
+
+I genuinely love giving back to the open-source community in whatever way I can. Each figment of contribution had a purpose and therefore all talk resources, slides, designs and code whatever I have created is open-source and free for anyone to use/view/modify in whatever capacity they see fit unless stated otherwise. If you are unsure about something, drop me a message. Adding on to it, this repository is also a tracker of conferences that I attended/was invited/volunteered for. Networking and listening to people has always been the one activity that fuels my enthusiasm. Maybe that's my DevRel side speaking right now. Who knows?
 
 ![image](https://www.salesforce.com/content/dam/blogs/ca/Blog%20Posts/The%20Most%20Important%20Factors%20for%20Startup%20Success_Open%20Graph%20Image.png)
 > ### because for some, maybe the sky is the limit, for others, it's just the starting point.
@@ -44,7 +57,7 @@ This repository has gone through a lot of updates. [Check them out at the end](#
 | FOSSASIA Summit 2020 | Talk | [Selected] A topic I have been researching for quite some while. Couldn't go due to recent developments on Coronavirus |
 | PyCon US: Pittsburgh 2020 | Talk | [Selected] Conference shifted to online mode. Lightning talk at the Education Summit. |
 
-# Conferences with 2048
+## Conferences with 2048
 
 | Conference       | Website/Link for event | Comments |
 | --- |:---:|---|
@@ -66,7 +79,7 @@ This repository has gone through a lot of updates. [Check them out at the end](#
 | KubeCon Europe 2020 | [Website](https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/) | Awarded the Diversity scholarship to attend KubeCon this year, due to my documentation contribution to Prometheus related projects and releasing AquaSec's KubeHunter for PyPi |
 ***
 
-# Hackathons with 2048
+## Hackathons with 2048
 | Hackathons      | Links | Comments |
 | --- |:---:|---|
 | HackIIIT 2018 | [Website](http://esya.iiitd.edu.in/hackiiitd/) | 3rd Prize and best woman participant - Made the emotion-based Music Player, called StacksFX by team StacksFX, [blog post for reference](https://mixstersite.wordpress.com/2018/08/20/stacksfx-at-hackiiit-my-1-hackathon/) |
@@ -92,7 +105,7 @@ In my college years, I had the pleasure of contributing and participating in [Go
 
 ---
 
-# Products by 2048
+## Products by 2048
 
 Who knew? I love working on product design so much. It all started with this take-home assignment, I received from a PM interview. Now, I work on product design creating wireframes on AdobeXD whenever I feel like it. It feels liberating to let my ideas flow on a 770x340Px artboard with nothing but me and my prototypes.
 
@@ -102,7 +115,7 @@ Who knew? I love working on product design so much. It all started with this tak
 
 ---
 
-# Podcasts with 2048
+## Podcasts with 2048
 | Podcasts  | Links | Comments |
 | --- |:---:|---|
 | Decompiled: Google Summer of Code Edition | [Link to the episode](https://www.youtube.com/watch?v=CFAT_X84zJM) | Was invited for a fun insightful episode with the host Ayan Pahwa and Prakhar Srivastava on Decomplied to talk about Sugar Labs, Open-Source and Google Summer of Code. Episode out now, check it out [here](https://www.youtube.com/watch?v=CFAT_X84zJM). |
@@ -112,17 +125,46 @@ Who knew? I love working on product design so much. It all started with this tak
 
 ---
 
-# Posters by 2048
-| Posters  | Links | My thoughts |
-| --- |:---:|---|
-|![](https://user-images.githubusercontent.com/22801822/61649091-65a40800-acce-11e9-9c32-6b7bc55f3eaa.png)| [Meetup](https://www.meetup.com/pydelhi/events/263185692/) | Thought of making a meetup about Quantum RNGs, to be one of the coolest in New Delhi by making the brain attaining thug life in this blend of black and white poster. |
-|![](https://user-images.githubusercontent.com/22801822/61649830-d697ef80-accf-11e9-81f1-e3085cc84302.jpg)| Un-Meetup | Loved this poster, just because of the bright blends with the fusion of Hindi and English giving a modern, funky look! |
-|![](https://user-images.githubusercontent.com/22801822/67877443-91514c80-fb5f-11e9-8ea1-579003b784c8.png)| [Meetup](https://www.meetup.com/ilugdelhi/events/jkbtdqyznbqb/) | Took a wanted poster & remodeled it to work it as a treasure hunt advert for ILuGD's Anniversary meetup. Using Digital Ocean's wallpapers and Linux terminal symbols give it an elegant, bold look. |
-|![](https://user-images.githubusercontent.com/22801822/67877442-91514c80-fb5f-11e9-8888-fe3174a5f81e.png)| [Meetup](https://www.meetup.com/ilugdelhi/events/jkbtdqyznbqb/) | Had tons of fun designing this black beauty using Canva Pro, picked a fashion design template and added few quirky elements like the polaroid and glimmer circle in the background. Hindi just to re-introduce the funk back into design. |
-|![](https://user-images.githubusercontent.com/22801822/68994072-ac80c380-08a4-11ea-847e-091c70f1eab0.png)| [Blog](https://mixstersite.wordpress.com/2019/11/16/insync-onedrive-client-for-linux/) | A sweet and simple poster designed for a sponsor on their new OneDrive Linux client release blog |
-|![](https://user-images.githubusercontent.com/22801822/73104649-e7464e00-3f1c-11ea-834d-3b85c5fa52d5.png)| [Meetup](https://www.meetup.com/pydelhi/events/267949805/) | Saw this poster design, tweaked color pallete and fonts to represent Python syntax and highlighting making it special for a PyDelhi meetup. Originally made for the 9th Anniversary of PyDelhi.|
+## Design by 2048
 
-# Failures of 2048
+<table>
+  <tr>
+    <td align="center" width="33%">
+      <img src="https://user-images.githubusercontent.com/22801822/61649091-65a40800-acce-11e9-9c32-6b7bc55f3eaa.png" style="max-width:100%;" ><p><a href="https://www.meetup.com/pydelhi/events/263185692/">[Meetup]</a> about Quantum random number generators by making the brain attaining thug life in this b&w poster.</p>  
+    </td>
+    <td align="center" width="33%">
+      <img src="https://user-images.githubusercontent.com/22801822/61649830-d697ef80-accf-11e9-81f1-e3085cc84302.jpg" style="max-width:100%;" ><p><a href=#>[UnMeetup]</a> Loved this poster, just because of the bright pallete of colors and fusion of Hindi & English giving a modern, funky look!.</p>
+    </td>
+    <td align="center" width="33%">
+      <img src="https://user-images.githubusercontent.com/22801822/67877443-91514c80-fb5f-11e9-8ea1-579003b784c8.png" style="max-width:100%;"> <p><a href="https://www.meetup.com/ilugdelhi/events/jkbtdqyznbqb/">[Meetup]</a>Took a wanted poster, used Digital Ocean's wallpapers and Linux terminal as a treasure hunt advert for ILuGD's Anniversary meetup.</p>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" >
+      <img src="https://user-images.githubusercontent.com/22801822/67877442-91514c80-fb5f-11e9-8888-fe3174a5f81e.png"><p><a href="https://www.meetup.com/ilugdelhi/events/jkbtdqyznbqb/">[Meetup]</a> Had tons of fun designing this black beauty using Canva Pro, picked a fashion design template, added polaroid and glimmer circle. Used Hindi to re-introduce the funk back into design.</p>
+    </td>
+    <td align="center" >
+      <img src="https://user-images.githubusercontent.com/22801822/68994072-ac80c380-08a4-11ea-847e-091c70f1eab0.png"><a href="https://mixstersite.wordpress.com/2019/11/16/insync-onedrive-client-for-linux/">[Blog]</a> A sweet & simple poster designed for a sponsor on their new OneDrive Linux client release blog.</p>
+    </td>
+    <td align="center" >
+      <img src="https://user-images.githubusercontent.com/22801822/73104649-e7464e00-3f1c-11ea-834d-3b85c5fa52d5.png"><p><a href="https://www.meetup.com/pydelhi/events/267949805/">[Meetup]</a> Saw this poster design, tweaked color pallete and fonts to represent Python syntax with highlighting, originally for 9th Anniversary of PyDelhi.</p>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" >
+      <img src="https://user-images.githubusercontent.com/22801822/86318843-afbc9a00-bc50-11ea-8f42-da7d19a11118.png"><p>Sticker design from the awesome <a href="https://www.stickermule.com/en-in/unlock?ref_id=0751801701&utm_medium=link&utm_source=invite">StickerMule Design</a> Team.</p>
+    </td>
+    <td align="center" >
+      <img src="https://user-images.githubusercontent.com/22801822/86318847-b21ef400-bc50-11ea-80f7-889b1ca3997e.png">Sticker design from the awesome <a href="https://www.stickermule.com/en-in/unlock?ref_id=0751801701&utm_medium=link&utm_source=invite">StickerMule Design</a> Team.</p>
+    </td>
+    <td align="center">
+      <img src="https://user-images.githubusercontent.com/22801822/86318850-b2b78a80-bc50-11ea-8e85-594a23733104.png"><p>Sticker design from the awesome <a href="https://www.stickermule.com/en-in/unlock?ref_id=0751801701&utm_medium=link&utm_source=invite">StickerMule Design</a> Team.</p>
+    </td>
+  </tr>
+</table>
+
+
+## Failures of 2048
 Unfortunately, that list will take way too long to compile. You would have better chances of escaping the gravitational pull of a small black hole than getting that list. What I mean by that for people reading this is, I could have achieved nothing of this sort without failing a thousand times first, and then getting up just to fail again. You (The Reader) my advice for you is to dig deep, don't lose hope, and give your best shot to everything from this moment on. Life's got something nice in store for all of you. Trust me and if you think you are mediocre.
 
 Then, `fuck` `mediocrity`
