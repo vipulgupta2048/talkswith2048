@@ -90,7 +90,7 @@ This repository has gone through a lot of updates. [Check them out at the end](#
 | PenApps 2019 | [Website](http://pennapps.com) | Selected with my team StacksFX |
 | HackBMU 2020 | [Website](http://hackbmu.com) | Judged the 3rd Iteration of HackBMU at BML Munjal College. Was my first time as a  judge and a fitting end to an era of participating at hackathons as a student |
 
-!()[https://user-images.githubusercontent.com/22801822/85212462-b43fa380-b370-11ea-9ef9-4333684d32f8.png]
+![](https://user-images.githubusercontent.com/22801822/85212462-b43fa380-b370-11ea-9ef9-4333684d32f8.png)
 
 ---
 
