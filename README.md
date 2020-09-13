@@ -56,6 +56,7 @@ This repository has gone through a lot of updates. [Check them out at the end](#
 |~ 2020 ~|||
 | FOSSASIA Summit 2020 | Talk | [Selected] A topic I have been researching for quite some while. Couldn't go due to recent developments on Coronavirus |
 | PyCon US: Pittsburgh 2020 | Talk | [Selected] Conference shifted to online mode. Lightning talk at the Education Summit. |
+| Writing open-source documentation at scale that isn't terrible: Right the Docs | Talk | [Delivered] Sharing insights into how folks can imporve their project's or product's open-source documentation at scale at FOSS Hack 2020. My first talk out of many about docs after starting Mixster 2 years ago. [Slides](https://slides.com/vipulgupta2048/writing-open-source-documentation-at-scale-that-isn-t-terrible/fullscreen) and [Website](https://fossunited.org/hackathon) |
 
 ## Conferences with 2048
 
@@ -88,13 +89,28 @@ This repository has gone through a lot of updates. [Check them out at the end](#
 | MSHack 2018 | [Website](http://mshack.devpost.com) | Team of 4, StacksFX was selected out of 2000 team submission in the online round, to hack at Microsoft Gurugram to create [InsightsFX](https://devpost.com/software/insightsfx), a unique air pollution management solution with insights that help make everyday life easier |
 | Smart India Hackathon 2019 | [Website](https://www.sih.gov.in) | Participated in the World's biggest hackathon on problem statement of Environment Engineering solving problems that benefit our entire community. Inspired over 50 teams from ALiAS to participate with their innovative statements. Facilitated 2 teams with reimbursements for their travel which cleared the national rounds. Go ALiAS! |
 | PenApps 2019 | [Website](http://pennapps.com) | Selected with my team StacksFX |
+| FOSS Hack 2020 | [Website](https://fossunited.org/hackathon) | Mentor for hardware projects at FOSS Hack 2020 and Speaker. This was a online 48 hour hackathon with a really great talks agenda and equally well organised team. It was quite fun to see about 150+ FOSS projects getting out there.  |
 | HackBMU 2020 | [Website](http://hackbmu.com) | Judged the 3rd Iteration of HackBMU at BML Munjal College. Was my first time as a  judge and a fitting end to an era of participating at hackathons as a student  <p align="center"><img src="https://user-images.githubusercontent.com/22801822/85212462-b43fa380-b370-11ea-9ef9-4333684d32f8.png" height="350" style="max-width:100%;"></p> |
-
 ---
 
-# Best Blogs on Mixster by 2048 (Top 10 all-time)
-I always wanted to do this. Coming soon.
-I instead released a newsletter, [Mixster x Mixtapes](https://buttondown.email/vipulgupta2048)
+# Mixster by 2048 (Top 10 blogs of all-time)
+
+My friend really likes this blog. Sometimes more than me. She likes little things and she helps me get through tough days. So I finally got around to putting her and mine favortite list out. **It was damn tough to pick the top 10.**
+
+1. [4 Months Of Full-time Remote: Hits, Misses, and Infectious Initiative](https://mixstersite.wordpress.com/2020/08/23/four-months-remote-2020/)
+2. [Hackmit 2018: a Journey Through My Lens](https://mixstersite.wordpress.com/2018/09/28/hackmit-2018/)
+3. [How to Be Financially Independent Before College Without Getting Lucky‽‽](https://mixstersite.wordpress.com/2020/04/16/how-to-be-financially-independent-before-college/)
+4. [Humans of Mixster](https://mixstersite.wordpress.com/humans-of-mixster/)
+5. [Taking Names, Giving Hugs: Acknowledge-II-mentation](https://mixstersite.wordpress.com/2020/03/19/thankyou2020/)
+6. [(Simple English) What is Kubernetes (K8’s), “the Office” Version](https://mixstersite.wordpress.com/2020/01/07/what-is-kubernetes-k8s-simple-english/)
+7. [‘n’ Honest Truths About Working Remote (Community Edition)](https://mixstersite.wordpress.com/2019/07/19/n-honest-truths-about-working-remote-community-edition/)
+8. [“BRUH, SLOW DOWN…”](https://mixstersite.wordpress.com/2018/04/30/bruh-slow-down/)
+9. [#0 ALiAS does it Again: Report on our GSoC AMA Program](https://mixstersite.wordpress.com/2019/06/01/aliasama/)
+10. I will leave this one empty for you all to decide on the 10th!
+
+I also released a newsletter, [Mixster x Mixtapes](https://buttondown.email/vipulgupta2048)
+
+---
 
 # Google Summer of Code with 2048
 In my college years, I had the pleasure of contributing and participating in [Google Summer of Code 2018 with Sugar Labs](https://github.com/vipulgupta2048/mygsoc) and with [The Scrapy Project in 2019](https://github.com/vipulgupta2048/mygsoc). These projects have taught, helped make me who I am. Even after the projects have finished, I continue to volunteer with Sugar Labs focusing on Outreach efforts and playing an active part in their Google OSS programs. I contribute code frequently to ScrapingHub and The Scrapy Project. These were good times indeed.
