@@ -9,7 +9,7 @@ Hey, if you like what I do and want to hire me as the [Dev](https://github.com/v
   * [Talks with 2048](#talks-with-2048)
   * [Conferences with 2048](#conferences-with-2048)
   * [Hackathons with 2048](#hackathons-with-2048)
-  * [Best Blogs on Mixster by 2048 (Top 10 all-time)](#best-blogs-on-mixster-by-2048--top-10-all-time-)
+  * [Mixster by 2048 (Top 10 blogs of all-time)](#mixster-by-2048-top-10-blogs-of-all-time)
   * [Google Summer of Code with 2048](#google-summer-of-code-with-2048)
   * [Products by 2048](#products-by-2048)
   * [Podcasts with 2048](#podcasts-with-2048)
@@ -108,7 +108,7 @@ My friend really likes this blog. Sometimes more than me. She likes little thing
 9. [#0 ALiAS does it Again: Report on our GSoC AMA Program](https://mixstersite.wordpress.com/2019/06/01/aliasama/)
 10. I will leave this one empty for you all to decide on the 10th!
 
-I also released a newsletter, [Mixster x Mixtapes](https://buttondown.email/vipulgupta2048)
+I also released a newsletter, [Mixster x Mixtapes](https://buttondown.email/vipulgupta2048). Just so you know, Mixster is not just a blog. We got [Humans of Mixster](https://mixstersite.wordpress.com/humans-of-mixster/) now too!
 
 ---
 
