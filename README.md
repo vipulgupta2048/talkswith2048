@@ -6,12 +6,12 @@ Hey, if you like what I do and want to hire me as the [Dev](https://github.com/v
 
 ## Contents
   * [About 2048](#about-2048)
-  * [Talks with 2048](#talks-with-2048)
+  * [Talks with 2048](#talks-with-2048-1)
   * [Conferences with 2048](#conferences-with-2048)
   * [Hackathons with 2048](#hackathons-with-2048)
   * [Mixster by 2048 (Top 10 blogs of all-time)](#mixster-by-2048-top-10-blogs-of-all-time)
   * [Google Summer of Code with 2048](#google-summer-of-code-with-2048)
-  * [Products by 2048](#products-by-2048)
+  * [Mockups by 2048](#mockups-by-2048)
   * [Podcasts with 2048](#podcasts-with-2048)
   * [Design by 2048](#design-by-2048)
   * [Failures of 2048](#failures-of-2048)
@@ -56,7 +56,8 @@ This repository has gone through a lot of updates. [Check them out at the end](#
 |~ 2020 ~|||
 | FOSSASIA Summit 2020 | Talk | [Selected] A topic I have been researching for quite some while. Couldn't go due to recent developments on Coronavirus |
 | PyCon US: Pittsburgh 2020 | Talk | [Selected] Conference shifted to online mode. Lightning talk at the Education Summit. |
-| Writing open-source documentation at scale that isn't terrible: Right the Docs | Talk | [Delivered] Sharing insights into how folks can improve their project's or product's open-source documentation at scale at FOSS Hack 2020. My first talk out of many about docs after starting Mixster 2 years ago. [Slides](https://slides.com/vipulgupta2048/writing-open-source-documentation-at-scale-that-isn-t-terrible/fullscreen) and [Website](https://fossunited.org/hackathon) |
+| Writing open-source documentation at scale that isn't terrible: Right the Docs | Talk | [[Delivered - Youtube]](https://www.youtube.com/watch?v=ZW4NmuSi-pA) Sharing insights into how folks can improve their project's or product's open-source documentation at scale at FOSS Hack 2020. My first talk out of many about docs after starting Mixster 2 years ago. [Slides](https://slides.com/vipulgupta2048/writing-open-source-documentation-at-scale-that-isn-t-terrible/fullscreen) and [Website](https://fossunited.org/hackathon) |
+| Documenting your next Python project: Right the Docs | Talk | [Delivered] Documenting your next Python project is a deep dive into options available as far as internal tools are considered to document your Python code at the PyCon India Flames Meetup - Python mega meetup [Slides](https://slides.com/vipulgupta2048/writing-open-source-documentation-at-scale-that-isn-t-terrible-879091/fullscreen) and [GitHub issue](https://github.com/pydelhi/talks/issues/191) |
 
 ## Conferences with 2048
 
@@ -119,7 +120,7 @@ In my college years, I had the pleasure of contributing and participating in [Go
 
 ---
 
-## Products by 2048
+## Mockups by 2048
 
 Who knew? I love working on product design so much. It all started with this take-home assignment, I received from a PM interview. Now, I work on product design creating wireframes on AdobeXD whenever I feel like it. It feels liberating to let my ideas flow on a 770x340Px artboard with nothing but me and my prototypes.
 
