@@ -58,6 +58,10 @@ This repository has gone through a lot of updates. [Check them out at the end](#
 | PyCon US: Pittsburgh 2020 | Talk | [Selected] Conference shifted to online mode. Lightning talk at the Education Summit. |
 | Writing open-source documentation at scale that isn't terrible: Right the Docs | Talk | [[Delivered - Youtube]](https://www.youtube.com/watch?v=ZW4NmuSi-pA) Sharing insights into how folks can improve their project's or product's open-source documentation at scale at FOSS Hack 2020. My first talk out of many about docs after starting Mixster 2 years ago. [Slides](https://slides.com/vipulgupta2048/writing-open-source-documentation-at-scale-that-isn-t-terrible/fullscreen) and [Website](https://fossunited.org/hackathon) |
 | Documenting your next Python project: Right the Docs | Talk | [Delivered] Documenting your next Python project is a deep dive into options available as far as internal tools are considered to document your Python code at the PyCon India Flames Meetup - Python mega meetup [Slides](https://slides.com/vipulgupta2048/writing-open-source-documentation-at-scale-that-isn-t-terrible-879091/fullscreen) and [GitHub issue](https://github.com/pydelhi/talks/issues/191) |
+| Right the Docs: Mixster pitch | Lightning talk | [Delivered] Mixster's pitch at PyCon India 2020, for creating and most importantly fixing OSS documentation in the community. [Slides](https://slides.com/vipulgupta2048/deck/fullscreen) and [Youtube coming soon]() |
+| Hands On: Containerizing Python and Deploying to IoT and Edge Devices | Workshop | [Delivered] In the world of IoT, python can be used for reading data from sensors, enabling Artificial Intelligence and Machine Learning at the edge. Developing all of this locally on small prototype devi is great, but when it comes to deploying devices out into the world, special considerations need to be taken. For that we present balenaCloud. [Slides](https://docs.google.com/presentation/d/1Ve43SXu78fgePMfA--psofAUZ8YeRLwPtR0HPXNsDRw/edit?usp=sharing) and [PyCon Proposal](https://in.pycon.org/cfp/2020/proposals/hands-on-containerizing-python-and-deploying-to-iot-and-edge-devices~egJYk/) |
+
+
 
 ## Conferences with 2048
 
@@ -79,6 +83,7 @@ This repository has gone through a lot of updates. [Check them out at the end](#
 | GraphQL Summit ASIA 2019 | [Website](https://www.graphql-asia.org) | Handled bit of Community Outreach |
 | React India 2019 | [Website](https://reactindia.io) | One of the 10 React India Scholarship awardees to be accepted into the largest React conference in India by the React Community and Geekabyte. Held in Goa on 26-28 September 2019. |
 | KubeCon Europe 2020 | [Website](https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/) | Awarded the Diversity scholarship to attend KubeCon this year, due to my documentation contribution to Prometheus related projects and releasing AquaSec's KubeHunter for PyPi |
+| PyCon India 2020, Online | [Website](https://in.pycon.org/2020/) | Content Workgroup lead for PyCon India Virtual Conf. Gave conf new direction with a [defined content pipeline](https://github.com/pythonindia/inpycon-blog/pulls?q=is%3Aclosed+is%3Apr+author%3A%40me+), documented processes for future years and created the [PyCon India Program Guide](https://in.pycon.org/blog/2020/announce-pycon-india-program-guide.html). |
 ***
 
 ## Hackathons with 2048
@@ -96,7 +101,7 @@ This repository has gone through a lot of updates. [Check them out at the end](#
 
 # Mixster by 2048 (Top 10 blogs of all-time)
 
-My friend likes this blog. Sometimes more than me. She likes little things and she helps me get through tough days. So I finally got around to putting her and mine's favorite list out. **It was damn tough to pick the top 10.**
+My friend likes this blog. Sometimes more than me. She likes little things and she helps me get through tough days. So I finally got around to putting her and mine's favorite list out. **It was damn tough to pick the top 10**.
 
 1. [4 Months Of Full-time Remote: Hits, Misses, and Infectious Initiative](https://mixstersite.wordpress.com/2020/08/23/four-months-remote-2020/)
 2. [Hackmit 2018: a Journey Through My Lens](https://mixstersite.wordpress.com/2018/09/28/hackmit-2018/)
