@@ -1,6 +1,6 @@
 # Talks with 2048
 
-[![HitCount](http://hits.dwyl.io/vipulgupta2048/talkswith2048.svg)](http://hits.dwyl.io/vipulgupta2048/talkswith2048) [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fvipulgupta2048%2Ftalkswith2048&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com) [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
 Hey, if you like what I do and want to hire me as the [Dev](https://github.com/vipulgupta2048), [Docs](https://bit.ly/whatmixster), or [open-source](https://github.com/vipulgupta2048/talkswith2048/) human at your venture. Then, feel free to drop me a message over on [@vipulgupta2048](https://twitter.com/vipulgupta2048) or reach me anywhere on the web by [`vipulgupta2048`](https://lmgtfy.com/?q=vipulgupta2048&iie=1). If you like to know me personally as a person, I suggest reading this freshly brewed post about [Who Really is Vipul Gupta?](https://mixstersite.wordpress.com/aboutvipulgupta2048).
 
