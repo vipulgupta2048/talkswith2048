@@ -91,8 +91,8 @@ This repository has gone through a lot of updates. [Check them out at the end](#
 | React India 2019 | [Website](https://reactindia.io) | One of the 10 React India Scholarship awardees to be accepted into the largest React conference in India by the React Community and Geekabyte. Held in Goa on 26-28 September 2019. |
 | KubeCon Europe 2020 | [Website](https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/) | Awarded the Diversity scholarship to attend KubeCon this year, due to my documentation contribution to Prometheus related projects and releasing AquaSec's KubeHunter for PyPi |
 | PyCon India 2020, Online | [Website](https://in.pycon.org/2020/) | Content Workgroup lead for PyCon India Virtual Conf. Gave conf new direction with a [defined content pipeline](https://github.com/pythonindia/inpycon-blog/pulls?q=is%3Aclosed+is%3Apr+author%3A%40me+), documented processes for future years and created the [PyCon India Program Guide](https://in.pycon.org/blog/2020/announce-pycon-india-program-guide.html). |
-| Sabbatical: Covid 2020-2021 | - | - |
 | PyCon India 2021, Online | [Website](https://in.pycon.org/2020/) | Content & Social Media Workgroup lead for PyCon India Virtual Conf. [More of the same work](https://github.com/pythonindia/inpycon-blog/pulls?q=is%3Aclosed+is%3Apr+author%3A%40me+) but this time with broader responsiblities and making the [PyCon India Program Guide](https://in.pycon.org/share/PyConIndia2021ProgramGuide.pdf). |
+| Sabbatical: Covid 2020-2021 | - | - |
 |~ 2022 ~|||
 | FOSSIndia 2022 | [Website](https://indiafoss.net/delhi/2022/schedule) | Really good conference organized by the FOSS UNITED team in New Delhi. Gave a talk there, met a lot of good people there and one of my first offline conference after Covid. Good times. Will be applying for a lot more. |
 
@@ -111,7 +111,6 @@ This repository has gone through a lot of updates. [Check them out at the end](#
 | FOSS Hack 2020 | [Website](https://fossunited.org/hackathon) | Mentor for hardware projects at FOSS Hack 2020 and Speaker. This was an online 48-hour hackathon with a great talks agenda and an equally well-organized team. It was quite fun to see about 150+ FOSS projects getting out there.  |
 | HackBMU 2020 | [Website](http://hackbmu.com) | Judged the 3rd Iteration of HackBMU at BML Munjal College. Was my first time as a  judge and a fitting end to an era of participating at hackathons as a student  <p align="center"><img src="https://user-images.githubusercontent.com/22801822/85212462-b43fa380-b370-11ea-9ef9-4333684d32f8.png" height="350" style="max-width:100%;"></p> |
 | Sabbatical: Covid 2020-2021 | - | - |
-| FOSSHack#2020 | [Website](https://fossunited.org/fosshack/2020) | FOSS Hack 2020 is an online hackathon organized by the FOSS United Foundation to promote the creation and use of FOSS in India. We invite developers—professionals and students—from all over India to compete for a cash prize of ₹10L by building Free and Open Source software and have fun doing it. |
 |~ 2022 ~|||
 
 ---
