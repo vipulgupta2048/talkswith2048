@@ -67,6 +67,7 @@ This repository has gone through a lot of updates. [Check them out at the end](#
 | Get me job | [Slides](https://slides.com/vipulgupta2048/job-i-need) | The sabbatical ended with a talk at Amity University, my alma mater. I want to help revive the community we once ran in college called [ALiAS](https://asetalias.in/) and get students motivated about future prospects at Amity. "Get me job" was a project I didn't make back in my college days which helps you find opportunities on Twitter & university job boards. I made that project as my presentation to help people find a framework or even a pattern of how to make the most out of college. |
 | Walking through Mexico | [Ignite](https://www.ignitetalks.io/) | Fun talk at company's conference detailing my one month, one country trip for Mexico held at Cancun, Mexico. |
 | [Building your next open-source product](https://indiafoss.net/delhi/2022/schedule) | [Recording](https://www.youtube.com/watch?v=dK2Ja-5cbOU) [Slides](https://slides.com/vipulgupta2048/delhifoss) | Chasing deadlines and ticking the checkboxes on our spec we forget who we are building software products for. After 2 years of working, I wanted to share my learnings around building open-source products that people can build upon, contribute to and actually use in real life. |
+| CDCon + gitOpsCon 2023 Vancouver: [Testing 100's of OS Images with Jenkins: A Journey from Pull Request to Production Release](https://sched.co/1Jp87) | [Recording](https://youtu.be/Dhl61ZQ63WY?t=164) [Slides](https://slides.com/vipulgupta2048/vipul-cdcon2023) | First major conference attended abroad and gave in 3 years. Appreciated the opportunity, through and through to finally attend a Linux Foundation event after 4 years of visa, money and covid issues. The talks was summarization of the last three years of my work at balena building a hardware-in-the-loop pipeline that tests operating systems on an actual IoT device. The work my team did resulted in balenaOS being released in a matter of hours, than weeks confidently from PR to production. Blogs on the topic [1](https://blog.balena.io/from-pr-to-release-os-testing-at-balena/) [2](https://blog.balena.io/maximizing-resources-in-the-chip-shortage-how-balenaos-testing-went-virtual/) |
 
 ---
 
@@ -95,6 +96,8 @@ This repository has gone through a lot of updates. [Check them out at the end](#
 | Sabbatical: Covid 2020-2021 | - | - |
 |~ 2022 ~|||
 | FOSSIndia 2022 | [Website](https://indiafoss.net/delhi/2022/schedule) | Really good conference organized by the FOSS UNITED team in New Delhi. Gave a talk there, met a lot of good people there and one of my first offline conference after Covid. Good times. Will be applying for a lot more. |
+| CDCon + gitOpsCon 2023 Vancouver | [Website](https://events.linuxfoundation.org/cdcon-gitopscon/) | A mini conference was executed well and I really got a chance to actually connect with all the sponsors. Met a lot of good people during and after my talk at the conference. One of my first offline conference abroad after Covid. Good times. Will continue applying. |
+| Open Source Summit 2023 Vancouver | [Website](https://events.linuxfoundation.org/open-source-summit-north-america/) | Linux Foundation was gracious enough to provide passes to the premier open-source conference. The schedule was jam packed with different events and I was able to get a lot of feedback on my work, talks, general CFP process and making the most out of conferences themselves. I would say, coming out of it. I have a lot of respect for the developer advocates. |
 
 ***
 
@@ -175,6 +178,8 @@ After being an organizer for [many years](https://linkedin.com/in/vipulgupta2048
 | --- |:---:|---|
 | Monthly City Meetups | [Posts on Twitter](https://twitter.com/vipulgupta2048/status/1547295294395928576?s=20&t=Az4ux_k_zudpqE7OA3MCGA) | I organize mini meetups with folks in and around the city who like to come out and meet people on Saturday. |
 | RemoteIndian Delhi Meetup | [Meetup](https://lu.ma/delhiremote) | I organize mini meetups with folks in and around the city who like to come out and meet people on Saturday. |
+| PyDelhi Meetup | [Meetup](https://meetup.com/pydelhi) | Actively volunteered as co-organizer for 3 years till Covid came and my social battery got depleted through Zoom meetups. During my time, we organized meetups every fortnight for 2 years straight with several collaborations, workshops, talks, devsprints and fun hackathons in the middle. The community grew to 11k members but don't have the bandwidth remaining to be co-organizer again. |
+| Indian Linux users Group Delhi meetup | [Meetup](https://meetup.com/ilugd) | Volunteered for the meetups for a couple of years. |
 
 ---
 
