@@ -1,0 +1,30 @@
+{
+  "language": "en",
+  "caseSensitive": false,
+  "dictionaries": [
+      "en_US",
+      "companies",
+      "softwareTerms",
+      "python",
+      "cpp",
+      "go",
+      "npm",
+      "node",
+      "javascript",
+      "typescript",
+      "filestypes",
+      "html",
+      "css",
+      "bash",
+      "powershell"
+  ],
+  "files": [
+      "README.md"
+  ],
+  "exclude": [
+      "*/*.svg"
+  ],
+  "ignorePaths": [
+      "node_modules"
+  ]
+}

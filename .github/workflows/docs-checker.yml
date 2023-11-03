@@ -1,0 +1,22 @@
+name: Docusaurus
+
+on:
+  push:
+    branches:
+      - 'main'
+      - 'master'
+
+jobs:
+  spellcheck:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: streetsidesoftware/cspell-action@v4
+        with:
+          files: ''
+          root: '.'
+          strict: true
+          verbose: false
+
+      - uses: theashraf/alex-action@master
