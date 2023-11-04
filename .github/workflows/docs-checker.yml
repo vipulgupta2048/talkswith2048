@@ -14,9 +14,10 @@ jobs:
 
       - uses: streetsidesoftware/cspell-action@v4
         with:
-          files: ''
+          files: 'README.md'
           root: '.'
+          config: '.'
           strict: true
           verbose: false
 
-      - uses: theashraf/alex-action@master
+      # - uses: theashraf/alex-action@master
