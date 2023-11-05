@@ -1,4 +1,4 @@
-name: link checker
+name: Link Check
 
 on:
   schedule:

@@ -3,8 +3,10 @@
   "caseSensitive": false,
   "dictionaries": [
       "en_US",
+      "en-gb",
       "companies",
       "softwareTerms",
+      "misc",
       "python",
       "cpp",
       "go",
@@ -13,10 +15,19 @@
       "javascript",
       "typescript",
       "filestypes",
+      "fonts",
       "html",
       "css",
       "bash",
-      "powershell"
+      "powershell",
+      "my-words"
+  ],
+  "dictionaryDefinitions": [
+    {
+        "name": "my-words",
+        "path": "./.cspell/my-words.txt",
+        "addWords": true
+    }
   ],
   "files": [
       "README.md"

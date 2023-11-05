@@ -102,7 +102,7 @@ This repository has gone through a lot of updates. [Check them out at the end](#
 | React India 2019 | [Website](https://reactindia.io) | One of the 10 React India Scholarship awardees to be accepted into the largest React conference in India by the React Community and Geekabyte. Held in Goa on 26-28 September 2019. |
 | KubeCon Europe 2020 | [Website](https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/) | Awarded the Diversity scholarship to attend KubeCon this year, due to my documentation contribution to Prometheus related projects and releasing AquaSec's KubeHunter for PyPi |
 | PyCon India 2020, Online | [Website](https://in.pycon.org/2020/) | Content Workgroup lead for PyCon India Virtual Conf. Gave conf new direction with a [defined content pipeline](https://github.com/pythonindia/inpycon-blog/pulls?q=is%3Aclosed+is%3Apr+author%3A%40me+), documented processes for future years and created the [PyCon India Program Guide](https://in.pycon.org/blog/2020/announce-pycon-india-program-guide.html). |
-| PyCon India 2021, Online | [Website](https://in.pycon.org/2020/) | Content & Social Media Workgroup lead for PyCon India Virtual Conf. [More of the same work](https://github.com/pythonindia/inpycon-blog/pulls?q=is%3Aclosed+is%3Apr+author%3A%40me+) but this time with broader responsiblities and making the [PyCon India Program Guide](https://in.pycon.org/share/PyConIndia2021ProgramGuide.pdf). |
+| PyCon India 2021, Online | [Website](https://in.pycon.org/2020/) | Content & Social Media Workgroup lead for PyCon India Virtual Conf. [More of the same work](https://github.com/pythonindia/inpycon-blog/pulls?q=is%3Aclosed+is%3Apr+author%3A%40me+) but this time with broader responsibilities and making the [PyCon India Program Guide](https://in.pycon.org/share/PyConIndia2021ProgramGuide.pdf). |
 | Sabbatical: Covid 2020-2021 | - | - |
 |~ 2022 ~|||
 | FOSSIndia 2022 | [Website](https://indiafoss.net/delhi/2022/schedule) | Really good conference organized by the FOSS UNITED team in New Delhi. Gave a talk there, met a lot of good people there and one of my first offline conference after Covid. Good times. Will be applying for a lot more. |
@@ -178,7 +178,7 @@ If you like to read more, I can recommend.
 
 | Program  | Organization | Status/LoC |
 | --- | --- | --- | --- | --- |
-| Mentoring contributors at my Alma Mater | [ALiAS](https://asetalias.in) | My proudest achievement has been founding an independent, open-source college community with my peers. Few students in a classroom peer learning git and GitHub kikcstarted the open-source culture at my Alma mater that grew into hundreds of students across campuses learning to contribute to FOSS. The community decayed at one point but never died. It's flourishing with folks self-organizing internships, summer of code programs, hackathons and conferences. It's free, open for all and has no hierarchal governance model. Student volunteers run events every week with support from seniors (us) who provide mentorship, opportunities and guidance that we never received. I started the [ALiAS AMA](https://mixster.dev/2019/06/01/aliasama/), and [Abroad Opportunities Fund Scholarship](https://amity.edu/admissions-scholarship.aspx) to help students get access to every opportunity they want to reach out for.  | 
+| Mentoring contributors at my Alma Mater | [ALiAS](https://asetalias.in) | My proudest achievement has been founding an independent, open-source college community with my peers. Few students in a classroom peer learning git and GitHub kickstarted the open-source culture at my Alma mater that grew into hundreds of students across campuses learning to contribute to FOSS. The community decayed at one point but never died. It's flourishing with folks self-organizing internships, summer of code programs, hackathons and conferences. It's free, open for all and has no hierarchal governance model. Student volunteers run events every week with support from seniors (us) who provide mentorship, opportunities and guidance that we never received. I started the [ALiAS AMA](https://mixster.dev/2019/06/01/aliasama/), and [Abroad Opportunities Fund Scholarship](https://amity.edu/admissions-scholarship.aspx) to help students get access to every opportunity they want to reach out for.  | 
 | [Google Code In 2019](https://codein.withgoogle.com/archive/2019/organization/5148169659219968/) | Sugar Labs | [Certificate](./img/gsoc/GCI-2019-Certificate-5509470436720640.pdf) Google Code-in was a contest that introduced pre-university students (ages 13-17) to open source software development. I participated mentoring students to accomplish a total of 178 tasks alloted by the organization. | 
 | [OpenEBS Hackfest](https://mixster.dev/2018/05/26/writing-documentation-hacking-with-go-for-openebs-foss/) | OpenEBS | OpenEBS Hackfest is a 3-month long open-source contribution festival. Awarded star contributor for major contributions to documentation & its pipelines. [Contributions](https://github.com/search?utf8=%E2%9C%93&q=org:openebs+is:pr++label:summerhack++author:vipulgupta2048+is:merged&type=Issues), [Star Contributor](https://twitter.com/vipulgupta2048/status/1018540819911987200), [prizes](https://twitter.com/openebs/status/1002182541745385473) |
 | [Google Code In 2018](https://codein.withgoogle.com/archive/2018/organization/5131432846426112/) | Sugar Labs | [Certificate](./img/gsoc/GCI-2018-Certificate-for-Vipul-Gupta.pdf) Google Code-in was a contest that introduced pre-university students (ages 13-17) to open source software development. I participated mentoring students to accomplish a total of 135 tasks alloted by the organization.  |
@@ -198,7 +198,7 @@ Who knew? I love working on product design so much. It all started with this tak
 
 ## Community Organizer @ 2048
 
-After being an organizer for many years to a number of communities, I have thought of starting my own meetups. I take huge pride in striking that spark that is conversations between strangers, building relationships more than piling up connections and helping my people succeed. Good vibes gurannteed is what I bring to a conference/meetup. Here's what I have worked on in the past.
+After being an organizer for many years to a number of communities, I have thought of starting my own meetups. I take huge pride in striking that spark that is conversations between strangers, building relationships more than piling up connections and helping my people succeed. Good vibes guaranteed is what I bring to a conference/meetup. Here's what I have worked on in the past.
 
 | Meetups/Conferences | Link | Years  | Comments |
 | --- | --- | --- | --- |
@@ -216,7 +216,7 @@ After being an organizer for many years to a number of communities, I have thoug
 | --- |:---:|---|
 | [How to get a Remote Job as a fresher with RemoteIndian](https://remoteindian.com/videos) | [Link to the episode](https://share.descript.com/view/25c3e54f-48bb-4dea-9b5d-78acfe0d1d88) | Podcast with RemoteIndian having an amazing discussion discussing the importance of open-source, challenges of a junior dev and red flags in the application process. I hope this helps folks going forward. |
 | [Sustain Our Software Podcast](https://podcast.sustainoss.org/episodes) with Vipul Gupta | [Link to the episode](https://podcast.sustainoss.org/4) | Samson Goddy and Vipul Gupta join the panelists' Pia Mancini and Richard Littauer to talk about open source activities in Nigeria and India. Vipul is the Global Outreach Team Lead at Sugar Labs. Sugar Labs is an activity-focused open-source software learning platform for children. Both Samson and Vipul agree that a lot of developers they talk to are not very familiar with open source and the most common question they receive in meet-up groups is how one can start to contribute to open source. |
-| [Decompiled](https://codensolder.com/decompiled): Google Summer of Code Edition | [Link to the episode](https://www.youtube.com/watch?v=CFAT_X84zJM) | Was invited for a fun insightful episode with the host Ayan Pahwa and Prakhar Srivastava on Decomplied to talk about Sugar Labs, Open-Source, and Google Summer of Code. Episode out now, check it out [here](https://www.youtube.com/watch?v=CFAT_X84zJM). |
+| [Decompiled](https://codensolder.com/decompiled): Google Summer of Code Edition | [Link to the episode](https://www.youtube.com/watch?v=CFAT_X84zJM) | Was invited for a fun insightful episode with the host Ayan Pahwa and Prakhar Srivastava on Decompiled to talk about Sugar Labs, Open-Source, and Google Summer of Code. Episode out now, check it out [here](https://www.youtube.com/watch?v=CFAT_X84zJM). |
 | Vipul Gupta, Open-Source, Freelancing, and Financial Independence by [CodeCast Zambia](https://twitter.com/codecastzm) | [Link to the episode](https://open.spotify.com/episode/6gvXFnMUTDx6ceUUrGR03M?si=ad9NZrMSTSScdSlUhQL_CQ) | Daniel talks to Vipul about alternative sources of income and the stigma behind freelance work as well as tips to freelancing effectively and using open source contributions to up-skill yourself. |
 
 ---
@@ -229,7 +229,7 @@ After being an organizer for many years to a number of communities, I have thoug
       <img src="https://user-images.githubusercontent.com/22801822/61649091-65a40800-acce-11e9-9c32-6b7bc55f3eaa.png" style="max-width:100%;" ></img><p><a href="https://www.meetup.com/pydelhi/events/263185692/">[Meetup]</a> about Quantum random number generators by making the brain attaining thug life in this b&w poster.</p>  
     </td>
     <td align="center" width="33%">
-      <img src="https://user-images.githubusercontent.com/22801822/61649830-d697ef80-accf-11e9-81f1-e3085cc84302.jpg" style="max-width:100%;" ></img><p>[UnMeetup] Loved this poster, just because of the bright pallete of colors and fusion of Hindi & English giving a modern, funky look!.</p>
+      <img src="https://user-images.githubusercontent.com/22801822/61649830-d697ef80-accf-11e9-81f1-e3085cc84302.jpg" style="max-width:100%;" ></img><p>[UnMeetup] Loved this poster, just because of the bright palette of colors and fusion of Hindi & English giving a modern, funky look!.</p>
     </td>
     <td align="center" width="33%">
       <img src="https://user-images.githubusercontent.com/22801822/67877443-91514c80-fb5f-11e9-8ea1-579003b784c8.png" style="max-width:100%;"></img><p><a href="https://www.meetup.com/ilugdelhi/events/jkbtdqyznbqb/">[Meetup]</a>Took a wanted poster, used Digital Ocean's wallpapers and Linux terminal as a treasure hunt advert for ILuGD's Anniversary meetup.</p>
@@ -243,7 +243,7 @@ After being an organizer for many years to a number of communities, I have thoug
       <img src="https://user-images.githubusercontent.com/22801822/68994072-ac80c380-08a4-11ea-847e-091c70f1eab0.png"></img><a href="https://mixster.dev/2019/11/16/insync-onedrive-client-for-linux/">[Blog]</a><p>A sweet & simple poster designed for a sponsor on their new OneDrive Linux client release blog.</p>
     </td>
     <td align="center" >
-      <img src="https://user-images.githubusercontent.com/22801822/73104649-e7464e00-3f1c-11ea-834d-3b85c5fa52d5.png"></img><p><a href="https://www.meetup.com/pydelhi/events/267949805/">[Meetup]</a> Saw this poster design, tweaked color pallete and fonts to represent Python syntax with highlighting, originally for 9th Anniversary of PyDelhi.</p>
+      <img src="https://user-images.githubusercontent.com/22801822/73104649-e7464e00-3f1c-11ea-834d-3b85c5fa52d5.png"></img><p><a href="https://www.meetup.com/pydelhi/events/267949805/">[Meetup]</a> Saw this poster design, tweaked color palette and fonts to represent Python syntax with highlighting, originally for 9th Anniversary of PyDelhi.</p>
     </td>
   </tr>
   <tr>
@@ -265,7 +265,7 @@ After being an organizer for many years to a number of communities, I have thoug
               <img src="./img/design/1.png">[Meetup]</a> about Quantum random number generators by making the brain attaining thug life in this b&amp;w poster.</p>  
             </td>
             <td align="center" width="33%">
-              <img src="./img/design/2.png" style={{maxWidth: '100%'}} /><p>[UnMeetup] Loved this poster, just because of the bright pallete of colors and fusion of Hindi &amp; English giving a modern, funky look!.</p>
+              <img src="./img/design/2.png" style={{maxWidth: '100%'}} /><p>[UnMeetup] Loved this poster, just because of the bright palette of colors and fusion of Hindi &amp; English giving a modern, funky look!.</p>
             </td>
             <td align="center" width="33%">
               <img src="./img/design/3.png" style={{maxWidth: '100%'}} /><p><a href="https://www.meetup.com/ilugdelhi/events/jkbtdqyznbqb/">[Meetup]</a>Took a wanted poster, used Digital Ocean's wallpapers and Linux terminal as a treasure hunt advert for ILuGD's Anniversary meetup.</p>
@@ -279,7 +279,7 @@ After being an organizer for many years to a number of communities, I have thoug
               <img src="./img/design/5.png" /><a href="https://mixster.dev/2019/11/16/insync-onedrive-client-for-linux/">[Blog]</a><p>A sweet &amp; simple poster designed for a sponsor on their new OneDrive Linux client release blog.</p>
             </td>
             <td align="center">
-              <img src="./img/design/6.png" /><p><a href="https://www.meetup.com/pydelhi/events/267949805/">[Meetup]</a> Saw this poster design, tweaked color pallete and fonts to represent Python syntax with highlighting, originally for 9th Anniversary of PyDelhi.</p>
+              <img src="./img/design/6.png" /><p><a href="https://www.meetup.com/pydelhi/events/267949805/">[Meetup]</a> Saw this poster design, tweaked color palette and fonts to represent Python syntax with highlighting, originally for 9th Anniversary of PyDelhi.</p>
             </td>
           </tr>
           <tr>
