@@ -38,7 +38,7 @@ This repository has gone through a lot of updates. [Check them out at the end](#
 
 
 ## Talks with 2048
-asdasdasdas
+
 | Title of the talk       | Link for Proposal  | Status - Other Comments |
 | --- |:---:|---|
 | Introduction to Git     | [Link for proposal](https://github.com/ILUGD/talks/issues/45) | [Delivered] [Repo Vanilla](https://github.com/vipulgupta2048/vanilla) used for tutorial.  |
@@ -96,7 +96,7 @@ asdasdasdas
 | Mozfest 2018 | [Website](https://mozillafestival.org/) | Facilitator and volunteer in the Youth Zone of the 8 track mega festival of Mozilla at Ravensbourne College, London, UK |
 | Sustain Summit 2018 | [Website](https://sustainoss.org) |  Invited as a sustainer to represent Sugar Labs and ALiAS globally in between the biggest communities in the world including that of Google, Microsoft, StackOverflow, GitHub and more|
 | Digital Ocean Tide 2018: New Delhi | [Website](https://www.meetup.com/DigitalOceanDelhi/events/256140664/) | Attended to explore opportunities with Digital Ocean, instead got opportunities with Hasura as SDE intern. So thrilled to join them in May 2019. |
-| DebUtsav 2018 | [Website](https://debutsav.in) | Attended this awesome mini-conf from 9-10 March 2019, to learn Debian packaging and participate in bug squashing party over the weekend at NIFPP, gave a small talk on digging opportunities as well |
+| DebUtsav 2018 | Meetup | Attended this awesome mini-conf from 9-10 March 2019, to learn Debian packaging and participate in bug squashing party over the weekend at NIFPP, gave a small talk on digging opportunities as well |
 | GraphQL Summit ASIA 2019 | [Website](https://www.graphql-asia.org) | Handled bit of Community Outreach |
 | React India 2019 | [Website](https://reactindia.io) | One of the 10 React India Scholarship awardees to be accepted into the largest React conference in India by the React Community and Geekabyte. Held in Goa on 26-28 September 2019. |
 | KubeCon Europe 2020 | [Website](https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/) | Awarded the Diversity scholarship to attend KubeCon this year, due to my documentation contribution to Prometheus related projects and releasing AquaSec's KubeHunter for PyPi |
