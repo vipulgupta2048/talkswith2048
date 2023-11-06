@@ -1,6 +1,6 @@
 # Talks with 2048
 
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fvipulgupta2048%2Ftalkswith2048&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com) [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/) [![Link Check](https://github.com/vipulgupta2048/talkswith2048/actions/workflows/link-checker.yml/badge.svg)](https://github.com/vipulgupta2048/talkswith2048/actions/workflows/link-checker.yml)
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fvipulgupta2048%2Ftalkswith2048&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com) [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/) [![Lychee Link Checker](https://github.com/vipulgupta2048/talkswith2048/actions/workflows/link-checker.yml/badge.svg?branch=master)](https://github.com/vipulgupta2048/talkswith2048/actions/workflows/link-checker.yml)
 
 Hey, welcome to my corner of the internet. 
 I am Vipul Gupta, a growth-oriented open-source engineer and product owner during the day. Solo backpacker, community organizer and cheesecake enthusiast on the weekends. 
