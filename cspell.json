@@ -25,7 +25,7 @@
   "dictionaryDefinitions": [
     {
         "name": "my-words",
-        "path": "./.cspell/my-words.txt",
+        "path": "my-words.txt",
         "addWords": true
     }
   ],

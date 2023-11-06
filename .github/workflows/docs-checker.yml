@@ -19,9 +19,10 @@ jobs:
       - uses: streetsidesoftware/cspell-action@v4
         id: cspell
         with:
+          files: "**/*.md"
           config: 'cspell.json'
+          check_dot_files: explicit
           strict: true
-          incremental_files_only: true
           verbose: true
           inline: error
 
