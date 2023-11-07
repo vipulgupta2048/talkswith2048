@@ -30,7 +30,8 @@
     }
   ],
   "files": [
-      "README.md"
+      "README.md",
+      "docs/**"
   ],
   "exclude": [
       "*/*.svg"
