@@ -20,7 +20,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: streetsidesoftware/cspell-action@v4
+      - uses: streetsidesoftware/cspell-action@v5
         id: cspell
         with:
           files: "**/*.md"
