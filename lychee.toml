@@ -47,8 +47,7 @@ timeout = 10
 insecure = false
 
 # Comma-separated list of accepted status codes for valid links.
-# accept = [200, 204, 301, 429]
-accept = [200]
+accept = ['200', '204', '301', '429']
 
 # Only test links with the given schemes (e.g. https).
 # Omit to check links with any scheme.
@@ -84,9 +83,9 @@ exclude = [
 ]
 
 # Exclude these filesystem paths from getting checked.
-exclude_path = []
+exclude_path = ['node_modules/', 'build/']
 
-include = []
+include = ["docs/", "README.md"]
 
 include_verbatim = true
 
