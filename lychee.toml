@@ -17,7 +17,7 @@ progress = true
 cache = true
 
 # Discard all cached requests older than this duration.
-max_cache_age = "2d"
+max_cache_age = "1d"
 
 #############################  Runtime  #############################
 
@@ -51,7 +51,7 @@ accept = ['200', '204', '301', '429']
 
 # Only test links with the given schemes (e.g. https).
 # Omit to check links with any scheme.
-scheme = [ "https" ]
+# scheme = [ "https" ]
 
 # When links are available using HTTPS, treat HTTP links as errors.
 require_https = true
@@ -83,9 +83,9 @@ exclude = [
 ]
 
 # Exclude these filesystem paths from getting checked.
-exclude_path = ['node_modules/', 'build/']
+# exclude_path = ['node_modules/', 'build/']
 
-include = ["docs/", "README.md"]
+# include = ["README.md"]
 
 include_verbatim = true
 

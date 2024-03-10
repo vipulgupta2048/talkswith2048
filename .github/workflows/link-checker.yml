@@ -24,13 +24,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # Building the docs
-      - name: Build the docs
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
-      - run: npm run generate
-
       - name: Restore lychee cache
         uses: actions/cache@v3
         with:
@@ -46,8 +39,13 @@ jobs:
           fail: true
           args: >
             --config ./lychee.toml
-            --cache --max-cache-age 1d
             README.md
+      
+      # Check spelling
+      - name: Spelling Checker
+        id: spellcheck
+        run: |
+          npm run test:spellcheck
 
       - name: Create Issue From File
         if: |

@@ -23,7 +23,7 @@ jobs:
       - uses: streetsidesoftware/cspell-action@v4
         id: cspell
         with:
-          files: "**/*.md"
+          files: "README.md"
           config: 'cspell.json'
           check_dot_files: explicit
           strict: true

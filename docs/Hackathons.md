@@ -10,6 +10,12 @@
 | FOSS Hack 2020 | [Website](https://fossunited.org/hackathon) | Mentor for hardware projects at FOSS Hack 2020 and Speaker. This was an online 48-hour hackathon with a great talks agenda and an equally well-organized team. It was quite fun to see about 150+ FOSS projects getting out there.  |
 | HackBMU 2020 | [Website](http://hackbmu.com) | Judged the 3rd Iteration of HackBMU at BML Munjal College. Was my first time as a judge and a fitting end to an era of participating at hackathons as a student <img src={require('./img/hackbmu/1.png').default} height="{350}" width="{450}" /> |
 | Sabbatical: Covid 2020-2021 | - | - |
+|~ 2024 ~|||
+| GitLab Pitch Competition | [Website](http://gitlab.devpost.com) | ßne for GitLab customers to test their code directly on their devices using GitLab Runners and Balena. |
+
+
+
+
 
 ---
 
