@@ -1,4 +1,4 @@
-name: Link Checker
+name: Doctor Docs
 
 on:
   schedule:
@@ -17,7 +17,7 @@ on:
 
 
 jobs:
-  Checking-Links:
+  Checking-Docs:
     runs-on: ubuntu-latest
     steps:
       # Checks out a copy of your repository on the ubuntu-latest machine
