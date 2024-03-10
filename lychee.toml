@@ -79,7 +79,9 @@ headers = []
 
 exclude = [
     "https://www.behance.net/gallery/86486979/The-BookHustler-Project",
-    "https://twitter.com/*"
+    "https://twitter.com/*",
+    "https://www.sih.gov.in/",
+    "https://sched.co/*"
 ]
 
 # Exclude these filesystem paths from getting checked.
