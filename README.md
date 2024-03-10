@@ -1,42 +1,36 @@
 ### Everything with 2048: Talkswith2048
 
-# [Check out my new portfolio website](https://vipulgupta2048.github.io/talkswith2048/)
+[Check out my new portfolio website](https://vipulgupta2048.github.io/talkswith2048/)
 
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fvipulgupta2048%2Ftalkswith2048&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com) [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/) [![Lychee Link Checker](https://github.com/vipulgupta2048/talkswith2048/actions/workflows/link-checker.yml/badge.svg?branch=master)](https://github.com/vipulgupta2048/talkswith2048/actions/workflows/link-checker.yml)
 
-Hey, welcome to my corner of the internet. 
-I am Vipul Gupta. 
-I am open-source product owner and documentarian during the days/nights. 
-Solo backpacker, community organizer and cheesecake enthusiast on the weekends. 
+> This repository acts as a showcase of just about ... everything I have done since I got introduced to open-source back in 2016. It's an odometer that keeps track of my professional journey for the time well spent on Earth. It also works well for the usual bouts of imposter syndrome and recruiter screens when looking for a role.
 
-I love to document. 
+Welcome to my corner of the internet!
+ 
+I am Vipul Gupta (@vipulgupta2048). I am an open-source developer, documentarian, community manager and growth hacker. I enjoy backpacking solo on long trips, reviewing cheesecakes in each country I visit and collecting Calvin & Hobbes comics. Current, I am a product owner and documentation lead at Balena building open-source hardtech products. I also run a initiative to "right" the docs for startups and organizations called Mixster. 
 
+I strongly believe in Open source is more than software. It’s a culture, a conversation, a way to bring the best minds together for the common good. This culture thrives on the principles of collaboration, transparency, and shared achievement. It's a realm where barriers of entry have been lowered to enable folks to grow, contribute and learn from each other. As a result, open-source is not just a method for developing software; it's a movement; it's a way of life. I aim to rethink that for more companies embracing [innersource](https://about.gitlab.com/topics/version-control/what-is-innersource/) and want to take on new roles in organization to do just that. Refer to [hiring me](#hire-2048) section.
 
-Open source is more than software. It’s a culture, a conversation, a way to bring the best minds together for the common good. This culture thrives on the principles of collaboration, transparency, and shared achievement. It's a realm where barriers of entry have been lowered to enable folks to grow, contribute and learn from each other. As a result, open-source is not just a method for developing software; it's a movement; it's a way of life. I aim to rethink that for more companies embracing [innersource](https://about.gitlab.com/topics/version-control/what-is-innersource/) want to help you build that culture no matter the hat I am wearing or responsiblities I am undertaking.
-
-
-_This repository acts as a showcase... of just about everything I enjoyed doing in my college years and kept doing (Thankfully, I ~ain't~ am done, no thanks to 2020) It's a personal gauge I keep for progress, personal development, and most importantly to remind me of impact I have on people around me, while my time on Earth. To be frank, I visit this corner of the web when the imposter syndrome hits.._
-
-I genuinely love giving back to the open-source community in whatever way I can. Each figment of contribution had a purpose and therefore all talk resources, slides, designs, and code whatever I have created is open-source. You can find read about commercial use or [drop me a message](https://mixster.dev/contact/). Adding on to it, this repository is also a tracker of conferences that I attended/was invited/volunteered for. Networking and listening to people has always been the one activity that fuels my enthusiasm. Maybe that's my DevRel side speaking right now. Who knows?
+Over the years, I have given back my time/money/efforts in enabling communities, conferences, meetups, projects and people towards a better open-source future. Free to reuse this template as a base to map your own journey.
 
 ![image](https://www.salesforce.com/content/dam/blogs/ca/Blog%20Posts/The%20Most%20Important%20Factors%20for%20Startup%20Success_Open%20Graph%20Image.png)
 
-> ### because for some, maybe the sky is the limit, for others, it's just the starting point.
-
 
 ## Contents
-  * [About 2048](#about-2048)
-  * [Talks with 2048](#talks-with-2048-1)
-  * [Conferences with 2048](#conferences-with-2048)
-  * [Hackathons with 2048](#hackathons-with-2048)
-  * [Mixster by 2048 (Top 10 blogs of all-time)](#mixster-by-2048-top-10-blogs-of-all-time)
-  * [Google Summer of Code with 2048](#google-summer-of-code-with-2048)
-  * [Mockups/Products by 2048](#mockups/products-by-2048)
-  * [Meetups by 2048](#meetups-by-2048)
-  * [Podcasts with 2048](#podcasts-with-2048)
-  * [Design by 2048](#design-by-2048)
-  * [Failures of 2048](#failures-of-2048)
-  * [Updates](#updates)
+- [Contents](#contents)
+- [Talks with 2048](#talks-with-2048)
+- [Conferences with 2048](#conferences-with-2048)
+- [Hackathons with 2048](#hackathons-with-2048)
+- [Mixster by 2048 (Top 10 blogs of all-time)](#mixster-by-2048-top-10-blogs-of-all-time)
+- [Google Summer of Code with 2048](#google-summer-of-code-with-2048)
+- [Mentoring with 2048](#mentoring-with-2048)
+- [Projects with 2048](#projects-with-2048)
+- [Organizing with 2048](#organizing-with-2048)
+- [Podcasts with 2048](#podcasts-with-2048)
+- [Designing sometimes with 2048](#designing-sometimes-with-2048)
+- [Hire 2048](#hire-2048)
+- [Failures of 2048](#failures-of-2048)
 
 
 ## Talks with 2048
@@ -87,7 +81,7 @@ From local meetups to global conferences, I've aimed to weave technical concepts
 | Linux Plumbers 2023 | [Selected] | THE Linux Kernel conference to attend in the world. 2023 was my first year stepping back into conferencing and another journey to United States to attend this would have stretched me a bit too far.  |
 | Open Source Summit Japan 2023 [Let's Build Our Own Virtual RaspberryPi Using QEMU Virtualization](https://sched.co/1TzRx) | [Slides](https://slides.com/vipulgupta2048/cdcon-japan-2023/) [Certificate](https://www.credly.com/badges/2e9936ba-60b7-4255-baf3-21d2fe530f92/) | Presenting my session at CDCon Japan 2023, going deeper into the hardware in the loop testing implemented at balena by my team. Discussed architecture and implementation details of the project. Received a lot of feedback from 50+ CI experts attending. The conference agenda was very well formulated and the schedule was one of the rare ones where each talk brought in something interesting  <img src="./docs/img/oss/2.png" height="{358}" width="{400}" /> |
 |~ 2024 ~|||
-| FOSS United Delhi Conference: [Pains, Processes & the Eventual Gains of Building Open-Source Hardtech projects](https://indiafoss.net/Delhi/2024/talk/08737248bb) | [Recording](https://www.youtube.com/watch?v=dK2Ja-5cbOU) [Slides](https://slides.com/vipulgupta2048/delhifoss-hardtech/fullscreen) [Feedback](./docs/img/1.png) | Hard tech involves the combination of hardware and software to solve a problem. As opposed to soft tech, hard tech projects have to be completed on launch with hardware ready to ship. This talk is all about the pain, the processes and eventual gains in the journey of building hard tech project in the open. |
+| DelhiFOSS 2.0 Conference: [Pains, Processes & the Eventual Gains of Building Open-Source Hardtech projects](https://indiafoss.net/Delhi/2024/talk/08737248bb) | [Recording](https://www.youtube.com/watch?v=dK2Ja-5cbOU) [Slides](https://slides.com/vipulgupta2048/delhifoss-hardtech/fullscreen) [Feedback](./docs/img/1.png) | Hard tech involves the combination of hardware and software to solve a problem. As opposed to soft tech, hard tech projects have to be completed on launch with hardware ready to ship. This talk is all about the pain, the processes and eventual gains in the journey of building hard tech project in the open. |
 
 
 
@@ -118,12 +112,17 @@ From local meetups to global conferences, I've aimed to weave technical concepts
 | PyCon India 2021, Online | [Website](https://in.pycon.org/2020/) | Content & Social Media Workgroup lead for PyCon India Virtual Conf. [More of the same work](https://github.com/pythonindia/inpycon-blog/pulls?q=is%3Aclosed+is%3Apr+author%3A%40me+) but this time with broader responsibilities and making the [PyCon India Program Guide](https://in.pycon.org/share/PyConIndia2021ProgramGuide.pdf). |
 | Sabbatical: Covid 2020-2021 | - | - |
 |~ 2022 ~|||
-| FOSSIndia 2022 | [Website](https://indiafoss.net/delhi/2022/schedule) | Really good conference organized by the FOSS UNITED team in New Delhi. Gave a talk there, met a lot of good people there and one of my first offline conference after Covid. Good times. Will be applying for a lot more. |
+| DelhiFOSS 1.0 2022 from FOSS United | [Website](https://indiafoss.net/delhi/2022/schedule) | Really good conference organized by the FOSS UNITED team in New Delhi. Gave a talk there, met a lot of good people there and one of my first offline conference after Covid. Good times. Will be applying for a lot more. |
+|~ 2022 ~|||
 | CDCon + gitOpsCon 2023 Vancouver | [Website](https://events.linuxfoundation.org/cdcon-gitopscon/) | A mini conference was executed well and I really got a chance to actually connect with all the sponsors. Met a lot of good people during and after my talk at the conference. One of my first offline conference abroad after Covid. Good times. Will continue applying. |
 | Open Source Summit 2023 Vancouver | [Website](https://events.linuxfoundation.org/archive/2023/open-source-summit-north-america/) | Linux Foundation was gracious enough to provide passes to the premier open-source conference. The schedule was jam packed with different events and I was able to get a lot of feedback on my work, talks, general CFP process and making the most out of conferences themselves. I would say, coming out of it. I have a lot of respect for the developer advocates. |
 | PyDelhi Conf 2023 | [Website](https://conference.pydelhi.org/) | After organizing PyDelhi meetups for 3 years, it was time for Delhi's biggest conference to return from the covid hiatus. Lots of sessions, people to meet and a talk to give. The two days at the conference went on quite well. |
-| Open Source Summit 2023 Europe | [Website](https://events.linuxfoundation.org/archive/2023/open-source-summit-europe/) | The schedule was jam packed with different events and I was able to get a lot of feedback on my work, talks, general CFP process and making the most out of conferences themselves. I would say, coming out of it. I have a lot of respect for the developer advocates. |
-| Open Source Summit 2023 Japan | [Website](https://events.linuxfoundation.org/archive/2023/open-source-summit-japan/) | The same brand of amazing, schedule packed open-source conference but thankfully in the same continent. First time visiting Tokyo to attend the mega conference was an amazing experience. One that I would gladly repeat anytime. |
+| Open Source Summit 2023 Europe | [Website](https://events.linuxfoundation.org/archive/2023/open-source-summit-europe/) | The schedule was jam packed with different events and I was able to get a lot of feedback on my work, talks, general CFP process and making the most out of conferences themselves. I would say, coming out of it. I have a lot of respect for the developer advocates. Gave a session on QEMU. |
+| PyCon India 2023 | [Website](https://in.pycon.org/2023/) | Back in Hyderabad to meet a lot of familiar faces at the 'ol stomping ground of Python's premier conference called PyCon India. Was a volunteer as usual helping make the conference yet another roaring success. |
+| Open Source Summit 2023 Japan | [Website](https://events.linuxfoundation.org/archive/2023/open-source-summit-japan/) | The same brand of amazing, schedule packed open-source conference but thankfully in the same continent. First time visiting Tokyo to attend the mega conference was an amazing experience. One that I would gladly repeat anytime. Gave a talk at the conference and met a lot of people. |
+|~ 2024 ~|||
+| DelhiFOSS 2.0 2022 | [Website](https://indiafoss.net/delhi/2024/schedule) | An open-source focused conference organized by the FOSS United Delhi Chapter. Gave a talk, met a lot of new people in my city and the first conference of 2024. The event was held at Indian Institue of Technology, New Delhi. First time being there, and good times. |
+
 
 ***
 
@@ -140,10 +139,14 @@ From local meetups to global conferences, I've aimed to weave technical concepts
 | FOSS Hack 2020 | [Website](https://fossunited.org/hackathon) | Mentor for hardware projects at FOSS Hack 2020 and Speaker. This was an online 48-hour hackathon with a great talks agenda and an equally well-organized team. It was quite fun to see about 150+ FOSS projects getting out there.  |
 | HackBMU 2020 | [Website](http://hackbmu.com) | Judged the 3rd Iteration of HackBMU at BML Munjal College. Was my first time as a judge and a fitting end to an era of participating at hackathons as a student <img src="./docs/img/hackbmu/1.png" height="{350}" width="{450}" /> |
 | Sabbatical: Covid 2020-2021 | - | - |
+|~ 2024 ~|||
+| GitLab Pitch Competition | [Website](http://gitlab.devpost.com) | Held during January '2024. The hackathon was a chance to build proofs-of-concept and a pitch to improve services on GitLab's platform. I pitched TestButler as a new pipeline for GitLab customers to test their code directly on their devices using GitLab Runners and Balena. |
+
+
 
 ---
 
-# Mixster by 2048 (Top 10 blogs of all-time)
+## Mixster by 2048 (Top 10 blogs of all-time)
 
 Mixster is where I document my life, my travels and my work. Mixster is also where I work
 
