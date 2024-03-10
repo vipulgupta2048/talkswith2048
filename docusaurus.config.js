@@ -11,15 +11,15 @@ const repo = "talkswith2048"
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'talkswith2048',
-  tagline: 'Docs on vipulgupta2048 OSS journey',
-  favicon: 'favicon.ico',
+  title: org,
+  tagline: `Docs on everything ${org}.`,
+  favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: `https://vipulgupta2048.github.io/${repo}`,
+  url: `https://vipulgupta2048.github.io/`,
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/talkswith2048',
+  baseUrl: repo,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -53,7 +53,9 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            `https://github.com/${org}/${repo}/`,
+            `https://github.com/${org}/${repo}/edit/master/docs/cd`,
+          routeBasePath: '/'
+
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -68,16 +70,17 @@ const config = {
       docs: {
         sidebar: {
           hideable: true,
-          autoCollapseCategories: true,
+          autoCollapseCategories: false,
         }
       },
+      blog: false,
       // Replace with your project's social card
       image: 'talkswith2048.png',
       navbar: {
-        title: `${repo}`,
+        title: repo,
         logo: {
-          alt: 'vipulgupta2048-logo',
-          src: 'talkswith2048.png',
+          alt: `${repo}-logo`,
+          src: 'img/talkswith2048.png',
         },
         items: [
           {
@@ -100,38 +103,46 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Everything open-source',
+                to: '/open-source',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'Social',
             items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: `https://twitter.com/${org}`,
               },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'Linkedin',
+                href: `https://linkedin.com/in/${org}/`,
               },
               {
                 label: 'GitHub',
-                href: `https://github.com/${org}/${repo}`,
+                href: `https://github.com/${org}/`,
+              },
+              {
+                label: 'Blog',
+                href: 'https://mixster.dev',
+              },              
+            ],
+          },
+          {
+            title: 'Contact',
+            items: [
+              {
+                label: 'Email',
+                href: `mailto:${org}[@]gmail[DoT]com`,
+              },
+              {
+                label: 'Instagram',
+                href: `https://instagram.com/vipulgupta.travel/`,
+              },
+              {
+                label: 'Signal',
+                href: `https://signal.me/#vipulgupta2048`,
               },
             ],
           },

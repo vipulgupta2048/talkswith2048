@@ -1,5 +1,7 @@
 {
+  "version": "0.2",
   "language": "en",
+  "useGitignore": true,
   "caseSensitive": false,
   "dictionaries": [
       "en_US",
@@ -20,23 +22,13 @@
       "css",
       "bash",
       "powershell",
-      "my-words"
+      "cspell-words"
   ],
   "dictionaryDefinitions": [
     {
-        "name": "my-words",
-        "path": "my-words.txt",
+        "name": "cspell-words",
+        "path": "./cspell-words.txt",
         "addWords": true
     }
-  ],
-  "files": [
-      "README.md",
-      "docs/**"
-  ],
-  "exclude": [
-      "*/*.svg"
-  ],
-  "ignorePaths": [
-      "node_modules"
   ]
 }
