@@ -16,7 +16,7 @@ DESTINATION=$SCRIPT_DIR/../docs
 sed -i -r 's|\./docs/img|\./img|g' $SOURCE_FILE
 
 # Replacing img src tag with JSX require for all instances that matches
-sed -i -r "s|<img src=\"\(.*\)\" height=\"\(.*\)\" width=\"\(.*\)\" />|<img src={require('\1').default} height=\"\2\" width=\"\3\" />|g" $SOURCE_FILE
+sed -i "s|<img src=\"\(.*\)\" height=\"\(.*\)\" width=\"\(.*\)\" />|<img src={require('\1').default} height=\"\2\" width=\"\3\" />|g" $SOURCE_FILE
 
 # Wiping old snippets
 # if [ -d "$SCRIPT_DIR/../docs/snippets/" ]; then
