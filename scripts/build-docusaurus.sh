@@ -16,7 +16,8 @@ DESTINATION=$SCRIPT_DIR/../docs
 sed -i -r 's|\./docs/img|\./img|g' $SOURCE_FILE
 
 # Replacing img src tag with JSX require for all instances that matches
-sed -i "s|<img src=\"\(.*\)\" height=\"\(.*\)\" width=\"\(.*\)\" />|<img src={require(\"\1\").default} height=\"\2\" width=\"\3\" />|g" $SOURCE_FILE
+# sed -i -r "s|<img src=\"\(.*\)\" height=\"\(.*\)\" width=\"\(.*\)\" />|<img src={require(\"\1\").default} height=\"\2\" width=\"\3\" />|g" $SOURCE_FILE
+sed -i -r "s|<img src=\"(.*)\" height=\"(.*)\" width=\"(.*)\" />|<img src={require(\"\1\").default} height=\"\2\" width=\"\3\" />|g" $SOURCE_FILE
 
 # Wiping old snippets
 # if [ -d "$SCRIPT_DIR/../docs/snippets/" ]; then
@@ -42,11 +43,12 @@ $SCRIPT_DIR/extract-markdown.sh "Organizing with 2048" <$SOURCE_FILE >Communitie
 $SCRIPT_DIR/extract-markdown.sh "Podcasts with 2048" <$SOURCE_FILE >Podcasts.md && mv ./Podcasts.md $DESTINATION/ &
 
 $SCRIPT_DIR/extract-markdown.sh "Designing sometimes with 2048" <$SOURCE_FILE >Designs.md && mv ./Designs.md $DESTINATION/ &&
-sed -i -r "s|<img src=\"\(.*\)\" |<img src={require('\1').default} |g" $DESTINATION/Designs.md &
+    # sed -i -r "s|<img src=\"\(.*\)\" |<img src={require(\"\1\").default} |g" $DESTINATION/Designs.md &
+    sed -i -r "s|<img src=\"(.*)\" |<img src={require(\"\1\").default} |g" $DESTINATION/Designs.md &
 
 wait
 
 # Cleanup
 rm $SOURCE_FILE
-rm -r *.md-r
-rm -r $DESTINATION/*.md-r
+rm -fr *.md-r
+rm -fr $DESTINATION/*.md-r

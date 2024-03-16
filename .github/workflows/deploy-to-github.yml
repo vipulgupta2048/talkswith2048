@@ -37,7 +37,7 @@ jobs:
         run: npm ci
 
       - name: Build website
-        shell: sh
+        shell: bash
         run: npm run build
 
       # Popular action to deploy to GitHub Pages:
