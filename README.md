@@ -1,4 +1,4 @@
-### Everything with 2048: Talkswith2048
+# Everything with 2048: Talkswith2048
 
 [Check out my new portfolio website](https://vipulgupta2048.github.io/talkswith2048/)
 
