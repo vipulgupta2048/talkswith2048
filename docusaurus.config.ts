@@ -49,16 +49,16 @@ const config = {
         indexPages: true
       },
     ],
-    [
-      '@docusaurus/plugin-ideal-image',
-      {
-        quality: 85,
-        max: 2000, // max resized image's size.
-        min: 600, // min resized image's size. if original is lower, use that size.
-        steps: 4, // the max number of images generated between min and max (inclusive)
-        disableInDev: false,
-      },
-    ],
+    // [
+    //   '@docusaurus/plugin-ideal-image',
+    //   {
+    //     quality: 85,
+    //     max: 2000, // max resized image's size.
+    //     min: 600, // min resized image's size. if original is lower, use that size.
+    //     steps: 4, // the max number of images generated between min and max (inclusive)
+    //     disableInDev: false,
+    //   },
+    // ],
     ['docusaurus-plugin-sass', {}],
   ],
 

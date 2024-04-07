@@ -12,14 +12,19 @@ cp README.md README-temp.md
 SOURCE_FILE=README-temp.md
 DESTINATION=$SCRIPT_DIR/../docs
 
+OS="$(uname)"
+SED_EXTENSION=""
+if [[ "$OS" == "Darwin" ]]; then
+    SED_EXTENSION="''"
+fi
+
 # Replacing relative paths from README to match docusaurus
-ls
-sed -i '' 's|\./docs/img|\./img|g' $SOURCE_FILE
+sed -i $SED_EXTENSION 's|\./docs/img|\./img|g' $SOURCE_FILE
 
 # Replacing img src tag with JSX require for all instances that matches
 # sed -i -r "s|<img src=\"\(.*\)\" height=\"\(.*\)\" width=\"\(.*\)\" />|<img src={require(\"\1\").default} height=\"\2\" width=\"\3\" />|g" $SOURCE_FILE
 # sed -i -r "s|<img src=\"(.*)\" height=\"(.*)\" width=\"(.*)\" />|<img src={require(\"\1\").default} height=\"\2\" width=\"\3\" />|g" $SOURCE_FILE
-sed -i '' "s|<img src=\"\\(.*\\)\" height=\"\\(.*\\)\" width=\"\\(.*\\)\" />|<img src={require(\"\1\").default} height=\"\2\" width=\"\3\" />|g" $SOURCE_FILE
+sed -i $SED_EXTENSION "s|<img src=\"\\(.*\\)\" height=\"\\(.*\\)\" width=\"\\(.*\\)\" />|<img src={require(\"\1\").default} height=\"\2\" width=\"\3\" />|g" $SOURCE_FILE
 
 
 echo "Generating partials for docs"
@@ -43,7 +48,7 @@ $SCRIPT_DIR/extract-markdown.sh "Podcasts with 2048" <$SOURCE_FILE >Podcasts.md 
 $SCRIPT_DIR/extract-markdown.sh "Designing sometimes with 2048" <$SOURCE_FILE >Designs.md && mv ./Designs.md $DESTINATION/ &&
     # sed -i -r "s|<img src=\"\(.*\)\" |<img src={require(\"\1\").default} |g" $DESTINATION/Designs.md &
     # sed -i -r "s|<img src=\"(.*)\" |<img src={require(\"\1\").default} |g" $DESTINATION/Designs.md &
-    sed -i '' "s|<img src=\"\\(.*\\)\" |<img src={require(\"\1\").default} |g" $DESTINATION/Designs.md &
+    sed -i $SED_EXTENSION "s|<img src=\"\\(.*\\)\" |<img src={require(\"\1\").default} |g" $DESTINATION/Designs.md &
 
 wait
 
