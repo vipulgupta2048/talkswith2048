@@ -25,6 +25,7 @@
 		"@cmfcmf/docusaurus-search-local": "^1.1.0",
 		"@docusaurus/core": "3.2.1",
 		"@docusaurus/preset-classic": "3.2.1",
+		"@docusaurus/utils-validation": "^3.2.1",
 		"@mdx-js/react": "^3.0.1",
 		"clsx": "^2.1.0",
 		"cspell": "^8.6.1",
