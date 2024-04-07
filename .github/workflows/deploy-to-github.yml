@@ -23,7 +23,7 @@ jobs:
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
       cancel-in-progress: true
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
         with:
@@ -38,6 +38,8 @@ jobs:
 
       - name: Build website
         shell: bash
+        env:
+          SOURCE_FILE: README-temp.md
         run: npm run build
 
       # Popular action to deploy to GitHub Pages:

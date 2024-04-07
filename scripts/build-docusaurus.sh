@@ -13,6 +13,7 @@ SOURCE_FILE=README-temp.md
 DESTINATION=$SCRIPT_DIR/../docs
 
 # Replacing relative paths from README to match docusaurus
+ls
 sed -i '' 's|\./docs/img|\./img|g' $SOURCE_FILE
 
 # Replacing img src tag with JSX require for all instances that matches
