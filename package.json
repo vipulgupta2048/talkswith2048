@@ -1,46 +1,67 @@
 {
-  "name": "vipul-docs",
-  "version": "1.0.0",
-  "scripts": {
-    "docusaurus": "docusaurus",
-    "start": "./scripts/build-docusaurus.sh && docusaurus start",
-    "build": "./scripts/build-docusaurus.sh && docusaurus build",
-    "generate": "./scripts/build-docusaurus.sh",
-    "swizzle": "docusaurus swizzle",
-    "deploy": "docusaurus deploy",
-    "clear": "docusaurus clear",
-    "serve": "docusaurus serve",
-    "write-translations": "docusaurus write-translations",
-    "write-heading-ids": "docusaurus write-heading-ids",
-    "test:spellcheck": "npx cspell 'README.md' --gitignore -c cspell.json --unique --words-only --no-progress"
-  },
-  "dependencies": {
-    "@docusaurus/core": "3.1.1",
-    "@docusaurus/preset-classic": "3.1.1",
-    "@mdx-js/react": "^3.0.1",
-    "clsx": "^2.1.0",
-    "cspell": "^8.6.0",
-    "prism-react-renderer": "^2.3.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
-  "devDependencies": {
-    "@docusaurus/module-type-aliases": "3.1.1",
-    "@docusaurus/types": "3.1.1"
-  },
-  "browserslist": {
-    "production": [
-      ">0.5%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 3 chrome version",
-      "last 3 firefox version",
-      "last 5 safari version"
-    ]
-  },
-  "engines": {
-    "node": ">=18.0"
-  }
+	"name": "vipulgupta2048-docs",
+	"version": "1.0.0",
+	"scripts": {
+		"docusaurus": "docusaurus",
+		"start": "npm run generate && docusaurus start",
+		"build": "npm run generate && docusaurus build",
+		"generate": "./scripts/build-docusaurus.sh",
+		"swizzle": "docusaurus swizzle",
+		"deploy": "docusaurus deploy",
+		"clear": "docusaurus clear",
+		"serve": "docusaurus serve",
+		"write-translations": "docusaurus write-translations",
+		"write-heading-ids": "docusaurus write-heading-ids",
+		"test:spellcheck": "npx cspell 'README.md' --gitignore -c cspell.json --unique --words-only --no-progress",
+		"typecheck": "tsc",
+		"lint": "npm run eslint:check && npm run prettier:check",
+		"lint:fix": "npm run eslint:fix && npm run prettier:fix",
+		"eslint:check": "eslint . --ext .json,.js,.jsx,.ts,.tsx",
+		"prettier:check": "prettier --check .",
+		"eslint:fix": "eslint . --fix --ext .json,.js,.jsx,.ts,.tsx",
+		"prettier:fix": "prettier --write ."
+	},
+	"dependencies": {
+		"@cmfcmf/docusaurus-search-local": "^1.1.0",
+		"@docusaurus/core": "3.2.1",
+		"@docusaurus/preset-classic": "3.2.1",
+		"@mdx-js/react": "^3.0.1",
+		"clsx": "^2.1.0",
+		"cspell": "^8.6.1",
+		"docusaurus-plugin-sass": "^0.2.5",
+		"prism-react-renderer": "^2.3.1",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"sass": "^1.74.1"
+	},
+	"devDependencies": {
+		"@docusaurus/module-type-aliases": "3.2.1",
+		"@docusaurus/tsconfig": "^3.2.1",
+		"@docusaurus/types": "3.2.1",
+		"@typescript-eslint/eslint-plugin": "^7.5.0",
+		"eslint": "^8.57.0",
+		"eslint-config-prettier": "^9.1.0",
+		"prettier": "^3.2.5",
+		"typescript": "^5.4.4"
+	},
+	"browserslist": {
+		"production": [
+			">0.5%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 3 chrome version",
+			"last 3 firefox version",
+			"last 5 safari version"
+		]
+	},
+	"engines": {
+		"node": ">=18.0"
+	},
+	"overrides": {
+		"@cmfcmf/docusaurus-search-local": {
+			"@docusaurus/core": "^3.2.1"
+		}
+	}
 }
