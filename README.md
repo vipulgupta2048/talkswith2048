@@ -4,7 +4,7 @@
 
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fvipulgupta2048%2Ftalkswith2048&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com) [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/) [![Lychee Link Checker](https://github.com/vipulgupta2048/talkswith2048/actions/workflows/link-checker.yml/badge.svg?branch=master)](https://github.com/vipulgupta2048/talkswith2048/actions/workflows/link-checker.yml)
 
-> This repository acts as a showcase of just about ... everything I have done since I got introduced to open-source back in 2016. It's an odometer that keeps track of my professional journey for the time well spent on Earth. It also works well for the usual bouts of imposter syndrome and recruiter screens when looking for a role.
+> This repository acts as a showcase of just about ... everything I have done since I got introduced to tech back in 2016. It's an odometer that keeps track of my professional journey for I think was time well spent on Earth giving back. Personal introspection aside, maintaing this collection has worked well for sudden bouts of either imposter syndrome hitting or recruiter screens when looking for a role. 
 
 Welcome to my corner of the internet!
  
@@ -137,7 +137,7 @@ From local meetups to global conferences, I've aimed to weave technical concepts
 
 ## Conferences with 2048
 
-> From attending, to volunteering, to organizing and networking in conferences. Whatever role I play in a conference. I add it here. Conferences are strange for me in their phenomena. Apart from all the travel, meeting people, preparing to take the stage there is a genuine fear of missing out for me. If I don't attend one, there is FOMO. But, the more you connect in one, the more FOMO you get. Whether that's the case for you. Few things are certain. Social batteries are bound to run out. Leg pain is mandatory. And, If you are attending every single session then probably rethink your approach and spend some time in the hallway. See you there!
+From attending, to volunteering, to organizing and networking in conferences. Whatever role I play in a conference. I add it here. Conferences are strange for me in their phenomena. Apart from all the travel, meeting people, preparing to take the stage there is a genuine fear of missing out for me. If I don't attend one, there is FOMO. But, the more you connect in one, the more FOMO you get. Whether that's the case for you. Few things are certain. Social batteries are bound to run out. Leg pain is mandatory. And, If you are attending every single session then probably rethink your approach and spend some time in the hallway. See you there!
 
 | Conference       | Website/Link for event | Comments |
 | --- |:---:|---|
@@ -328,20 +328,6 @@ After being an organizer for many years to a number of communities, I have thoug
 </table>
 
 ---
-
-## Hire 2048
-
-If you like what you see for a 
-
-If you like what I do and want to hire me as a [Developer](https://github.com/vipulgupta2048), [Documentarian](https://bit.ly/whatmixster), or [wearing multiple hats](https://github.com/vipulgupta2048/talkswith2048/) at your venture. Then, feel free to drop me a message over on [@vipulgupta2048](https://twitter.com/vipulgupta2048) or reach me anywhere on the web by [`vipulgupta2048`](https://googlethatforyou.com?q=vipulgupta2048). Always looking for a new challenge in building products from first principles, sustaining open-source communities around those products, and ensuring it ships with documentation on release. 
-
-## Failures of 2048
-
-Unfortunately, that list will take way too long to compile. You would have better chances of escaping the gravitational pull of a small black hole than getting that list. What I mean by that for people reading this is, I could have achieved nothing of this sort without failing a thousand times first, and then getting up just to fail again. You (The Reader) my advice for you is to dig deep, don't lose hope, and give your best shot to everything from this moment on. Life's got something nice in store for all of you. Trust me and if you think you are mediocre.
-
-Then, `fuck mediocrity`
-
-At last, I am thankful for each person who waited till my talk finished to share their valuable feedback, shared opportunities, and asked the right questions that made me learn more. The people who kept me soaring in high regard and also kept me close to the ground. Every bit of my Bachelor's helped me in my growth essentially. Be it personal, academic, professional. I hope this information is useful and inspiring, for people looking to contribute and expose themselves to everything that is out there and make the most of it. I for one, have always loved to do that. Read more good things about these [people in my life](https://mixster.dev/2020/03/19/thankyou2020/#more-2367).
 
 
 ## Credits

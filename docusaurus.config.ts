@@ -143,7 +143,7 @@ const config = {
       footer: {
         links: [
           {
-            html: `Built with 💜 on Docusaurus, written by @${org}</br>If you find this pretty cool, then steal responsibly 👀, give a <a href=${githubUrl}>star 🌟</a> and as always live in the mix!`,
+            html: `Built with 💜 on Docusaurus, written by @${org}</br><a href="/docs/Introduction##credits">Steal responsibly</a> 👀, give it a <a href=${githubUrl}>star 🌟</a> if you find this cool and as always live in the mix!`,
           },
         ],
       },
