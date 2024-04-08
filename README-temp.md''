@@ -185,7 +185,7 @@ From attending, to volunteering, to organizing and networking in conferences. Wh
 | Smart India Hackathon 2019 | [Website](https://www.sih.gov.in) | Participated in the World's biggest hackathon on problem statement of Environment Engineering solving problems that benefit our entire community. Inspired over 50 teams from ALiAS to participate with their innovative statements. Facilitated 2 teams with reimbursements for their travel which cleared the national rounds. Go ALiAS! |
 | PenApps 2019 | [Website](https://pennapps.com) | Selected with my team StacksFX |
 | FOSS Hack 2020 | [Website](https://fossunited.org/hackathon) | Mentor for hardware projects at FOSS Hack 2020 and Speaker. This was an online 48-hour hackathon with a great talks agenda and an equally well-organized team. It was quite fun to see about 150+ FOSS projects getting out there.  |
-| HackBMU 2020 | [Website](https://hackbmu-3.devfolio.co/) | Judged the 3rd Iteration of HackBMU at BML Munjal College. Was my first time as a judge and a fitting end to an era of participating at hackathons as a student <img src="./docs/img/hackbmu/1.png" height="{350}" width="{450}" /> |
+| HackBMU 2020 | [Website](https://hackbmu-3.devfolio.co/) | Judged the 3rd Iteration of HackBMU at BML Munjal College. Was my first time as a judge and a fitting end to an era of participating at hackathons as a student <img src="./img/hackbmu/1.png" height="{350}" width="{450}" /> |
 | Sabbatical: Covid 2020-2021 | - | - |
 |~ 2024 ~|||
 | GitLab Pitch Competition | [Website](https://gitlab.devpost.com) | Held during January '2024. The hackathon was a chance to build a proof of concept and a pitch to improve services on GitLab's platform. I pitched TestButler as a new pipeline for GitLab customers to test their code directly on their devices using GitLab Runners and Balena. |
@@ -213,14 +213,14 @@ I also released a newsletter, [Mixster x Mixtapes](https://buttondown.email/vipu
 
 ## Google Summer of Code with 2048
 
-<img src="./docs/img/gsoc/gsoc.jpg" height="{380}" width="{540}" />
+<img src="./img/gsoc/gsoc.jpg" height="{380}" width="{540}" />
 
 From the start, I had the pleasure of contributing and participating in Google Summer of Code with [Sugar Labs in 2018](https://github.com/vipulgupta2048/mygsoc) and again a year later with [The Scrapy Project in 2019](https://github.com/vipulgupta2048/mygsoc). Executing these projects and working with the organizations taught me a lot. Even after the projects have finished, I continued to volunteer with Sugar Labs focusing on Outreach efforts and playing an active part in their Google OSS programs. I contribute code frequently to ScrapingHub and The Scrapy Project. These were good times indeed.
 
 | Project  | Project org | Proposal Links | Work Product | Status/LoC |
 | --- | --- | --- | --- | --- |
-| [Integrate Cerberus in Spidermon](https://summerofcode.withgoogle.com/archive/2019/projects/5471827642548224/) | The Scrapy Project (GSoC 2019) | [Project Proposal #1](https://docs.google.com/document/d/14iLYsnZYpxR-YvbceB6VljyCBwCFsPk4f-iaoPGAUZY/edit?usp=sharing) & [Project Proposal #2](https://docs.google.com/document/d/1FGd1te3A07PDIcQheBDparclUemU1CE_ixngHTVvQzs/edit?usp=sharing) | [Final Implementation](https://github.com/scrapinghub/spidermon/pull/201) and [Work Report](https://mixster.dev/2019/08/24/integrate-cerberus-work-report/)| **Completed** :heavy_check_mark: [Letter of Completion](./docs/img/gsoc/GSoC-2019-Certificate-for-Vipul-Gupta.pdf) & [Completion Certificate](./docs/img/gsoc/GSoC-2019-Completion-Verification-Letter-for-Vipul-Gupta-(1).pdf) |
-| [Setting up of Activity Server and WikiPort (Activity Migration)](https://summerofcode.withgoogle.com/archive/2018/projects/4997424095428608/) | Sugar Labs (GSoC 2018) | [Project Proposal](https://docs.google.com/document/d/1mPd_SeUqeJF_yKWVEDFuzU7LWsnUFSbLdQQ44HvsYyA/edit?usp=sharing) | [**Work Product**](https://github.com/vipulgupta2048/sugarport) | **Completed** :heavy_check_mark: [Letter of Completion](./docs/img/gsoc/GSoC-2018-Completion-Verification-Letter-for-Vipul-Gupta.pdf) & [Completion Certificate](./docs/img/gsoc/GSoC-2018-Certificate-of-Completion-for-Vipul-Gupta.pdf) |
+| [Integrate Cerberus in Spidermon](https://summerofcode.withgoogle.com/archive/2019/projects/5471827642548224/) | The Scrapy Project (GSoC 2019) | [Project Proposal #1](https://docs.google.com/document/d/14iLYsnZYpxR-YvbceB6VljyCBwCFsPk4f-iaoPGAUZY/edit?usp=sharing) & [Project Proposal #2](https://docs.google.com/document/d/1FGd1te3A07PDIcQheBDparclUemU1CE_ixngHTVvQzs/edit?usp=sharing) | [Final Implementation](https://github.com/scrapinghub/spidermon/pull/201) and [Work Report](https://mixster.dev/2019/08/24/integrate-cerberus-work-report/)| **Completed** :heavy_check_mark: [Letter of Completion](./img/gsoc/GSoC-2019-Certificate-for-Vipul-Gupta.pdf) & [Completion Certificate](./img/gsoc/GSoC-2019-Completion-Verification-Letter-for-Vipul-Gupta-(1).pdf) |
+| [Setting up of Activity Server and WikiPort (Activity Migration)](https://summerofcode.withgoogle.com/archive/2018/projects/4997424095428608/) | Sugar Labs (GSoC 2018) | [Project Proposal](https://docs.google.com/document/d/1mPd_SeUqeJF_yKWVEDFuzU7LWsnUFSbLdQQ44HvsYyA/edit?usp=sharing) | [**Work Product**](https://github.com/vipulgupta2048/sugarport) | **Completed** :heavy_check_mark: [Letter of Completion](./img/gsoc/GSoC-2018-Completion-Verification-Letter-for-Vipul-Gupta.pdf) & [Completion Certificate](./img/gsoc/GSoC-2018-Certificate-of-Completion-for-Vipul-Gupta.pdf) |
 
 **Blogs, Podcasts & Guides**
 
@@ -241,9 +241,9 @@ If you like to read more, I can recommend.
 | Program  | Organization | Status/LoC |
 | --- | --- | --- |
 | Mentoring contributors at my Alma Mater | [ALiAS](https://asetalias.in) | My proudest achievement has been founding an independent, open-source college community with my peers. Few students in a classroom peer learning git and GitHub kickstarted the open-source culture at my Alma mater that grew into hundreds of students across campuses learning to contribute to FOSS. The community decayed at one point but never died. It's flourishing with folks self-organizing internships, summer of code programs, hackathons and conferences. It's free, open for all and has no hierarchal governance model. Student volunteers run events every week with support from seniors (us) who provide mentorship, opportunities and guidance that we never received. I started the [ALiAS AMA](https://mixster.dev/2019/06/01/aliasama/), and [Abroad Opportunities Fund Scholarship](https://amity.edu/admissions-scholarship.aspx) to help students get access to every opportunity they want to reach out for.  | 
-| [Google Code In 2019](https://codein.withgoogle.com/archive/2019/organization/5148169659219968/) | Sugar Labs | [Certificate](./docs/img/gsoc/GCI-2019-Certificate-5509470436720640.pdf) Google Code-in was a contest that introduced pre-university students (ages 13-17) to open source software development. I participated mentoring students to accomplish a total of 178 tasks alloted by the organization. | 
+| [Google Code In 2019](https://codein.withgoogle.com/archive/2019/organization/5148169659219968/) | Sugar Labs | [Certificate](./img/gsoc/GCI-2019-Certificate-5509470436720640.pdf) Google Code-in was a contest that introduced pre-university students (ages 13-17) to open source software development. I participated mentoring students to accomplish a total of 178 tasks alloted by the organization. | 
 | [OpenEBS Hackfest](https://mixster.dev/2018/05/26/writing-documentation-hacking-with-go-for-openebs-foss/) | OpenEBS | OpenEBS Hackfest is a 3-month long open-source contribution festival. Awarded star contributor for major contributions to documentation & its pipelines. [Contributions](https://github.com/search?utf8=%E2%9C%93&q=org:openebs+is:pr++label:summerhack++author:vipulgupta2048+is:merged&type=Issues), [Star Contributor](https://twitter.com/vipulgupta2048/status/1018540819911987200), [prizes](https://twitter.com/openebs/status/1002182541745385473?s=20) |
-| [Google Code In 2018](https://codein.withgoogle.com/archive/2018/organization/5131432846426112/) | Sugar Labs | [Certificate](./docs/img/gsoc/GCI-2018-Certificate-for-Vipul-Gupta.pdf) Google Code-in was a contest that introduced pre-university students (ages 13-17) to open source software development. I participated mentoring students to accomplish a total of 135 tasks alloted by the organization.  |
+| [Google Code In 2018](https://codein.withgoogle.com/archive/2018/organization/5131432846426112/) | Sugar Labs | [Certificate](./img/gsoc/GCI-2018-Certificate-for-Vipul-Gupta.pdf) Google Code-in was a contest that introduced pre-university students (ages 13-17) to open source software development. I participated mentoring students to accomplish a total of 135 tasks alloted by the organization.  |
 | Peer Mentor | 1 Million Women to Tech x Girlscript Summer of Code  | Mentored Women in 1 Million Woman to Tech Python track in the summer'18 to help them kickstart their careers in tech and help them fulfill their true aspirations by utilizing their full potential. Mentored the project WTF Python in GirlScript Summer of Code for the GirlScript foundation for 3+ months to help people contribute to the open-source project, WTF Python. |
 
 
@@ -253,8 +253,8 @@ Who knew? I love working on product design so much. It all started with this tak
 
 | Products  | Project Link | Comments |
 | --- |:---:|---|
-|![](./docs/img/mockup/bookhustler.png)| [Behance](https://www.behance.net/gallery/86486979/The-BookHustler-Project) | The BookHustler Project was my first project. It's an e-commerce app for buying, selling, and renting second-hand books online. I have [documented the idea](https://docs.google.com/document/d/1Ppgt6Pk2n0Mdp2YpBTtIym8Nx4ugAlAz92r067DDsEU/edit?usp=sharing) as well behind the project if you like to read. It has all the information from the logistics of how books are bought and sold to the renting model involved. [Adobe XD Project file](https://drive.google.com/uc?export=download&id=1z-wf3OHqc2CAsAOl8eHVXJsBojeRp8d8) |
-| ![](./docs/img/mockup/meetbot.png) | [GitHub](https://github.com/vipulgupta2048/meetbot) | Meetbot is a Google Meet bot that makes your meetings frictionless. It records chat transcript and voice captions, validates user audio and auto-records meetings which it can join automatically from a given calendar. |
+|![](./img/mockup/bookhustler.png)| [Behance](https://www.behance.net/gallery/86486979/The-BookHustler-Project) | The BookHustler Project was my first project. It's an e-commerce app for buying, selling, and renting second-hand books online. I have [documented the idea](https://docs.google.com/document/d/1Ppgt6Pk2n0Mdp2YpBTtIym8Nx4ugAlAz92r067DDsEU/edit?usp=sharing) as well behind the project if you like to read. It has all the information from the logistics of how books are bought and sold to the renting model involved. [Adobe XD Project file](https://drive.google.com/uc?export=download&id=1z-wf3OHqc2CAsAOl8eHVXJsBojeRp8d8) |
+| ![](./img/mockup/meetbot.png) | [GitHub](https://github.com/vipulgupta2048/meetbot) | Meetbot is a Google Meet bot that makes your meetings frictionless. It records chat transcript and voice captions, validates user audio and auto-records meetings which it can join automatically from a given calendar. |
 
 ---
 
@@ -293,35 +293,35 @@ After being an organizer for many years to a number of communities, I have thoug
   <tbody>
   <tr>
       <td align="center" width="33%">
-         <img src="./docs/img/design/1.png" style={{maxWidth: '100%'}} /><p><a href="https://www.meetup.com/pydelhi/events/263185692/">[Meetup]</a> about Quantum random number generators by making the brain attaining thug life in this b/w poster.</p>
+         <img src="./img/design/1.png" style={{maxWidth: '100%'}} /><p><a href="https://www.meetup.com/pydelhi/events/263185692/">[Meetup]</a> about Quantum random number generators by making the brain attaining thug life in this b/w poster.</p>
       </td>
       <td align="center" width="33%">
-        <img src="./docs/img/design/2.png" style={{maxWidth: '100%'}} /><p>[UnMeetup] Loved this poster, just because of the bright palette of colors and fusion of Hindi &amp; English giving a modern, funky look!.</p>
+        <img src="./img/design/2.png" style={{maxWidth: '100%'}} /><p>[UnMeetup] Loved this poster, just because of the bright palette of colors and fusion of Hindi &amp; English giving a modern, funky look!.</p>
       </td>
       <td align="center" width="33%">
-        <img src="./docs/img/design/3.png" style={{maxWidth: '100%'}} /><p><a href="https://www.meetup.com/ilugdelhi/events/jkbtdqyznbqb/">[Meetup]</a>Took a wanted poster, used Digital Ocean's wallpapers and Linux terminal as a treasure hunt advert for ILuGD's Anniversary meetup.</p>
+        <img src="./img/design/3.png" style={{maxWidth: '100%'}} /><p><a href="https://www.meetup.com/ilugdelhi/events/jkbtdqyznbqb/">[Meetup]</a>Took a wanted poster, used Digital Ocean's wallpapers and Linux terminal as a treasure hunt advert for ILuGD's Anniversary meetup.</p>
       </td>
     </tr>
     <tr>
       <td align="center">
-        <img src="./docs/img/design/4.png" /><p><a href="https://www.meetup.com/ilugdelhi/events/jkbtdqyznbqb/">[Meetup]</a> Had tons of fun designing this black beauty using Canva Pro, picked a fashion design template, added polaroid and glimmer circle. Used Hindi to re-introduce the funk back into design.</p>
+        <img src="./img/design/4.png" /><p><a href="https://www.meetup.com/ilugdelhi/events/jkbtdqyznbqb/">[Meetup]</a> Had tons of fun designing this black beauty using Canva Pro, picked a fashion design template, added polaroid and glimmer circle. Used Hindi to re-introduce the funk back into design.</p>
       </td>
       <td align="center">
-        <img src="./docs/img/design/5.png" /><a href="https://mixster.dev/2019/11/16/insync-onedrive-client-for-linux/">[Blog]</a><p>A sweet &amp; simple poster designed for a sponsor on their new OneDrive Linux client release blog.</p>
+        <img src="./img/design/5.png" /><a href="https://mixster.dev/2019/11/16/insync-onedrive-client-for-linux/">[Blog]</a><p>A sweet &amp; simple poster designed for a sponsor on their new OneDrive Linux client release blog.</p>
       </td>
       <td align="center">
-        <img src="./docs/img/design/6.png" /><p><a href="https://www.meetup.com/pydelhi/events/267949805/">[Meetup]</a> Saw this poster design, tweaked color palette and fonts to represent Python syntax with highlighting, originally for 9th Anniversary of PyDelhi.</p>
+        <img src="./img/design/6.png" /><p><a href="https://www.meetup.com/pydelhi/events/267949805/">[Meetup]</a> Saw this poster design, tweaked color palette and fonts to represent Python syntax with highlighting, originally for 9th Anniversary of PyDelhi.</p>
       </td>
     </tr>
     <tr>
       <td align="center">
-        <img src="./docs/img/design/7.png" /><p>Sticker design from the awesome <a href="https://www.stickermule.com/en-in/unlock?ref_id=0751801701&utm_medium=link&utm_source=invite">StickerMule Design</a> Team.</p>
+        <img src="./img/design/7.png" /><p>Sticker design from the awesome <a href="https://www.stickermule.com/en-in/unlock?ref_id=0751801701&utm_medium=link&utm_source=invite">StickerMule Design</a> Team.</p>
       </td>
       <td align="center">
-        <img src="./docs/img/design/8.png" /><p>Sticker design from the awesome <a href="https://www.stickermule.com/en-in/unlock?ref_id=0751801701&utm_medium=link&utm_source=invite">StickerMule Design</a> Team.</p>
+        <img src="./img/design/8.png" /><p>Sticker design from the awesome <a href="https://www.stickermule.com/en-in/unlock?ref_id=0751801701&utm_medium=link&utm_source=invite">StickerMule Design</a> Team.</p>
       </td>
       <td align="center">
-        <img src="./docs/img/design/9.png" /><p>Sticker design from the awesome <a href="https://www.stickermule.com/en-in/unlock?ref_id=0751801701&utm_medium=link&utm_source=invite">StickerMule Design</a> Team.</p>
+        <img src="./img/design/9.png" /><p>Sticker design from the awesome <a href="https://www.stickermule.com/en-in/unlock?ref_id=0751801701&utm_medium=link&utm_source=invite">StickerMule Design</a> Team.</p>
       </td>
     </tr>
   </tbody>

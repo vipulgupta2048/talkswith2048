@@ -12,16 +12,21 @@ cp README.md README-temp.md
 SOURCE_FILE=README-temp.md
 DESTINATION=$SCRIPT_DIR/../docs
 
+OS="$(uname)"
+if [[ "$OS" == "Darwin" ]]; then
+    SED_EXTENSION="-i ''"
+else
+    SED_EXTENSION="-i"
+fi
+
 # Replacing relative paths from README to match docusaurus
-sed -i -r 's|\./docs/img|\./img|g' $SOURCE_FILE
+sed $SED_EXTENSION 's|\./docs/img|\./img|g' $SOURCE_FILE
 
 # Replacing img src tag with JSX require for all instances that matches
-sed -i -r "s|<img src=\"\(.*\)\" height=\"\(.*\)\" width=\"\(.*\)\" />|<img src={require('\1').default} height=\"\2\" width=\"\3\" />|g" $SOURCE_FILE
+# sed -i -r "s|<img src=\"\(.*\)\" height=\"\(.*\)\" width=\"\(.*\)\" />|<img src={require(\"\1\").default} height=\"\2\" width=\"\3\" />|g" $SOURCE_FILE
+# sed -i -r "s|<img src=\"(.*)\" height=\"(.*)\" width=\"(.*)\" />|<img src={require(\"\1\").default} height=\"\2\" width=\"\3\" />|g" $SOURCE_FILE
+sed $SED_EXTENSION "s|<img src=\"\\(.*\\)\" height=\"\\(.*\\)\" width=\"\\(.*\\)\" />|<img src={require(\"\1\").default} height=\"\2\" width=\"\3\" />|g" $SOURCE_FILE
 
-# Wiping old snippets
-# if [ -d "$SCRIPT_DIR/../docs/snippets/" ]; then
-#     rm -rf $SCRIPT_DIR/../docs/snippets/*
-# fi
 
 echo "Generating partials for docs"
 
@@ -42,11 +47,13 @@ $SCRIPT_DIR/extract-markdown.sh "Organizing with 2048" <$SOURCE_FILE >Communitie
 $SCRIPT_DIR/extract-markdown.sh "Podcasts with 2048" <$SOURCE_FILE >Podcasts.md && mv ./Podcasts.md $DESTINATION/ &
 
 $SCRIPT_DIR/extract-markdown.sh "Designing sometimes with 2048" <$SOURCE_FILE >Designs.md && mv ./Designs.md $DESTINATION/ &&
-sed -i -r "s|<img src=\"\(.*\)\" |<img src={require('\1').default} |g" $DESTINATION/Designs.md &
+    # sed -i -r "s|<img src=\"\(.*\)\" |<img src={require(\"\1\").default} |g" $DESTINATION/Designs.md &
+    # sed -i -r "s|<img src=\"(.*)\" |<img src={require(\"\1\").default} |g" $DESTINATION/Designs.md &
+    sed $SED_EXTENSION "s|<img src=\"\\(.*\\)\" |<img src={require(\"\1\").default} |g" $DESTINATION/Designs.md &
 
 wait
 
 # Cleanup
 rm $SOURCE_FILE
-rm -r *.md-r
-rm -r $DESTINATION/*.md-r
+rm -fr *.md-r
+rm -fr $DESTINATION/*.md-r

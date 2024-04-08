@@ -4,30 +4,32 @@
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
-import {themes as prismThemes} from 'prism-react-renderer';
+import { themes as prismThemes } from 'prism-react-renderer';
 
-const org = "vipulgupta2048" 
-const repo = "talkswith2048" 
+const org = "vipulgupta2048"
+const repo = "talkswith2048"
+const tagline = `Docs on everything ${org}`
+const githubUrl = `https://github.com/${org}/${repo}`
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: org,
-  tagline: `Docs on everything ${org}.`,
+  tagline: tagline,
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: `https://vipulgupta2048.github.io/`,
+  url: `https://mixster.dev`,
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: repo,
+  baseUrl: `/docs/`,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: org, // Usually your GitHub org/user name.
   projectName: repo, // Usually your repo name.
 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'throw',
+  onBrokenLinks: 'warn',
+  onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -36,6 +38,30 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
+
+  plugins: [
+    [
+      require.resolve("@cmfcmf/docusaurus-search-local"),
+      {
+        // whether to index docs pages
+        indexDocs: true,
+        // whether to index static pages
+        indexPages: true
+      },
+    ],
+    // [
+    //   '@docusaurus/plugin-ideal-image',
+    //   {
+    //     quality: 85,
+    //     max: 2000, // max resized image's size.
+    //     min: 600, // min resized image's size. if original is lower, use that size.
+    //     steps: 4, // the max number of images generated between min and max (inclusive)
+    //     disableInDev: false,
+    //   },
+    // ],
+    ['docusaurus-plugin-sass', {}],
+  ],
+
 
   presets: [
     [
@@ -53,12 +79,11 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            `https://github.com/${org}/${repo}/edit/master/docs/cd`,
+            `${githubUrl}/edit/master/docs/`,
           routeBasePath: '/'
-
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: [require.resolve("./src/css/custom.scss")],
         },
       }),
     ],
@@ -67,6 +92,24 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      metadata: [
+        {
+          name: "description",
+          content: tagline,
+        },
+        {
+          name: "keywords",
+          content:
+            "vipulgupta2048,mixster,developer,engineer,javascript,python,iot,kernel,open,source,rest,testing,hardware,loop, system,ci,cd,devops,cloud,balena,open-source,gophers,summit,talks,conferences",
+        },
+        {
+          name: "twitter:card",
+          content: "summary",
+        },
+      ],
+      colorMode: {
+        respectPrefersColorScheme: true,
+      },
       docs: {
         sidebar: {
           hideable: true,
@@ -77,77 +120,32 @@ const config = {
       // Replace with your project's social card
       image: 'talkswith2048.png',
       navbar: {
-        title: repo,
+        hideOnScroll: true,
         logo: {
-          alt: `${repo}-logo`,
+          alt: `${org}-logo`,
           src: 'img/talkswith2048.png',
+          // srcDark: 'img/talkswith2048.png',
         },
         items: [
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Tutorial',
+            position: 'right',
+            label: 'The Good Stuff',
           },
           {
-            href: `https://github.com/${org}/${repo}`,
-            label: 'GitHub',
+            href: `${githubUrl}/issues/new`,
+            label: "New Ideas?",
             position: 'right',
           },
         ],
       },
       footer: {
-        style: 'dark',
         links: [
           {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Everything open-source',
-                to: '/open-source',
-              },
-            ],
-          },
-          {
-            title: 'Social',
-            items: [
-              {
-                label: 'Twitter',
-                href: `https://twitter.com/${org}`,
-              },
-              {
-                label: 'Linkedin',
-                href: `https://linkedin.com/in/${org}/`,
-              },
-              {
-                label: 'GitHub',
-                href: `https://github.com/${org}/`,
-              },
-              {
-                label: 'Blog',
-                href: 'https://mixster.dev',
-              },              
-            ],
-          },
-          {
-            title: 'Contact',
-            items: [
-              {
-                label: 'Email',
-                href: `mailto:${org}[@]gmail[DoT]com`,
-              },
-              {
-                label: 'Instagram',
-                href: `https://instagram.com/vipulgupta.travel/`,
-              },
-              {
-                label: 'Signal',
-                href: `https://signal.me/#vipulgupta2048`,
-              },
-            ],
+            html: `Built with 💜 on Docusaurus, written by @${org}</br><a href="/docs/Introduction##credits">Steal responsibly</a> 👀, give it a <a href=${githubUrl}>star 🌟</a> if you find this cool and as always live in the mix!`,
           },
         ],
-        copyright: `This webiste and all its assets are owned by Vipul Gupta and is licensed under CC BY-NC 4.0`,
       },
       prism: {
         theme: prismThemes.github,

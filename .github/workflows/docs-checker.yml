@@ -9,6 +9,7 @@ on:
     branches:
       - "master"
       - 'main'
+
   # Runs on each push
   push:
     branches:
@@ -19,6 +20,7 @@ on:
 jobs:
   Checking-Docs:
     runs-on: ubuntu-latest
+
     steps:
       # Checks out a copy of your repository on the ubuntu-latest machine
       - name: Checkout code
@@ -40,11 +42,41 @@ jobs:
             --config ./lychee.toml
             README.md
       
-      # Check spelling
-      - name: Spelling Checker
-        id: spellcheck
-        run: |
-          npm run test:spellcheck
+      # # Check spelling
+      # - name: Spelling Checker
+      #   id: spellcheck
+      #   run: |
+      #     npm run test:spellcheck
+
+      - name: Run LanguageTool
+        uses: reviewdog/action-languagetool@v1
+        with:
+          github_token: ${{ secrets.github_token }}
+          reporter: github-pr-review
+          level: info
+          patterns: "**.md"
+          language: "en-US"
+          # LanguageTool flags - see https://languagetool.org/http-api/swagger-ui/#!/default/post_check
+          enabled_rules: "WHITESPACE_RULE,EN_QUOTES,DASH_RULE,WORD_CONTAINS_UNDERSCORE,UPPERCASE_SENTENCE_START,ARROWS,COMMA_PARENTHESIS_WHITESPACE,UNLIKELY_OPENING_PUNCTUATION,SENTENCE_WHITESPACE,CURRENCY,EN_UNPAIRED_BRACKETS,PHRASE_REPETITION,PUNCTUATION_PARAGRAPH_END,METRIC_UNITS_EN_US,ENGLISH_WORD_REPEAT_BEGINNING_RULE"
+          disabled_categories: "TYPOS,TYPOGRAPHY,CASING"
+
+      - name: Run misspell
+        uses: reviewdog/action-misspell@v1
+        with:
+          github_token: ${{ secrets.github_token }}
+          reporter: github-pr-review
+          pattern: "**.md"
+          level: info
+          locale: "US"
+
+      - uses: reviewdog/action-alex@v1
+        with:
+          github_token: ${{ secrets.github_token }}
+          # Change reviewdog reporter if you need [github-pr-check,github-check,github-pr-review].
+          reporter: github-pr-review
+          # Change reporter level if you need.
+          # GitHub Status Check won't become failure with warning.
+          level: warning
 
       - name: Create Issue From File
         if: |

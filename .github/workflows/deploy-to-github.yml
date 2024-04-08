@@ -6,6 +6,11 @@ on:
     branches:
       - main
       - master
+  # Runs on each PR
+  pull_request:
+    branches:
+      - "master"
+      - 'main'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -33,11 +38,14 @@ jobs:
 
       - name: Build website
         shell: bash
+        env:
+          SOURCE_FILE: README-temp.md
         run: npm run build
 
       # Popular action to deploy to GitHub Pages:
       # Docs: https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-docusaurus
       - name: Deploy to GitHub Pages
+        if: github.event_name != 'pull_request'
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}

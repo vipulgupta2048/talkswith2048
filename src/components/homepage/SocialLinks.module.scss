@@ -1,0 +1,53 @@
+@import "../../css/mixins";
+
+.socialContainer {
+  padding: 2rem 0 4rem;
+}
+
+.socialLinks {
+  @include small-size {
+    & > div:nth-child(odd) {
+      padding-right: calc(var(--ifm-spacing-horizontal) / 2);
+    }
+    & > div:nth-child(even) {
+      padding-left: calc(var(--ifm-spacing-horizontal) / 2);
+    }
+  }
+}
+
+.col {
+  @include small-size {
+    --ifm-col-width: 50%;
+    margin-top: var(--ifm-spacing-vertical);
+  }
+}
+
+.btn {
+  width: 100%;
+  border-color: var(--ifm-color-emphasis-200);
+  padding: 1rem 0;
+
+  &--active,
+  &:active,
+  &:hover,
+  &:focus {
+    .btnText {
+      color: var(--ifm-font-color-base-inverse);
+    }
+    .btnIcon {
+      fill: var(--ifm-font-color-base-inverse);
+    }
+  }
+}
+
+.btnIcon {
+  display: block;
+  width: 1.5rem;
+  padding: 0.5rem 0;
+  margin: 0 auto;
+  fill: var(--ifm-button-color);
+}
+
+.btnText {
+  color: var(--ifm-font-color-base);
+}
