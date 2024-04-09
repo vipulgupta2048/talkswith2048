@@ -134,16 +134,51 @@ const config = {
             label: 'The Good Stuff',
           },
           {
+            href: `https://mixster.dev`,
+            label: "Mixster",
+            position: 'right',
+          },
+          {
             href: `${githubUrl}/issues/new`,
             label: "New Ideas?",
             position: 'right',
+          },
+          {
+            position: 'right',
+            label: 'Usual Suspects',
+            items: [
+              {
+                href: `https://github.com/${org}`,
+                label: "GitHub",
+              },
+              {
+                href: `https://linkedin.com/in/${org}`,
+                label: "LinkedIn",
+              },
+              {
+                href: `https://twitter.com/${org}`,
+                label: "Twitter",
+              },
+              {
+                href: `https://instagram.com/vipulgupta.travel`,
+                label: "Instagram",
+              },
+              {
+                href: `https://t.me/${org}`,
+                label: "Telegram",
+              },
+              {
+                href: `https://bit.ly/vresume`,
+                label: "Resume",
+              },
+            ]
           },
         ],
       },
       footer: {
         links: [
           {
-            html: `Built with 💜 on Docusaurus, written by @${org}</br><a href="/docs/Introduction##credits">Steal responsibly</a> 👀, give it a <a href=${githubUrl}>star 🌟</a> if you find this cool and as always live in the mix!`,
+            html: `Built with 💜 on Docusaurus, written by @${org}</br><a href="/Introduction#credits">Steal responsibly</a> 👀, give it a <a href=${githubUrl}>star 🌟</a> if you find this cool and as always live in the mix!`,
           },
         ],
       },
