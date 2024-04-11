@@ -8,7 +8,7 @@ import { themes as prismThemes } from 'prism-react-renderer';
 
 const org = "vipulgupta2048"
 const repo = "talkswith2048"
-const tagline = `Docs on everything ${org}`
+const tagline = `Docs site of ${org}`
 const githubUrl = `https://github.com/${org}/${repo}`
 
 /** @type {import('@docusaurus/types').Config} */
@@ -118,12 +118,12 @@ const config = {
       },
       blog: false,
       // Replace with your project's social card
-      image: 'talkswith2048.png',
+      image: '/img/avatar.png',
       navbar: {
         hideOnScroll: true,
         logo: {
           alt: `${org}-logo`,
-          src: 'img/talkswith2048.png',
+          src: 'img/hatching.gif',
           // srcDark: 'img/talkswith2048.png',
         },
         items: [
@@ -168,7 +168,7 @@ const config = {
                 label: "Telegram",
               },
               {
-                href: `https://bit.ly/vresume`,
+                href: `https://bit.ly/vipresume`,
                 label: "Resume",
               },
             ]
