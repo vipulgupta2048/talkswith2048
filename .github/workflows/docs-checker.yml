@@ -26,13 +26,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Restore lychee cache
-        uses: actions/cache@v4
-        with:
-          path: .lycheecache
-          key: cache-lychee-${{ github.sha }}
-          restore-keys: cache-lychee-
-
       # Run link checker on the generated HTML
       - name: Link Checker
         id: lychee
@@ -40,7 +33,7 @@ jobs:
         with:
           args: >
             --config ./lychee.toml
-            README.md
+            build/**
 
       - name: Run LanguageTool
         uses: reviewdog/action-languagetool@v1
@@ -51,8 +44,8 @@ jobs:
           patterns: "**.md"
           language: "en-US"
           # LanguageTool flags - see https://languagetool.org/http-api/swagger-ui/#!/default/post_check
-          enabled_rules: "WHITESPACE_RULE,EN_QUOTES,DASH_RULE,WORD_CONTAINS_UNDERSCORE,UPPERCASE_SENTENCE_START,ARROWS,COMMA_PARENTHESIS_WHITESPACE,UNLIKELY_OPENING_PUNCTUATION,SENTENCE_WHITESPACE,CURRENCY,EN_UNPAIRED_BRACKETS,PHRASE_REPETITION,PUNCTUATION_PARAGRAPH_END,METRIC_UNITS_EN_US,ENGLISH_WORD_REPEAT_BEGINNING_RULE"
-          disabled_categories: "TYPOS,TYPOGRAPHY,CASING"
+          enabled_rules: "TYPOS,TYPOGRAPHY,CASING,EN_QUOTES,DASH_RULE,WORD_CONTAINS_UNDERSCORE,UPPERCASE_SENTENCE_START,ARROWS,COMMA_PARENTHESIS_WHITESPACE,UNLIKELY_OPENING_PUNCTUATION,SENTENCE_WHITESPACE,CURRENCY,EN_UNPAIRED_BRACKETS,PHRASE_REPETITION,PUNCTUATION_PARAGRAPH_END,METRIC_UNITS_EN_US,ENGLISH_WORD_REPEAT_BEGINNING_RULE"
+          disabled_categories: "WHITESPACE_RULE"
 
       - name: Run misspell
         uses: reviewdog/action-misspell@v1
