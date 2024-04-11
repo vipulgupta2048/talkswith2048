@@ -1,3 +1,8 @@
+---
+slug: /gsoc
+---
+
+# Google Summer of Code
 
 <img src={require("./img/gsoc/gsoc.jpg").default} height="{380}" width="{540}" />
 
