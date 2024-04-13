@@ -92,6 +92,48 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      algolia: {
+        // The application ID provided by Algolia
+        appId: '2W8TQEDQ7Y',
+  
+        // Public API key: it is safe to commit it
+        apiKey: '9182b1e9f7a45bc038813c8c2791ed70',
+        indexName: 'mixster',  
+        contextualSearch: true,
+  
+        // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
+        externalUrlRegex: 'mixster\\.dev',
+  
+        // Optional: Replace parts of the item URLs from Algolia. Useful when using the same search index for multiple deployments using a different baseUrl. You can use regexp or string in the `from` param. For example: localhost:3000 vs myCompany.com/docs
+        // replaceSearchResultPathname: {
+        //   from: '/docs/', // or as RegExp: /\/docs\//
+        //   to: '/',
+        // },
+  
+        // Optional: Algolia search parameters
+        searchParameters: {},
+  
+        // Optional: path for search page that enabled by default (`false` to disable it)
+        searchPagePath: 'search',  
+      },
+    
+      // announcementBar: {
+      //   id: 'support_us',
+      //   content:
+      //     `Vipul would love your feedback on the docs/portfolio site, please fill <a target="_blank" rel="noopener noreferrer" href="${githubUrl}/issues/new">a GitHub issue</a>`,
+      //   backgroundColor: '#fafbfc',
+      //   textColor: '#091E42',
+      //   isCloseable: true,
+      // },
+      tableOfContents: {
+        minHeadingLevel: 2,
+        maxHeadingLevel: 5,
+      },
+      colorMode: {
+        defaultMode: 'dark',
+        disableSwitch: false,
+        respectPrefersColorScheme: true,
+      },
       metadata: [
         {
           name: "description",
@@ -107,9 +149,6 @@ const config = {
           content: "summary",
         },
       ],
-      colorMode: {
-        respectPrefersColorScheme: true,
-      },
       docs: {
         sidebar: {
           hideable: true,
@@ -124,6 +163,8 @@ const config = {
         logo: {
           alt: `${org}-logo`,
           src: 'img/hatching.gif',
+          height: 48,
+          width: 38,
           // srcDark: 'img/talkswith2048.png',
         },
         items: [
@@ -139,7 +180,7 @@ const config = {
             position: 'right',
           },
           {
-            href: `${githubUrl}/issues/new`,
+            href: `${githubUrl}/issues/new?assignees=vipulgupta2048&labels=&projects=&template=welcome-ideas.md&title=user-feedback`,
             label: "New Ideas?",
             position: 'right',
           },
