@@ -36,7 +36,7 @@ $SCRIPT_DIR/extract-markdown.sh "Conferences with 2048" <$SOURCE_FILE >Conferenc
 
 $SCRIPT_DIR/extract-markdown.sh "Hackathons with 2048" <$SOURCE_FILE >Hackathons.md && mv ./Hackathons.md $DESTINATION/ &
 
-$SCRIPT_DIR/extract-markdown.sh "Google Summer of Code with 2048" <$SOURCE_FILE >gsoc.md && mv ./gsoc.md $DESTINATION/ &
+$SCRIPT_DIR/extract-markdown.sh "Google Summer of Code with 2048" <$SOURCE_FILE >Google\ Summer\ of\ Code.md && mv ./Google\ Summer\ of\ Code.md $DESTINATION/ &
 
 $SCRIPT_DIR/extract-markdown.sh "Mentoring with 2048" <$SOURCE_FILE >Mentoring.md && mv ./Mentoring.md $DESTINATION/ &
 
