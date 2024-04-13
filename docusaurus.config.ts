@@ -78,6 +78,8 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl: `${githubUrl}/edit/master/docs/`,
           routeBasePath: "/",
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
         },
         theme: {
           customCss: [require.resolve("./src/css/custom.scss")],
@@ -133,6 +135,8 @@ const config = {
           autoCollapseCategories: false,
         },
       },
+      showLastUpdateAuthor: true,
+      showLastUpdateTime: true,
       blog: false,
       // Replace with your project's social card
       image: "/img/avatar.png",

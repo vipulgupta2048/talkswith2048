@@ -10,13 +10,14 @@ I am Vipul, going by @vipulgupta2048. I am an open-source developer, documentari
 
 This docs site is my collection of everything I ever done which makes up for a pretty good portfolio. I am not a person that appreciate rebuilding the wheel unless for personal learning. Hence, back in 2016 when I was introduced to computer science. I was hooked. I was hooked on the idea of building things. I was hooked on the idea of sharing knowledge. I was hooked on the idea of open-source which became the North Star of my career.
 
+![image](https://www.salesforce.com/content/dam/blogs/ca/Blog%20Posts/The%20Most%20Important%20Factors%20for%20Startup%20Success_Open%20Graph%20Image.png)
+
 I strongly believe in Open Source being more than software. It’s a culture, a conversation, a way to bring the best minds together for the common good. This culture thrives on the principles of collaboration, transparency, and shared achievement. It's a realm where barriers of entry have been lowered to enable folks to grow, contribute and learn from each other. 
 
 As a result, open-source is not just a method for developing software; it's a movement; it's a way of life. I aim to rethink that for more companies embracing [innersource](https://about.gitlab.com/topics/version-control/what-is-innersource/) and want to take on new roles in organization who want to think about this. You can [hire me](#hiring) to do just that.
 
 Over the years, I have given back considerable time in enabling efforts towards a better open-source future. These docs reflect that journey. It's an odometer that keeps track of my professional journey for I think was time well spent on Earth giving back. Personal introspection aside, maintaing this collection has worked well for sudden bouts of either imposter syndrome hitting or recruiter screens when looking for a role.
 
-![image](https://www.salesforce.com/content/dam/blogs/ca/Blog%20Posts/The%20Most%20Important%20Factors%20for%20Startup%20Success_Open%20Graph%20Image.png)
 
 
 ### Failures of 2048

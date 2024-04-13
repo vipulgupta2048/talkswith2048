@@ -2,6 +2,7 @@ import clsx from "clsx";
 import React, { FunctionComponent } from "react";
 
 import styles from "./Hero.module.scss";
+import Link from "@docusaurus/Link";
 
 export const Hero: FunctionComponent = () => {
   return (
@@ -19,6 +20,8 @@ export const Hero: FunctionComponent = () => {
           The docs site of a traveling software engineer & cheesecake
           enthusiast.
         </p>
+        <br />
+        <Link to="/Introduction" className={clsx("button button--outline button--primary", styles.btn)} > The Good Stuff </Link>
       </div>
     </header>
   );
