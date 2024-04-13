@@ -40,15 +40,6 @@ const config = {
   },
 
   plugins: [
-    [
-      require.resolve("@cmfcmf/docusaurus-search-local"),
-      {
-        // whether to index docs pages
-        indexDocs: true,
-        // whether to index static pages
-        indexPages: true
-      },
-    ],
     // [
     //   '@docusaurus/plugin-ideal-image',
     //   {
@@ -93,27 +84,12 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       algolia: {
-        // The application ID provided by Algolia
-        appId: '2W8TQEDQ7Y',
-  
-        // Public API key: it is safe to commit it
+        appId: '2W8TQEDQ7Y',  
         apiKey: '9182b1e9f7a45bc038813c8c2791ed70',
         indexName: 'mixster',  
-        contextualSearch: true,
-  
-        // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
-        externalUrlRegex: 'mixster\\.dev',
-  
-        // Optional: Replace parts of the item URLs from Algolia. Useful when using the same search index for multiple deployments using a different baseUrl. You can use regexp or string in the `from` param. For example: localhost:3000 vs myCompany.com/docs
-        // replaceSearchResultPathname: {
-        //   from: '/docs/', // or as RegExp: /\/docs\//
-        //   to: '/',
-        // },
-  
-        // Optional: Algolia search parameters
-        searchParameters: {},
-  
-        // Optional: path for search page that enabled by default (`false` to disable it)
+        contextualSearch: true,  
+        externalUrlRegex: 'mixster\\.dev',  
+        searchParameters: {},  
         searchPagePath: 'search',  
       },
     
@@ -125,10 +101,6 @@ const config = {
       //   textColor: '#091E42',
       //   isCloseable: true,
       // },
-      tableOfContents: {
-        minHeadingLevel: 2,
-        maxHeadingLevel: 5,
-      },
       colorMode: {
         defaultMode: 'dark',
         disableSwitch: false,

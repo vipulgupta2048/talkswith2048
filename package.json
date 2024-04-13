@@ -21,7 +21,6 @@
 		"prettier:fix": "prettier --write ."
 	},
 	"dependencies": {
-		"@cmfcmf/docusaurus-search-local": "^1.1.0",
 		"@docusaurus/core": "3.2.1",
 		"@docusaurus/preset-classic": "3.2.1",
 		"@docusaurus/utils-validation": "^3.2.1",
@@ -57,10 +56,5 @@
 	},
 	"engines": {
 		"node": ">=18.0"
-	},
-	"overrides": {
-		"@cmfcmf/docusaurus-search-local": {
-			"@docusaurus/core": "^3.2.1"
-		}
 	}
 }
