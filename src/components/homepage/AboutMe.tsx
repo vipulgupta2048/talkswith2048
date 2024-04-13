@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from "react";
 import clsx from "clsx";
 import styles from "./AboutMe.module.scss";
-import useBaseUrl from '@docusaurus/useBaseUrl';
+import useBaseUrl from "@docusaurus/useBaseUrl";
 export interface AboutMeProps {
   descriptionComponent: React.ReactNode;
 }
@@ -17,7 +17,7 @@ export const AboutMe: FunctionComponent<AboutMeProps> = ({
         <div className={clsx("col col--5", styles.avatarContainer)}>
           <div className={styles.avatar}>
             {/* <img src={require('../../pages/assets/index/avatar.png')} alt="Avatar" /> */}
-            <img src={useBaseUrl('/img/avatar.png')} />
+            <img src={useBaseUrl("/img/avatar.png")} />
           </div>
         </div>
       </div>

@@ -19,70 +19,60 @@ const sidebars = {
   // But you can create a sidebar manually
 
   tutorialSidebar: [
-    'Introduction',
+    "Introduction",
     {
-      type: 'category',
-      label: 'Sharing what I know',
+      type: "category",
+      label: "Sharing what I know",
       link: {
-        type: 'generated-index',
-        title: 'Sharing what I know',
-        description: 'Documenting talks, podcast, conferences where I share openly about my work, the friction, and the journey of whatever I am building/learning/struggling with that year.',
-        keywords: ['talks', 'conferences', 'podcast'],
+        type: "generated-index",
+        title: "Sharing what I know",
+        description:
+          "Documenting talks, podcast, conferences where I share openly about my work, the friction, and the journey of whatever I am building/learning/struggling with that year.",
+        keywords: ["talks", "conferences", "podcast"],
       },
       collapsed: false,
-      items: [
-        'Talks',
-        'Podcasts',
-        'Conferences',
-      ],
+      items: ["Talks", "Podcasts", "Conferences"],
     },
     {
-      type: 'category',
-      label: 'Paying it forward',
+      type: "category",
+      label: "Paying it forward",
       link: {
-        type: 'generated-index',
-        title: 'Paying it Forward',
-        description: 'Documenting talks, podcast, conferences where I share openly about my work, the friction, and the journey of whatever I am building/learning/struggling with that year.',
-        keywords: ['mentoring', 'organizing', 'community'],
+        type: "generated-index",
+        title: "Paying it Forward",
+        description:
+          "Documenting talks, podcast, conferences where I share openly about my work, the friction, and the journey of whatever I am building/learning/struggling with that year.",
+        keywords: ["mentoring", "organizing", "community"],
       },
       collapsed: false,
-      items: [
-        'Communities',
-        'Mentoring',
-      ],
+      items: ["Communities", "Mentoring"],
     },
     {
-      type: 'category',
-      label: 'Constantly building',
+      type: "category",
+      label: "Constantly building",
       link: {
-        type: 'generated-index',
-        title: 'Constantly Building',
-        description: 'Documenting talks, podcast, conferences where I share openly about my work, the friction, and the journey of whatever I am building/learning/struggling with that year.',
-        keywords: ['products', 'designs', 'hackathons'],
+        type: "generated-index",
+        title: "Constantly Building",
+        description:
+          "Documenting talks, podcast, conferences where I share openly about my work, the friction, and the journey of whatever I am building/learning/struggling with that year.",
+        keywords: ["products", "designs", "hackathons"],
       },
       collapsed: false,
-      items: [
-        'Projects',
-        'Hackathons',
-        'Designs',
-      ],
+      items: ["Projects", "Hackathons", "Designs"],
     },
     {
-      type: 'category',
-      label: 'Past work',
+      type: "category",
+      label: "Past work",
       link: {
-        type: 'generated-index',
-        title: 'Past Work',
-        description: 'Documenting talks, podcast, conferences where I share openly about my work, the friction, and the journey of whatever I am building/learning/struggling with that year.',
-        keywords: ['gsoc', 'balena', 'google summer of code', 'open-source'],
+        type: "generated-index",
+        title: "Past Work",
+        description:
+          "Documenting talks, podcast, conferences where I share openly about my work, the friction, and the journey of whatever I am building/learning/struggling with that year.",
+        keywords: ["gsoc", "balena", "google summer of code", "open-source"],
       },
       collapsed: true,
-      items: [
-        'Google Summer of Code',
-      ],
+      items: ["Google Summer of Code"],
     },
   ],
-
 };
 
 export default sidebars;

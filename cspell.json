@@ -4,31 +4,31 @@
   "useGitignore": true,
   "caseSensitive": false,
   "dictionaries": [
-      "en_US",
-      "en-gb",
-      "companies",
-      "softwareTerms",
-      "misc",
-      "python",
-      "cpp",
-      "go",
-      "npm",
-      "node",
-      "javascript",
-      "typescript",
-      "filestypes",
-      "fonts",
-      "html",
-      "css",
-      "bash",
-      "powershell",
-      "cspell-words"
+    "en_US",
+    "en-gb",
+    "companies",
+    "softwareTerms",
+    "misc",
+    "python",
+    "cpp",
+    "go",
+    "npm",
+    "node",
+    "javascript",
+    "typescript",
+    "filestypes",
+    "fonts",
+    "html",
+    "css",
+    "bash",
+    "powershell",
+    "cspell-words"
   ],
   "dictionaryDefinitions": [
     {
-        "name": "cspell-words",
-        "path": "./cspell-words.txt",
-        "addWords": true
+      "name": "cspell-words",
+      "path": "./cspell-words.txt",
+      "addWords": true
     }
   ]
 }

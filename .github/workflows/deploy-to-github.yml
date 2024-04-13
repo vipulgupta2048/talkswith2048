@@ -52,7 +52,7 @@ jobs:
           personal_token: ${{ secrets.PERSONAL_TOKEN }}
           external_repository: vipulgupta2048/vipulgupta2048.github.io
           publish_dir: ./build
-          
+
       - name: Deploy to GitHub Pages
         if: github.event_name != 'pull_request'
         uses: peaceiris/actions-gh-pages@v4

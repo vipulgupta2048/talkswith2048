@@ -7,4 +7,3 @@
 **#3** - From July'19, I am adding posters as well. Something I like dearly is creating good content, no matter how hard it might be. Meetup posters hold quite a special place in my mind as that always helps me think towards design, UI/UX as well as mixing up different techniques. These are Canva made, ain't special. I like them so why not show them.
 
 **#4** - I have stopped logging updates. New content all the time. **YOLO**.
-

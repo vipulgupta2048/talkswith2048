@@ -4,18 +4,18 @@
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
-import { themes as prismThemes } from 'prism-react-renderer';
+import { themes as prismThemes } from "prism-react-renderer";
 
-const org = "vipulgupta2048"
-const repo = "talkswith2048"
-const tagline = `Docs site of ${org}`
-const githubUrl = `https://github.com/${org}/${repo}`
+const org = "vipulgupta2048";
+const repo = "talkswith2048";
+const tagline = `Docs site of ${org}`;
+const githubUrl = `https://github.com/${org}/${repo}`;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: org,
   tagline: tagline,
-  favicon: 'img/favicon.ico',
+  favicon: "img/favicon.ico",
 
   // Set the production url of your site here
   url: `https://docs.mixster.dev`,
@@ -29,15 +29,15 @@ const config = {
   organizationName: org, // Usually your GitHub org/user name.
   projectName: repo, // Usually your repo name.
 
-  onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: "warn",
+  onBrokenMarkdownLinks: "warn",
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: "en",
+    locales: ["en"],
   },
 
   plugins: [
@@ -51,56 +51,54 @@ const config = {
     //     disableInDev: false,
     //   },
     // ],
-    ['docusaurus-plugin-sass', {}],
+    ["docusaurus-plugin-sass", {}],
   ],
-
 
   presets: [
     [
-      'classic',
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
+      {
         googleTagManager: {
-          containerId: 'GTM-5JMKTPCM',
+          containerId: "GTM-5JMKTPCM",
         },
         gtag: {
-          trackingID: 'G-HW23H5D7FP',
+          trackingID: "G-HW23H5D7FP",
           anonymizeIP: true,
         },
         sitemap: {
-          changefreq: 'weekly',
+          changefreq: "weekly",
           priority: 0.5,
-          ignorePatterns: ['/tags/**'],
-          filename: 'sitemap.xml',
+          ignorePatterns: ["/tags/**"],
+          filename: "sitemap.xml",
         },
         docs: {
-          sidebarPath: './sidebars.js',
+          sidebarPath: "./sidebars.js",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            `${githubUrl}/edit/master/docs/`,
-          routeBasePath: '/'
+          editUrl: `${githubUrl}/edit/master/docs/`,
+          routeBasePath: "/",
         },
         theme: {
           customCss: [require.resolve("./src/css/custom.scss")],
         },
-      }),
+      },
     ],
   ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
+    {
       algolia: {
-        appId: '2W8TQEDQ7Y',  
-        apiKey: '9182b1e9f7a45bc038813c8c2791ed70',
-        indexName: 'mixster',  
-        contextualSearch: true,  
-        externalUrlRegex: 'mixster\\.dev',  
-        searchParameters: {},  
-        searchPagePath: 'search',  
+        appId: "2W8TQEDQ7Y",
+        apiKey: "9182b1e9f7a45bc038813c8c2791ed70",
+        indexName: "mixster",
+        contextualSearch: true,
+        externalUrlRegex: "mixster\\.dev",
+        searchParameters: {},
+        searchPagePath: "search",
       },
-    
+
       // announcementBar: {
       //   id: 'support_us',
       //   content:
@@ -110,7 +108,7 @@ const config = {
       //   isCloseable: true,
       // },
       colorMode: {
-        defaultMode: 'dark',
+        defaultMode: "dark",
         disableSwitch: false,
         respectPrefersColorScheme: true,
       },
@@ -133,40 +131,40 @@ const config = {
         sidebar: {
           hideable: true,
           autoCollapseCategories: false,
-        }
+        },
       },
       blog: false,
       // Replace with your project's social card
-      image: '/img/avatar.png',
+      image: "/img/avatar.png",
       navbar: {
         hideOnScroll: true,
         logo: {
           alt: `${org}-logo`,
-          src: 'img/hatching.gif',
+          src: "img/hatching.gif",
           height: 48,
           width: 38,
           // srcDark: 'img/talkswith2048.png',
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'right',
-            label: 'The Good Stuff',
+            type: "docSidebar",
+            sidebarId: "tutorialSidebar",
+            position: "right",
+            label: "The Good Stuff",
           },
           {
             href: `https://mixster.dev`,
             label: "Mixster",
-            position: 'right',
+            position: "right",
           },
           {
             href: `${githubUrl}/issues/new?assignees=vipulgupta2048&labels=&projects=&template=welcome-ideas.md&title=user-feedback`,
             label: "New Ideas?",
-            position: 'right',
+            position: "right",
           },
           {
-            position: 'right',
-            label: 'Usual Suspects',
+            position: "right",
+            label: "Usual Suspects",
             items: [
               {
                 href: `https://github.com/${org}`,
@@ -192,7 +190,7 @@ const config = {
                 href: `https://bit.ly/vipresume`,
                 label: "Resume",
               },
-            ]
+            ],
           },
         ],
       },
@@ -207,7 +205,7 @@ const config = {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
-    }),
+    },
 };
 
 export default config;

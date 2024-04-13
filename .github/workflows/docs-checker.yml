@@ -8,14 +8,13 @@ on:
   pull_request:
     branches:
       - "master"
-      - 'main'
+      - "main"
 
   # Runs on each push
   push:
     branches:
-      - 'main'
-      - 'master'
-
+      - "main"
+      - "master"
 
 jobs:
   Checking-Docs:
