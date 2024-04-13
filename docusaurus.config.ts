@@ -96,7 +96,7 @@ const config = {
         apiKey: "9182b1e9f7a45bc038813c8c2791ed70",
         indexName: "mixster",
         contextualSearch: true,
-        externalUrlRegex: "mixster\\.dev",
+        // externalUrlRegex: "mixster\\.dev",
         searchParameters: {},
         searchPagePath: "search",
       },
@@ -135,8 +135,6 @@ const config = {
           autoCollapseCategories: false,
         },
       },
-      showLastUpdateAuthor: true,
-      showLastUpdateTime: true,
       blog: false,
       // Replace with your project's social card
       image: "/img/avatar.png",
@@ -159,12 +157,17 @@ const config = {
           {
             href: `https://mixster.dev`,
             label: "Mixster",
+            position: "left",
+          },
+          {
+            href: `https://mixster.dev/lets-goto`,
+            label: "Travel Docs",
             position: "right",
           },
           {
             href: `${githubUrl}/issues/new?assignees=vipulgupta2048&labels=&projects=&template=welcome-ideas.md&title=user-feedback`,
             label: "New Ideas?",
-            position: "right",
+            position: "left",
           },
           {
             position: "right",
