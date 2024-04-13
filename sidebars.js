@@ -45,7 +45,7 @@ const sidebars = {
         description: 'Documenting talks, podcast, conferences where I share openly about my work, the friction, and the journey of whatever I am building/learning/struggling with that year.',
         keywords: ['mentoring', 'organizing', 'community'],
       },
-      collapsed: true,
+      collapsed: false,
       items: [
         'Communities',
         'Mentoring',
@@ -60,7 +60,7 @@ const sidebars = {
         description: 'Documenting talks, podcast, conferences where I share openly about my work, the friction, and the journey of whatever I am building/learning/struggling with that year.',
         keywords: ['products', 'designs', 'hackathons'],
       },
-      collapsed: true,
+      collapsed: false,
       items: [
         'Projects',
         'Hackathons',
@@ -74,7 +74,7 @@ const sidebars = {
         type: 'generated-index',
         title: 'Past Work',
         description: 'Documenting talks, podcast, conferences where I share openly about my work, the friction, and the journey of whatever I am building/learning/struggling with that year.',
-        keywords: ['gsoc', 'balena', 'open-source'],
+        keywords: ['gsoc', 'balena', 'google summer of code', 'open-source'],
       },
       collapsed: true,
       items: [
