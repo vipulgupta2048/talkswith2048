@@ -29,7 +29,7 @@ export const SocialLinks: FunctionComponent<SocialLinksProps> = ({ data }) => {
 
   return (
     <div className={styles.socialContainer}>
-      <h2>Social media</h2>
+      <h2>Click your favorite buttons</h2>
       <div className={clsx("row", styles.socialLinks)}>
         {socialLinksComponents}
       </div>
