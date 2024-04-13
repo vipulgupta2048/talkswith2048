@@ -11,8 +11,7 @@
 | HackBMU 2020 | [Website](https://hackbmu-3.devfolio.co/) | Judged the 3rd Iteration of HackBMU at BML Munjal College. Was my first time as a judge and a fitting end to an era of participating at hackathons as a student <img src={require("./img/hackbmu/1.png").default} height="{350}" width="{450}" /> |
 | Sabbatical: Covid 2020-2021 | - | - |
 |~ 2024 ~|||
-| GitLab Pitch Competition | [Website](https://gitlab.devpost.com) | Held during January '2024. The hackathon was a chance to build a proof of concept and a pitch to improve services on GitLab's platform. I pitched TestButler as a new pipeline for GitLab customers to test their code directly on their devices using GitLab Runners and Balena. |
-
+| Testbutler wins [GitLab Pitch Competition](https://gitlab.devpost.com) 🔥🔥 | [WINNER, 4th prize!](https://devpost.com/software/testbutler-iot-testing-made-easier) | Held during January '2024. The hackathon was a chance to build a proof of concept and a pitch to improve services on GitLab's platform. I pitched TestButler as a new pipeline for GitLab customers to test their code directly on their devices using GitLab Runners and Balena. Won $3k cash prize for my project. <img src={require("./img/hackathon/1.png").default} height="{350}" width="{450}" /> |
 
 ---
 

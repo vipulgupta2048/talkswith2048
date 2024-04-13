@@ -46,9 +46,6 @@ From local meetups to global conferences, I've aimed to weave technical concepts
 | DelhiFOSS 2.0 Conference: [Pains, Processes & the Eventual Gains of Building Open-Source Hardtech projects](https://indiafoss.net/Delhi/2024/talk/08737248bb) | [Recording](https://youtu.be/fa62hVxUUGI?si=t64hvPlsNgQRaWZd) [Slides](https://slides.com/vipulgupta2048/delhifoss-hardtech/fullscreen) [Feedback](./img/fossindia/1.png) | Hard tech involves the combination of hardware and software to solve a problem. As opposed to soft tech, hard tech projects have to be completed on launch with hardware ready to ship. This talk is all about the pain, the processes and eventual gains in the journey of building hard tech project in the open. |
 
 
-<details>
-  <summary>2023</summary>
-  
 ### 2023
 
 | Title of the talk       | Link for Proposal  | Thoughts |
@@ -62,7 +59,6 @@ From local meetups to global conferences, I've aimed to weave technical concepts
 | Open Source Summit China 2023 | [Selected] | Talk got selected. Couldn't go due to visa issues. Maybe next year. |
 | Linux Plumbers 2023 | [Selected] | THE Linux Kernel conference to attend in the world. 2023 was my first year stepping back into conferencing and another journey to United States to attend this would have stretched me a bit too far.  |
 | Open Source Summit Japan 2023 [Let's Build Our Own Virtual RaspberryPi Using QEMU Virtualization](https://sched.co/1TzRx) | [Slides](https://slides.com/vipulgupta2048/cdcon-japan-2023/) [Certificate](https://www.credly.com/badges/2e9936ba-60b7-4255-baf3-21d2fe530f92/) | Presenting my session at CDCon Japan 2023, going deeper into the hardware in the loop testing implemented at balena by my team. Discussed architecture and implementation details of the project. Received a lot of feedback from 50+ CI experts attending. The conference agenda was very well formulated and the schedule was one of the rare ones where each talk brought in something interesting <img src={require("./img/oss/1.jpg")} height="{358}" width="{400}" /> | |
-</details>
 
 
 <details>
@@ -188,8 +184,7 @@ From attending, to volunteering, to organizing and networking in conferences. Wh
 | HackBMU 2020 | [Website](https://hackbmu-3.devfolio.co/) | Judged the 3rd Iteration of HackBMU at BML Munjal College. Was my first time as a judge and a fitting end to an era of participating at hackathons as a student <img src="./docs/img/hackbmu/1.png" height="{350}" width="{450}" /> |
 | Sabbatical: Covid 2020-2021 | - | - |
 |~ 2024 ~|||
-| GitLab Pitch Competition | [Website](https://gitlab.devpost.com) | Held during January '2024. The hackathon was a chance to build a proof of concept and a pitch to improve services on GitLab's platform. I pitched TestButler as a new pipeline for GitLab customers to test their code directly on their devices using GitLab Runners and Balena. |
-
+| Testbutler wins [GitLab Pitch Competition](https://gitlab.devpost.com) 🔥🔥 | [WINNER, 4th prize!](https://devpost.com/software/testbutler-iot-testing-made-easier) | Held during January '2024. The hackathon was a chance to build a proof of concept and a pitch to improve services on GitLab's platform. I pitched TestButler as a new pipeline for GitLab customers to test their code directly on their devices using GitLab Runners and Balena. Won $3k cash prize for my project. <img src="./docs/img/hackathon/1.png" height="{350}" width="{450}" /> |
 
 ---
 
@@ -216,9 +211,12 @@ I also released a newsletter, [Mixster x Mixtapes](https://buttondown.email/vipu
 slug: /gsoc
 ---
 
-# Google Summer of Code: '18 & '19
-
-<img src="./docs/img/gsoc/gsoc.jpg" height="{380}" width="{540}" />
+<p align="center">
+  <img src="./docs/img/gsoc/3.jpg" width="{45%}" />
+&nbsp; &nbsp; &nbsp; &nbsp;
+  <img src="./docs/img/gsoc/gsoc.jpg" width="{45%}" />
+</p>
+<!-- <img src=><img src="./docs/img/gsoc/gsoc.jpg" height="{380}" width="{540}" /> -->
 
 From the start, I had the pleasure of contributing and participating in Google Summer of Code with [Sugar Labs in 2018](https://github.com/vipulgupta2048/mygsoc) and again a year later with [The Scrapy Project in 2019](https://github.com/vipulgupta2048/mygsoc). Executing these projects and working with the organizations taught me a lot. Even after the projects have finished, I continued to volunteer with Sugar Labs focusing on Outreach efforts and playing an active part in their Google OSS programs. I contribute code frequently to ScrapingHub and The Scrapy Project. These were good times indeed.
 
