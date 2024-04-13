@@ -60,6 +60,13 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
+        googleTagManager: {
+          containerId: 'GTM-5JMKTPCM',
+        },
+        gtag: {
+          trackingID: 'G-HW23H5D7FP',
+          anonymizeIP: true,
+        },
         sitemap: {
           changefreq: 'weekly',
           priority: 0.5,
