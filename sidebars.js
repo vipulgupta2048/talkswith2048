@@ -69,8 +69,8 @@ const sidebars = {
           "Documenting talks, podcast, conferences where I share openly about my work, the friction, and the journey of whatever I am building/learning/struggling with that year.",
         keywords: ["gsoc", "balena", "google summer of code", "open-source"],
       },
-      collapsed: true,
-      items: ["Google Summer of Code"],
+      collapsed: false,
+      items: ["Google Summer of Code", "Mixster", "Balena"],
     },
   ],
 };

@@ -99,6 +99,7 @@ const config = {
         // externalUrlRegex: "mixster\\.dev",
         searchParameters: {},
         searchPagePath: "search",
+        ignoreCanonicalTo: true
       },
 
       // announcementBar: {
