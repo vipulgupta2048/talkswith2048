@@ -8,6 +8,7 @@ From local meetups to global conferences, I've aimed to weave technical concepts
 | Title of the talk       | Link for Proposal  | Thoughts |
 | --- |:---:|---|
 | DelhiFOSS 2.0 Conference: [Pains, Processes & the Eventual Gains of Building Open-Source Hardtech projects](https://indiafoss.net/Delhi/2024/talk/08737248bb) | [Recording](https://youtu.be/fa62hVxUUGI?si=t64hvPlsNgQRaWZd) [Slides](https://slides.com/vipulgupta2048/delhifoss-hardtech/fullscreen) [Feedback](./img/fossindia/1.png) | Hard tech involves the combination of hardware and software to solve a problem. As opposed to soft tech, hard tech projects have to be completed on launch with hardware ready to ship. This talk is all about the pain, the processes and eventual gains in the journey of building hard tech project in the open. |
+| GitHub Constellation 2024: [How Balena Releases 100's of Embedded Operating Systems with GitHub Actions in Hours, Not Weeks](https://githubconstellation.com/schedule/how-balena-releases-100s-of-embedded-operating-systems-with-github-actions-in-hours-not-weeks) | [Recording]() [Slides](https://slides.com/vipulgupta2048/constellation-2024/fullscreen) [Feedback](./img/github/feedback.png) | This presentation is about using GitHub Actions to test hundreds of OS images, specifically focusing on balenaOS and the challenges of testing embedded operating systems. The talk is about balenaOS's build, testing, and deployment pipelines using GitHub Actions that took place at GitHub Constellation 2024 in Bangalore, India. |
 
 
 ### 2023
