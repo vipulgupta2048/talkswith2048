@@ -44,6 +44,7 @@ From local meetups to global conferences, I've aimed to weave technical concepts
 | Title of the talk       | Link for Proposal  | Thoughts |
 | --- |:---:|---|
 | DelhiFOSS 2.0 Conference: [Pains, Processes & the Eventual Gains of Building Open-Source Hardtech projects](https://indiafoss.net/Delhi/2024/talk/08737248bb) | [Recording](https://youtu.be/fa62hVxUUGI?si=t64hvPlsNgQRaWZd) [Slides](https://slides.com/vipulgupta2048/delhifoss-hardtech/fullscreen) [Feedback](./img/fossindia/1.png) | Hard tech involves the combination of hardware and software to solve a problem. As opposed to soft tech, hard tech projects have to be completed on launch with hardware ready to ship. This talk is all about the pain, the processes and eventual gains in the journey of building hard tech project in the open. |
+| GitHub Constellation 2024: [How Balena Releases 100's of Embedded Operating Systems with GitHub Actions in Hours, Not Weeks](https://githubconstellation.com/schedule/how-balena-releases-100s-of-embedded-operating-systems-with-github-actions-in-hours-not-weeks) | [Recording]() [Slides](https://slides.com/vipulgupta2048/constellation-2024/fullscreen) [Feedback 1](./img/github/feedback.png) [Feedback 2](./img/github/1.png) | This presentation was about how Balena is using GitHub Actions to test hundreds of OS images, specifically focusing on balenaOS and the challenges of testing embedded operating systems. The talk is about balenaOS's build, testing, and deployment pipelines using GitHub Actions. |
 
 
 ### 2023
@@ -165,7 +166,8 @@ From attending, to volunteering, to organizing and networking in conferences. Wh
 | PyCon India 2023 | [Website](https://in.pycon.org/2023/) | Back in Hyderabad to meet a lot of familiar faces at the 'ol stomping ground of Python's premier conference called PyCon India. Was a volunteer as usual helping make the conference yet another roaring success. |
 | Open Source Summit 2023 Japan | [Website](https://events.linuxfoundation.org/archive/2023/open-source-summit-japan/) | The same brand of amazing, schedule packed open-source conference but thankfully in the same continent. First time visiting Tokyo to attend the mega conference was an amazing experience. One that I would gladly repeat anytime. Gave a talk at the conference and met a lot of people. |
 |~ 2024 ~|||
-| DelhiFOSS 2.0 2022 | [Website](https://indiafoss.net/delhi/2024/schedule) | An open-source focused conference organized by the FOSS United Delhi Chapter. Gave a talk, met a lot of new people in my city and the first conference of 2024. The event was held at Indian Institue of Technology, New Delhi. First time being there, and good times. |
+| DelhiFOSS 2.0 2024 | [Website](https://indiafoss.net/delhi/2024/schedule) | An open-source focused conference organized by the FOSS United Delhi Chapter. Gave a talk, met a lot of new people in my city and the first conference of 2024. The event was held at Indian Institue of Technology, New Delhi. First time being there, and good times. |
+| GitHub Constellation 2024 | [Website](https://githubconstellation.com/) | Constellation 2024 is GitHub's in-person developer conference celebrating the best of the Indian developer community. One day event to learn, share and connect with developers on topics like  AI,  Collaboration,  Community and  Security held in Bangalore, India. First time being there, first time speaking at GH conference and good times. |
 
 
 ***
@@ -255,6 +257,7 @@ Who knew? I love working on product design so much. It all started with this tak
 | --- |:---:|---|
 |![](./docs/img/mockup/bookhustler.png)| [Behance](https://www.behance.net/gallery/86486979/The-BookHustler-Project) | The BookHustler Project was my first project. It's an e-commerce app for buying, selling, and renting second-hand books online. I have [documented the idea](https://docs.google.com/document/d/1Ppgt6Pk2n0Mdp2YpBTtIym8Nx4ugAlAz92r067DDsEU/edit?usp=sharing) as well behind the project if you like to read. It has all the information from the logistics of how books are bought and sold to the renting model involved. [Adobe XD Project file](https://drive.google.com/uc?export=download&id=1z-wf3OHqc2CAsAOl8eHVXJsBojeRp8d8) |
 | ![](./docs/img/mockup/meetbot.png) | [GitHub](https://github.com/vipulgupta2048/meetbot) | Meetbot is a Google Meet bot that makes your meetings frictionless. It records chat transcript and voice captions, validates user audio and auto-records meetings which it can join automatically from a given calendar. |
+| ![](./docs/img/mockup/whoami.png) | [GitHub](https://github.com/vipulgupta2048/whoami) | Whoami is a essential tool in parsing & finding information about GitHub users. The data is fetched from GitHub API by providing a comma seperated list of usernames. |
 
 ---
 
@@ -264,11 +267,12 @@ After being an organizer for many years to a number of communities, I have thoug
 
 | Meetups/Conferences | Link | Years  | Comments |
 | --- | --- | --- | --- |
+| Github GitTogether Meetups | [Meetup](https://www.meetup.com/gittogether-delhi/?eventOrigin=event_home_page) | 2024 - present  | Organizer for GitTogether Delhi NCR is a gathering for developers in and around Delhi, India. Powered by GitHub and led by community experts, the events cover diverse topics such as AI, Open Source, and Security. |
 | PyCon India | [Website](https://in.pycon.org) | 2018 - present  | PyCon India 2023 is the premier conference for Python enthusiasts and professionals, offering an unparalleled opportunity to dive deep into the world of Python and explore its limitless potential. Worn multiple hats at the conference   |
 | Monthly City Meetups | [Posts on Twitter](https://twitter.com/vipulgupta2048/status/1547295294395928576?s=20&t=Az4ux_k_zudpqE7OA3MCGA) | 2021 - present | I organize mini meetups with folks in and around the city who like to come out and meet people on Saturday. |
 | RemoteIndian Delhi Meetup | [Meetup](https://lu.ma/delhiremote) | 2022 - present  | I organize mini meetups with folks in and around the city who like to come out and meet people on Saturday. |
 | PyDelhi Meetup | [Meetup](https://meetup.com/pydelhi) | 2017-2020 | Actively volunteered as co-organizer for 3 years till Covid came and my social battery got depleted through Zoom meetups. During my time, we organized meetups every fortnight for 2 years straight with several collaborations, workshops, talks, devsprints and fun hackathons in the middle. The community grew to 11k members but don't have the bandwidth remaining to be co-organizer again. |
-| Indian Linux users Group Delhi meetup | [Meetup](https://meetup.com/ilugdelhi) | 2017-2020 |Volunteered for the meetups for a couple of years. |
+| Indian Linux users Group Delhi meetup | [Meetup](https://meetup.com/ilugdelhi) | 2017-2020 | Volunteered for the meetups for a couple of years. |
 
 ---
 
