@@ -31,7 +31,8 @@ From attending, to volunteering, to organizing and networking in conferences. Wh
 | PyCon India 2023 | [Website](https://in.pycon.org/2023/) | Back in Hyderabad to meet a lot of familiar faces at the 'ol stomping ground of Python's premier conference called PyCon India. Was a volunteer as usual helping make the conference yet another roaring success. |
 | Open Source Summit 2023 Japan | [Website](https://events.linuxfoundation.org/archive/2023/open-source-summit-japan/) | The same brand of amazing, schedule packed open-source conference but thankfully in the same continent. First time visiting Tokyo to attend the mega conference was an amazing experience. One that I would gladly repeat anytime. Gave a talk at the conference and met a lot of people. |
 |~ 2024 ~|||
-| DelhiFOSS 2.0 2022 | [Website](https://indiafoss.net/delhi/2024/schedule) | An open-source focused conference organized by the FOSS United Delhi Chapter. Gave a talk, met a lot of new people in my city and the first conference of 2024. The event was held at Indian Institue of Technology, New Delhi. First time being there, and good times. |
+| DelhiFOSS 2.0 2024 | [Website](https://indiafoss.net/delhi/2024/schedule) | An open-source focused conference organized by the FOSS United Delhi Chapter. Gave a talk, met a lot of new people in my city and the first conference of 2024. The event was held at Indian Institue of Technology, New Delhi. First time being there, and good times. |
+| GitHub Constellation 2024 | [Website](https://githubconstellation.com/) | Constellation 2024 is GitHub's in-person developer conference celebrating the best of the Indian developer community. One day event to learn, share and connect with developers on topics like  AI,  Collaboration,  Community and  Security held in Bangalore, India. First time being there, first time speaking at GH conference and good times. |
 
 
 ***

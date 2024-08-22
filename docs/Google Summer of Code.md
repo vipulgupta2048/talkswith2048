@@ -2,7 +2,6 @@
 slug: /gsoc
 ---
 
-
 | Project  | Project org | Proposal Links | Work Product | Status/LoC |
 | --- | --- | --- | --- | --- |
 | [Integrate Cerberus in Spidermon](https://summerofcode.withgoogle.com/archive/2019/projects/5471827642548224/) | The Scrapy Project (GSoC 2019) | [Project Proposal #1](https://docs.google.com/document/d/14iLYsnZYpxR-YvbceB6VljyCBwCFsPk4f-iaoPGAUZY/edit?usp=sharing) & [Project Proposal #2](https://docs.google.com/document/d/1FGd1te3A07PDIcQheBDparclUemU1CE_ixngHTVvQzs/edit?usp=sharing) | [Final Implementation](https://github.com/scrapinghub/spidermon/pull/201) and [Work Report](https://mixster.dev/2019/08/24/integrate-cerberus-work-report/)| **Completed** :heavy_check_mark: [Letter of Completion](./img/gsoc/GSoC-2019-Certificate-for-Vipul-Gupta.pdf) & [Completion Certificate](./img/gsoc/GSoC-2019-Completion-Verification-Letter-for-Vipul-Gupta-(1).pdf) |
@@ -13,7 +12,6 @@ From the start, I had the pleasure of contributing and participating in Google S
 
  <img src={require("./img/gsoc/3.jpg").default} height="300" width="430" />
  <img src={require("./img/gsoc/gsoc.jpg").default} height="300" width="430" />
-
 
 **Blogs, Podcasts & Guides**
 
