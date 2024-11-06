@@ -2,7 +2,7 @@
 | Hackathons      | Links | Comments |
 | --- |:---:|---|
 | HackIIIT 2018 | [Project Deck](https://slides.com/vipulgupta2048/stacksfx) | 3rd Prize and best woman participant - Made the emotion-based Music Player, called StacksFX by team StacksFX, [blog post for reference](https://mixster.dev/2018/08/20/stacksfx-at-hackiiit-my-1-hackathon/) |
-| HackMIT 2018 | [Website](https://hackmit.org) | Project Wats'on The Roof selected for IBM: Call for Code - Global Challenge [blog post for reference](https://mixster.dev/2018/09/28/hackmit-2018/) |
+| HackMIT 2018 | [Website](https://hackmit.org) | [SELECTED] Project Wats'on The Roof selected for IBM: Call for Code - Global Challenge [blog post for reference](https://mixster.dev/2018/09/28/hackmit-2018/) <img src="https://mixster.dev/wp-content/uploads/2018/09/photo_2018-09-28_05-20-02-e1538093190884-1.jpg" /> |
 | Hack Moscow 2018 | [Website](https://hack.moscow/) | Selected as a Lonewolf |
 | MSHack 2018 | [Website](https://mshack.devpost.com) | Team of 4, StacksFX was selected out of 2000 team submission in the online round, to hack at Microsoft Gurugram to create [InsightsFX](https://devpost.com/software/insightsfx), a unique air pollution management solution with insights that help make everyday life easier |
 | Smart India Hackathon 2019 | [Website](https://www.sih.gov.in) | Participated in the World's biggest hackathon on problem statement of Environment Engineering solving problems that benefit our entire community. Inspired over 50 teams from ALiAS to participate with their innovative statements. Facilitated 2 teams with reimbursements for their travel which cleared the national rounds. Go ALiAS! |
