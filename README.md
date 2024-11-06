@@ -18,20 +18,28 @@ Over the years, I have given back my time/money/efforts in enabling communities,
 
 
 ## Contents
-- [Contents](#contents)
-- [Talks with 2048](#talks-with-2048)
-- [Conferences with 2048](#conferences-with-2048)
-- [Hackathons with 2048](#hackathons-with-2048)
-- [Mixster by 2048 (Top 10 blogs of all-time)](#mixster-by-2048-top-10-blogs-of-all-time)
-- [Google Summer of Code with 2048](#google-summer-of-code-with-2048)
-- [Mentoring with 2048](#mentoring-with-2048)
-- [Projects with 2048](#projects-with-2048)
-- [Organizing with 2048](#organizing-with-2048)
-- [Podcasts with 2048](#podcasts-with-2048)
-- [Designing sometimes with 2048](#designing-sometimes-with-2048)
-- [Hire 2048](#hire-2048)
-- [Failures of 2048](#failures-of-2048)
 
+- [Everything with 2048: Talkswith2048](#everything-with-2048-talkswith2048)
+  - [Contents](#contents)
+  - [Talks with 2048](#talks-with-2048)
+    - [2024](#2024)
+    - [2023](#2023)
+    - [2021-2022](#2021-2022)
+    - [2020](#2020)
+    - [2019](#2019)
+    - [2018](#2018)
+    - [2017](#2017)
+  - [Conferences with 2048](#conferences-with-2048)
+  - [Hackathons with 2048](#hackathons-with-2048)
+  - [Mixster by 2048 (Top 10 blogs of all-time)](#mixster-by-2048-top-10-blogs-of-all-time)
+  - [Google Summer of Code with 2048](#google-summer-of-code-with-2048)
+  - [slug: /gsoc](#slug-gsoc)
+  - [Mentoring with 2048](#mentoring-with-2048)
+  - [Projects with 2048](#projects-with-2048)
+  - [Organizing with 2048](#organizing-with-2048)
+  - [Podcasts with 2048](#podcasts-with-2048)
+  - [Designing sometimes with 2048](#designing-sometimes-with-2048)
+  - [Credits](#credits)
 
 ## Talks with 2048
 
@@ -136,6 +144,8 @@ From local meetups to global conferences, I've aimed to weave technical concepts
 
 From attending, to volunteering, to organizing and networking in conferences. Whatever role I play in a conference. I add it here. Conferences are strange for me in their phenomena. Apart from all the travel, meeting people, preparing to take the stage there is a genuine fear of missing out for me. If I don't attend one, there is FOMO. But, the more you connect in one, the more FOMO you get. Whether that's the case for you. Few things are certain. Social batteries are bound to run out. Leg pain is mandatory. And, If you are attending every single session then probably rethink your approach and spend some time in the hallway. See you there!
 
+> Checkout the [presentations & recordings](https://docs.mixster.dev/Talks) for the talks delivered at the conferences below!
+
 | Conference       | Website/Link for event | Comments |
 | --- |:---:|---|
 | PyDelhi Conference 2017 | [Website](https://conference.pydelhi.org) | Attendee - My first tech conference |
@@ -177,7 +187,7 @@ From attending, to volunteering, to organizing and networking in conferences. Wh
 | Hackathons      | Links | Comments |
 | --- |:---:|---|
 | HackIIIT 2018 | [Project Deck](https://slides.com/vipulgupta2048/stacksfx) | 3rd Prize and best woman participant - Made the emotion-based Music Player, called StacksFX by team StacksFX, [blog post for reference](https://mixster.dev/2018/08/20/stacksfx-at-hackiiit-my-1-hackathon/) |
-| HackMIT 2018 | [Website](https://hackmit.org) | Project Wats'on The Roof selected for IBM: Call for Code - Global Challenge [blog post for reference](https://mixster.dev/2018/09/28/hackmit-2018/) |
+| HackMIT 2018 | [Website](https://hackmit.org) | [SELECTED] Project Wats'on The Roof selected for IBM: Call for Code - Global Challenge [blog post for reference](https://mixster.dev/2018/09/28/hackmit-2018/) <img src="https://mixster.dev/wp-content/uploads/2018/09/photo_2018-09-28_05-20-02-e1538093190884-1.jpg" /> |
 | Hack Moscow 2018 | [Website](https://hack.moscow/) | Selected as a Lonewolf |
 | MSHack 2018 | [Website](https://mshack.devpost.com) | Team of 4, StacksFX was selected out of 2000 team submission in the online round, to hack at Microsoft Gurugram to create [InsightsFX](https://devpost.com/software/insightsfx), a unique air pollution management solution with insights that help make everyday life easier |
 | Smart India Hackathon 2019 | [Website](https://www.sih.gov.in) | Participated in the World's biggest hackathon on problem statement of Environment Engineering solving problems that benefit our entire community. Inspired over 50 teams from ALiAS to participate with their innovative statements. Facilitated 2 teams with reimbursements for their travel which cleared the national rounds. Go ALiAS! |
