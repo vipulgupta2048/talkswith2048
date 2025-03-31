@@ -88,7 +88,7 @@ const socialLinks: SocialLinkData[] = [
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <Layout title="Home" description={siteConfig.tagline}>
+    <Layout title="Vipul Gupta's docs" description={siteConfig.tagline}>
       <Hero />
       <main>
         <div className="container padding-vert">

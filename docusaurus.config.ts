@@ -136,7 +136,6 @@ const config = {
           autoCollapseCategories: false,
         },
       },
-      blog: false,
       // Replace with your project's social card
       image: "/img/avatar.png",
       navbar: {
