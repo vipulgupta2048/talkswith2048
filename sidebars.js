@@ -40,7 +40,7 @@ const sidebars = {
         type: "generated-index",
         title: "Paying it Forward",
         description:
-          "Documenting talks, podcast, conferences where I share openly about my work, the friction, and the journey of whatever I am building/learning/struggling with that year.",
+          "A list of initiatives I am part of, where I am helping others to grow and learn. This includes mentoring, organizing events, and other community-driven activities.",
         keywords: ["mentoring", "organizing", "community"],
       },
       collapsed: false,
@@ -53,7 +53,7 @@ const sidebars = {
         type: "generated-index",
         title: "Constantly Building",
         description:
-          "Documenting talks, podcast, conferences where I share openly about my work, the friction, and the journey of whatever I am building/learning/struggling with that year.",
+          "An exhaustive list of constantly building & purchasing domain names for side projects.",
         keywords: ["products", "designs", "hackathons"],
       },
       collapsed: false,
@@ -61,12 +61,12 @@ const sidebars = {
     },
     {
       type: "category",
-      label: "Past work",
+      label: "Work",
       link: {
         type: "generated-index",
-        title: "Past Work",
+        title: "Work",
         description:
-          "Documenting talks, podcast, conferences where I share openly about my work, the friction, and the journey of whatever I am building/learning/struggling with that year.",
+          "A collection of my work experiences, including programs, my initiative, researhc and full-time positions.",
         keywords: ["gsoc", "balena", "google summer of code", "open-source"],
       },
       collapsed: false,
