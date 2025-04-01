@@ -52,6 +52,19 @@ const config = {
     //   },
     // ],
     ["docusaurus-plugin-sass", {}],
+    
+      [
+        '@docusaurus/plugin-client-redirects',
+        {
+          redirects: [
+            {
+              from: '/Mixster',
+              to: 'https://mixster.dev',
+            },
+          ],
+        },
+      ],
+    
   ],
 
   presets: [

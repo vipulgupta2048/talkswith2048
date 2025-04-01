@@ -70,7 +70,16 @@ const sidebars = {
         keywords: ["gsoc", "balena", "google summer of code", "open-source"],
       },
       collapsed: false,
-      items: ["Google Summer of Code", "Mixster", "Balena", "ai-safety", "interview-questions"],
+      items: [
+        "Google Summer of Code",
+        "Balena",
+        "interview-questions",
+        {
+          type: "link",
+          label: "What is Mixster really?",
+          href: "https://mixster.dev/2019/05/24/mixster/",
+        },
+      ],
     },
   ],
 };
