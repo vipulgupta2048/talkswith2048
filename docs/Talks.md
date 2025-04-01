@@ -2,17 +2,19 @@
 From local meetups to global conferences, I've aimed to weave technical concepts into unconventional, witty narratives. I believe deeply in the impact of a good story. Through my talks, I strive to not just inform but to connect, making each concept relatable and each session memorable. I still have a lot to learn, and you can find me collecting feedback from the audience after the talk. I intend to bring my unqiue brand of fun into each session I propose. No repeats, no boring monologue, if I can help it - Just a good, fun story. Served on a stage near you. Next time, please pull me in for feedback that you can provide. 
 
 **A complete repository of talks selected & delivered since 2017**
-
-### 2024 
+<details>
+  <summary>2024</summary>
 
 | Title of the talk       | Link for Proposal  | Thoughts |
 | --- |:---:|---|
 | DelhiFOSS 2.0 Conference: [Pains, Processes & the Eventual Gains of Building Open-Source Hardtech projects](https://indiafoss.net/Delhi/2024/talk/08737248bb) | [Recording](https://youtu.be/fa62hVxUUGI?si=t64hvPlsNgQRaWZd) [Slides](https://slides.com/vipulgupta2048/delhifoss-hardtech/fullscreen) [Feedback](./img/fossindia/1.png) | Hard tech involves the combination of hardware and software to solve a problem. As opposed to soft tech, hard tech projects have to be completed on launch with hardware ready to ship. This talk is all about the pain, the processes and eventual gains in the journey of building hard tech project in the open. |
 | GitHub Constellation 2024: [How Balena Releases 100's of Embedded Operating Systems with GitHub Actions in Hours, Not Weeks](https://githubconstellation.com/schedule/how-balena-releases-100s-of-embedded-operating-systems-with-github-actions-in-hours-not-weeks) | Recording [Slides](https://slides.com/vipulgupta2048/constellation-2024/fullscreen) [Feedback 1](./img/github/feedback.png) [Feedback 2](./img/github/1.png) | This presentation was about how Balena is using GitHub Actions to test hundreds of OS images, specifically focusing on balenaOS and the challenges of testing embedded operating systems. The talk is about balenaOS's build, testing, and deployment pipelines using GitHub Actions. |
 
-
-### 2023
-
+</details>
+<details>
+  <summary>2023</summary>
+  
+  
 | Title of the talk       | Link for Proposal  | Thoughts |
 | --- |:---:|---|
 | Get me job | [Slides](https://slides.com/vipulgupta2048/job-i-need) | The sabbatical ended with a talk at my alma mater. I want to help revive the community we once ran in college called [ALiAS](https://asetalias.in/) and get students motivated about future prospects. "Get me job" was a project which helps folks find opportunities on Twitter, Hacker News & university job boards. I made that project as my presentation to help people find a framework or even a pattern of how to make the most out of college. |
@@ -25,6 +27,7 @@ From local meetups to global conferences, I've aimed to weave technical concepts
 | Linux Plumbers 2023 | [Selected] | THE Linux Kernel conference to attend in the world. 2023 was my first year stepping back into conferencing and another journey to United States to attend this would have stretched me a bit too far.  |
 | Open Source Summit Japan 2023 [Let's Build Our Own Virtual RaspberryPi Using QEMU Virtualization](https://sched.co/1TzRx) | [Slides](https://slides.com/vipulgupta2048/cdcon-japan-2023/) [Certificate](https://www.credly.com/badges/2e9936ba-60b7-4255-baf3-21d2fe530f92/) | Presenting my session at CDCon Japan 2023, going deeper into the hardware in the loop testing implemented at balena by my team. Discussed architecture and implementation details of the project. Received a lot of feedback from 50+ CI experts attending. The conference agenda was very well formulated and the schedule was one of the rare ones where each talk brought in something interesting <img src={require("./img/oss/1.jpg").default} height="{358}" width="{400}" /> |
 
+</details>
 
 <details>
   <summary>Sabbatical: Covid 2021-2022</summary>
