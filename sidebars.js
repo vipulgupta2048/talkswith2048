@@ -66,7 +66,7 @@ const sidebars = {
         type: "generated-index",
         title: "Work",
         description:
-          "A collection of my work experiences, including programs, my initiative, researhc and full-time positions.",
+          "A collection of all my work experiences, across programs, timezone, my initiatives, research and full-time positions.",
         keywords: ["gsoc", "balena", "google summer of code", "open-source"],
       },
       collapsed: false,
