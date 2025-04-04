@@ -76,7 +76,7 @@ const sidebars = {
         "interview-questions",
         {
           type: "link",
-          label: "What is Mixster really?",
+          label: "Mixster",
           href: "https://mixster.dev/2019/05/24/mixster/",
         },
       ],

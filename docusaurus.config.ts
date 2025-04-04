@@ -35,10 +35,7 @@ const config = {
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
-  i18n: {
-    defaultLocale: "en",
-    locales: ["en"],
-  },
+  i18n: { defaultLocale: "en", locales: ["en"] },
 
   plugins: [
     // [
@@ -52,19 +49,19 @@ const config = {
     //   },
     // ],
     ["docusaurus-plugin-sass", {}],
-    
-      [
-        '@docusaurus/plugin-client-redirects',
-        {
-          redirects: [
-            {
-              from: '/Mixster',
-              to: 'https://mixster.dev',
-            },
-          ],
-        },
-      ],
-    
+
+    [
+      "@docusaurus/plugin-client-redirects",
+      {
+        redirects: [
+          { from: "/Mixster", to: "https://mixster.dev" },
+          {
+            from: "/resume",
+            to: "https://drive.usercontent.google.com/download?id=1fwsRgQNhwp4vv23FjbRB3MGHbjWhoh9r&export=download&authuser=0",
+          },
+        ],
+      },
+    ],
   ],
 
   presets: [
@@ -72,13 +69,8 @@ const config = {
       "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       {
-        googleTagManager: {
-          containerId: "GTM-5JMKTPCM",
-        },
-        gtag: {
-          trackingID: "G-HW23H5D7FP",
-          anonymizeIP: true,
-        },
+        googleTagManager: { containerId: "GTM-5JMKTPCM" },
+        gtag: { trackingID: "G-HW23H5D7FP", anonymizeIP: true },
         sitemap: {
           changefreq: "weekly",
           priority: 0.5,
@@ -94,138 +86,84 @@ const config = {
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
         },
-        theme: {
-          customCss: [require.resolve("./src/css/custom.scss")],
-        },
+        theme: { customCss: [require.resolve("./src/css/custom.scss")] },
       },
     ],
   ],
 
   themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    {
-      algolia: {
-        appId: "2W8TQEDQ7Y",
-        apiKey: "9182b1e9f7a45bc038813c8c2791ed70",
-        indexName: "mixster",
-        contextualSearch: true,
-        // externalUrlRegex: "mixster\\.dev",
-        searchParameters: {},
-        searchPagePath: "search",
-        ignoreCanonicalTo: true
+  /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+  {
+    algolia: {
+      appId: "2W8TQEDQ7Y",
+      apiKey: "9182b1e9f7a45bc038813c8c2791ed70",
+      indexName: "mixster",
+      contextualSearch: true,
+      // externalUrlRegex: "mixster\\.dev",
+      searchParameters: {},
+      searchPagePath: "search",
+      ignoreCanonicalTo: true,
+    },
+
+    announcementBar: {
+      id: "support_us",
+      content: `Actively interviewing for new opportunities. <a target="_blank" rel="noopener noreferrer" href="/resume">Reach out!</a>`,
+      backgroundColor: "#1a1c1e",
+      textColor: "#FFFFFF",
+      isCloseable: true,
+    },
+    colorMode: {
+      defaultMode: "dark",
+      disableSwitch: false,
+      respectPrefersColorScheme: true,
+    },
+    metadata: [
+      { name: "description", content: tagline },
+      {
+        name: "keywords",
+        content:
+          "vipulgupta2048,mixster,developer,engineer,javascript,python,iot,kernel,open,source,rest,testing,hardware,loop, system,ci,cd,devops,cloud,balena,open-source,gophers,summit,talks,conferences",
+      },
+      { name: "twitter:card", content: "summary" },
+    ],
+    docs: { sidebar: { hideable: true, autoCollapseCategories: false } },
+    // Replace with your project's social card
+    image: "/img/avatar.png",
+    navbar: {
+      hideOnScroll: true,
+      logo: {
+        alt: `${org}-logo`,
+        src: "img/hatching.gif",
+        height: 48,
+        width: 38,
+        // srcDark: 'img/talkswith2048.png',
       },
 
-      // announcementBar: {
-      //   id: 'support_us',
-      //   content:
-      //     `Vipul would love your feedback on the docs/portfolio site, please fill <a target="_blank" rel="noopener noreferrer" href="${githubUrl}/issues/new">a GitHub issue</a>`,
-      //   backgroundColor: '#fafbfc',
-      //   textColor: '#091E42',
-      //   isCloseable: true,
-      // },
-      colorMode: {
-        defaultMode: "dark",
-        disableSwitch: false,
-        respectPrefersColorScheme: true,
-      },
-      metadata: [
+      items: [
         {
-          name: "description",
-          content: tagline,
+          type: "docSidebar",
+          sidebarId: "tutorialSidebar",
+          position: "right",
+          label: "Docs",
         },
+        { href: `https://mixster.dev`, label: "Blog", position: "left" },
         {
-          name: "keywords",
-          content:
-            "vipulgupta2048,mixster,developer,engineer,javascript,python,iot,kernel,open,source,rest,testing,hardware,loop, system,ci,cd,devops,cloud,balena,open-source,gophers,summit,talks,conferences",
+          href: `${githubUrl}/issues/new?assignees=vipulgupta2048&labels=&projects=&template=welcome-ideas.md&title=user-feedback`,
+          label: "Feedback",
+          position: "left",
         },
+        { href: `/resume`, label: "Resume", position: "right" },
+      ],
+    },
+    footer: {
+      links: [
         {
-          name: "twitter:card",
-          content: "summary",
+          html: `Built with 💜 on Docusaurus, written by @${org}</br><a href="/Introduction#credits">Steal responsibly</a> 👀, give it a <a href=${githubUrl}>star 🌟</a> if you find this cool and as always live in the mix!`,
         },
       ],
-      docs: {
-        sidebar: {
-          hideable: true,
-          autoCollapseCategories: false,
-        },
-      },
-      // Replace with your project's social card
-      image: "/img/avatar.png",
-      navbar: {
-        hideOnScroll: true,
-        logo: {
-          alt: `${org}-logo`,
-          src: "img/hatching.gif",
-          height: 48,
-          width: 38,
-          // srcDark: 'img/talkswith2048.png',
-        },
-        items: [
-          {
-            type: "docSidebar",
-            sidebarId: "tutorialSidebar",
-            position: "right",
-            label: "The Good Stuff",
-          },
-          {
-            href: `https://mixster.dev`,
-            label: "Mixster",
-            position: "left",
-          },
-          {
-            href: `https://mixster.dev/lets-goto`,
-            label: "Travel Docs",
-            position: "right",
-          },
-          {
-            href: `${githubUrl}/issues/new?assignees=vipulgupta2048&labels=&projects=&template=welcome-ideas.md&title=user-feedback`,
-            label: "New Ideas?",
-            position: "left",
-          },
-          {
-            position: "right",
-            label: "Usual Suspects",
-            items: [
-              {
-                href: `https://github.com/${org}`,
-                label: "GitHub",
-              },
-              {
-                href: `https://linkedin.com/in/${org}`,
-                label: "LinkedIn",
-              },
-              {
-                href: `https://twitter.com/${org}`,
-                label: "Twitter",
-              },
-              {
-                href: `https://instagram.com/vipulgupta.travel`,
-                label: "Instagram",
-              },
-              {
-                href: `https://t.me/${org}`,
-                label: "Telegram",
-              },
-              {
-                href: `https://bit.ly/vipresume`,
-                label: "Resume",
-              },
-            ],
-          },
-        ],
-      },
-      footer: {
-        links: [
-          {
-            html: `Built with 💜 on Docusaurus, written by @${org}</br><a href="/Introduction#credits">Steal responsibly</a> 👀, give it a <a href=${githubUrl}>star 🌟</a> if you find this cool and as always live in the mix!`,
-          },
-        ],
-      },
-      prism: {
-        theme: prismThemes.github,
-        darkTheme: prismThemes.dracula,
-      },
     },
+    prism: { theme: prismThemes.github, darkTheme: prismThemes.dracula },
+  },
 };
 
 export default config;
