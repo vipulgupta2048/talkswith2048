@@ -143,12 +143,12 @@ const config = {
         {
           type: "docSidebar",
           sidebarId: "tutorialSidebar",
-          position: "left",
+          position: "right",
           label: "Docs",
         },
         { href: `https://mixster.dev`, label: "Blog", position: "left" },
         { href: `https://mixster.dev/2019/05/24/mixster/`, label: "Mixster", position: "left" },
-        { href: `/resume`, label: "Resume", position: "left" },
+        { href: `/resume`, label: "Resume", position: "right" },
         // Social media icons
         {
           href: 'https://github.com/vipulgupta2048',
