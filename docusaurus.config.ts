@@ -147,18 +147,39 @@ const config = {
           label: "Docs",
         },
         { href: `https://mixster.dev`, label: "Blog", position: "left" },
-        {
-          href: `${githubUrl}/issues/new?assignees=vipulgupta2048&labels=&projects=&template=welcome-ideas.md&title=user-feedback`,
-          label: "Feedback",
-          position: "left",
-        },
+        { href: `https://mixster.dev/2019/05/24/mixster/`, label: "Mixster", position: "left" },
         { href: `/resume`, label: "Resume", position: "right" },
+        // Social media icons
+        {
+          href: 'https://github.com/vipulgupta2048',
+          position: 'right',
+          className: 'header-github-link',
+          'aria-label': 'GitHub',
+        },
+        {
+          href: 'https://www.linkedin.com/in/vipulgupta2048',
+          position: 'right',
+          className: 'header-linkedin-link',
+          'aria-label': 'LinkedIn',
+        },
+        {
+          href: 'https://www.instagram.com/vipulgupta2048',
+          position: 'right',
+          className: 'header-instagram-link',
+          'aria-label': 'Instagram',
+        },
+        {
+          href: 'https://twitter.com/vipulgupta2048',
+          position: 'right',
+          className: 'header-twitter-link',
+          'aria-label': 'Twitter',
+        }
       ],
     },
     footer: {
       links: [
         {
-          html: `Built with 💜 on Docusaurus, written by @${org}</br><a href="/Introduction#credits">Steal responsibly</a> 👀, give it a <a href=${githubUrl}>star 🌟</a> if you find this cool and as always live in the mix!`,
+          html: `Built with 💜 on Docusaurus, written by @${org}</br><a href="${githubUrl}/issues/new?assignees=vipulgupta2048&labels=&projects=&template=welcome-ideas.md&title=user-feedback">Steal responsibly</a> 👀, give the template a <a href=${githubUrl}>star 🌟</a> and as always live in the mix!`,
         },
       ],
     },
