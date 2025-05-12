@@ -2,6 +2,10 @@
 
 .avatarContainer {
   margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  
   @include small-size {
     margin: 2rem 0 0;
   }
@@ -21,5 +25,62 @@ $avatar-size: 410px;
 
   @include small-size {
     margin: 0 auto;
+  }
+}
+
+.imageContainer {
+  margin: 2rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  @include small-size {
+    margin: 1.5rem 0;
+  }
+}
+
+.careerPivotImage {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  
+  &:hover {
+    transform: scale(1.02);
+  }
+  
+  @include small-size {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+}
+
+.hackmitImage {
+  width: 100%;
+  max-width: $avatar-size;
+  margin-top: 1rem;
+  
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+  
+  @include small-size {
+    max-width: 100%;
+    margin: 1rem auto 0;
+    
+    img {
+      border-radius: 8px;
+    }
   }
 }
