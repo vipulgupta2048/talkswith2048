@@ -1,4 +1,4 @@
-I am a product owner with 6+ years of niche expertise in building hard-tech applications, scalable documentation, and open-source communities.
+I am a product owner with 6+ years of niche expertise in building hard-tech applications, scalable documentation, and thriving open-source communities.
 
 My diverse experience comes from wearing multiple hats at startups, taking ownership in uncertainty and solving complex problems with first principles thinking. My professional background spans full stack development, product development, release engineering, DevOps, developer education, community management and growth. Each career pivot into a completely new niche, under unforgiving circumstances and challenging odds is where I've delivered my best work.
 

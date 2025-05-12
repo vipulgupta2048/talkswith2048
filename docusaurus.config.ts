@@ -49,20 +49,7 @@ const config = {
     //   },
     // ],
     ["docusaurus-plugin-sass", {}],
-
-    [
-      "@docusaurus/plugin-client-redirects",
-      {
-        redirects: [
-          {
-            from: ["/Mixster"],  // Make this an array for flexibility
-            to: "https://mixster.dev"
-          },
-        ],
-      },
-    ],
   ],
-
   presets: [
     [
       "classic",
@@ -106,7 +93,7 @@ const config = {
 
     announcementBar: {
       id: "support_us",
-      content: `Actively interviewing for new opportunities. <a target="_blank" rel="noopener noreferrer" href="/resume">Reach out!</a>`,
+      content: `Actively interviewing for new opportunities. <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1fwsRgQNhwp4vv23FjbRB3MGHbjWhoh9r/view">Reach out!</a>`,
       backgroundColor: "#1a1c1e",
       textColor: "#FFFFFF",
       isCloseable: true,
@@ -121,7 +108,7 @@ const config = {
       {
         name: "keywords",
         content:
-          "vipulgupta2048,mixster,developer,engineer,javascript,python,iot,kernel,open,source,rest,testing,hardware,loop, system,ci,cd,devops,cloud,balena,open-source,gophers,summit,talks,conferences",
+          "vipulgupta2048,mixster,developer,engineer,javascript,python,iot,kernel,open,source,rest,testing,hardware,loop,system,ci,cd,devops,cloud,balena,open-source,gophers,summit,talks,conferences",
       },
       { name: "twitter:card", content: "summary" },
     ],
@@ -147,7 +134,7 @@ const config = {
         },
         { href: `https://mixster.dev`, label: "Blog", position: "left" },
         { href: `https://mixster.dev/2019/05/24/mixster/`, label: "Mixster", position: "left" },
-        { href: `https://drive.usercontent.google.com/download?id=1fwsRgQNhwp4vv23FjbRB3MGHbjWhoh9r&export=download&authuser=0`, label: "Resume", position: "right" },
+        { href: `https://drive.google.com/file/d/1fwsRgQNhwp4vv23FjbRB3MGHbjWhoh9r/view`, label: "Resume", position: "right" },
         // Social media icons
         {
           href: 'https://github.com/vipulgupta2048',

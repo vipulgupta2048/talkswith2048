@@ -1,3 +1,0 @@
-# Mixster
-
-WIP
