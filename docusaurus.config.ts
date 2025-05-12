@@ -54,11 +54,13 @@ const config = {
       "@docusaurus/plugin-client-redirects",
       {
         redirects: [
-          { 
+          {
             from: ["/Mixster"],  // Make this an array for flexibility
-            to: "https://mixster.dev" 
+            to: "https://mixster.dev"
           },
-    ],},
+        ],
+      },
+    ],
   ],
 
   presets: [
