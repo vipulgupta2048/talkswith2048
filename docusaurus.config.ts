@@ -54,14 +54,11 @@ const config = {
       "@docusaurus/plugin-client-redirects",
       {
         redirects: [
-          { from: "/Mixster", to: "https://mixster.dev" },
-          {
-            from: "/resume",
-            to: "https://drive.usercontent.google.com/download?id=1fwsRgQNhwp4vv23FjbRB3MGHbjWhoh9r&export=download&authuser=0",
+          { 
+            from: ["/Mixster"],  // Make this an array for flexibility
+            to: "https://mixster.dev" 
           },
-        ],
-      },
-    ],
+    ],},
   ],
 
   presets: [
@@ -148,7 +145,7 @@ const config = {
         },
         { href: `https://mixster.dev`, label: "Blog", position: "left" },
         { href: `https://mixster.dev/2019/05/24/mixster/`, label: "Mixster", position: "left" },
-        { href: `/resume`, label: "Resume", position: "right" },
+        { href: `https://drive.usercontent.google.com/download?id=1fwsRgQNhwp4vv23FjbRB3MGHbjWhoh9r&export=download&authuser=0`, label: "Resume", position: "right" },
         // Social media icons
         {
           href: 'https://github.com/vipulgupta2048',
