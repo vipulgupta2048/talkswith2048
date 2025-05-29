@@ -1,4 +1,4 @@
-# [Currently working] Balena
+# Balena
 
 Started working at Balena in April 2020 as a software engineer in the balenaOS team. 
 Maintain Leviathan & autokit, key components in the open-source hardware in the loop testing pipeline which enables support for over 200+ device types.  

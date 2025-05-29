@@ -1,4 +1,4 @@
-# Answers to Interview Questions
+# Questions about work
 
 <details>
   <summary>What’s the most impressive or the most difficult thing that you’ve built? Describe the technical challenge in depth and a link to it if possible.</summary>
@@ -23,7 +23,7 @@ I have also been sharing my work in talks and workshops at open-source conferenc
 </details>
 
 <details>
-  <summary>Leviathan: Story so far.</summary>
+  <summary>Ownership I took on at the deep end - Leviathan: Story so far.</summary>
   
   The time when we almost scrapped Leviathan.
   Hardware-in-loop testing (HiLT) is a challenging concept. It’s a system able to test software on real hardware to provide back feedback.
