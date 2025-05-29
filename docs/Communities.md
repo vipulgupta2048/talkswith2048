@@ -3,6 +3,7 @@ After being an organizer for many years to a number of communities, I have thoug
 
 | Meetups/Conferences | Link | Years  | Comments |
 | --- | --- | --- | --- |
+| Open Hardware in the Loop Community | [Bi-weekly meetings](https://openhil.github.io) | 2024 - present  | Forum for software engineers, hardware hackers, QA teams, and embedded board manufacturers to come together and have conversations about Hardware in the Loop (HiL or HitL) systems |
 | Github GitTogether Meetups | [Meetup](https://www.meetup.com/gittogether-delhi/?eventOrigin=event_home_page) | 2024 - present  | Organizer for GitTogether Delhi NCR is a gathering for developers in and around Delhi, India. Powered by GitHub and led by community experts, the events cover diverse topics such as AI, Open Source, and Security. |
 | PyCon India | [Website](https://in.pycon.org) | 2018 - present  | PyCon India 2023 is the premier conference for Python enthusiasts and professionals, offering an unparalleled opportunity to dive deep into the world of Python and explore its limitless potential. Worn multiple hats at the conference   |
 | Monthly City Meetups | [Posts on Twitter](https://twitter.com/vipulgupta2048/status/1547295294395928576?s=20&t=Az4ux_k_zudpqE7OA3MCGA) | 2021 - present | I organize mini meetups with folks in and around the city who like to come out and meet people on Saturday. |
