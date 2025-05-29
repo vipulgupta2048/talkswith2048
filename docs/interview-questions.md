@@ -49,9 +49,9 @@ I have also been sharing my work in talks and workshops at open-source conferenc
 </details>
 
 <details>
-  <summary>What's that one time you executed a strategy/feature/product launch under pressure in resource constrained environments? Global supply chain storage. </summary>
+  <summary>What's that one time you executed a strategy/feature/product launch under pressure in resource constrained environments?</summary>
   
-  **Navigating Hardware Scarcity: Virtualizing balenaOS Testing Under Pressure**  
+  ## Navigating Hardware Scarcity: Virtualizing balenaOS Testing Under Pressure**  
 
 **Situation**  
 During the 2020 global semiconductor shortage, our hardware testing pipeline at balena faced collapse. With 40% of our critical test devices unavailable and release deadlines looming, I led the charge to virtualize balenaOS testing to avoid delaying updates for thousands of IoT fleets.  
