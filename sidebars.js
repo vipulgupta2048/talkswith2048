@@ -76,6 +76,7 @@ const sidebars = {
         {
           type: "link",
           label: "Mixster",
+          description: "My initiative to 'right' the docs, build processes and do friction logging for startups and organizations.",
           href: "https://mixster.dev/2019/05/24/mixster/",
         },
         "Google Summer of Code",
