@@ -76,18 +76,20 @@ const sidebars = {
         {
           type: "link",
           label: "Mixster",
-          description: "My initiative to 'right' the docs, build processes and do friction logging for startups and organizations.",
+          description: "Initiative to 'right' the docs for startups and organizations.",
           href: "https://mixster.dev/2019/05/24/mixster/",
         },
         "Google Summer of Code",
         {
           type: "link",
           label: "2018: Mozilla Foundation - Mozfest",
+          description: "My experience at Mozfest 2018, where I worked on the Mozilla Foundation's open-source projects.",
           href: "https://mixster.dev/2018/11/20/mozfest2018/",
         },
         {
           type: "link",
           label: "2018: IBM at HackMIT",
+          description: "Built Wats'On The Roof; Used later for IBM Watson's onboarding guides.",
           href: "https://mixster.dev/2018/09/28/hackmit-2018/",
         },
       ],
