@@ -3,7 +3,8 @@
 <details>
   <summary>What’s the most impressive or the most difficult thing that you’ve built? Describe the technical challenge in depth and a link to it if possible.</summary>
   
-  Creating a hardware-in-the-loop (HiL) pipeline to test software on actual hardware. 
+  # Creating a hardware-in-the-loop (HiL) pipeline to test software on actual hardware. 
+
 IoT systems need to be extremely reliable. Environmental, hardware, software, networks, and even humans are all causes of failures to account for. BalenaOS supports 100+ device types, that’s 100+ distinct balenaOS releases that we support. Each version needs to be secure, fault-tolerant, compatible, and be capable of self-healing in cases of incidents.
 Our HiL pipeline tests each version of balenaOS directly on a device under test (DUT) that is connected to our test jig called autokit. The device is booted and an operating system is flashed, provisioned, tested, validated, upgraded, and then corrupted in a few different ways to check recovery. Our system completely automates balenaOS release from pull request to production. Every week we test 2000+ balenaOS releases, saving our team over 160 hours of work combined.
 
@@ -25,7 +26,8 @@ I have also been sharing my work in talks and workshops at open-source conferenc
 <details>
   <summary>Ownership I took on at the deep end - Leviathan: Story so far.</summary>
   
-  The time when we almost scrapped Leviathan.
+  # The time when we almost scrapped Leviathan.
+  
   Hardware-in-loop testing (HiLT) is a challenging concept. It’s a system able to test software on real hardware to provide back feedback.
   
   Balena was my first job. In my 3rd month in the company, we received a silent deadline by the CEO to give up the concept or start fresh. A truly desperate time turned worse with the senior developer leaving the project to only two people in the team. Leviathan project overall was in a bad shape. Confused product decisions, unreasonable requirements, undocumented code and lots of technical debt was where I spent a lot of time in the first 6 months.
@@ -51,7 +53,7 @@ I have also been sharing my work in talks and workshops at open-source conferenc
 <details>
   <summary>What's that one time you executed a strategy/feature/product launch under pressure in resource constrained environments?</summary>
   
-  ## Navigating Hardware Scarcity: Virtualizing balenaOS Testing Under Pressure**  
+  ## Navigating Hardware Scarcity: Virtualizing balenaOS Testing Under Pressure
 
 **Situation**  
 During the 2020 global semiconductor shortage, our hardware testing pipeline at balena faced collapse. With 40% of our critical test devices unavailable and release deadlines looming, I led the charge to virtualize balenaOS testing to avoid delaying updates for thousands of IoT fleets.  
@@ -77,8 +79,10 @@ The virtualization system became a cornerstone of our DevOps strategy, later ado
 <details>
   <summary>Tell me about a time when you had to take on a task that was not part of your usual responsibilities. How did you approach the situation, and what did you learn from it?</summary>
 
-For the longest time, we didn’t have a documentarian or any docs team. It’s incredibly hard to get engineers to keep the docs updated. Finding someone to do docs for operating systems, backend components, Docker Engines, Linux, and hardware devices is a tall order. I have always followed the principle of “If you see something, fix something.” 
+## Taking ownership of documentation at Balena
 
+For the longest time, we didn’t have a documentarian or any docs team. It’s incredibly hard to get engineers to keep the docs updated. Finding someone to do docs for operating systems, backend components, Docker Engines, Linux, and hardware devices is a tall order and that's the vast surface of balena's product surface. With no maintainence, 400+ issues open, docs were outdated, incomplete, and not user-friendly. I have always followed the principle of `If you see something, fix something.`
+ 
 I decided to take on ownership of urgent issues on BalenaCloud, which could have been easy fixes, but realized all too soon that this needs to be an entire company effort and a culture issue that we need to tackle. Thankfully, the CEO had a pretty big buy-in on docs already and needed no convincing on the sad state of docs. I had a vision of how to get them back on track. 
 
 I worked with the leadership team to implement Documentation Driven Development from scratch that would suit our way of working. I championed this and helped my colleagues take this up gradually in their projects. I even took sessions to help my peers in the operations team [learn Git & GitHub](https://docs.mixster.dev/git-intro). We truly wanted everyone to write and commit docs. 
@@ -92,6 +96,8 @@ Time passed, as I methodologically worked on a roadmap towards a further point o
 
 <details>
   <summary>Can you describe a time when you had to scale a system or application to handle a significant increase in traffic or usage? What were the key challenges you faced, and how did you overcome them?</summary>
+
+# Scaling a queue management system of a hardware-in-the-loop testing system
 
 We implemented a queue management for our test workers that accepts test jobs at scale. Before a test job starts, available workers are picked from the pool based on the DUT (device under test), peripherals, CPU architecture, and software tags.
 
@@ -112,6 +118,8 @@ I want to mention, in the end, we could have thrown money at the problem to hori
 
 <details>
 <summary>Have you ever had to work with limited resources to solve a problem? How did you prioritize tasks and make decisions about what to tackle first? Include an example</summary>
+
+## Working in resource-constrained environments
 
 IoT has been the biggest teacher of how to solve complex problems with limited resources. Whether that’s RAM, storage, cost, or even the physical boundary of what a device can or can’t do. One of the examples I want to take an example of limited resources such as time. Deadlines are industry-agnostic. 
 
