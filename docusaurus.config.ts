@@ -67,7 +67,7 @@ const config = {
           sidebarPath: "./sidebars.js",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: `${githubUrl}/edit/master/docs/`,
+          editUrl: `${githubUrl}/edit/master/`,
           routeBasePath: "/",
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,

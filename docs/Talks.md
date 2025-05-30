@@ -7,7 +7,6 @@ From local meetups to global conferences, I've aimed to weave technical concepts
 
 | Title of the talk       | Link for Proposal  | Thoughts |
 | --- |:---:|---|
-
 | OpenSSF Japan Community day 2025 | Accepted |  |
 | Open Source Summit North America: Automated testing Summit 2025 | Accepted |  |
 | OpenSSF India Conference 2025 | Accepted |  |
