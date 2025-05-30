@@ -72,13 +72,13 @@ const sidebars = {
       collapsed: false,
       items: [
         "Balena",
-        "Google Summer of Code",
         "interview-questions",
         {
           type: "link",
           label: "Mixster",
           href: "https://mixster.dev/2019/05/24/mixster/",
         },
+        "Google Summer of Code",
         {
           type: "link",
           label: "2018: Mozilla Foundation - Mozfest",
