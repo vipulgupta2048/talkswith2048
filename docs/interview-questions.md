@@ -3,7 +3,7 @@
 <details>
   <summary>What’s the most impressive or the most difficult thing that you’ve built? Describe the technical challenge in depth and a link to it if possible.</summary>
   
-  # Creating a hardware-in-the-loop (HiL) pipeline to test software on actual hardware. 
+  ## Creating a hardware-in-the-loop (HiL) pipeline to test software on actual hardware. 
 
 IoT systems need to be extremely reliable. Environmental, hardware, software, networks, and even humans are all causes of failures to account for. BalenaOS supports 100+ device types, that’s 100+ distinct balenaOS releases that we support. Each version needs to be secure, fault-tolerant, compatible, and be capable of self-healing in cases of incidents.
 
@@ -27,7 +27,7 @@ I have also been sharing my work in talks and workshops at open-source conferenc
 <details>
   <summary>Ownership I took on at the deep end - Leviathan: Story so far.</summary>
   
-  # The time when we almost scrapped Leviathan.
+  ## The time when we almost scrapped Leviathan.
   
   Hardware-in-loop testing (HiLT) is a challenging concept. It’s a system able to test software on real hardware to provide back feedback.
   
@@ -98,7 +98,7 @@ Time passed, as I methodologically worked on a roadmap towards a further point o
 <details>
   <summary>Can you describe a time when you had to scale a system or application to handle a significant increase in traffic or usage? What were the key challenges you faced, and how did you overcome them?</summary>
 
-# Scaling a queue management system of a hardware-in-the-loop testing system
+## Scaling a queue management system of a hardware-in-the-loop testing system
 
 We implemented a queue management for our test workers that accepts test jobs at scale. Before a test job starts, available workers are picked from the pool based on the DUT (device under test), peripherals, CPU architecture, and software tags.
 
