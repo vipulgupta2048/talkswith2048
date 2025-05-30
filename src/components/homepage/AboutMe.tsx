@@ -18,14 +18,14 @@ export const AboutMe: FunctionComponent = () => {
           <p>
             My diverse experience comes from wearing multiple hats at startups,
             taking ownership in uncertainty and solving complex problems with
-            first principles thinking. My professional background spans full
-            stack development, product development, release engineering, DevOps,
-            developer education, community management and growth.
+            first principles thinking. I am a generalist, excelling in full
+            stack development, product management, release engineering, DevOps,
+            developer education, community management, and growth.
           </p>
 
           <blockquote>
             With each pivot in my career, I have delivered my best work from
-            taking on new challenges, embracing the uncertainity and excelling
+            taking on new challenges, embracing the uncertainty, and excelling
             against the odds.
           </blockquote>
 
@@ -34,25 +34,27 @@ export const AboutMe: FunctionComponent = () => {
             As a skilled operator, my core engineering experience lies in
             building highly scalable, reliable applications with
             Node.js/TypeScript/Python for resource-constrained environments. I
-            built and maintained the first ever open-source Hardware in the Loop
-            system for a leading IoT fleet management company. While mastering
-            hardware, firmware, and operating systems during this stint, I also
-            created a fully automated generative documentation system before
-            LLMs became mainstream, saved millions of dollars in cloud &
-            engineering costs through strategic projects, and presented my
-            learnings (and mistakes too) at major international conferences as a
-            speaker.
+            built and maintained the first-ever open-source Hardware in the Loop
+            system for a leading IoT fleet management company.
+          </p>
+
+          <p>
+            While mastering hardware, firmware, and operating systems during
+            this stint, I also created a fully automated generative
+            documentation system before LLMs became mainstream, saved millions
+            of dollars in cloud & engineering costs through strategic projects,
+            and presented my learnings (and mistakes too) at major international
+            conferences as a speaker.
           </p>
 
           <h2>Open-source shaped who I am</h2>
           <p>
-            Contributing since 2016, my origin story in tech is through
-            open-source. I initially aspired to be an architect in urban
-            planning, but fell in love with the idea of a community building
-            things together globally—for everyone, for free. I've been fortunate
-            to collaborate with some of the best minds in the industry through
-            Mozilla Festival, HackMIT, Google Summer of Code, AMA Mentorship
-            program & Google Code-in.
+            Contributing since 2016, my origin story started with open-source. I
+            initially aspired to be an architect in urban planning, but fell in
+            love with the idea of a community coming together to build software
+            — for everyone, for free. I've collaborated with the best minds in
+            the industry through Mozilla Festival, HackMIT, Google Summer of
+            Code, AMA Mentorship program & Google Code-in.
           </p>
 
           <blockquote>
@@ -65,21 +67,18 @@ export const AboutMe: FunctionComponent = () => {
 
           <h2>Present day</h2>
           <p>
-            My weekends are dedicated as Communication Lead for PyCon India,
-            mentoring college students through ALiAS, a 3000+ members
-            open-source community fostering open-sourc, and organizing meetups
-            for GitHub GitTogether Delhi-NCR community. I've also been involved
-            in various initiatives promoting open-source software and hardware,
-            including workshops, hackathons, and meetups. Currently, I'm scaling
-            up the Open Hardware in the Loop community.
+            5 days a week, I am the product owner & documentation lead at
+            Balena. I also run Mixster, an initiative to "right" the docs, build
+            scalable content pipelines, and do friction logging for startups and
+            organizations. I'm always exploring new challenges at the
+            intersection of product, people, and code.
           </p>
-
           <p>
-            Today, I serve as a product owner & documentation lead at Balena. I
-            also run Mixster, an initiative to "right" the docs and build
-            scalable content pipelines for startups and organizations. I'm
-            always exploring new challenges at the intersection of product,
-            people, and code.
+            My weekends are spent as comms Lead for PyCon India, mentoring
+            college students through ALiAS, a 3000+ members open-source
+            community fostering open-source and organizing meetups for GitHub
+            GitTogether Delhi-NCR community. Currently, scaling up the Open
+            Hardware in the Loop community.
           </p>
         </div>
         <div className={clsx("col col--5", styles.avatarContainer)}>

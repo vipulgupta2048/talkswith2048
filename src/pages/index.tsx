@@ -8,7 +8,7 @@ import {
 } from "../components/homepage/SocialLinks";
 import { Hero } from "../components/homepage/Hero";
 
-import AboutMeDesc from "./assets/index/_about-me.md";
+// import AboutMeDesc from "./assets/index/_about-me.md";
 
 const socialLinks: SocialLinkData[] = [
   {
@@ -92,7 +92,7 @@ export default function Home(): JSX.Element {
       <Hero />
       <main>
         <div className="container padding-vert">
-          <AboutMe descriptionComponent={<AboutMeDesc />} />
+          <AboutMe />
           <SocialLinks data={socialLinks} />
         </div>
       </main>
