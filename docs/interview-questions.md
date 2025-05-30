@@ -6,6 +6,7 @@
   # Creating a hardware-in-the-loop (HiL) pipeline to test software on actual hardware. 
 
 IoT systems need to be extremely reliable. Environmental, hardware, software, networks, and even humans are all causes of failures to account for. BalenaOS supports 100+ device types, that’s 100+ distinct balenaOS releases that we support. Each version needs to be secure, fault-tolerant, compatible, and be capable of self-healing in cases of incidents.
+
 Our HiL pipeline tests each version of balenaOS directly on a device under test (DUT) that is connected to our test jig called autokit. The device is booted and an operating system is flashed, provisioned, tested, validated, upgraded, and then corrupted in a few different ways to check recovery. Our system completely automates balenaOS release from pull request to production. Every week we test 2000+ balenaOS releases, saving our team over 160 hours of work combined.
 
 Broad Technical challenges that show my learning journey:

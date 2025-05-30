@@ -71,13 +71,23 @@ const sidebars = {
       },
       collapsed: false,
       items: [
-        "Google Summer of Code",
         "Balena",
+        "Google Summer of Code",
         "interview-questions",
         {
           type: "link",
           label: "Mixster",
           href: "https://mixster.dev/2019/05/24/mixster/",
+        },
+        {
+          type: "link",
+          label: "2018: Mozilla Foundation - Mozfest",
+          href: "https://mixster.dev/2018/11/20/mozfest2018/",
+        },
+        {
+          type: "link",
+          label: "2018: IBM at HackMIT",
+          href: "https://mixster.dev/2018/09/28/hackmit-2018/",
         },
       ],
     },
