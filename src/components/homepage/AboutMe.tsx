@@ -91,6 +91,12 @@ export const AboutMe: FunctionComponent = () => {
               alt="HackMIT Experience"
             />
           </div>
+          <div className={styles.hackmitImage}>
+            <img
+              src={useBaseUrl("/img/1.jpg")}
+              alt="GitHub GitTogether Constellation"
+            />
+          </div>
         </div>
       </div>
     </div>
