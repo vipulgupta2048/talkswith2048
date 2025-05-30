@@ -31,7 +31,7 @@ const sidebars = {
         keywords: ["talks", "conferences", "podcast"],
       },
       collapsed: false,
-      items: ["Talks", "Podcasts", "Conferences"],
+      items: ["Talks", "Podcasts", "Conferences", "Workshops"],
     },
     {
       type: "category",

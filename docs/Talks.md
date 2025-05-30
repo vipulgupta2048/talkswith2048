@@ -3,14 +3,26 @@ From local meetups to global conferences, I've aimed to weave technical concepts
 
 **A complete repository of talks selected & delivered since 2017**
 <details>
+  <summary>2025</summary>
+
+| Title of the talk       | Link for Proposal  | Thoughts |
+| --- |:---:|---|
+
+| OpenSSF Japan Community day 2025 | Accepted |  |
+| Open Source Summit North America: Automated testing Summit 2025 | Accepted |  |
+| OpenSSF India Conference 2025 | Accepted |  |
+
+</details>
+<details>
   <summary>2024</summary>
 
 | Title of the talk       | Link for Proposal  | Thoughts |
 | --- |:---:|---|
 | DelhiFOSS 2.0 Conference: [Pains, Processes & the Eventual Gains of Building Open-Source Hardtech projects](https://indiafoss.net/Delhi/2024/talk/08737248bb) | [Recording](https://youtu.be/fa62hVxUUGI?si=t64hvPlsNgQRaWZd) [Slides](https://slides.com/vipulgupta2048/delhifoss-hardtech/fullscreen) [Feedback](./img/fossindia/1.png) | Hard tech involves the combination of hardware and software to solve a problem. As opposed to soft tech, hard tech projects have to be completed on launch with hardware ready to ship. This talk is all about the pain, the processes and eventual gains in the journey of building hard tech project in the open. |
 | GitHub Constellation 2024: [How Balena Releases 100's of Embedded Operating Systems with GitHub Actions in Hours, Not Weeks](https://githubconstellation.com/schedule/how-balena-releases-100s-of-embedded-operating-systems-with-github-actions-in-hours-not-weeks) | Recording [Slides](https://slides.com/vipulgupta2048/constellation-2024/fullscreen) [Feedback 1](./img/github/feedback.png) [Feedback 2](./img/github/1.png) | This presentation was about how Balena is using GitHub Actions to test hundreds of OS images, specifically focusing on balenaOS and the challenges of testing embedded operating systems. The talk is about balenaOS's build, testing, and deployment pipelines using GitHub Actions. |
-
+| GitHub Constellation Delhi 2024: What's new with GitHub Copilot by Vipul Gupta | [Post](https://www.linkedin.com/feed/update/urn:li:activity:7276636792185872384/) [Feedback](./img/github/2.png) | Covering the updates in Copilot with agent mode and using different models to build a small game right in front of the audience having experienced developers and technical program managers. |
 </details>
+
 <details>
   <summary>2023</summary>
   

@@ -24,7 +24,6 @@ export const Hero: FunctionComponent = () => {
           <Link to="/Introduction" className={clsx("button button--outline button--primary", styles.btn)} > About </Link>
           <Link to="/category/work" className={clsx("button button--outline button--primary", styles.btn)} > Work </Link>
           <Link to="/category/sharing-what-i-know" className={clsx("button button--outline button--primary", styles.btn)} > Talks </Link>
-          <Link to="/category/constantly-building" className={clsx("button button--outline button--primary", styles.btn)} > Currently building ? </Link>
         </div>
       </div>
     </header>
