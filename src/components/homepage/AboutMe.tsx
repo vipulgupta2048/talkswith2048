@@ -11,15 +11,15 @@ export const AboutMe: FunctionComponent = () => {
         <div className="col col--6">
           <p>
             I am a product owner with 6+ years of niche expertise in building
-            hard-tech applications, scalable documentation, and thriving
-            open-source communities.
+            hard-tech applications, scaling
+            open-source communities and leading developer education efforts.
           </p>
 
           <p>
             My diverse experience comes from wearing multiple hats at startups,
             taking ownership in uncertainty and solving complex problems with
             first principles thinking. I am a generalist, excelling in full
-            stack development, product management, release engineering, DevOps,
+            stack development, product management, release engineering, DevOps, documentation, 
             developer education, community management, and growth.
           </p>
 
