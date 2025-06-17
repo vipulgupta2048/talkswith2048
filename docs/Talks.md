@@ -7,9 +7,12 @@ From local meetups to global conferences, I've aimed to weave technical concepts
 
 | Title of the talk       | Link for Proposal  | Thoughts |
 | --- |:---:|---|
-| OpenSSF Japan Community day 2025 | Accepted |  |
-| Open Source Summit North America: Automated testing Summit 2025 | Accepted |  |
-| OpenSSF India Conference 2025 | Accepted |  |
+| Open Source Summit Europe: OpenSSF Conf | Accepted |  |
+| Internet Freedom Foundation x FOSS United Delhi: [Decoding The AI Black Box: An overwhelmed engineer's guide to LLM Evals](https://fossunited.org/c/delhi/2025-june/cfp/ab8r4dbmm6) | [Slides](https://slides.com/vipulgupta2048/llm-ai-evals-vipulgupta2048) [feedback](./img/fossindia/talk-feedback-1.png) | Presented my first session on LLM evals at the Interenet Freedom Foundation. Attendees took an in-depth dive into understanding AI evals, how it's fundamentally different from testing/benchmarking, impact on LLM pipeline, systematic ways to evaluate applications, types of evals and how to become an evaluator. |
+| Getting Started to Open-Source with GitHub workshop | Invited to IIMT University, Meerut |  |
+| KubeCon Japan: OpenSSF Japan Community day | Accepted | Couldn't attend |
+| Open Source Summit North America: Automated testing Summit 2025 | Accepted | Couldn't make it |
+| Open Source India 2025: OpenSSF Conference | Accepted |  |
 
 </details>
 <details>
