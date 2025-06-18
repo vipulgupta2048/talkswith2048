@@ -4,19 +4,18 @@ From local meetups to global conferences, I've aimed to weave technical concepts
 **A complete repository of talks selected & delivered since 2017**
 <details>
   <summary>2025</summary>
-
 | Title of the talk       | Link for Proposal  | Thoughts |
 | --- |:---:|---|
-| Open Source Summit Europe: OpenSSF Conf | Accepted |  |
+| Open Source Summit EU 2025: OpenSSF Conf | Accepted |  |
 | Internet Freedom Foundation x FOSS United Delhi: [Decoding The AI Black Box: An overwhelmed engineer's guide to LLM Evals](https://fossunited.org/c/delhi/2025-june/cfp/ab8r4dbmm6) | [Slides](https://slides.com/vipulgupta2048/llm-ai-evals-vipulgupta2048) [feedback](./img/fossindia/talk-feedback-1.png) | Presented my first session on LLM evals at the Interenet Freedom Foundation. Attendees took an in-depth dive into understanding AI evals, how it's fundamentally different from testing/benchmarking, impact on LLM pipeline, systematic ways to evaluate applications, types of evals and how to become an evaluator. |
-| Getting Started to Open-Source with GitHub workshop | Invited to IIMT University, Meerut |  |
+| IIMT University GDG on Campus: [GitToGether - Getting Started with Git & GitHub](https://github.com/vipulgupta2048/git-intro) | [Workshop](https://www.linkedin.com/feed/update/urn:li:activity:7333078054379945984/) | Hands-on workshop introducing Git fundamentals, GitHub collaboration, branching, commits, and pull requests to students at IIMT University, Meerut. [Read more](https://docs.mixster.dev/workshops#-iimt-university-gdg-on-campus-meerut---gittogather-event). | 
 | KubeCon Japan: OpenSSF Japan Community day | Accepted | Couldn't attend |
 | Open Source Summit North America: Automated testing Summit 2025 | Accepted | Couldn't make it |
 | Open Source India 2025: OpenSSF Conference | Accepted |  |
 
 </details>
 <details>
-  <summary>2024</summary>
+  <summary>## 2024</summary>
 
 | Title of the talk       | Link for Proposal  | Thoughts |
 | --- |:---:|---|
