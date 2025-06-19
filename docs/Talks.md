@@ -15,7 +15,7 @@ From local meetups to global conferences, I've aimed to weave technical concepts
 
 </details>
 <details>
-  <summary>## 2024</summary>
+  <summary><h1> 2024</h1></summary>
 
 | Title of the talk       | Link for Proposal  | Thoughts |
 | --- |:---:|---|
