@@ -106,8 +106,7 @@ export const Testimonials: React.FC = () => {
     <section className="testimonials-section">
       <div className="container">
         <div className="testimonials-header">
-          <h2>What People Say</h2>
-          <p>Hear from the amazing people I've had the privilege to work with</p>
+          <h2>Hear it from the people</h2>
         </div>
         
         <div className="testimonials-marquee-container">

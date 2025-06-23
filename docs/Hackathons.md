@@ -12,6 +12,7 @@
 | Sabbatical: Covid 2020-2021 | - | - |
 |~ 2024 ~|||
 | Testbutler wins [GitLab Pitch Competition](https://gitlab.devpost.com) 🔥🔥 | [WINNER, 4th prize!](https://devpost.com/software/testbutler-iot-testing-made-easier) | Held during January '2024. The hackathon was a chance to build a proof of concept and a pitch to improve services on GitLab's platform. I pitched TestButler as a new pipeline for GitLab customers to test their code directly on their devices using GitLab Runners and Balena. Won $3k cash prize for my project. <img src={require("./img/hackathon/1.png").default} height="{350}" width="{450}" /> |
-
+|~ 2025 ~|||
+| Base44 Hackathon | [Built AccessLens](https://t.co/o3wV1c6dFa) | Getting involved with vibe coding tools like Loveable and V0 got me to Base44's hackathon. There I tried building out several prototypes, until finally resolving to going with an accessibility driven idea which was AccessLens which I built with a [one shot prompt](https://x.com/vipulgupta2048/status/1916865377541271974) right in the open. |
 ---
 
