@@ -94,7 +94,7 @@ export default function Home(): JSX.Element {
       <main>
         <div className="container padding-vert">
           <AboutMe />
-          <SocialLinks data={socialLinks} />
+          {/* <SocialLinks data={socialLinks} /> */}
         </div>
         <Testimonials />
       </main>
