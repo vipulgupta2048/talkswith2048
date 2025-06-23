@@ -110,7 +110,12 @@ const config = {
         content:
           "vipulgupta2048,mixster,developer,engineer,javascript,python,iot,kernel,open,source,rest,testing,hardware,loop,system,ci,cd,devops,cloud,balena,open-source,gophers,summit,talks,conferences",
       },
-      { name: "twitter:card", content: "summary" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:site", content: "@vipulgupta2048" },
+      { name: "twitter:creator", content: "@vipulgupta2048" },
+      { property: "og:type", content: "website" },
+      { property: "og:site_name", content: "Vipul Gupta Docs" },
+      { property: "og:locale", content: "en_US" },
     ],
     docs: { sidebar: { hideable: true, autoCollapseCategories: false } },
     // Replace with your project's social card

@@ -8,6 +8,7 @@ import {
 } from "../components/homepage/SocialLinks";
 import { Hero } from "../components/homepage/Hero";
 import { Testimonials } from "../components/homepage/Testimonials";
+import SEO from "../components/SEO";
 
 // import AboutMeDesc from "./assets/index/_about-me.md";
 
@@ -86,18 +87,24 @@ const socialLinks: SocialLinkData[] = [
   },
 ];
 
-export default function Home(): JSX.Element {
+export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <Layout title="Vipul Gupta's docs" description={siteConfig.tagline}>
-      <Hero />
-      <main>
-        <div className="container padding-vert">
-          <AboutMe />
-          {/* <SocialLinks data={socialLinks} /> */}
-        </div>
-        <Testimonials />
-      </main>
-    </Layout>
+    <>
+      <SEO 
+        title="Everything with 2048"
+        description="Open-source developer, documentarian, community manager and growth hacker. Portfolio of talks, conferences, projects and everything I've done since 2016."
+      />
+      <Layout>
+        <Hero />
+        <main>
+          <div className="container padding-vert">
+            <AboutMe />
+            {/* <SocialLinks data={socialLinks} /> */}
+          </div>
+          <Testimonials />
+        </main>
+      </Layout>
+    </>
   );
 }
