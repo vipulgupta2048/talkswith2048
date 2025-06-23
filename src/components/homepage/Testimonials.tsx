@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from "react";
 import Marquee from "react-fast-marquee";
-import { TestimonialData } from "../../data/testimonials";
+import { TestimonialData, testimonials as testimonialsData } from "../../data/testimonials";
 import "./Testimonials.scss";
 
 interface TestimonialCardProps {
@@ -56,8 +56,7 @@ export const Testimonials: React.FC = () => {
   useEffect(() => {
     const loadTestimonials = async () => {
       try {
-        const data = await testimonialsManager.loadTestimonials();
-        setTestimonials(data);
+        setTestimonials(testimonialsData);
       } catch (error) {
         console.error('Error loading testimonials:', error);
       } finally {
