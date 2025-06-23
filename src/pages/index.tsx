@@ -7,6 +7,7 @@ import {
   SocialLinks,
 } from "../components/homepage/SocialLinks";
 import { Hero } from "../components/homepage/Hero";
+import { Testimonials } from "../components/homepage/Testimonials";
 
 // import AboutMeDesc from "./assets/index/_about-me.md";
 
@@ -95,6 +96,7 @@ export default function Home(): JSX.Element {
           <AboutMe />
           <SocialLinks data={socialLinks} />
         </div>
+        <Testimonials />
       </main>
     </Layout>
   );
