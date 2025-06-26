@@ -8,21 +8,11 @@ interface TestimonialCardProps {
 }
 
 const TestimonialCard: React.FC<TestimonialCardProps> = ({ testimonial }) => {
-  const stars = Array.from({ length: 5 }, (_, i) => (
-    <span
-      key={i}
-      className={`star ${i < testimonial.rating ? "filled" : ""}`}
-    >
-      ★
-    </span>
-  ));
-
   return (
     <div className="testimonial-card">
       <div className="testimonial-content">
         <div className="quote-icon">"</div>
         <p className="testimonial-text">{testimonial.content}</p>
-        <div className="rating">{stars}</div>
       </div>
       <div className="testimonial-footer">
         <div className="avatar">
@@ -48,7 +38,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ testimonial }) => {
 };
 
 export const Testimonials: React.FC = () => {
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [direction, setDirection] = useState<'left' | 'right'>('left');
   const [testimonials, setTestimonials] = useState<TestimonialData[]>([]);
   const [loading, setLoading] = useState(true);
   const marqueeRef = useRef<any>(null);
@@ -66,14 +56,6 @@ export const Testimonials: React.FC = () => {
 
     loadTestimonials();
   }, []);
-
-  const handlePause = () => {
-    setIsPlaying(false);
-  };
-
-  const handlePlay = () => {
-    setIsPlaying(true);
-  };
 
   if (loading) {
     return (
@@ -107,45 +89,24 @@ export const Testimonials: React.FC = () => {
         <div className="testimonials-header">
           <h2>Hear it from the people</h2>
         </div>
+      </div>
         
-        <div className="testimonials-marquee-container">
-          <button 
-            className="marquee-control left" 
-            onClick={handlePause}
-            aria-label="Pause testimonials"
-          >
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"/>
-            </svg>
-          </button>
-
-          <div className="marquee-wrapper">
-            <Marquee
-              ref={marqueeRef}
-              play={isPlaying}
-              speed={30}
-              gradient={true}
-              gradientColor="var(--ifm-background-color)"
-              gradientWidth={50}
-              pauseOnHover={true}
-              className="testimonials-marquee"
-            >
-              {testimonials.map((testimonial) => (
-                <TestimonialCard key={testimonial.id} testimonial={testimonial} />
-              ))}
-            </Marquee>
-          </div>
-
-          <button 
-            className="marquee-control right" 
-            onClick={handlePlay}
-            aria-label="Play testimonials"
-          >
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M8 5v14l11-7z"/>
-            </svg>
-          </button>
-        </div>
+      <div className="marquee-wrapper">
+        <Marquee
+          ref={marqueeRef}
+          play={true}
+          speed={40}
+          direction={direction}
+          gradient={true}
+          gradientColor="var(--ifm-background-color)"
+          gradientWidth={50}
+          // pauseOnHover={true}
+          className="testimonials-marquee"
+        >
+          {testimonials.map((testimonial) => (
+            <TestimonialCard key={testimonial.id} testimonial={testimonial} />
+          ))}
+        </Marquee>
       </div>
     </section>
   );
