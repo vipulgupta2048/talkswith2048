@@ -1,0 +1,88 @@
+llms.txt for https://docs.mixster.dev
+
+This file provides a structured overview of Vipul Gupta's personal documentation site.
+It is intended to help language models and crawlers understand the purpose and content of each section.
+
+--- Website Overview ---
+
+URL: https://docs.mixster.dev/
+Content: The personal digital portfolio and documentation hub for Vipul Gupta (vipulgupta2048). This site acts as a comprehensive "digital garden," chronicling his professional work, side projects, community contributions, public speaking engagements, and thoughts on technology.
+Keywords: portfolio, personal website, digital garden, open-source, developer, documentation, community, vipulgupta2048
+
+--- Core Sections ---
+
+URL: https://docs.mixster.dev/Introduction
+Content: A personal welcome message from Vipul Gupta. It sets a friendly, informal tone and introduces the purpose of the site as his "corner of the internet."
+Keywords: introduction, welcome, about me, personal site
+
+URL: https://docs.mixster.dev/category/work
+Content: Details Vipul Gupta's professional work history. This section includes information on his full-time positions (like his role at Balena), specific initiatives he has led, and research projects. It is a comprehensive overview of his career.
+Keywords: work experience, career, professional history, software engineer, resume, cv, balena
+
+URL: https://docs.mixster.dev/interview-questions
+Content: A self-interview page that answers common, in-depth technical interview questions. It provides a detailed description of a technically challenging project he has built, serving as a deep-dive portfolio piece.
+Keywords: interview questions, technical challenge, portfolio, project deep-dive, STAR method, system design, technical architecture, problem solving
+
+--- Building & Projects ---
+
+URL: https://docs.mixster.dev/category/constantly-building
+Content: A comprehensive catalog of Vipul Gupta's side projects and entrepreneurial ideas, often represented by the domain names he has purchased. This section showcases his passion for building and creating outside of his formal work.
+Keywords: side projects, building, ideas, domains, personal projects, portfolio
+
+URL: https://docs.mixster.dev/Projects
+Content: Details Vipul's work in product design, from conceptualization to functional prototypes. This section covers the 'how' of his design process (wireframes, UX flows in Adobe XD), while the 'Designs' page showcases the final visual 'what'.
+Keywords: product design, UI, UX, wireframes, Adobe XD, design portfolio, prototypes
+
+URL: https://docs.mixster.dev/Designs
+Content: A gallery of Vipul Gupta's visual and graphic design work. This page showcases his creative experiments and personal design philosophy.
+Keywords: graphic design, visual design, portfolio, creative work, artboard
+
+URL: https://docs.mixster.dev/gsoc
+Content: Documents Vipul Gupta's participation in Google Summer of Code (GSoC). It lists the projects he worked on, the mentoring organizations, and provides links to his proposals and work products.
+Keywords: Google Summer of Code, GSoC, open-source, student programs, mentoring
+
+URL: https://docs.mixster.dev/Hackathons
+Content: A record of the hackathons Vipul Gupta has participated in. It includes details about the events, the projects built, and links to the outcomes.
+Keywords: hackathons, coding competitions, prototypes, innovation
+
+--- Community & Knowledge Sharing ---
+
+URL: https://docs.mixster.dev/category/sharing-what-i-know
+Content: A parent category that aggregates all of Vipul Gupta's public knowledge-sharing activities, including talks, podcast appearances, and conference participation.
+Keywords: knowledge sharing, public speaking, community engagement
+
+URL: https://docs.mixster.dev/Talks
+Content: A curated list of talks and presentations given by Vipul Gupta. He describes his speaking style as storytelling-focused, aiming to make technical topics relatable, witty, and memorable.
+Keywords: public speaking, tech talks, conferences, presentations, storytelling
+
+URL: https://docs.mixster.dev/Workshops
+Content: Lists the workshops Vipul Gupta has conducted. His goal is to create interactive, relatable, and memorable learning sessions that foster connection.
+Keywords: workshops, training, education, teaching, public speaking
+
+URL: https://docs.mixster.dev/Conferences
+Content: Documents Vipul Gupta's involvement with tech conferences as an attendee, volunteer, organizer, and speaker. He shares personal reflections on the conference experience.
+Keywords: conferences, tech events, networking, community, volunteering, organizing
+
+URL: https://docs.mixster.dev/Podcasts
+Content: A collection of podcast episodes where Vipul Gupta has appeared as a guest, discussing topics like remote work, open-source culture, and technology.
+Keywords: podcasts, interviews, guest speaker, remote work, open-source
+
+--- Mentoring & Community Building ---
+
+URL: https://docs.mixster.dev/category/paying-it-forward
+Content: This category highlights Vipul Gupta's community service and mentorship activities, encapsulating his efforts to help others in the tech community grow.
+Keywords: mentoring, community service, volunteering, paying it forward, giving back
+
+URL: https://docs.mixster.dev/Mentoring
+Content: Provides a structured list of the formal mentoring programs Vipul Gupta has been involved with, including the organizations and his role.
+Keywords: mentoring, coaching, tech community, guidance, mentorship programs
+
+URL: https://docs.mixster.dev/Communities
+Content: Outlines Vipul Gupta's work in building and organizing tech communities, including his own meetups. It expresses his passion for fostering connections and creating positive, collaborative environments.
+Keywords: community building, meetups, event organizing, networking, tech community
+
+--- Site Functionality ---
+
+URL: https://docs.mixster.dev/search
+Content: The search functionality for the entire website, allowing users to find specific information across all documented pages.
+Keywords: search, find, lookup, documentation search
