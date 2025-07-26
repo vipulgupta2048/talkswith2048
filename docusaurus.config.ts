@@ -48,6 +48,107 @@ const config = {
     //     disableInDev: false,
     //   },
     // ],
+    // docusaurus.config.js
+    [
+      '@docusaurus/plugin-sitemap',
+      {
+        // Change frequency for all routes
+        changefreq: 'weekly',
+        
+        // Priority configuration
+        priority: null, // We'll handle this with createSitemapItems
+        
+        // Ignore certain paths
+        ignorePatterns: [
+          '/search/**',
+          '/tags/**',
+        ],
+        
+        createSitemapItems: async (params) => {
+          const { defaultCreateSitemapItems, ...rest } = params;
+          const items = await defaultCreateSitemapItems(rest);
+          
+          // Define priority mappings for easy maintenance
+          const priorityMap = {
+            // Homepage - highest priority
+            '/': 1.0,
+            
+            // Key content pages - high priority
+            '/Introduction': 0.9,
+            '/Projects': 0.6,
+            '/Communities': 0.6,
+            
+            // Professional content - medium-high priority
+            '/Talks': 0.9,
+            '/Workshops': 0.9,
+            '/Mentoring': 0.8,
+            
+            // Professional activities - medium priority
+            '/Conferences': 0.9,
+            '/Podcasts': 0.7,
+            '/gsoc': 0.7,
+            '/interview-questions': 0.6,
+            
+            // Secondary content - lower priority
+            '/Hackathons': 0.6,
+            '/Designs': 0.6,
+            '/Balena': 0.6,
+            
+            // Category pages - organized by importance
+            '/category/work': 0.8,                    // High - professional focus
+            '/category/constantly-building': 0.7,     // Medium-high - shows activity
+            '/category/sharing-what-i-know': 0.7,     // Medium-high - knowledge sharing
+            '/category/paying-it-forward': 0.6,       // Medium - community contribution
+          };
+          
+          return items.map((item) => {
+            // Extract the path from the full URL
+            const urlPath = item.url.replace('https://docs.mixster.dev', '');
+            
+            // Check if we have a specific priority for this page
+            let priority = priorityMap[urlPath];
+            
+            // If no specific priority, use pattern-based fallbacks
+            if (!priority) {
+              if (urlPath.includes('/category/')) {
+                // Default priority for any new category pages not explicitly listed
+                priority = 0.6;
+              } else if (urlPath.includes('/search')) {
+                priority = 0.3;
+              } else {
+                // Default priority for NEW pages - you can adjust this
+                priority = 0.7; // Higher default to ensure new content gets attention
+              }
+            }
+            
+            return {
+              ...item,
+              priority,
+              changefreq: 'weekly',
+            };
+          });
+        },
+        
+        // Add last modification time based on git
+        lastmod: 'date',
+        
+        // Exclude certain routes completely
+        routeBasePath: '/',
+        
+        // Custom transform function for additional control
+        transform: async (url, route, isRootRoute) => {
+          // Skip certain patterns
+          if (url.includes('/_category_/') || url.includes('/tags/')) {
+            return null;
+          }
+          
+          return {
+            url,
+            lastmod: new Date().toISOString().split('T')[0], // YYYY-MM-DD format
+          };
+        },
+      },
+    ],
     ["docusaurus-plugin-sass", {}],
   ],
   presets: [
@@ -57,12 +158,9 @@ const config = {
       {
         googleTagManager: { containerId: "GTM-5JMKTPCM" },
         gtag: { trackingID: "G-HW23H5D7FP", anonymizeIP: true },
-        sitemap: {
-          changefreq: "weekly",
-          priority: 0.5,
-          ignorePatterns: ["/tags/**"],
-          filename: "sitemap.xml",
-        },
+        
+
+
         docs: {
           sidebarPath: "./sidebars.js",
           // Please change this to your repo.
@@ -116,6 +214,8 @@ const config = {
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "Vipul Gupta Docs" },
       { property: "og:locale", content: "en_US" },
+      {name: 'robots', content: 'index, follow'},
+      {name: 'googlebot', content: 'index, follow'},
     ],
     docs: { sidebar: { hideable: true, autoCollapseCategories: false } },
     // Replace with your project's social card
