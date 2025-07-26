@@ -176,13 +176,6 @@ const config = {
         gtag: {
           trackingID: "G-HW23H5D7FP",
           anonymizeIP: true,
-          // Enhanced ecommerce and engagement tracking
-          config: {
-            send_page_view: true,
-            anonymize_ip: true,
-            allow_google_signals: true,
-            allow_ad_personalization_signals: false,
-          },
         },
 
         // Sitemap configuration within the preset
@@ -403,17 +396,17 @@ const config = {
           type: "docSidebar",
           sidebarId: "tutorialSidebar",
           position: "right",
-          label: "📚 Docs",
+          label: "Docs",
         },
-        { href: `https://mixster.dev`, label: "📝 Blog", position: "left" },
+        { href: `https://mixster.dev`, label: "Blog", position: "left" },
         {
           href: `https://mixster.dev/2019/05/24/mixster/`,
-          label: "🎯 About Mixster",
+          label: "About Mixster",
           position: "left",
         },
         {
           href: `https://drive.google.com/file/d/1fwsRgQNhwp4vv23FjbRB3MGHbjWhoh9r/view`,
-          label: "📄 Resume",
+          label: "Resume",
           position: "right",
         },
         // Social media icons with enhanced accessibility
@@ -469,7 +462,6 @@ const config = {
     prism: { 
       theme: prismThemes.github, 
       darkTheme: prismThemes.dracula,
-      additionalLanguages: ['bash', 'json', 'yaml', 'dockerfile'],
     },
     
     // Enhanced table of contents
