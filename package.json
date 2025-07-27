@@ -21,13 +21,13 @@
     "prettier:fix": "prettier --write ."
   },
   "dependencies": {
-    "@docusaurus/core": "^3.7.0",
-    "@docusaurus/plugin-client-redirects": "^3.7.0",
-    "@docusaurus/plugin-google-gtag": "^3.7.0",
-    "@docusaurus/plugin-google-tag-manager": "^3.7.0",
+    "@docusaurus/core": "^3.8.1",
+    "@docusaurus/plugin-client-redirects": "^3.8.1",
+    "@docusaurus/plugin-google-gtag": "^3.8.1",
+    "@docusaurus/plugin-google-tag-manager": "^3.8.1",
     "@docusaurus/plugin-pwa": "^3.8.1",
-    "@docusaurus/preset-classic": "^3.7.0",
-    "@docusaurus/utils-validation": "^3.7.0",
+    "@docusaurus/preset-classic": "^3.8.1",
+    "@docusaurus/utils-validation": "^3.8.1",
     "@mdx-js/react": "^3.1.0",
     "clsx": "^2.1.1",
     "docusaurus-plugin-sass": "^0.2.6",
@@ -38,14 +38,14 @@
     "sass": "^1.86.1"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "^3.7.0",
-    "@docusaurus/tsconfig": "^3.7.0",
-    "@docusaurus/types": "^3.7.0",
-    "@typescript-eslint/eslint-plugin": "^8.29.0",
-    "eslint": "^9.23.0",
-    "eslint-config-prettier": "^10.1.1",
-    "prettier": "^3.5.3",
-    "typescript": "^5.8.2"
+    "@docusaurus/module-type-aliases": "^3.8.1",
+    "@docusaurus/tsconfig": "^3.8.1",
+    "@docusaurus/types": "^3.8.1",
+    "@typescript-eslint/eslint-plugin": "^8.38.0",
+    "eslint": "^9.32.0",
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "^3.6.2",
+    "typescript": "^5.8.3"
   },
   "browserslist": {
     "production": [
