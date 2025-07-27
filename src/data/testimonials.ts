@@ -22,10 +22,18 @@ export const testimonials: TestimonialData[] = [
     role: "Founder", 
     company: "Firecamp",
     avatar: "/img/avatars/sarah.jpg",
-    content: "“Vipul is the goto person for technical documentation. He brings commitment and experience across the stack. If you’re looking for someone to write your technical docs I’d say, don’t waste your time, just call this guy!”",
+    content: `Vipul is the goto person for technical documentation. He brings commitment and experience across the stack. If you’re looking for someone to write your technical docs I’d say, don’t waste your time, just call this guy!`,
   },
   {
     id: "3",
+    name: "Arun Singh",
+    role: "Tech Lead - India",
+    company: "Tech Mahindra",
+    avatar: "https://avatars.githubusercontent.com/u/47097845?v=4",
+    content: "Vipul's LLM evals talk was thoughtful, relevant, and deeply technical. His efforts and leadership in the GitTogether community to grow from 0 to 5000+ members in a year reflects his commitment to foster collaboration in the Indian open-source ecosystem.",
+  },
+  {
+    id: "7",
     name: "Yash",
     role: "Software Engineer",
     company: "Annoymous",
@@ -33,7 +41,7 @@ export const testimonials: TestimonialData[] = [
     content: "Vipul has a unique way of making complex topics accessible with his interactive presentations. It was an enlightening talk and your made each concept clear.",
   },
   {
-    id: "6",
+    id: "5",
     name: "Annoymous",
     role: "Technical Writer",
     company: "Annoymous",
@@ -41,7 +49,7 @@ export const testimonials: TestimonialData[] = [
     content: "Attending Vipul's workshop on technical documentation was a game-changer for my career. His practical approach and real-world examples were invaluable.",
   },
   {
-    id: "7",
+    id: "4",
     name: "Zoya Naaz",
     role: "Associate",
     company: "IIM Business Incubator",
@@ -49,7 +57,7 @@ export const testimonials: TestimonialData[] = [
     content: "Vipul’s workshop was incredibly insightful. He made Git and GitHub easy to understand and inspired me to start contributing to open source. His approachable nature and real-world insights made a lasting impact. Truly grateful for his guidance!",
   },
   {
-    id: "8",
+    id: "6",
     name: "Devank Srivastava",
     role: "Frontend Engineer",
     company: "Orygin AI",
