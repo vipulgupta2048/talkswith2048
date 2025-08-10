@@ -1,22 +1,96 @@
 
-From local meetups to global conferences, I've aimed to weave technical concepts into unconventional, witty narratives. I believe deeply in the impact of a good story. Through my talks, I strive to not just inform but to connect, making each concept relatable and each session memorable. I still have a lot to learn, and you can find me collecting feedback from the audience after the talk. I intend to bring my unqiue brand of fun into each session I propose. No repeats, no boring monologue, if I can help it - Just a good, fun story. Served on a stage near you. Next time, please pull me in for feedback that you can provide. 
+From local meetups to global conferences, I've aimed to weave technical concepts into unconventional, witty narratives. I believe deeply in the impact of a good story. Through my talks, I strive to not just inform but to connect, making each concept relatable and each session memorable. I still have a lot to learn, and you can find me collecting feedback from the audience after the talk. I intend to bring my unique brand of fun into each session I propose. No repeats, no boring monologue, if I can help it - Just a good, fun story. Served on a stage near you. Next time, please pull me in for feedback that you can provide.
 
-**A complete repository of talks selected & delivered since 2017**
+## Stats 
+
+- **Years of Experience:** 8+ years since 2017
+- **Total Sessions:** 100+ online/offline 
+- **Audience Reach:** 100,000+ senior engineers, early-career devs, and engineering students.
+- **Geographic Reach:** 15+ countries, US, Canada, Japan, India, Spain, China, and more.
+
 <details>
   <summary>2025</summary>
-| Title of the talk       | Link for Proposal  | Description |
-| --- |:---:|---|
-| Open Source India 2025: OpenSSF Conference [How Insecure Defaults Led to Undetected Supply Chain Incident: A CI/CD Security nightmare](https://openssfcdin2025.sched.com/event/242lj/how-insecure-defaults-led-to-undetected-supply-chain-incident-a-cicd-security-nightmare-vipul-gupta-balena?iframe=yes&w=100%&sidebar=yes&bg=no) | [Slides](https://docs.google.com/presentation/d/1yc8o9vu7NbWIrW2VfH1VRIsn80hjDH58PLKUqjZf0MI/edit?usp=sharing) ![Feedback 1](./img/openssf/1.png) ![Feedback 2](./img/openssf/2.png) ![Feedback 3](./img/openssf/3.png) ![Talk Photo 1](./img/openssf/4sg79i.jpg) ![Talk Photo 2](./img/openssf/IMG_20250804_114013.jpg) | How a misconfigured GitHub Action exposed a long-lived token for two years, creating an undetected attack vector that compromised a  multi-platform code signing infrastructure and much more. Over 250+ attendees; 50+ folks giving feedback. |
-| Open Source Summit EU 2025 | Waitlisted | Talk topic, The Zero Overhead Docs Blueprint: Lessons from building scalable Open Source Documentation System |
-| Amity University Alumni Talk: How to Prepare Technically for Cracking Placement | [LinkedIn Post](https://www.linkedin.com/posts/corporate-resource-centre-amity-school-of-engineering-and-technology-noida-876a33273_alumnitalk-thankyoualumni-engineering-ugcPost-7356989318604754944-RpyG?utm_source=share&utm_medium=member_desktop&rcm=ACoAACD76ywBmaTacRmcewhE1c2v2s8L8FVxT4k) | Participated in an alumni panel discussion to discuss insights, strategies, and placement preparation tips for final year engineering students. Panelists included Anuvrat Parashar (Founder & CEO, Essentia.dev), Kunal Jindal (Associate Software Engineer, Ciena), and Shashwat Sharma (AI Engineer, Alyssum Global Services). Attended by 400+ students. |
-| GitTogether Anniversary Meetup: Good LLM! Bad LLM? Not sure about that LLM: A practical guide to do AI Evals | [Slides](https://slides.com/vipulgupta2048/llm-ai-evals-vipulgupta2048) | Diving deep into how to get started with AI evals, systematic methods of evals and demo to build their first LLM as a judge ![GitTogether Talk 1](./img/gittogether/WhatsApp%20Image%202025-08-10%20at%2017.08.58.jpeg) ![GitTogether Talk 2](./img/gittogether/WhatsApp%20Image%202025-08-10%20at%2017.09.31.jpeg) |
-| OpenSSF Community Day EU 2025 | Accepted | Same talk as OpenSSF India |
-| Internet Freedom Foundation x FOSS United Delhi: [Decoding The AI Black Box: An overwhelmed engineer's guide to LLM Evals](https://fossunited.org/c/delhi/2025-june/cfp/ab8r4dbmm6) | [Slides](https://slides.com/vipulgupta2048/llm-ai-evals-vipulgupta2048) [feedback](./img/fossindia/talk-feedback-1.png) | Presented my first session on LLM evals at the Interenet Freedom Foundation. Attendees took an in-depth dive into understanding AI evals, how it's fundamentally different from testing/benchmarking, impact on LLM pipeline, systematic ways to evaluate applications, types of evals and how to become an evaluator. |
-| IIMT University GDG on Campus: [GitToGether - Getting Started with Git & GitHub](https://github.com/vipulgupta2048/git-intro) | [Workshop](https://www.linkedin.com/feed/update/urn:li:activity:7333078054379945984/) | Hands-on workshop introducing Git fundamentals, GitHub collaboration, branching, commits, and pull requests to students at IIMT University, Meerut. [Read more](https://docs.mixster.dev/workshops#-iimt-university-gdg-on-campus-meerut---gittogather-event). | 
-| KubeCon Japan: OpenSSF Japan Community day | Accepted | Couldn't attend |
-| Open Source Summit North America: Automated testing Summit 2025 | Accepted | Couldn't make it |
+
+## 🔒 Open Source Summit India 2025: OpenSSF India Community Days
+
+### Supply Chain Security: How Insecure Defaults Led to Undetected Incidents
+
+• 🔗 [Talk Link](https://openssfcdin2025.sched.com/event/242lj/how-insecure-defaults-led-to-undetected-supply-chain-incident-a-cicd-security-nightmare-vipul-gupta-balena?iframe=yes&w=100%&sidebar=yes&bg=no)  
+• 📊 [Slides](https://docs.google.com/presentation/d/1yc8o9vu7NbWIrW2VfH1VRIsn80hjDH58PLKUqjZf0MI/edit?usp=sharing)  
+• 🎥 Recording - Coming Soon  
+• Hyderabad, India, 250+ Security Engineers & DevOps Professionals
+
+A deep dive into how a misconfigured GitHub Action exposed a long-lived token for two years, creating an undetected attack vector that compromised a multi-platform code signing infrastructure. This session demonstrated real-world supply chain vulnerabilities and their mitigation strategies.
+
+Received Feedback from 50+ Attendees
+
+| | | 
+|:---:|:---:|
+| ![Feedback 1](./img/openssf/1.png) | ![Feedback 2](./img/openssf/3.png) |
+| ![Talk Photo 1](./img/openssf/4sg79i.jpg) | ![Talk Photo 2](./img/openssf/IMG_20250804_114013.jpg) |
+
+---
+
+## 🎓 Amity University Alumni Panel
+
+### Technical Interview & Placement Preparation Workshop
+
+• 📝 [LinkedIn Post](https://www.linkedin.com/posts/corporate-resource-centre-amity-school-of-engineering-and-technology-noida-876a33273_alumnitalk-thankyoualumni-engineering-ugcPost-7356989318604754944-RpyG?utm_source=share&utm_medium=member_desktop&rcm=ACoAACD76ywBmaTacRmcewhE1c2v2s8L8FVxT4k)  
+• 📍 400+ Final Year Students at Amity School of Engineering & Technology, Noida 
+
+Part of an expert alumni panel focused on practical strategies for technical interview preparation and industry placement success. Shared real-world insights on transitioning from academic pursuits to professional development roles through open-source and navigating the tech job market.
+
+---
+
+## 🤖 GitTogether Anniversary Meetup  
+### AI Evaluation: Good LLM! Bad LLM? A Practical Guide to AI Evals
+
+• 📊 [Slides](https://slides.com/vipulgupta2048/llm-ai-evals-vipulgupta2048)  
+• 📍 Microsoft Gurgaon, 200+ tech professionals
+
+Delivered an in-depth technical workshop on Large Language Model evaluation methodologies. Demonstrated systematic approaches to AI evaluation beyond traditional testing, including building an LLM-as-a-judge system live during the presentation.
+
+Participants gained practical experience with modern AI assessment techniques and how to run LLM evaluations in production systems.
+
+| | |
+|:---:|:---:|
+| ![GitTogether Talk 1](./img/gittogether/WhatsApp%20Image%202025-08-10%20at%2017.08.58.jpeg) | ![GitTogether Talk 2](./img/gittogether/WhatsApp%20Image%202025-08-10%20at%2017.09.31.jpeg) |
+
+---
+
+## 🔐 Internet Freedom Foundation x FOSS United Delhi
+### Decoding The AI Black Box: An Engineer's Guide to LLM Evaluation
+
+• 🔗 [Conference Page](https://fossunited.org/c/delhi/2025-june/cfp/ab8r4dbmm6)  
+• 📊 [Slides](https://slides.com/vipulgupta2048/llm-ai-evals-vipulgupta2048)  
+• 📸 [Session Feedback](./img/fossindia/talk-feedback-1.png)  
+
+Presented my first session on LLM evals at the Interenet Freedom Foundation. Attendees took an in-depth dive into understanding AI evals, how it's fundamentally different from testing/benchmarking, impact on LLM pipeline, systematic ways to evaluate applications, types of evals and how to become an evaluator.
+
+---
+
+## 🎓 IIMT University GDG on Campus Workshop
+### GitTogether: Git & GitHub Fundamentals for Developers
+
+• 🔗 [Workshop Slides](https://github.com/vipulgupta2048/git-intro)  
+• 📝 [Event Post](https://www.linkedin.com/feed/update/urn:li:activity:7333078054379945984/)  
+• 📖 [Detailed Summary](https://docs.mixster.dev/workshops#-iimt-university-gdg-on-campus-meerut---gittogather-event)  
+
+Hands-on workshop introducing Git fundamentals, GitHub collaboration, branching, commits, and pull requests to students at IIMT University, Meerut. Read more. Students successfully created their first repositories and completed collaborative exercises, gaining confidence in professional development workflows.
+
+---
+
+## 📋 2025 Other Conferences Summary
+
+| Conference | Status | Topic & Impact |
+|:---|:---:|:---|
+| **Open Source Summit EU 2025** | 🔄 Waitlisted | *Zero Overhead Docs Blueprint* - Scalable documentation architecture patterns |
+| **OpenSSF Community Day EU 2025** | ✅ Accepted | *Supply Chain Security* - Extending OpenSSF India presentation to European audience |
+| **KubeCon Japan: OpenSSF Community Day** | ✅ Accepted | *Security Focus* - Could not attend due to scheduling conflicts |
+| **Open Source Summit NA: Automated Testing** | ✅ Accepted | *CI/CD Testing* - Could not attend due to prior commitments |
 
 </details>
+
 <details>
   <summary>2024</summary>
 
