@@ -4,14 +4,19 @@ From local meetups to global conferences, I've aimed to weave technical concepts
 **A complete repository of talks selected & delivered since 2017**
 <details>
   <summary>2025</summary>
-| Title of the talk       | Link for Proposal  | Thoughts |
+| Title of the talk       | Link for Proposal  | Description |
 | --- |:---:|---|
-| Open Source Summit EU 2025: OpenSSF Conf | Accepted |  |
+| Open Source India 2025: OpenSSF Conference [How Insecure Defaults Led to Undetected Supply Chain Incident: A CI/CD Security nightmare](https://openssfcdin2025.sched.com/event/242lj/how-insecure-defaults-led-to-undetected-supply-chain-incident-a-cicd-security-nightmare-vipul-gupta-balena?iframe=yes&w=100%&sidebar=yes&bg=no) | [Slides](https://docs.google.com/presentation/d/1yc8o9vu7NbWIrW2VfH1VRIsn80hjDH58PLKUqjZf0MI/edit?usp=sharing) [Recording]() 
+![Feedback 1](./img/openssf/1.png)
+![Feedback 2](./img/openssf/2.png) 
+![Feedback 3](./img/openssf/3.png) | How a misconfigured GitHub Action exposed a long-lived token for two years, creating an undetected attack vector that compromised a  multi-platform code signing infrastructure and much more. Over 250+ attendees; 50+ folks giving feedback.  |
+| Open Source Summit EU 2025 | Waitlisted | Talk topic, The Zero Overhead Docs Blueprint: Lessons from building scalable Open Source Documentation System |
+| GitTogether Anniversary Meetup: Good LLM! Bad LLM? Not sure about that LLM: A practical guide to do AI Evals | [Slides](https://slides.com/vipulgupta2048/llm-ai-evals-vipulgupta2048) | Diving deep into how to get started with AI evals, systematic methods of evals and demo to build their first LLM as a judge ![GitTogether Talk 1](./img/gittogether/WhatsApp%20Image%202025-08-10%20at%2017.08.58.jpeg) ![GitTogether Talk 2](./img/gittogether/WhatsApp%20Image%202025-08-10%20at%2017.09.31.jpeg) |
+| OpenSSF Community Day EU 2025 | Accepted, didn't attend |  |
 | Internet Freedom Foundation x FOSS United Delhi: [Decoding The AI Black Box: An overwhelmed engineer's guide to LLM Evals](https://fossunited.org/c/delhi/2025-june/cfp/ab8r4dbmm6) | [Slides](https://slides.com/vipulgupta2048/llm-ai-evals-vipulgupta2048) [feedback](./img/fossindia/talk-feedback-1.png) | Presented my first session on LLM evals at the Interenet Freedom Foundation. Attendees took an in-depth dive into understanding AI evals, how it's fundamentally different from testing/benchmarking, impact on LLM pipeline, systematic ways to evaluate applications, types of evals and how to become an evaluator. |
 | IIMT University GDG on Campus: [GitToGether - Getting Started with Git & GitHub](https://github.com/vipulgupta2048/git-intro) | [Workshop](https://www.linkedin.com/feed/update/urn:li:activity:7333078054379945984/) | Hands-on workshop introducing Git fundamentals, GitHub collaboration, branching, commits, and pull requests to students at IIMT University, Meerut. [Read more](https://docs.mixster.dev/workshops#-iimt-university-gdg-on-campus-meerut---gittogather-event). | 
 | KubeCon Japan: OpenSSF Japan Community day | Accepted | Couldn't attend |
 | Open Source Summit North America: Automated testing Summit 2025 | Accepted | Couldn't make it |
-| Open Source India 2025: OpenSSF Conference | Accepted |  |
 
 </details>
 <details>
