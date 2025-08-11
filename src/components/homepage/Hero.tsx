@@ -17,7 +17,7 @@ export const Hero: FunctionComponent = () => {
         <p className={clsx("hero__subtitle", styles.subtitle)}>
           Thoroughly reads, meticulously documents, and continuously automates.
           <br />
-          The docs site of a Product Owner, Open-Source Engineer & Traveling Cheesecake Enthusiast.
+          Product Owner, Open-Source Leader, GitHub Star & Cheesecake Enthusiast.
         </p>
         <br />
         <div className={styles.buttonsContainer}>

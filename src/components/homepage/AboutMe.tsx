@@ -10,7 +10,7 @@ export const AboutMe: FunctionComponent = () => {
       <div className="row">
         <div className="col col--6">
           <p>
-            I am a product owner with 6+ years of niche expertise in building
+            I am a product owner with 7+ years of niche expertise in building
             hard-tech applications, scaling
             open-source communities and leading developer education efforts.
           </p>
@@ -29,7 +29,7 @@ export const AboutMe: FunctionComponent = () => {
             against the odds.
           </blockquote>
 
-          <h2>Technical Expertise</h2>
+          <h2>Technical Expertise: Scaling Experience of 0 to 1 &gt;&gt; 100</h2>
           <p>
             As a skilled operator, my core engineering experience lies in
             building highly scalable, reliable applications with
@@ -47,14 +47,14 @@ export const AboutMe: FunctionComponent = () => {
             conferences as a speaker.
           </p>
 
-          <h2>Open-source shaped who I am</h2>
+          <h2>Open Source Leader: GitHub Star ⭐</h2>
           <p>
-            Contributing since 2016, my origin story started with open-source. I
+            Contributing since 2016, my origin story starts with open-source. I
             initially aspired to be an architect in urban planning, but fell in
-            love with the idea of a community coming together to build software
+            love with the idea of a community coming together on a grassroots level to build software
             — for everyone, for free. I've collaborated with the best minds in
             the industry through Mozilla Festival, HackMIT, Google Summer of
-            Code, AMA Mentorship program & Google Code-in.
+            Code, AMA Mentorship program & Google Code-in. I was recognized as a GitHub Star in July 2025 for my contributions to the online and offline open-source communities. 
           </p>
 
           <blockquote>
@@ -67,18 +67,17 @@ export const AboutMe: FunctionComponent = () => {
 
           <h2>Present day</h2>
           <p>
-            5 days a week, I am the product owner & documentation lead at
+            I am the Senior Software Engineer & Developer Education lead at
             Balena. I also run Mixster, an initiative to "right" the docs, build
             scalable content pipelines, and do friction logging for startups and
             organizations. I'm always exploring new challenges at the
             intersection of product, people, and code.
           </p>
           <p>
-            My weekends are spent as comms Lead for PyCon India, mentoring
-            college students through ALiAS, a 3000+ members open-source
-            community fostering open-source and organizing meetups for GitHub
-            GitTogether Delhi-NCR community. Currently, scaling up the Open
-            Hardware in the Loop community.
+            On the weekend, I am the community lead for
+            GitTogether Delhi-NCR community and scaling up the Open Hardware in the Loop community.
+            My weekends are split volunteering for PyCon India as comms lead, mentoring
+            college students through ALiAS, a 3000+ early-career developer community focused on ethical open-source contributions. Previously, I was the lead organizer for PyDelhi and iLuGD.
           </p>
         </div>
         <div className={clsx("col col--5", styles.avatarContainer)}>
