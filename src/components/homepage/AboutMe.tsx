@@ -29,7 +29,7 @@ export const AboutMe: FunctionComponent = () => {
             against the odds.
           </blockquote>
 
-          <h2>Technical Expertise: Scaling Experience of 0 to 1 &gt;&gt; 100</h2>
+          <h2>Technical Expertise: Scaling from 0 to 1 to 100</h2>
           <p>
             As a skilled operator, my core engineering experience lies in
             building highly scalable, reliable applications with

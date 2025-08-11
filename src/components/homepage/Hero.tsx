@@ -9,7 +9,7 @@ export const Hero: FunctionComponent = () => {
     <header className={clsx("hero hero--primary", styles.heroBanner)}>
       <div className="container">
         <p className={clsx("hero__subtitle", styles.subtitle)}>
-          Welcome to my personal docs site!
+          Welcome to my own docs site!
         </p>
         <h1 className={clsx("hero__title", styles.title)}>
           I am <span className={styles.highlighted}>Vipul Gupta</span> 👋
@@ -17,7 +17,7 @@ export const Hero: FunctionComponent = () => {
         <p className={clsx("hero__subtitle", styles.subtitle)}>
           Thoroughly reads, meticulously documents, and continuously automates.
           <br />
-          Product Owner, Open-Source Leader, GitHub Star & Cheesecake Enthusiast.
+          Product Owner, Community Organizer, & Cheesecake Enthusiast.
         </p>
         <br />
         <div className={styles.buttonsContainer}>
