@@ -2,16 +2,17 @@
 
 import { themes as prismThemes } from "prism-react-renderer";
 
+const name = "Vipul Gupta";
 const org = "vipulgupta2048";
 const repo = "talkswith2048";
-const tagline = `Portfolio of ${org} - Developer, Speaker, and Community Builder`;
+const tagline = `${name} - Developer, Speaker, and Community Builder`;
 const githubUrl = `https://github.com/${org}/${repo}`;
 const description = `Portfolio of Vipul Gupta (${org}) - Software Engineer, Tech Speaker, Open Source Leader, Developer Education Expert and GitHub Star`;
 const siteUrl = `https://docs.mixster.dev`;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: `${org}'s Docs & Portfolio`,
+  title: `${name}'s Docs`,
   tagline: tagline,
   favicon: "img/favicon.ico",
 
@@ -89,7 +90,7 @@ const config = {
       innerHTML: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "WebSite",
-        name: `${org} - Developer Portfolio`,
+        name: `${name} - Developer Portfolio`,
         description: description,
         url: siteUrl,
         author: {
@@ -332,7 +333,7 @@ const config = {
       { property: "og:site_name", content: "Vipul Gupta Portfolio & Docs" },
       {
         property: "og:title",
-        content: `${org} - Developer Portfolio & Technical Insights`,
+        content: `${name} - Developer Portfolio & Docs`,
       },
       { property: "og:description", content: description },
       { property: "og:url", content: siteUrl },
@@ -384,7 +385,7 @@ const config = {
     navbar: {
       hideOnScroll: true,
       logo: {
-        alt: `${org} portfolio logo`,
+        alt: `${name} portfolio logo`,
         src: "img/hatching.gif",
         height: 48,
         width: 38,

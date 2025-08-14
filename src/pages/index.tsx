@@ -92,7 +92,7 @@ export default function Home() {
   return (
     <>
       <SEO 
-        title="Everything with 2048"
+        title="About Vipul Gupta"
         description="Open-source developer, documentarian, community manager and growth hacker. Portfolio of talks, conferences, projects and everything I've done since 2016."
       />
       <Layout>
