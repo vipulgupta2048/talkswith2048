@@ -299,54 +299,28 @@ const config = {
       disableSwitch: false,
       respectPrefersColorScheme: true,
     },
-    // Enhanced metadata with comprehensive SEO tags
+    // Global metadata - site-wide SEO essentials
     metadata: [
-      // Basic SEO
-      { name: "description", content: description },
+      // Core SEO (global defaults)
       { name: "author", content: "Vipul Gupta (vipulgupta2048)" },
       { name: "viewport", content: "width=device-width, initial-scale=1.0" },
 
-      // Keywords - Updated for better targeting
+      // Keywords - Global site keywords
       {
         name: "keywords",
         content:
-          "vipulgupta2048,mixster,github,star,software, engineer,developer,speaker,open source,gittogether,product,owner,devops,docusaurus,docker,docs,projects,workshops,nodejs,portfolio,talks,workshops,community,mentoring,conferences,hackathons,balena,sugarlabs,delhi,noida,india",
+          "vipulgupta2048,mixster,github,star,software,engineer,developer,speaker,open source,gittogether,product,owner,devops,docusaurus,docker,docs,projects,workshops,nodejs,portfolio,talks,workshops,community,mentoring,conferences,hackathons,balena,sugarlabs,delhi,noida,india",
       },
 
-      // Enhanced Twitter Cards
-      { name: "twitter:card", content: "summary_large_image" },
+      // Global Twitter defaults
       { name: "twitter:site", content: "@vipulgupta2048" },
       { name: "twitter:creator", content: "@vipulgupta2048" },
-      {
-        name: "twitter:title",
-        content: `vipulgupta2048's Developer Portfolio & Documentation`,
-      },
-      { name: "twitter:description", content: description },
-      { name: "twitter:image", content: `${siteUrl}/img/avatar.png` },
-      {
-        name: "twitter:image:alt",
-        content: "Vipul Gupta - Software Engineer and Tech Speaker",
-      },
 
-      // Enhanced Open Graph tags
-      { property: "og:type", content: "website" },
+      // Global Open Graph site info
       { property: "og:site_name", content: "Vipul Gupta Portfolio & Docs" },
-      {
-        property: "og:title",
-        content: `${name} - Developer Portfolio & Docs`,
-      },
-      { property: "og:description", content: description },
-      { property: "og:url", content: siteUrl },
-      { property: "og:image", content: `${siteUrl}/img/avatar.png` },
-      { property: "og:image:width", content: "1200" },
-      { property: "og:image:height", content: "630" },
-      {
-        property: "og:image:alt",
-        content: "Vipul Gupta - Software Engineer and Tech Speaker",
-      },
       { property: "og:locale", content: "en_US" },
 
-      // Additional SEO meta tags
+      // Search engine directives
       {
         name: "robots",
         content:
@@ -359,7 +333,7 @@ const config = {
       },
       { name: "bingbot", content: "index, follow" },
 
-      // Mobile and performance
+      // Mobile and performance optimizations
       { name: "format-detection", content: "telephone=no" },
       { name: "mobile-web-app-capable", content: "yes" },
       { name: "apple-mobile-web-app-capable", content: "yes" },
