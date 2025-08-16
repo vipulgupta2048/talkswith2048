@@ -7,7 +7,7 @@ const org = "vipulgupta2048";
 const repo = "talkswith2048";
 const tagline = `${name} - Developer, Speaker, and Community Builder`;
 const githubUrl = `https://github.com/${org}/${repo}`;
-const description = `Portfolio of Vipul Gupta (${org}) - Software Engineer, Tech Speaker, Open Source Leader, Developer Education Expert and GitHub Star`;
+const description = `Portfolio of Vipul Gupta (${org}) - Software Engineer, Tech Speaker, Open Source Leader, Community Lead and GitHub Star. Docs about my talks, workshops, projects, community contributions, mentoring and more.`;
 const siteUrl = `https://docs.mixster.dev`;
 
 /** @type {import('@docusaurus/types').Config} */
@@ -30,6 +30,17 @@ const config = {
 
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
+
+  // Additional performance optimizations
+  future: {
+    experimental_faster: {
+      swcJsLoader: true,
+      swcJsMinimizer: true,
+      swcHtmlMinimizer: true,
+      lightningCssMinimizer: true,
+      mdxCrossCompilerCache: true,
+    },
+  },
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -58,7 +69,7 @@ const config = {
         name: "Vipul Gupta",
         alternateName: "vipulgupta2048",
         url: siteUrl,
-        image: `${siteUrl}/img/avatar.png`,
+        image: `${siteUrl}/img/avatar.webp`,
         sameAs: [
           "https://github.com/vipulgupta2048",
           "https://www.linkedin.com/in/vipulgupta2048",
@@ -128,6 +139,17 @@ const config = {
 
   plugins: [
     ["docusaurus-plugin-sass", {}],
+    // Ideal Image Plugin for automatic image optimization
+    [
+      "@docusaurus/plugin-ideal-image",
+      {
+        quality: 85, // Optimized quality for web
+        max: 1030, // Maximum width
+        min: 640, // Minimum width
+        steps: 2, // Number of variants between min and max
+        disableInDev: false, // Enable in development for testing
+      },
+    ],
     // PWA Plugin for better mobile experience
     [
       "@docusaurus/plugin-pwa",
@@ -271,158 +293,158 @@ const config = {
   ],
 
   themeConfig:
-  /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-  {
-    algolia: {
-      appId: "2W8TQEDQ7Y",
-      apiKey: "9182b1e9f7a45bc038813c8c2791ed70",
-      indexName: "mixster",
-      contextualSearch: true,
-      // externalUrlRegex: "mixster\\.dev",
-      searchParameters: {
-        facetFilters: ["type:content"],
-      },
-      searchPagePath: "search",
-      ignoreCanonicalTo: true,
-      insights: true, // Enable search insights
-    },
-
-    announcementBar: {
-      id: "support_us",
-      content: `Actively interviewing for new opportunities. <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1fwsRgQNhwp4vv23FjbRB3MGHbjWhoh9r/view">Reach out!</a>`,
-      backgroundColor: "#1a1c1e",
-      textColor: "#FFFFFF",
-      isCloseable: true,
-    },
-    colorMode: {
-      defaultMode: "dark",
-      disableSwitch: false,
-      respectPrefersColorScheme: true,
-    },
-    // Global metadata - site-wide SEO essentials
-    metadata: [
-      // Core SEO (global defaults)
-      { name: "author", content: "Vipul Gupta (vipulgupta2048)" },
-      { name: "viewport", content: "width=device-width, initial-scale=1.0" },
-
-      // Keywords - Global site keywords
-      {
-        name: "keywords",
-        content:
-          "vipulgupta2048,mixster,github,star,software,engineer,developer,speaker,open source,gittogether,product,owner,devops,docusaurus,docker,docs,projects,workshops,nodejs,portfolio,talks,workshops,community,mentoring,conferences,hackathons,balena,sugarlabs,delhi,noida,india",
+    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+    {
+      algolia: {
+        appId: "2W8TQEDQ7Y",
+        apiKey: "9182b1e9f7a45bc038813c8c2791ed70",
+        indexName: "mixster",
+        contextualSearch: true,
+        // externalUrlRegex: "mixster\\.dev",
+        searchParameters: {
+          facetFilters: ["type:content"],
+        },
+        searchPagePath: "search",
+        ignoreCanonicalTo: true,
+        insights: true, // Enable search insights
       },
 
-      // Global Twitter defaults
-      { name: "twitter:site", content: "@vipulgupta2048" },
-      { name: "twitter:creator", content: "@vipulgupta2048" },
-
-      // Global Open Graph site info
-      { property: "og:site_name", content: "Vipul Gupta Portfolio & Docs" },
-      { property: "og:locale", content: "en_US" },
-
-      // Search engine directives
-      {
-        name: "robots",
-        content:
-          "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      announcementBar: {
+        id: "support_us",
+        content: `Actively interviewing for new opportunities. <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1fwsRgQNhwp4vv23FjbRB3MGHbjWhoh9r/view">Reach out!</a>`,
+        backgroundColor: "#1a1c1e",
+        textColor: "#FFFFFF",
+        isCloseable: true,
       },
-      {
-        name: "googlebot",
-        content:
-          "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      colorMode: {
+        defaultMode: "dark",
+        disableSwitch: false,
+        respectPrefersColorScheme: true,
       },
-      { name: "bingbot", content: "index, follow" },
+      // Global metadata - site-wide SEO essentials
+      metadata: [
+        // Core SEO (global defaults)
+        { name: "author", content: "Vipul Gupta (vipulgupta2048)" },
+        { name: "viewport", content: "width=device-width, initial-scale=1.0" },
 
-      // Mobile and performance optimizations
-      { name: "format-detection", content: "telephone=no" },
-      { name: "mobile-web-app-capable", content: "yes" },
-      { name: "apple-mobile-web-app-capable", content: "yes" },
-      {
-        name: "apple-mobile-web-app-status-bar-style",
-        content: "black-translucent",
-      },
+        // Keywords - Global site keywords
+        {
+          name: "keywords",
+          content:
+            "vipulgupta2048,mixster,github,star,software,engineer,developer,speaker,open source,gittogether,product,owner,devops,docusaurus,docker,docs,projects,workshops,nodejs,portfolio,talks,workshops,community,mentoring,conferences,hackathons,balena,sugarlabs,delhi,noida,india",
+        },
 
-      // Security and privacy
-      { name: "referrer", content: "no-referrer-when-downgrade" },
+        // Global Twitter defaults
+        { name: "twitter:site", content: "@vipulgupta2048" },
+        { name: "twitter:creator", content: "@vipulgupta2048" },
 
-      // Content and language
-      { httpEquiv: "content-language", content: "en-US" },
-    ],
+        // Global Open Graph site info
+        { property: "og:site_name", content: "Vipul Gupta Portfolio & Docs" },
+        { property: "og:locale", content: "en_US" },
 
-    docs: {
-      sidebar: {
-        hideable: true,
-        autoCollapseCategories: false
-      }
-    },
-    image: "/img/avatar.png",
-    navbar: {
-      hideOnScroll: true,
-      logo: {
-        alt: `${name} portfolio logo`,
-        src: "img/hatching.gif",
-        height: 48,
-        width: 38,
-        // srcDark: 'img/talkswith2048.png',
-      },
+        // Search engine directives
+        {
+          name: "robots",
+          content:
+            "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        },
+        {
+          name: "googlebot",
+          content:
+            "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        },
+        { name: "bingbot", content: "index, follow" },
 
-      items: [
+        // Mobile and performance optimizations
+        { name: "format-detection", content: "telephone=no" },
+        { name: "mobile-web-app-capable", content: "yes" },
+        { name: "apple-mobile-web-app-capable", content: "yes" },
         {
-          type: "docSidebar",
-          sidebarId: "tutorialSidebar",
-          position: "right",
-          label: "Docs",
+          name: "apple-mobile-web-app-status-bar-style",
+          content: "black-translucent",
         },
-        { href: `https://mixster.dev`, label: "Blog", position: "left" },
-        {
-          href: `https://mixster.dev/2019/05/24/mixster/`,
-          label: "About Mixster",
-          position: "left",
-        },
-        {
-          href: `https://drive.google.com/file/d/1fwsRgQNhwp4vv23FjbRB3MGHbjWhoh9r/view`,
-          label: "Resume",
-          position: "right",
-        },
-        // Social media icons with enhanced accessibility
-        {
-          href: 'https://github.com/vipulgupta2048',
-          position: 'right',
-          className: 'header-github-link',
-          'aria-label': 'Visit Vipul Gupta GitHub Profile',
-          title: 'GitHub Profile',
-        },
-        {
-          href: 'https://www.linkedin.com/in/vipulgupta2048',
-          position: 'right',
-          className: 'header-linkedin-link',
-          'aria-label': 'Connect with Vipul Gupta on LinkedIn',
-          title: 'LinkedIn Profile',
-        },
-        {
-          href: 'https://www.instagram.com/vipulgupta2048',
-          position: 'right',
-          className: 'header-instagram-link',
-          'aria-label': 'Follow Vipul Gupta on Instagram',
-          title: 'Instagram Profile',
-        },
-        {
-          href: 'https://twitter.com/vipulgupta2048',
-          position: 'right',
-          className: 'header-twitter-link',
-          'aria-label': 'Follow Vipul Gupta on Twitter',
-          title: 'Twitter Profile',
-        }
+
+        // Security and privacy
+        { name: "referrer", content: "no-referrer-when-downgrade" },
+
+        // Content and language
+        { httpEquiv: "content-language", content: "en-US" },
       ],
-    },
-    footer: {
-      links: [
-        {
-          html: `<div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+
+      docs: {
+        sidebar: {
+          hideable: true,
+          autoCollapseCategories: false,
+        },
+      },
+      image: "/img/avatar.webp",
+      navbar: {
+        hideOnScroll: true,
+        logo: {
+          alt: `${name} portfolio logo`,
+          src: "img/hatching.gif",
+          height: 48,
+          width: 38,
+          // srcDark: 'img/talkswith2048.png',
+        },
+
+        items: [
+          {
+            type: "docSidebar",
+            sidebarId: "tutorialSidebar",
+            position: "right",
+            label: "Docs",
+          },
+          { href: `https://mixster.dev`, label: "Blog", position: "left" },
+          {
+            href: `https://mixster.dev/2019/05/24/mixster/`,
+            label: "About Mixster",
+            position: "left",
+          },
+          {
+            href: `https://drive.google.com/file/d/1fwsRgQNhwp4vv23FjbRB3MGHbjWhoh9r/view`,
+            label: "Resume",
+            position: "right",
+          },
+          // Social media icons with enhanced accessibility
+          {
+            href: "https://github.com/vipulgupta2048",
+            position: "right",
+            className: "header-github-link",
+            "aria-label": "Visit Vipul Gupta GitHub Profile",
+            title: "GitHub Profile",
+          },
+          {
+            href: "https://www.linkedin.com/in/vipulgupta2048",
+            position: "right",
+            className: "header-linkedin-link",
+            "aria-label": "Connect with Vipul Gupta on LinkedIn",
+            title: "LinkedIn Profile",
+          },
+          {
+            href: "https://www.instagram.com/vipulgupta2048",
+            position: "right",
+            className: "header-instagram-link",
+            "aria-label": "Follow Vipul Gupta on Instagram",
+            title: "Instagram Profile",
+          },
+          {
+            href: "https://twitter.com/vipulgupta2048",
+            position: "right",
+            className: "header-twitter-link",
+            "aria-label": "Follow Vipul Gupta on Twitter",
+            title: "Twitter Profile",
+          },
+        ],
+      },
+      footer: {
+        links: [
+          {
+            html: `<div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
             <div>
-              <p align='left'>✍️ Docs written by @${org} since 2017, not generated 💜</br>
+              <p align='left'>✍️ Docs written by @${org} since 2017, not generated 💜<br>
               <a href="${githubUrl}/issues/new?assignees=vipulgupta2048&labels=&projects=&template=welcome-ideas.md&title=user-feedback" aria-label="Provide feedback on documentation">Steal responsibly</a> 👀, 
-              give the docs a <a href="${githubUrl}" aria-label="Star the repository on GitHub">star 🌟</a> if they helped.</br>
+              give the docs a <a href="${githubUrl}" aria-label="Star the repository on GitHub">star 🌟</a> if they helped.<br>
               As always, live in the mix! 🎵</p>
             </div>
             <div>
@@ -431,20 +453,20 @@ const config = {
               </a>
             </div>
           </div>`,
-        },
-      ],
+          },
+        ],
+      },
+      prism: {
+        theme: prismThemes.github,
+        darkTheme: prismThemes.dracula,
+      },
+
+      // Enhanced table of contents
+      tableOfContents: {
+        minHeadingLevel: 2,
+        maxHeadingLevel: 5,
+      },
     },
-    prism: { 
-      theme: prismThemes.github, 
-      darkTheme: prismThemes.dracula,
-    },
-    
-    // Enhanced table of contents
-    tableOfContents: {
-      minHeadingLevel: 2,
-      maxHeadingLevel: 5,
-    },
-  },
 };
 
 export default config;
