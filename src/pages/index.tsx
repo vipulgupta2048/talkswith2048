@@ -91,9 +91,9 @@ export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <>
-      <SEO 
+      <SEO
         title="About Vipul Gupta"
-        description="Open-source developer, documentarian, community manager and growth hacker. Portfolio of talks, conferences, projects and everything I've done since 2016."
+        description="Software Engineer, Tech Speaker, Open Source Leader, Community Lead and GitHub Star. Portfolio of talks, conferences, projects and everything I've done since 2016."
       />
       <Layout>
         <Hero />
