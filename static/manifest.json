@@ -1,0 +1,41 @@
+{
+  "name": "Vipul Gupta - Developer Portfolio & Docs",
+  "short_name": "VipulGupta2048",
+  "description": "Portfolio of Vipul Gupta - Software Engineer, Tech Speaker, Open Source Leader, Developer Education Expert and GitHub Star",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#1a1c1e",
+  "background_color": "#1a1c1e",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en-US",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "/img/favicon.ico",
+      "sizes": "16x16 32x32",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/img/avatar.webp",
+      "sizes": "192x192",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/img/avatar.webp",
+      "sizes": "512x512",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["productivity", "education", "developer", "portfolio"],
+  "screenshots": [
+    {
+      "src": "/img/og-image.webp",
+      "sizes": "1200x630",
+      "type": "image/webp",
+      "label": "Homepage of Vipul Gupta's developer portfolio"
+    }
+  ]
+}
