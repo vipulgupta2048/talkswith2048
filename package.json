@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "docusaurus": "docusaurus",
-    "start": "docusaurus start",
-    "build": "docusaurus build",
+    "start": "./convert-images-to-webp.sh ./docs/img/ && docusaurus start",
+    "build": "./convert-images-to-webp.sh ./docs/img/ && docusaurus build",
     "generate": "./scripts/build-docusaurus.sh",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
@@ -25,6 +25,7 @@
     "@docusaurus/plugin-client-redirects": "^3.8.1",
     "@docusaurus/plugin-google-gtag": "^3.8.1",
     "@docusaurus/plugin-google-tag-manager": "^3.8.1",
+    "@docusaurus/plugin-ideal-image": "^3.8.1",
     "@docusaurus/plugin-pwa": "^3.8.1",
     "@docusaurus/preset-classic": "^3.8.1",
     "@docusaurus/utils-validation": "^3.8.1",
@@ -38,13 +39,16 @@
     "sass": "^1.86.1"
   },
   "devDependencies": {
+    "@docusaurus/faster": "^3.8.1",
     "@docusaurus/module-type-aliases": "^3.8.1",
     "@docusaurus/tsconfig": "^3.8.1",
     "@docusaurus/types": "^3.8.1",
+    "@swc/core": "^1.13.3",
     "@typescript-eslint/eslint-plugin": "^8.38.0",
     "eslint": "^9.32.0",
     "eslint-config-prettier": "^10.1.8",
     "prettier": "^3.6.2",
+    "swc-loader": "^0.2.6",
     "typescript": "^5.8.3"
   },
   "browserslist": {
