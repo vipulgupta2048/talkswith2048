@@ -1,36 +1,39 @@
-import React from 'react';
-import Head from '@docusaurus/Head';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import React, { memo } from "react";
+import Head from "@docusaurus/Head";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 
 interface SEOProps {
   title?: string;
   description?: string;
   image?: string;
   pathname?: string;
-  type?: 'website' | 'article';
+  type?: "website" | "article";
   keywords?: string[];
   publishedTime?: string;
   modifiedTime?: string;
 }
 
-export default function SEO({
+export default memo(function SEO({
   title,
   description,
   image,
-  pathname = '',
-  type = 'website',
+  pathname = "",
+  type = "website",
   keywords = [],
   publishedTime,
   modifiedTime,
 }: SEOProps) {
   const { siteConfig } = useDocusaurusContext();
-  
+
   const seo = {
     title: title ? `${title} | ${siteConfig.title}` : siteConfig.title,
     description: description || siteConfig.tagline,
-    image: image || `${siteConfig.url}/img/avatar.png`,
-    url: `${siteConfig.url}${siteConfig.baseUrl}${pathname}`.replace(/\/+/g, '/').replace(/\/$/, '') || siteConfig.url,
-    keywords: [...keywords].join(', '),
+    image: image || `${siteConfig.url}/img/avatar.webp`,
+    url:
+      `${siteConfig.url}${siteConfig.baseUrl}${pathname}`
+        .replace(/\/+/g, "/")
+        .replace(/\/$/, "") || siteConfig.url,
+    keywords: [...keywords].join(", "),
   };
 
   return (
@@ -55,13 +58,13 @@ export default function SEO({
       <meta property="og:image:height" content="630" />
 
       {/* Article-specific Open Graph tags */}
-      {type === 'article' && publishedTime && (
+      {type === "article" && publishedTime && (
         <meta property="article:published_time" content={publishedTime} />
       )}
-      {type === 'article' && modifiedTime && (
+      {type === "article" && modifiedTime && (
         <meta property="article:modified_time" content={modifiedTime} />
       )}
-      {type === 'article' && (
+      {type === "article" && (
         <meta property="article:author" content="Vipul Gupta" />
       )}
 
@@ -74,25 +77,25 @@ export default function SEO({
       <meta name="twitter:image:alt" content={seo.title} />
 
       {/* JSON-LD Structured Data for pages */}
-      {type === 'article' && (
+      {type === "article" && (
         <script type="application/ld+json">
           {JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'Article',
+            "@context": "https://schema.org",
+            "@type": "Article",
             headline: title,
             description: seo.description,
             image: seo.image,
             author: {
-              '@type': 'Person',
-              name: 'Vipul Gupta',
+              "@type": "Person",
+              name: "Vipul Gupta",
               url: siteConfig.url,
             },
             publisher: {
-              '@type': 'Person',
-              name: 'Vipul Gupta',
+              "@type": "Person",
+              name: "Vipul Gupta",
               logo: {
-                '@type': 'ImageObject',
-                url: `${siteConfig.url}/img/avatar.png`,
+                "@type": "ImageObject",
+                url: `${siteConfig.url}/img/avatar.webp`,
               },
             },
             url: seo.url,
@@ -103,4 +106,4 @@ export default function SEO({
       )}
     </Head>
   );
-}
+});
