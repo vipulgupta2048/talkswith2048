@@ -4,4 +4,4 @@ This [repository](https://github.com/vipulgupta2048/talkswith2048), and all rela
 
 Please contact the author before distributing this template, thanks! 😉
 
-All software components in this repository are licensed under the GPL-3.0 License. 
+All software components in this repository are licensed under the GPL-3.0 License.
