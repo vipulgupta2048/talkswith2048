@@ -1,4 +1,4 @@
-@import "../../css/mixins";
+@use "../../css/mixins" as *;
 
 .heroBanner {
   padding: 10rem 0 11rem;

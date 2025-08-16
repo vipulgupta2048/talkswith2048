@@ -1,9 +1,9 @@
-import React, { FunctionComponent } from "react";
+import React, { FunctionComponent, memo } from "react";
 import clsx from "clsx";
 import styles from "./AboutMe.module.scss";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 
-export const AboutMe: FunctionComponent = () => {
+export const AboutMe: FunctionComponent = memo(() => {
   return (
     <div className="margin-top--lg">
       <h2>Little about me</h2>
@@ -11,16 +11,17 @@ export const AboutMe: FunctionComponent = () => {
         <div className="col col--6">
           <p>
             I am a product owner with 7+ years of niche expertise in building
-            hard-tech applications, scaling
-            open-source communities and leading developer education efforts.
+            hard-tech applications, scaling open-source communities and leading
+            developer education efforts.
           </p>
 
           <p>
             My diverse experience comes from wearing multiple hats at startups,
             taking ownership in uncertainty and solving complex problems with
             first principles thinking. I am a generalist, excelling in full
-            stack development, product management, release engineering, DevOps, documentation, 
-            developer education, community management, and growth.
+            stack development, product management, release engineering, DevOps,
+            documentation, developer education, community management, and
+            growth.
           </p>
 
           <blockquote>
@@ -51,10 +52,12 @@ export const AboutMe: FunctionComponent = () => {
           <p>
             Contributing since 2016, my origin story starts with open-source. I
             initially aspired to be an architect in urban planning, but fell in
-            love with the idea of a community coming together on a grassroots level to build software
-            — for everyone, for free. I've collaborated with the best minds in
-            the industry through Mozilla Festival, HackMIT, Google Summer of
-            Code, AMA Mentorship program & Google Code-in. I was recognized as a GitHub Star in July 2025 for my contributions to the online and offline open-source communities. 
+            love with the idea of a community coming together on a grassroots
+            level to build software — for everyone, for free. I've collaborated
+            with the best minds in the industry through Mozilla Festival,
+            HackMIT, Google Summer of Code, AMA Mentorship program & Google
+            Code-in. I was recognized as a GitHub Star in July 2025 for my
+            contributions to the online and offline open-source communities.
           </p>
 
           <blockquote>
@@ -74,30 +77,40 @@ export const AboutMe: FunctionComponent = () => {
             intersection of product, people, and code.
           </p>
           <p>
-            On the weekend, I am the community lead for
-            GitTogether Delhi-NCR community and scaling up the Open Hardware in the Loop community.
-            My weekends are split volunteering for PyCon India as comms lead, mentoring
-            college students through ALiAS, a 3000+ early-career developer community focused on ethical open-source contributions. Previously, I was the lead organizer for PyDelhi and iLuGD.
+            On the weekend, I am the community lead for GitTogether Delhi-NCR
+            community and scaling up the Open Hardware in the Loop community. My
+            weekends are split volunteering for PyCon India as comms lead,
+            mentoring college students through ALiAS, a 3000+ early-career
+            developer community focused on ethical open-source contributions.
+            Previously, I was the lead organizer for PyDelhi and iLuGD.
           </p>
         </div>
         <div className={clsx("col col--5", styles.avatarContainer)}>
           <div className={styles.avatar}>
-            <img src={useBaseUrl("/img/avatar.png")} alt="Avatar" />
-          </div>
-          <div className={styles.hackmitImage}>
             <img
-              src={useBaseUrl("/img/cropped_image.png")}
-              alt="HackMIT Experience"
+              src={useBaseUrl("/img/avatar.webp")}
+              alt="Avatar"
+              loading="lazy"
             />
           </div>
           <div className={styles.hackmitImage}>
             <img
-              src={useBaseUrl("/img/1.jpg")}
+              src={useBaseUrl("/img/cropped_image.webp")}
+              alt="HackMIT Experience"
+              loading="lazy"
+            />
+          </div>
+          <div className={styles.hackmitImage}>
+            <img
+              src={useBaseUrl("/img/1.webp")}
               alt="GitHub GitTogether Constellation"
+              loading="lazy"
             />
           </div>
         </div>
       </div>
     </div>
   );
-};
+});
+
+AboutMe.displayName = "AboutMe";

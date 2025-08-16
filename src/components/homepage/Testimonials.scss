@@ -1,19 +1,25 @@
 .testimonials-section {
   padding: 4rem 0;
-  background: linear-gradient(135deg, 
-    var(--ifm-background-color) 0%, 
-    var(--ifm-background-surface-color) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--ifm-background-color) 0%,
+    var(--ifm-background-surface-color) 100%
+  );
   position: relative;
   overflow: hidden;
+  /* Performance optimizations */
+  contain: layout style paint;
+  will-change: auto;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f8f9fa' fill-opacity='0.03'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") repeat;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f8f9fa' fill-opacity='0.03'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")
+      repeat;
     pointer-events: none;
   }
 
@@ -30,7 +36,11 @@
       font-size: 2.5rem;
       font-weight: 700;
       margin-bottom: 1rem;
-      background: linear-gradient(135deg, var(--ifm-color-primary), var(--ifm-color-secondary));
+      background: linear-gradient(
+        135deg,
+        var(--ifm-color-primary),
+        var(--ifm-color-secondary)
+      );
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -100,7 +110,7 @@
 
   .testimonials-marquee {
     --pause-on-hover: running;
-    
+
     &:hover {
       --pause-on-hover: paused;
     }
@@ -122,15 +132,23 @@
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  /* Performance optimizations */
+  contain: layout style paint;
+  will-change: transform;
+  transform: translateZ(0); /* Force GPU acceleration */
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(90deg, var(--ifm-color-primary), var(--ifm-color-secondary));
+    background: linear-gradient(
+      90deg,
+      var(--ifm-color-primary),
+      var(--ifm-color-secondary)
+    );
   }
 
   &:hover {
@@ -295,14 +313,17 @@
 }
 
 /* Dark mode adjustments */
-[data-theme='dark'] {
+[data-theme="dark"] {
   .testimonials-section {
-    background: linear-gradient(135deg, 
-      var(--ifm-background-color) 0%, 
-      #1a1a1a 100%);
+    background: linear-gradient(
+      135deg,
+      var(--ifm-background-color) 0%,
+      #1a1a1a 100%
+    );
 
     &::before {
-      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.02'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") repeat;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.02'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")
+        repeat;
     }
   }
 

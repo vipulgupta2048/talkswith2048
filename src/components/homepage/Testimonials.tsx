@@ -1,44 +1,58 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState, useEffect, memo, useCallback } from "react";
 import Marquee from "react-fast-marquee";
-import { TestimonialData, testimonials as testimonialsData } from "../../data/testimonials";
+import {
+  TestimonialData,
+  testimonials as testimonialsData,
+} from "../../data/testimonials";
 import "./Testimonials.scss";
 
 interface TestimonialCardProps {
   testimonial: TestimonialData;
 }
 
-const TestimonialCard: React.FC<TestimonialCardProps> = ({ testimonial }) => {
-  return (
-    <div className="testimonial-card">
-      <div className="testimonial-content">
-        <div className="quote-icon">"</div>
-        <p className="testimonial-text">{testimonial.content}</p>
-      </div>
-      <div className="testimonial-footer">
-        <div className="avatar">
-          <img 
-            src={testimonial.avatar} 
-            alt={testimonial.name}
-            onError={(e) => {
-              // Fallback to a default avatar if image doesn't exist
-              e.currentTarget.src = "https://ui-avatars.com/api/?name=" + 
-                encodeURIComponent(testimonial.name) + 
-                "&background=random&size=60";
-            }}
-          />
-        </div>
-        <div className="testimonial-author">
-          <div className="author-name">{testimonial.name}</div>
-          <div className="author-role">{testimonial.role}</div>
-          <div className="author-company">{testimonial.company}</div>
-        </div>
-      </div>
-    </div>
-  );
-};
+const TestimonialCard: React.FC<TestimonialCardProps> = memo(
+  ({ testimonial }) => {
+    const handleImageError = useCallback(
+      (e: React.SyntheticEvent<HTMLImageElement>) => {
+        // Fallback to a default avatar if image doesn't exist
+        e.currentTarget.src =
+          "https://ui-avatars.com/api/?name=" +
+          encodeURIComponent(testimonial.name) +
+          "&background=random&size=60";
+      },
+      [testimonial.name],
+    );
 
-export const Testimonials: React.FC = () => {
-  const [direction, setDirection] = useState<'left' | 'right'>('left');
+    return (
+      <div className="testimonial-card">
+        <div className="testimonial-content">
+          <div className="quote-icon">"</div>
+          <p className="testimonial-text">{testimonial.content}</p>
+        </div>
+        <div className="testimonial-footer">
+          <div className="avatar">
+            <img
+              src={testimonial.avatar}
+              alt={testimonial.name}
+              onError={handleImageError}
+              loading="lazy"
+            />
+          </div>
+          <div className="testimonial-author">
+            <div className="author-name">{testimonial.name}</div>
+            <div className="author-role">{testimonial.role}</div>
+            <div className="author-company">{testimonial.company}</div>
+          </div>
+        </div>
+      </div>
+    );
+  },
+);
+
+TestimonialCard.displayName = "TestimonialCard";
+
+export const Testimonials: React.FC = memo(() => {
+  const [direction, setDirection] = useState<"left" | "right">("left");
   const [testimonials, setTestimonials] = useState<TestimonialData[]>([]);
   const [loading, setLoading] = useState(true);
   const marqueeRef = useRef<any>(null);
@@ -48,7 +62,7 @@ export const Testimonials: React.FC = () => {
       try {
         setTestimonials(testimonialsData);
       } catch (error) {
-        console.error('Error loading testimonials:', error);
+        console.error("Error loading testimonials:", error);
       } finally {
         setLoading(false);
       }
@@ -90,7 +104,7 @@ export const Testimonials: React.FC = () => {
           <h2>Hear it from the people</h2>
         </div>
       </div>
-        
+
       <div className="marquee-wrapper">
         <Marquee
           ref={marqueeRef}
@@ -110,4 +124,6 @@ export const Testimonials: React.FC = () => {
       </div>
     </section>
   );
-};
+});
+
+Testimonials.displayName = "Testimonials";

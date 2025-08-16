@@ -1,10 +1,10 @@
 import clsx from "clsx";
-import React, { FunctionComponent } from "react";
+import React, { FunctionComponent, memo } from "react";
 
 import styles from "./Hero.module.scss";
 import Link from "@docusaurus/Link";
 
-export const Hero: FunctionComponent = () => {
+export const Hero: FunctionComponent = memo(() => {
   return (
     <header className={clsx("hero hero--primary", styles.heroBanner)}>
       <div className="container">
@@ -21,11 +21,40 @@ export const Hero: FunctionComponent = () => {
         </p>
         <br />
         <div className={styles.buttonsContainer}>
-          <Link to="/Introduction" className={clsx("button button--outline button--primary", styles.btn)} > About </Link>
-          <Link to="/category/work" className={clsx("button button--outline button--primary", styles.btn)} > Work </Link>
-          <Link to="/category/sharing-what-i-know" className={clsx("button button--outline button--primary", styles.btn)} > Talks </Link>
+          <Link
+            to="/Introduction"
+            className={clsx(
+              "button button--outline button--primary",
+              styles.btn,
+            )}
+          >
+            {" "}
+            About{" "}
+          </Link>
+          <Link
+            to="/category/work"
+            className={clsx(
+              "button button--outline button--primary",
+              styles.btn,
+            )}
+          >
+            {" "}
+            Work{" "}
+          </Link>
+          <Link
+            to="/category/sharing-what-i-know"
+            className={clsx(
+              "button button--outline button--primary",
+              styles.btn,
+            )}
+          >
+            {" "}
+            Talks{" "}
+          </Link>
         </div>
       </div>
     </header>
   );
-};
+});
+
+Hero.displayName = "Hero";
