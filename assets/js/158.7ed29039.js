@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkvipulgupta2048_docs=self.webpackChunkvipulgupta2048_docs||[]).push([[158],{8158:(a,u,c)=>{c.r(u),c.d(u,{DocSearchModal:()=>p.a1});var p=c(3219)}}]);
