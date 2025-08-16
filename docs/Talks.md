@@ -11,14 +11,14 @@ From local meetups to global conferences, I've aimed to weave technical concepts
 <details>
   <summary>2025</summary>
 
-## 🔒 Open Source Summit India 2025: OpenSSF India Community Days
+### 🔒 Open Source Summit India 2025: OpenSSF India Community Days
 
-### Supply Chain Security: How Insecure Defaults Led to Undetected Incidents
+#### Supply Chain Security: How Insecure Defaults Led to Undetected Incidents
 
 • 🔗 [Talk Link](https://openssfcdin2025.sched.com/event/242lj/how-insecure-defaults-led-to-undetected-supply-chain-incident-a-cicd-security-nightmare-vipul-gupta-balena?iframe=yes&w=100%&sidebar=yes&bg=no)  
 • 📊 [Slides](https://docs.google.com/presentation/d/1yc8o9vu7NbWIrW2VfH1VRIsn80hjDH58PLKUqjZf0MI/edit?usp=sharing)  
 • 🎥 Recording - Coming Soon  
-• Hyderabad, India, 250+ Security Engineers & DevOps Professionals
+• 📍 Hyderabad, India - 250+ Security Engineers & Open Source Contributors
 
 A deep dive into how a misconfigured GitHub Action exposed a long-lived token for two years, creating an undetected attack vector that compromised a multi-platform code signing infrastructure. This session demonstrated real-world supply chain vulnerabilities and their mitigation strategies.
 
@@ -26,8 +26,8 @@ Received Feedback from 50+ Attendees
 
 | | | 
 |:---:|:---:|
-| ![Feedback 1](./img/openssf/1.png) | ![Feedback 2](./img/openssf/3.png) |
-| ![Talk Photo 1](./img/openssf/4sg79i.jpg) | ![Talk Photo 2](./img/openssf/IMG_20250804_114013.jpg) |
+| ![Feedback 1](./img/openssf/1.webp) | ![Feedback 2](./img/openssf/3.webp) |
+| ![Talk Photo 1](./img/openssf/4sg79i.webp) | ![Talk Photo 2](./img/openssf/IMG_20250804_114013.webp) |
 
 ---
 
@@ -54,7 +54,7 @@ Participants gained practical experience with modern AI assessment techniques an
 
 | | |
 |:---:|:---:|
-| ![GitTogether Talk 1](./img/gittogether/WhatsApp%20Image%202025-08-10%20at%2017.08.58.jpeg) | ![GitTogether Talk 2](./img/gittogether/WhatsApp%20Image%202025-08-10%20at%2017.09.31.jpeg) |
+| ![GitTogether Talk 1](./img/gittogether/WhatsApp%20Image%202025-08-10%20at%2017.08.58.webp) | ![GitTogether Talk 2](./img/gittogether/WhatsApp%20Image%202025-08-10%20at%2017.09.31.webp) |
 
 ---
 
@@ -63,7 +63,7 @@ Participants gained practical experience with modern AI assessment techniques an
 
 • 🔗 [Conference Page](https://fossunited.org/c/delhi/2025-june/cfp/ab8r4dbmm6)  
 • 📊 [Slides](https://slides.com/vipulgupta2048/llm-ai-evals-vipulgupta2048)  
-• 📸 [Session Feedback](./img/fossindia/talk-feedback-1.png)  
+• 📸 [Session Feedback](./img/fossindia/talk-feedback-1.webp)  
 
 Presented my first session on LLM evals at the Interenet Freedom Foundation. Attendees took an in-depth dive into understanding AI evals, how it's fundamentally different from testing/benchmarking, impact on LLM pipeline, systematic ways to evaluate applications, types of evals and how to become an evaluator.
 
@@ -96,9 +96,9 @@ Hands-on workshop introducing Git fundamentals, GitHub collaboration, branching,
 
 | Title of the talk       | Link for Proposal  | Thoughts |
 | --- |:---:|---|
-| DelhiFOSS 2.0 Conference: [Pains, Processes & the Eventual Gains of Building Open-Source Hardtech projects](https://indiafoss.net/Delhi/2024/talk/08737248bb) | [Recording](https://youtu.be/fa62hVxUUGI?si=t64hvPlsNgQRaWZd) [Slides](https://slides.com/vipulgupta2048/delhifoss-hardtech/fullscreen) [Feedback](./img/fossindia/1.png) | Hard tech involves the combination of hardware and software to solve a problem. As opposed to soft tech, hard tech projects have to be completed on launch with hardware ready to ship. This talk is all about the pain, the processes and eventual gains in the journey of building hard tech project in the open. |
-| GitHub Constellation 2024: [How Balena Releases 100's of Embedded Operating Systems with GitHub Actions in Hours, Not Weeks](https://githubconstellation.com/schedule/how-balena-releases-100s-of-embedded-operating-systems-with-github-actions-in-hours-not-weeks) | Recording [Slides](https://slides.com/vipulgupta2048/constellation-2024/fullscreen) [Feedback 1](./img/github/feedback.png) [Feedback 2](./img/github/1.png) | This presentation was about how Balena is using GitHub Actions to test hundreds of OS images, specifically focusing on balenaOS and the challenges of testing embedded operating systems. The talk is about balenaOS's build, testing, and deployment pipelines using GitHub Actions. |
-| GitHub Constellation Delhi 2024: What's new with GitHub Copilot by Vipul Gupta | [Post](https://www.linkedin.com/feed/update/urn:li:activity:7276636792185872384/) [Feedback](./img/github/2.png) | Covering the updates in Copilot with agent mode and using different models to build a small game right in front of the audience having experienced developers and technical program managers. |
+| DelhiFOSS 2.0 Conference: [Pains, Processes & the Eventual Gains of Building Open-Source Hardtech projects](https://indiafoss.net/Delhi/2024/talk/08737248bb) | [Recording](https://youtu.be/fa62hVxUUGI?si=t64hvPlsNgQRaWZd) [Slides](https://slides.com/vipulgupta2048/delhifoss-hardtech/fullscreen) [Feedback](./img/fossindia/1.webp) | Hard tech involves the combination of hardware and software to solve a problem. As opposed to soft tech, hard tech projects have to be completed on launch with hardware ready to ship. This talk is all about the pain, the processes and eventual gains in the journey of building hard tech project in the open. |
+| GitHub Constellation 2024: [How Balena Releases 100's of Embedded Operating Systems with GitHub Actions in Hours, Not Weeks](https://githubconstellation.com/schedule/how-balena-releases-100s-of-embedded-operating-systems-with-github-actions-in-hours-not-weeks) | Recording [Slides](https://slides.com/vipulgupta2048/constellation-2024/fullscreen) [Feedback 1](./img/github/feedback.webp) [Feedback 2](./img/github/1.webp) | This presentation was about how Balena is using GitHub Actions to test hundreds of OS images, specifically focusing on balenaOS and the challenges of testing embedded operating systems. The talk is about balenaOS's build, testing, and deployment pipelines using GitHub Actions. |
+| GitHub Constellation Delhi 2024: What's new with GitHub Copilot by Vipul Gupta | [Post](https://www.linkedin.com/feed/update/urn:li:activity:7276636792185872384/) [Feedback](./img/github/2.webp) | Covering the updates in Copilot with agent mode and using different models to build a small game right in front of the audience having experienced developers and technical program managers. |
 | Linux Plumbers 2024 EU | [Selected, Couldn't Attend](https://lpc.events/event/18/contributions/1931/) | THE Linux Kernel conference to attend in the world. 2024 I couldn't get my funding together.  |
 </details>
 
@@ -113,10 +113,10 @@ Hands-on workshop introducing Git fundamentals, GitHub collaboration, branching,
 | FOSS United Delhi Conference: [Building your next open-source product](https://indiafoss.net/delhi/2022/schedule) | [Recording](https://www.youtube.com/watch?v=dK2Ja-5cbOU) [Slides](https://slides.com/vipulgupta2048/delhifoss) | Chasing deadlines and ticking the checkboxes on our spec we forget who we are building software products for. After 2 years of working, I wanted to share my learnings around building open-source products that people can build upon, contribute to and actually use in real life. |
 | CDCon + gitOpsCon 2023 Vancouver: [Testing 100's of OS Images with Jenkins: A Journey from Pull Request to Production Release](https://sched.co/1Jp87) | [Recording](https://youtu.be/Dhl61ZQ63WY?t=164) [Slides](https://slides.com/vipulgupta2048/vipul-cdcon2023) [Certificate](https://www.credly.com/badges/032b3b11-6242-4aa4-b626-2f986f6e1c75/public_url) | First major open-source conference I attended abroad and gave a talk after 4 years of visa, money and covid issues. The talks was a deep dive into the last three years of my work at balena building an open-source hardware-in-the-loop pipeline that tests software directly on an IoT device in a CI/CD pipeline. The work resulted in balenaOS being released in a matter of hours rather than weeks of testing. Further blogs on the topic [1](https://blog.balena.io/from-pr-to-release-os-testing-at-balena/) [2](https://blog.balena.io/maximizing-resources-in-the-chip-shortage-how-balenaos-testing-went-virtual/) |
 | PyDelhi Conf 2023: [Deploying Python on the edge: Mistakes, pain and learnings of scaling Python applications on millions of IoT devices](https://conference.pydelhi.org/) | [Slides](https://slides.com/vipulgupta2048/pydelhiconf2023-deployedge/) [Certificate](https://github.com/vipulgupta2048/talkswith2048/assets/22801822/22bfe997-169f-4d10-b9ad-320c93f45dea) [Recording](https://www.youtube.com/live/HclGLQVLBhM?si=eWOrbN86steOemR1&t=3348) | After a 5-year hiatus, the community gathered support to do another edition of the PyDelhi conference. The talk was about the mistakes, tips and learnings of scaling Python application on IoT devices handpicked from years of experience working with fleets of IoT devices. The presentation goes on to prove that Murphy's law is all powerful in the field and while you can't control every variable, and element. What you can control is your code and how you build it. |
-| Open Source Summit Europe 2023: [Let's Build Our Own Virtual RaspberryPi Using QEMU Virtualization](https://sched.co/1OGgk) | [Slides](https://slides.com/vipulgupta2048/osseu2023-qemu) [Certificate](https://www.credly.com/badges/a7cb9f21-5330-45b6-9006-dc93a4862a60/) [Recording](https://www.youtube.com/watch?v=EYVkSUydqMI) | My first talk at Open Source Summit giving my best tutorial trying to explain QEMU the best way I can. Received good feedback from my talk, worked hard on the examples and hopefully folks learned something! <img src={require("./img/oss/2.png").default} height="{358}" width="{400}" />  |
+| Open Source Summit Europe 2023: [Let's Build Our Own Virtual RaspberryPi Using QEMU Virtualization](https://sched.co/1OGgk) | [Slides](https://slides.com/vipulgupta2048/osseu2023-qemu) [Certificate](https://www.credly.com/badges/a7cb9f21-5330-45b6-9006-dc93a4862a60/) [Recording](https://www.youtube.com/watch?v=EYVkSUydqMI) | My first talk at Open Source Summit giving my best tutorial trying to explain QEMU the best way I can. Received good feedback from my talk, worked hard on the examples and hopefully folks learned something! <img src={require("./img/oss/2.webp").default} height="{358}" width="{400}" />  |
 | Open Source Summit China 2023 | [Selected] | Talk got selected. Couldn't go due to visa issues. Maybe next year. |
 | Linux Plumbers 2023 | [Selected] | THE Linux Kernel conference to attend in the world. 2023 was my first year stepping back into conferencing and another journey to United States to attend this would have stretched me a bit too far.  |
-| Open Source Summit Japan 2023 [Testing 100's of OS images with Jenkins: Exploring the architecture from Pull Request to Release](https://sched.co/1TzRx) | [Slides](https://slides.com/vipulgupta2048/cdcon-japan-2023/) [Certificate](https://www.credly.com/badges/2e9936ba-60b7-4255-baf3-21d2fe530f92/) | Presenting my session at CDCon Japan 2023, going deeper into the hardware in the loop testing implemented at balena by my team. Discussed architecture and implementation details of the project. Received a lot of feedback from 50+ CI experts attending. The conference agenda was very well formulated and the schedule was one of the rare ones where each talk brought in something interesting <img src={require("./img/oss/1.jpg").default} height="{358}" width="{400}" /> |
+| Open Source Summit Japan 2023 [Testing 100's of OS images with Jenkins: Exploring the architecture from Pull Request to Release](https://sched.co/1TzRx) | [Slides](https://slides.com/vipulgupta2048/cdcon-japan-2023/) [Certificate](https://www.credly.com/badges/2e9936ba-60b7-4255-baf3-21d2fe530f92/) | Presenting my session at CDCon Japan 2023, going deeper into the hardware in the loop testing implemented at balena by my team. Discussed architecture and implementation details of the project. Received a lot of feedback from 50+ CI experts attending. The conference agenda was very well formulated and the schedule was one of the rare ones where each talk brought in something interesting <img src={require("./img/oss/1.webp").default} height="{358}" width="{400}" /> |
 
 </details>
 
@@ -149,9 +149,9 @@ Hands-on workshop introducing Git fundamentals, GitHub collaboration, branching,
 ### 2019
 | Title of the talk       | Link for Proposal  | Thoughts |
 | --- |:---:|---|
-| PyCon US: Cleveland, Ohio 2019 | [Proposal](https://us.pycon.org/2019/schedule/presentation/415/), [Tweet](https://twitter.com/vipulgupta2048/status/1096062549877899264) [Archive](./img/pycon-us/screenshot.png) | [Selected](https://us.pycon.org/2019/schedule/presentation/415/?fbclid=IwAR1c34BedXNB3mw7hG5_zbQxx001gGL6NFdVSXj6UDlk1xpFCeESDQXmcdo) Talk on Reinventing Education with Python in 2019 representing PyDelhi and Sugar Labs in the biggest Python conference in the world. |
+| PyCon US: Cleveland, Ohio 2019 | [Proposal](https://us.pycon.org/2019/schedule/presentation/415/), [Tweet](https://twitter.com/vipulgupta2048/status/1096062549877899264) [Archive](./img/pycon-us/screenshot.webp) | [Selected](https://us.pycon.org/2019/schedule/presentation/415/?fbclid=IwAR1c34BedXNB3mw7hG5_zbQxx001gGL6NFdVSXj6UDlk1xpFCeESDQXmcdo) Talk on Reinventing Education with Python in 2019 representing PyDelhi and Sugar Labs in the biggest Python conference in the world. |
 | DebUtsav Delhi 2019 | [Proposal](https://2019.goa.debutsav.in/) | [Delivered](https://diasp.org/tags/debutsav) Talk on importance of digging opportunities in Open-Source, to attendees of DebUtsav at National Institute of Public Finance and Policy (NIFPP) [Slides](https://slides.com/vipulgupta2048/finding-foss) |
-| PyCon Singapore 2019 | Lightning talk | [Delivered](https://pycon.sg/edu-summit/) Spreading awareness about Sugar Labs's aim to transforming pedagogy with Python, showcasing our work over the years, contributions and impact created to improve the overall education scenario at the Education Summit. In line with the Outreach efforts of Sugar Labs in the APAC region, and how it helps remodel the current education system with its free and open-source Python tools. [Screenshot](./img/2.png) |
+| PyCon Singapore 2019 | Lightning talk | [Delivered](https://pycon.sg/edu-summit/) Spreading awareness about Sugar Labs's aim to transforming pedagogy with Python, showcasing our work over the years, contributions and impact created to improve the overall education scenario at the Education Summit. In line with the Outreach efforts of Sugar Labs in the APAC region, and how it helps remodel the current education system with its free and open-source Python tools. [Screenshot](./img/2.webp) |
 | PyCon UK 2019, PyCon ZA 2019 | talks on Sugar Labs | [Accepted] Spreading awareness about Sugar Labs's aim to transforming pedagogy with Python, showcasing our work over the years, contributions and impact created. |
 | Open Source Festival Lagos + Sustain Africa 2020 | Talk | [Selected] Forge your future with open-source: A primer for freelancers to grow with FOSS. With everyone looking for jobs, internships, or opportunities, I, a full-time student from the age of 18 have been leveraging open-source to find the right breaks, grow my community, and build my persona both personally & professionally. After this talk, you can do it too. |
 </details>
@@ -169,7 +169,7 @@ Hands-on workshop introducing Git fundamentals, GitHub collaboration, branching,
 | Bot Creation BootCamp | [Link for proposal](https://github.com/linuxchixin/talks/issues/46) | [Delivered] [Slides](https://slides.com/vipulgupta2048/2itterbots/) SocialCops, Saket, New Delhi @ LinuxChix India Meetup - 2 September 2018 |
 | How to contribute to Open-Source | Lightening talk | [Delivered] E2E Networks @ PyDelhi Meetup - 1 September 2018, [Blog Post for reference](https://pydelhi.org/blog/pydelhi-first-visit-e2enetworks.html) |
 | Google Summer of Code - Headstart Session | Spontaneous | [Delivered] Invited for a talk about my experience with Google Summer of Code along with Ajay Garg and the coding blocks team at Amity University by IUCEE Club - Addressed about 80 Students based on my popular [blog](https://mixster.dev/2018/04/25/123gsoc/) |
-| Green dots doesn't matter contributing does | [Proposal](https://github.com/MozillaFestival/mozfest-program-2018/issues/106) [Slides](https://docs.google.com/presentation/d/1HlBf3QgFz9sR00gmuB2LWEi7mLhyJ8qVOlT3gq_vcm0/edit?usp=sharing) | [Delivered] Mozfest 2018 - [Got a nice blog](https://mixster.dev/2018/11/20/mozfest2018/) Had a great talk at Mozfest, I even got featured in the newsletter. <img src={require("./img/mozfest/a.png").default} height="{358}" width="{400}" /> |
+| Green dots doesn't matter contributing does | [Proposal](https://github.com/MozillaFestival/mozfest-program-2018/issues/106) [Slides](https://docs.google.com/presentation/d/1HlBf3QgFz9sR00gmuB2LWEi7mLhyJ8qVOlT3gq_vcm0/edit?usp=sharing) | [Delivered] Mozfest 2018 - [Got a nice blog](https://mixster.dev/2018/11/20/mozfest2018/) Had a great talk at Mozfest, I even got featured in the newsletter. <img src={require("./img/mozfest/a.webp").default} height="{358}" width="{400}" /> |
 | FSoSS 2018 New York | [Proposal](https://imgur.com/a/ftfRFQ1) | [Couldn't go] Community Talks - Managing dotfiles with Homely |
 | Sugar Port - My GSoC project with Sugar Labs |  Lightening talk | [Delivered] At Google London Office for a lightning talk on my Google Summer of Code project, Sugar Port. [Slides](https://docs.google.com/presentation/d/12B2vPtcm5OhNYSIVNCZqrU-HiA04X7LjDpdSFSWQAbI/edit?usp=sharing) |
 | Mytrah talks 2018 | Selected among 100+ case studies at the National level [Video](https://photos.app.goo.gl/HHQ8C5MsS7MFsj8w7) !@! [Slides](https://docs.google.com/presentation/d/1wsHJvKbGeR-0jaTYETqjPx87VThNT3oz8RDxN45xblY/edit?usp=sharing) | [Delivered] At Amity University, in front of a diverse crowd of scientists, researchers, and students working on renewable energy and sustainable environment. |

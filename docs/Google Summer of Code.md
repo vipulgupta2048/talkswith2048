@@ -10,8 +10,8 @@ slug: /gsoc
 
 From the start, I had the pleasure of contributing and participating in Google Summer of Code with [Sugar Labs in 2018](https://github.com/vipulgupta2048/mygsoc) and again a year later with [The Scrapy Project in 2019](https://github.com/vipulgupta2048/mygsoc). Executing these projects and working with the organizations taught me a lot. Even after the projects have finished, I continued to volunteer with Sugar Labs focusing on Outreach efforts and playing an active part in their Google OSS programs. I contribute code frequently to ScrapingHub and The Scrapy Project. These were good times indeed.
 
- <img src={require("./img/gsoc/3.jpg").default} height="300" width="430" />
- <img src={require("./img/gsoc/gsoc.jpg").default} height="300" width="430" />
+ <img src={require("./img/gsoc/3.webp").default} height="300" width="430" />
+ <img src={require("./img/gsoc/gsoc.webp").default} height="300" width="430" />
 
 **Blogs, Podcasts & Guides**
 

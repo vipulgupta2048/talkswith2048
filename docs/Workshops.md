@@ -9,7 +9,7 @@ Through my workshops, I strive to not just inform but to connect, making each co
 
 This hands-on workshop introduced students to the fundamentals of version control using Git and collaborative development with GitHub. Participants learned essential concepts including repository creation, branching, committing changes, and pull requests. The session combined theoretical explanations with practical exercises, enabling students to set up their first repositories and understand the workflow used by developers worldwide. Also, discussed career paths and summer programs they could participate in.
 
-![Vipul Gupta presenting a workshop](./img/workshops/iimt-uni.jpg)
+![Vipul Gupta presenting a workshop](./img/workshops/iimt-uni.webp)
 
 
 ## 🌟 GitHub Constellation 2024: How Balena Releases 100's of Embedded Operating Systems with GitHub Actions in Hours, Not Weeks
@@ -24,5 +24,5 @@ This presentation was about how Balena is using GitHub Actions to test hundreds 
 
 | Feedback 1 | Feedback 2 |
 |:---:|:---:|
-| ![Feedback 1](./img/github/feedback.png) | ![Feedback 2](./img/github/1.png) |
+| ![Feedback 1](./img/github/feedback.webp) | ![Feedback 2](./img/github/1.webp) |
 
