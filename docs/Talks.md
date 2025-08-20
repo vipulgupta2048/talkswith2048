@@ -17,7 +17,7 @@ From local meetups to global conferences, I've aimed to weave technical concepts
 
 • 🔗 [Talk Link](https://openssfcdin2025.sched.com/event/242lj/how-insecure-defaults-led-to-undetected-supply-chain-incident-a-cicd-security-nightmare-vipul-gupta-balena?iframe=yes&w=100%&sidebar=yes&bg=no)  
 • 📊 [Slides](https://docs.google.com/presentation/d/1yc8o9vu7NbWIrW2VfH1VRIsn80hjDH58PLKUqjZf0MI/edit?usp=sharing)  
-• 🎥 Recording - Coming Soon  
+• 🎥 [Recording](https://www.youtube.com/watch?v=cSqEn2ulasE) and [certifaction badge](https://www.linkedin.com/feed/update/urn:li:activity:7363874222223355906/).
 • 📍 Hyderabad, India - 250+ Security Engineers & Open Source Contributors
 
 A deep dive into how a misconfigured GitHub Action exposed a long-lived token for two years, creating an undetected attack vector that compromised a multi-platform code signing infrastructure. This session demonstrated real-world supply chain vulnerabilities and their mitigation strategies.
