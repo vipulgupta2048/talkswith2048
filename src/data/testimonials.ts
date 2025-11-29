@@ -44,6 +44,15 @@ export const testimonials: TestimonialData[] = [
       "Vipul has a unique way of making complex topics accessible with his interactive presentations. It was an enlightening talk and your made each concept clear.",
   },
   {
+    id: "8",
+    name: "Nitya Pandey",
+    role: "Campus Expert Team, Engineering @ Soti",
+    company: "GitHub",
+    avatar: "https://avatars.githubusercontent.com/u/121478792?v=4",
+    content:
+      "HUGE bout of gratitude to Vipul for being the most supportive, kind and incredible mentor. This event wouldn't have the same experience, diversity and scale without him and his suggestions. To top it all, an amazing GitHub Copilot talk from beginner to advanced level.",
+  },
+  {
     id: "5",
     name: "Annoymous",
     role: "Technical Writer",
