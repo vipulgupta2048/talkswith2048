@@ -1,6 +1,20 @@
 
 > Tune into the podcasts I've been a part of, discussing everything from remote work to the intricacies of open-source culture.
 
+## SquaredUp: From pipelines to patterns: Observability in the wild
+
+• 🔗 [Full interview](https://www.youtube.com/watch?v=O-fWSN1H_GM)
+• 📝 [Blog post](https://squaredup.com/blog/from-pipelines-to-patterns-observability-in-the-wild/)
+• 📝 [Linkedin](https://www.linkedin.com/posts/sameer-mhaisekar_o11ywednesday-observability-cicd-ugcPost-7371529539556048899-rQpc)
+
+Excerpt: I’ve been exploring observability means to engineering leaders. Vipul Gupta's response was a surprise. It wasn’t about observing applications, it was observing their CI/CD pipelines in GitHub Actions. 
+
+At balena, Vipul’s team manages hundred of thousands IoT devices running balenaOS. That creates a unique challenge. How do you test software that runs on physical devices? How do you ensure pipelines are reliable when they depend on hardware that can be flaky?
+
+Every code change needs to be tested on real hardware using “hardware in the loop” pipelines. 🖨️
+
+CI/CD at this scale is fragile. Pipelines fail constantly due to dependency changes, hardware flakiness, or transient network issues. But workflows are business critical – monitoring them is a priority.
+
 ## 📝 Clarisights Engineering - Lessons, Mistakes & Challenges: Building our in-house orchestrator for Big Data Pipelines
 
 • 🔗 [Blog post](https://blog.clarisights.com/lessons-mistakes-challenges-building-our-in-house-orchestrator-for-big-data-pipelines-a-year-of-learnings-developing-mozek/)  
