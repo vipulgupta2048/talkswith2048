@@ -22,8 +22,9 @@ yarn-error.log*
 # lychee
 .lycheecache
 
+## AI
+.commandcode/
 
 ## Fix later
-
 README-temp.md''
 Designs.md''
