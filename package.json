@@ -1,6 +1,6 @@
 {
   "name": "vipulgupta2048-docs",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "./convert-images-to-webp.sh ./docs/img/ && docusaurus start",
@@ -21,35 +21,35 @@
     "prettier:fix": "prettier --write ."
   },
   "dependencies": {
-    "@docusaurus/core": "^3.8.1",
-    "@docusaurus/plugin-client-redirects": "^3.8.1",
-    "@docusaurus/plugin-google-gtag": "^3.8.1",
+    "@docusaurus/core": "^3.9.2",
+    "@docusaurus/plugin-client-redirects": "^3.9.2",
+    "@docusaurus/plugin-google-gtag": "^3.9.2",
     "@docusaurus/plugin-google-tag-manager": "^3.8.1",
-    "@docusaurus/plugin-ideal-image": "^3.8.1",
-    "@docusaurus/plugin-pwa": "^3.8.1",
-    "@docusaurus/preset-classic": "^3.8.1",
-    "@docusaurus/utils-validation": "^3.8.1",
-    "@mdx-js/react": "^3.1.0",
+    "@docusaurus/plugin-ideal-image": "^3.9.2",
+    "@docusaurus/plugin-pwa": "^3.9.2",
+    "@docusaurus/preset-classic": "^3.9.2",
+    "@docusaurus/utils-validation": "^3.9.2",
+    "@mdx-js/react": "^3.1.1",
     "clsx": "^2.1.1",
     "docusaurus-plugin-sass": "^0.2.6",
     "prism-react-renderer": "^2.4.1",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
     "react-fast-marquee": "^1.6.5",
-    "sass": "^1.86.1"
+    "sass": "^1.94.2"
   },
   "devDependencies": {
-    "@docusaurus/faster": "^3.8.1",
-    "@docusaurus/module-type-aliases": "^3.8.1",
-    "@docusaurus/tsconfig": "^3.8.1",
-    "@docusaurus/types": "^3.8.1",
-    "@swc/core": "^1.13.3",
-    "@typescript-eslint/eslint-plugin": "^8.38.0",
-    "eslint": "^9.32.0",
+    "@docusaurus/faster": "^3.9.2",
+    "@docusaurus/module-type-aliases": "^3.9.2",
+    "@docusaurus/tsconfig": "^3.9.2",
+    "@docusaurus/types": "^3.9.2",
+    "@swc/core": "^1.15.3",
+    "@typescript-eslint/eslint-plugin": "^8.48.0",
+    "eslint": "^9.39.1",
     "eslint-config-prettier": "^10.1.8",
-    "prettier": "^3.6.2",
+    "prettier": "^3.7.3",
     "swc-loader": "^0.2.6",
-    "typescript": "^5.8.3"
+    "typescript": "^5.9.3"
   },
   "browserslist": {
     "production": [
