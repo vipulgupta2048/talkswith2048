@@ -454,9 +454,9 @@ const config = {
           {
             html: `<div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
             <div>
-              <p align='left'>✍️ Docs written by @${org} since 2017, not generated 💜<br>
-              <a href="${githubUrl}/issues/new?assignees=vipulgupta2048&labels=&projects=&template=welcome-ideas.md&title=user-feedback" aria-label="Provide feedback on documentation">Steal responsibly</a> 👀, 
-              give the docs a <a href="${githubUrl}" aria-label="Star the repository on GitHub">star 🌟</a> if they helped.<br>
+              <p align='left'>✍️ Docs written by @${org} since 2017 💜<br>
+              <a href="${githubUrl}/issues/new?assignees=vipulgupta2048&labels=&projects=&template=welcome-ideas.md&title=user-feedback" aria-label="Provide feedback on documentation">Steal responsibly</a> 👀 
+              Share a <a href="${githubUrl}" aria-label="Star the repository on GitHub">star 🌟</a><br>
               As always, live in the mix! 🎵</p>
             </div>
             <div>

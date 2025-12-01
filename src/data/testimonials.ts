@@ -9,20 +9,20 @@ export interface TestimonialData {
 
 export const testimonials: TestimonialData[] = [
   {
-    id: "1",
+    id: "8",
     name: "Nikhil Maan",
     role: "Senior Developer",
     company: "FoodPe",
-    avatar: "/img/avatars/alex.jpg",
+    avatar: "https://avatars.githubusercontent.com/u/30147327?v=4",
     content:
       "Vipul's mentorship was invaluable during the ALiAS AMA program. His guidance helped me navigate complex projects, and going out of the way to edit some parts of the proposal himself.",
   },
   {
     id: "2",
     name: "Nishchit Dhanani & Shreya Ranpariya",
-    role: "Founder",
+    role: "Co-Founders",
     company: "Firecamp",
-    avatar: "/img/avatars/sarah.jpg",
+    avatar: "https://firecamp.io/logo/fc.svg",
     content: `Vipul is the goto person for technical documentation. He brings commitment and experience across the stack. If you’re looking for someone to write your technical docs I’d say, don’t waste your time, just call this guy!`,
   },
   {
@@ -37,8 +37,8 @@ export const testimonials: TestimonialData[] = [
   {
     id: "7",
     name: "Yash",
-    role: "Software Engineer",
-    company: "Annoymous",
+    role: "SDE III",
+    company: "Microsoft",
     avatar: "/img/avatars/marcus.jpg",
     content:
       "Vipul has a unique way of making complex topics accessible with his interactive presentations. It was an enlightening talk and your made each concept clear.",
@@ -46,18 +46,18 @@ export const testimonials: TestimonialData[] = [
   {
     id: "5",
     name: "Nitya Pandey",
-    role: "GitHub Campus Expert, Engineering @ Soti",
-    company: "GitHub",
+    role: "GitHub Campus Expert",
+    company: "Engineering @ Soti",
     avatar: "https://avatars.githubusercontent.com/u/121478792?v=4",
     content:
       "HUGE bout of gratitude to Vipul for being the most supportive, kind and incredible mentor. This event wouldn't have the same experience, diversity and scale without him and his suggestions. To top it all, an amazing GitHub Copilot talk from beginner to advanced level.",
   },
   {
-    id: "8",
+    id: "1",
     name: "Annoymous",
     role: "Team Lead",
     company: "Annoymous",
-    avatar: "/img/avatars/annoymous.jpg",
+    avatar: "/img/avatars/marcus.jpg",
     content:
       "Attending Vipul's workshop on Hardware in the Loop pipelines and how he explains system design was a game-changer for my career. His practical approach and real-world examples were invaluable.",
   },
@@ -66,7 +66,7 @@ export const testimonials: TestimonialData[] = [
     name: "Zoya Naaz",
     role: "Associate",
     company: "IIM Business Incubator",
-    avatar: "/img/avatars/raj.jpg",
+    avatar: "/img/avatars/zoya.webp",
     content:
       "Vipul’s workshop was incredibly insightful. He made Git and GitHub easy to understand and inspired me to start contributing to open source. His approachable nature and real-world insights made a lasting impact. Truly grateful for his guidance!",
   },
@@ -75,7 +75,7 @@ export const testimonials: TestimonialData[] = [
     name: "Devank Srivastava",
     role: "Frontend Engineer",
     company: "Orygin AI",
-    avatar: "/img/avatars/lisa.jpg",
+    avatar: "/img/avatars/ds.webp",
     content:
       "A big thank you to the amazing organizer, Vipul Gupta for putting together such a fantastic GitTogether. Your hard work and dedication made this possible, and I can’t wait to see what you plan for the next one!",
   },
