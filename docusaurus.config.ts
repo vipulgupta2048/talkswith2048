@@ -9,6 +9,7 @@ const tagline = `${name} - Developer, Speaker, and Community Builder`;
 const githubUrl = `https://github.com/${org}/${repo}`;
 const description = `Portfolio of Vipul Gupta (${org}) - Software Engineer, Tech Speaker, Open Source Leader, Community Lead and GitHub Star. Docs about my talks, workshops, projects, community contributions, mentoring and more.`;
 const siteUrl = `https://docs.mixster.dev`;
+const socialImage = `${siteUrl}/img/og-image.webp`;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -346,6 +347,15 @@ const config = {
             "vipulgupta2048,mixster,github,star,software,engineer,developer,speaker,open source,gittogether,product,owner,devops,docusaurus,docker,docs,projects,workshops,nodejs,portfolio,talks,workshops,community,mentoring,conferences,hackathons,balena,sugarlabs,delhi,noida,india",
         },
 
+        // Social cards
+        { name: "twitter:card", content: "summary_large_image" },
+        { name: "twitter:image", content: socialImage },
+        { property: "og:image", content: socialImage },
+        { property: "og:image:secure_url", content: socialImage },
+        { property: "og:image:width", content: "1200" },
+        { property: "og:image:height", content: "630" },
+        { property: "og:image:type", content: "image/webp" },
+
         // Global Twitter defaults
         { name: "twitter:site", content: "@vipulgupta2048" },
         { name: "twitter:creator", content: "@vipulgupta2048" },
@@ -389,7 +399,7 @@ const config = {
           autoCollapseCategories: false,
         },
       },
-      image: "/img/avatar.webp",
+      image: "img/og-image.webp",
       navbar: {
         hideOnScroll: true,
         logo: {
