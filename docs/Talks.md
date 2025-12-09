@@ -11,16 +11,58 @@ From local meetups to global conferences, I've aimed to weave technical concepts
 <details>
   <summary>2025</summary>
 
+2025: Supply chain security, agentic workflows, AI evals, and developer education spanning meetups to summits.
+
+### 🧠 GitHub NEXT: Continuous AI for Maintainers
+
+
+
+
+Spoke about GitHub NEXT's Continuous AI and how agentic workflows can help maintainers continuously automate recurring problems across today's largest open-source projects.
+
+**Highlight:** Maintainer-first agent patterns for triaging issues, repairing pipelines, and shipping without manual babysitting.
+
+---
+
+### 🚀 GDG DevFest Noida 2025: Continuous AI
+#### Continuous AI: From YAML Hell to Continuous Intelligence
+
+• 📊 [Slides](https://docs.google.com/presentation/d/1DYx3pjYRspHC5EUWkDeDe9dl6bKQ4kYxqYqRBMi-twA/edit?usp=sharing)  
+• 📝 [LinkedIn Post](https://www.linkedin.com/feed/update/urn:li:activity:7403818762455748610/)  
+• 📍 Noida, India — 350+ developers
+
+Explored the shift from brittle, procedural automation to autonomous agentic workflows that triage issues, fix flaky tests, and keep docs fresh while you sleep. Demonstrated GitHub Next research on self-healing pipelines that cut lead time for changes by ~25% and boost deployment frequency by ~28%, replacing "YAML hell" with natural-language intents.
+
+**Highlight:** Live demo of self-healing pipelines acting as teammates to shrink lead time and raise deploy cadence without adding human toil.
+
+| | |
+|:---:|:---:|
+| ![Attendee feedback note with praise](./img/gdg/gdg-feedback-note-vipul-gupta.webp) | ![Speaker on stage with slide on screen](./img/gdg/gdg-stage-photo-vipul-gupta.webp) |
+| ![Crowd shot during Continuous AI Q&A](./img/gdg/gdg-audience-qa-vipul-gupta.webp) | ![Audience capturing slides on phone](./img/gdg/gdg-audience-slides-vipul-gupta.webp) |
+
+<details>
+  <summary>More photos</summary>
+
+| | |
+|:---:|:---:|
+| ![Feedback screenshot from attendee DM](./img/gdg/gdg-attendee-dm-feedback-vipul-gupta.webp) | ![Post-talk hallway conversation with attendees](./img/gdg/gdg-hallway-convo-vipul-gupta.webp) |
+
+</details>
+
+---
+
 ### 🔒 Open Source Summit India 2025: OpenSSF India Community Days
 
 #### Supply Chain Security: How Insecure Defaults Led to Undetected Incidents
 
-• 🔗 [Talk Link](https://openssfcdin2025.sched.com/event/242lj/how-insecure-defaults-led-to-undetected-supply-chain-incident-a-cicd-security-nightmare-vipul-gupta-balena?iframe=yes&w=100%&sidebar=yes&bg=no)  
 • 📊 [Slides](https://docs.google.com/presentation/d/1yc8o9vu7NbWIrW2VfH1VRIsn80hjDH58PLKUqjZf0MI/edit?usp=sharing)  
-• 🎥 [Recording](https://www.youtube.com/watch?v=cSqEn2ulasE) and [certifaction badge](https://www.linkedin.com/feed/update/urn:li:activity:7363874222223355906/).
-• 📍 Hyderabad, India - 250+ Security Engineers & Open Source Contributors
+• 🎥 [Recording](https://www.youtube.com/watch?v=cSqEn2ulasE) and [certifaction badge](https://www.linkedin.com/feed/update/urn:li:activity:7363874222223355906/)  
+• 🔗 [Talk Link](https://openssfcdin2025.sched.com/event/242lj/how-insecure-defaults-led-to-undetected-supply-chain-incident-a-cicd-security-nightmare-vipul-gupta-balena?iframe=yes&w=100%&sidebar=yes&bg=no)  
+• 📍 Hyderabad, India — ~250 security engineers & OSS contributors
 
 A deep dive into how a misconfigured GitHub Action exposed a long-lived token for two years, creating an undetected attack vector that compromised a multi-platform code signing infrastructure. This session demonstrated real-world supply chain vulnerabilities and their mitigation strategies.
+
+**Highlight:** Walked through attack-chain reproduction and CI hardening patterns for secrets, signing, and repo hygiene.
 
 Received Feedback from 50+ Attendees
 
@@ -134,9 +176,6 @@ Hands-on workshop introducing Git fundamentals, GitHub collaboration, branching,
 ### 2020
 | Title of the talk       | Link for Proposal  | Thoughts |
 | --- |:---:|---|
-| FOSSASIA Summit 2020 | Talk | [Selected] A topic I have been researching for quite some while. Couldn't go due to recent developments on Coronavirus |
-| PyCon US: Pittsburgh 2020 | Talk | [Selected] Conference shifted to online mode. Lightning talk at the Education Summit. |
-| Writing open-source documentation at scale that isn't terrible: Right the Docs | [Youtube Video](https://www.youtube.com/watch?v=ZW4NmuSi-pA), [Slides](https://slides.com/vipulgupta2048/writing-open-source-documentation-at-scale-that-isn-t-terrible/fullscreen), [Website](https://fossunited.org/hackathon) | [Delivered] Sharing insights into how folks can improve their project's or product's open-source documentation at scale at FOSS Hack 2020. My first talk out of many about docs after starting Mixster 2 years ago. |
 | Documenting your next Python project: Right the Docs | Talk - [Slides](https://slides.com/vipulgupta2048/writing-open-source-documentation-at-scale-that-isn-t-terrible-879091/fullscreen) + [Proposal](https://github.com/pydelhi/talks/issues/191) | [Delivered] Documenting your next Python project is a deep dive into options available as far as internal tools are considered to document your Python code at the PyCon India Flames Meetup - Python mega meetup |
 | Right the Docs: Mixster pitch | Lightning talk | [Delivered] Mixster's pitch at PyCon India 2020, for creating and most importantly fixing OSS documentation in the community. [Slides](https://slides.com/vipulgupta2048/deck/fullscreen) and Youtube coming soon |
 | Hands On: Containerizing Python and Deploying to IoT and Edge Devices | Workshop - [Slides](https://docs.google.com/presentation/d/1Ve43SXu78fgePMfA--psofAUZ8YeRLwPtR0HPXNsDRw/edit?usp=sharing) and [PyCon Proposal](https://in.pycon.org/cfp/2020/proposals/hands-on-containerizing-python-and-deploying-to-iot-and-edge-devices~egJYk/) | [Delivered] In the world of IoT, python can be used for reading data from sensors, enabling Artificial Intelligence and Machine Learning at the edge. Developing all of this locally on small prototype devi is great, but when it comes to deploying devices out into the world, special considerations need to be taken. For that we present balenaCloud. |
@@ -146,20 +185,6 @@ Hands-on workshop introducing Git fundamentals, GitHub collaboration, branching,
 <details>
   <summary>2019</summary>
 
-### 2019
-| Title of the talk       | Link for Proposal  | Thoughts |
-| --- |:---:|---|
-| PyCon US: Cleveland, Ohio 2019 | [Proposal](https://us.pycon.org/2019/schedule/presentation/415/), [Tweet](https://twitter.com/vipulgupta2048/status/1096062549877899264) [Archive](./img/pycon-us/screenshot.webp) | [Selected](https://us.pycon.org/2019/schedule/presentation/415/?fbclid=IwAR1c34BedXNB3mw7hG5_zbQxx001gGL6NFdVSXj6UDlk1xpFCeESDQXmcdo) Talk on Reinventing Education with Python in 2019 representing PyDelhi and Sugar Labs in the biggest Python conference in the world. |
-| DebUtsav Delhi 2019 | [Proposal](https://2019.goa.debutsav.in/) | [Delivered](https://diasp.org/tags/debutsav) Talk on importance of digging opportunities in Open-Source, to attendees of DebUtsav at National Institute of Public Finance and Policy (NIFPP) [Slides](https://slides.com/vipulgupta2048/finding-foss) |
-| PyCon Singapore 2019 | Lightning talk | [Delivered](https://pycon.sg/edu-summit/) Spreading awareness about Sugar Labs's aim to transforming pedagogy with Python, showcasing our work over the years, contributions and impact created to improve the overall education scenario at the Education Summit. In line with the Outreach efforts of Sugar Labs in the APAC region, and how it helps remodel the current education system with its free and open-source Python tools. [Screenshot](./img/2.webp) |
-| PyCon UK 2019, PyCon ZA 2019 | talks on Sugar Labs | [Accepted] Spreading awareness about Sugar Labs's aim to transforming pedagogy with Python, showcasing our work over the years, contributions and impact created. |
-| Open Source Festival Lagos + Sustain Africa 2020 | Talk | [Selected] Forge your future with open-source: A primer for freelancers to grow with FOSS. With everyone looking for jobs, internships, or opportunities, I, a full-time student from the age of 18 have been leveraging open-source to find the right breaks, grow my community, and build my persona both personally & professionally. After this talk, you can do it too. |
-</details>
-
-<details>
-  <summary>2018</summary>
-  
-### 2018
 | Title of the talk       | Link for Proposal  | Thoughts |
 | --- |:---:|---|
 | Plymouth 101: Bootloader's Frontend     | [Link for proposal](https://github.com/ILUGD/talks/issues/80)  | [Delivered] - ILUG-D - WeWork Meetup, [Slides](https://slides.com/vipulgupta2048/vplymouth) |
