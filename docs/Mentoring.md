@@ -1,3 +1,7 @@
+---
+title: "Mentoring by Vipul Gupta"
+description: "Vipul Gupta (vipulgupta2048) mentoring programs, peer guidance, and open-source contributor coaching."
+---
 
 | Program  | Organization | Status/LoC |
 | --- | --- | --- |

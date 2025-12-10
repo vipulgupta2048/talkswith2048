@@ -1,4 +1,9 @@
 
+---
+title: "Workshops by Vipul Gupta"
+description: "Vipul Gupta (vipulgupta2048) workshops on Git, GitHub, CI, and developer education with hands-on sessions."
+---
+
 Through my workshops, I strive to not just inform but to connect, making each concept relatable and each session memorable. I still have a lot to learn, and you can find me collecting feedback from the audience after the talk. I intend to bring my unqiue brand of firestarter into each session I execute. No repeats, no boring monologue, and if I can help it - then a good story. Served on a stage near you. 
 
 ## 🎓 IIMT University: GDG on Campus Meerut - #GitToGather Event
@@ -24,5 +29,5 @@ This presentation was about how Balena is using GitHub Actions to test hundreds 
 
 | Feedback 1 | Feedback 2 |
 |:---:|:---:|
-| ![Feedback 1](./img/github/feedback.webp) | ![Feedback 2](./img/github/1.webp) |
+| ![Vipul Gupta feedback note from GitHub Constellation 2024](./img/github/github-constellation-feedback-vipul-gupta-2.webp) | ![Vipul Gupta workshop feedback at GitHub Constellation 2024](./img/github/github-constellation-feedback-vipul-gupta-1.webp) |
 

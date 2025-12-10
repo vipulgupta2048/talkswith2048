@@ -1,3 +1,8 @@
+---
+title: "Balena - Vipul Gupta"
+description: "Vipul Gupta (vipulgupta2048) work at Balena across hardware-in-the-loop testing, CI/CD migrations, and developer education."
+---
+
 # Balena
 
 Started working at Balena in April 2020 as a software engineer in the balenaOS team. 

@@ -1,3 +1,7 @@
+---
+title: "Communities by Vipul Gupta"
+description: "Vipul Gupta (vipulgupta2048) community building, meetups, and organizing work across Delhi and global OSS groups."
+---
 
 After being an organizer for many years to a number of communities, I have thought of starting my own meetups. I take huge pride in striking that spark that is conversations between strangers, building relationships more than piling up connections and helping my people succeed. Good vibes guaranteed is what I bring to a conference/meetup. Here's what I have worked on in the past.
 

@@ -1,3 +1,7 @@
+---
+title: "Hackathons by Vipul Gupta"
+description: "Vipul Gupta (vipulgupta2048) hackathon participation, wins, judging, and mentorship highlights."
+---
 
 | Hackathons      | Links | Comments |
 | --- |:---:|---|

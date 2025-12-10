@@ -1,5 +1,7 @@
 ---
 slug: /gsoc
+title: "Google Summer of Code - Vipul Gupta"
+description: "Vipul Gupta (vipulgupta2048) Google Summer of Code projects, proposals, and outcomes with Sugar Labs and The Scrapy Project."
 ---
 
 | Project  | Project org | Proposal Links | Work Product | Status/LoC |

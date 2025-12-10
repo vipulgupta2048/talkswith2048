@@ -1,3 +1,7 @@
+---
+title: "Podcasts with Vipul Gupta"
+description: "Vipul Gupta (vipulgupta2048) podcast interviews on open source, remote work, observability, and career journeys."
+---
 
 > Tune into the podcasts I've been a part of, discussing everything from remote work to the intricacies of open-source culture.
 

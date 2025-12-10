@@ -1,3 +1,8 @@
+---
+title: "Interview Questions - Vipul Gupta"
+description: "Vipul Gupta (vipulgupta2048) shares detailed answers to interview questions on ownership, hardware-in-the-loop, and open-source work."
+---
+
 # Questions about work
 
 <details>

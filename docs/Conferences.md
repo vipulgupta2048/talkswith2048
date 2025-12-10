@@ -1,3 +1,7 @@
+---
+title: "Conferences with Vipul Gupta"
+description: "Vipul Gupta (vipulgupta2048) conference speaking, volunteering, and organizing highlights across global developer events."
+---
 
 From attending, to volunteering, to organizing and networking in conferences. Whatever role I play in a conference. I add it here. Conferences are strange for me in their phenomena. Apart from all the travel, meeting people, preparing to take the stage there is a genuine fear of missing out for me. If I don't attend one, there is FOMO. But, the more you connect in one, the more FOMO you get. Whether that's the case for you. Few things are certain. Social batteries are bound to run out. Leg pain is mandatory. And, If you are attending every single session then probably rethink your approach and spend some time in the hallway. See you there!
 

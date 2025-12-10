@@ -1,3 +1,8 @@
+---
+title: "Introduction - Vipul Gupta"
+description: "Vipul Gupta (vipulgupta2048) introduction covering open source leadership, community building, and hard-tech product work."
+---
+
 # Docs of vipulgupta2048
 
 ### Welcome to my corner of the internet!

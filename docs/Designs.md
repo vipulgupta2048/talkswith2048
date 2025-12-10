@@ -1,3 +1,7 @@
+---
+title: "Designs by Vipul Gupta"
+description: "Vipul Gupta (vipulgupta2048) design explorations, posters, and visual experiments for meetups and blogs."
+---
 
 > Take a peek at my design attempts, where I center align inspiration, rotate prespectives to create visually appealing "stuff".
 
