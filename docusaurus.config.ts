@@ -90,11 +90,7 @@ const config = {
           "https://www.instagram.com/vipulgupta2048",
           "https://mixster.dev",
         ],
-        jobTitle: "Software Engineer",
-        worksFor: {
-          "@type": "Organization",
-          name: "Open Source Community",
-        },
+        jobTitle: "Product Engineer",
         knowsAbout: [
           "Software Development",
           "Open Source",
@@ -122,6 +118,32 @@ const config = {
           name: "Vipul Gupta",
         },
         inLanguage: "en-US",
+      }),
+    },
+    // Organization Schema
+    {
+      tagName: "script",
+      attributes: {
+        type: "application/ld+json",
+      },
+      innerHTML: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        name: "Vipul Gupta",
+        alternateName: "vipulgupta2048",
+        url: siteUrl,
+        logo: `${siteUrl}/img/avatar.webp`,
+        sameAs: [
+          "https://github.com/vipulgupta2048",
+          "https://twitter.com/vipulgupta2048",
+          "https://www.linkedin.com/in/vipulgupta2048",
+          "https://mixster.dev",
+        ],
+        founder: {
+          "@type": "Person",
+          name: "Vipul Gupta",
+          sameAs: "https://github.com/vipulgupta2048",
+        },
       }),
     },
     // Preconnect to external domains for performance
