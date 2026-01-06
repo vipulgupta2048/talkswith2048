@@ -1,46 +1,269 @@
 @use "../../css/mixins" as *;
 
 .heroBanner {
-  padding: 10rem 0 11rem;
-  text-align: left;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--vg-bg-primary);
   position: relative;
   overflow: hidden;
-  background: #000;
-  color: #fff;
-  margin-bottom: 4rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-
-  @include small-size {
-    padding: 4rem 2rem;
+  isolation: isolate;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+      radial-gradient(circle at 20% 20%, rgba(184, 251, 60, 0.05), transparent 40%),
+      radial-gradient(circle at 80% 80%, rgba(184, 251, 60, 0.03), transparent 40%);
+    pointer-events: none;
   }
+}
+
+.beam {
+  position: absolute;
+  inset: -20% 40% 0 0;
+  background: linear-gradient(130deg, rgba(184, 251, 60, 0.15), transparent);
+  transform: rotate(-6deg);
+  filter: blur(40px);
+  pointer-events: none;
+  animation: sweep 16s ease-in-out infinite;
+}
+
+.heroGrid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  width: min(1200px, 100%);
+  height: 100%;
+  padding: clamp(2.5rem, 3vw, 3.5rem) clamp(1.6rem, 3vw, 3rem);
+  gap: clamp(1.5rem, 2vw, 2.5rem);
+  position: relative;
+  z-index: 1;
+  
+  @include small-size {
+    grid-template-columns: 1fr;
+    height: auto;
+    width: 100%;
+    padding: 1.5rem 1.25rem 2.5rem;
+  }
+}
+
+.copyColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 720px;
+}
+
+.badgesRow {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.badgePrimary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.75rem;
+  border-radius: 6px;
+  background: var(--vg-accent);
+  color: var(--vg-bg-primary);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.badgeGhost {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.7rem;
+  border-radius: 6px;
+  border: 1px solid var(--vg-border);
+  background: var(--vg-bg-card);
+  color: var(--vg-text-secondary);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
 }
 
 .title {
-  font-size: 4rem;
-  text-shadow: 3px 0px 30px rgba(0, 0, 0, 0.2);
-
-  @include small-size {
-    font-size: 2rem;
-  }
+  font-size: clamp(2.6rem, 4.5vw, 3.6rem);
+  line-height: 1.05;
+  color: var(--vg-text-primary);
+  margin: 0;
+  letter-spacing: -0.03em;
+  font-weight: 800;
 }
 
-.subtitle {
-  margin: 0 0 0.5 0rem;
-
-  @include small-size {
-    font-size: 1.2rem;
-  }
+.subhead {
+  font-size: clamp(1.05rem, 2vw, 1.15rem);
+  color: var(--vg-text-muted);
+  margin: 0;
+  max-width: 56ch;
+  line-height: 1.7;
 }
 
-.highlighted {
-  background: linear-gradient(to left, #0054ad 0%, #b8fb3c 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.buttonsContainer {
+.ctaButtons {
   display: flex;
-  gap: 22px;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+  
+  @include small-size {
+    flex-direction: column;
+  }
+}
+
+.primaryBtn {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.875rem 1.75rem;
+  background: var(--vg-accent);
+  color: var(--vg-bg-primary);
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 40px rgba(184, 251, 60, 0.4);
+    text-decoration: none;
+    color: var(--vg-bg-primary);
+  }
+}
+
+.secondaryBtn {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.875rem 1.75rem;
+  background: transparent;
+  color: var(--vg-accent);
+  border: 1px solid var(--vg-accent);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  
+  &:hover {
+    background: rgba(184, 251, 60, 0.1);
+    transform: translateY(-2px);
+    text-decoration: none;
+    color: var(--vg-accent);
+  }
+}
+
+.ticker {
+  margin-top: 1.5rem;
+  overflow: hidden;
+  border: 1px solid var(--vg-border);
+  border-radius: 8px;
+  background: var(--vg-bg-card);
+}
+
+.tickerTrack {
+  display: flex;
+  gap: 1.5rem;
+  padding: 0.75rem 1rem;
+  animation: marquee 18s linear infinite;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--vg-text-muted);
+  
+  span {
+    white-space: nowrap;
+  }
+}
+
+.spotlight {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.frame {
+  position: relative;
+  width: 100%;
+  max-width: 520px;
+  min-height: 360px;
+  border-radius: 16px;
+  background: var(--vg-bg-card);
+  border: 1px solid var(--vg-border);
+  overflow: hidden;
+}
+
+.glow {
+  position: absolute;
+  inset: -20% -30% -25% -15%;
+  background: conic-gradient(from 120deg, rgba(184, 251, 60, 0.2), transparent, rgba(184, 251, 60, 0.15));
+  filter: blur(40px);
+  opacity: 0.6;
+  animation: rotate 20s linear infinite;
+}
+
+.heroPhoto {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  border: 1px solid var(--vg-border);
+}
+
+.accolades {
+  position: absolute;
+  left: 14px;
+  bottom: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  z-index: 1;
+}
+
+.accolade {
+  padding: 0.35rem 0.7rem;
+  border-radius: 6px;
+  background: var(--vg-bg-card);
+  border: 1px solid var(--vg-border);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--vg-text-primary);
+  backdrop-filter: blur(8px);
+}
+
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes sweep {
+  0%, 100% { transform: rotate(-6deg) translateX(0); }
+  50% { transform: rotate(-4deg) translateX(-6%); }
+}
+
+@keyframes rotate {
+  to { transform: rotate(360deg); }
+}
+
+@include small-size {
+  .heroBanner {
+    padding: 0;
+  }
+  .heroGrid {
+    gap: 1.25rem;
+  }
+  .tickerTrack {
+    animation-duration: 24s;
+  }
 }

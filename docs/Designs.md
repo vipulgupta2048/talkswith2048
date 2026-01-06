@@ -12,7 +12,7 @@ description: "Vipul Gupta (vipulgupta2048) design explorations, posters, and vis
          <img src={require("./img/design/1.webp").default} style={{maxWidth: '100%'}} /><p><a href="https://www.meetup.com/pydelhi/events/263185692/">[Meetup]</a> about Quantum random number generators by making the brain attaining thug life in this b/w poster.</p>
       </td>
       <td align="center" width="33%">
-        <img src={require("./img/design/2.webp").default} style={{maxWidth: '100%'}} /><p>[UnMeetup] Loved this poster, just because of the bright palette of colors and fusion of Hindi &amp; English giving a modern, funky look!.</p>
+        <img src={require("./img/design/2.webp").default} style={{maxWidth: '100%'}} /><p>[UnMeetup] Loved this poster, just because of the bright palette of colors and fusion of Hindi and English giving a modern, funky look!.</p>
       </td>
       <td align="center" width="33%">
         <img src={require("./img/design/3.webp").default} style={{maxWidth: '100%'}} /><p><a href="https://www.meetup.com/ilugdelhi/events/jkbtdqyznbqb/">[Meetup]</a>Took a wanted poster, used Digital Ocean's wallpapers and Linux terminal as a treasure hunt advert for ILuGD's Anniversary meetup.</p>
@@ -23,7 +23,7 @@ description: "Vipul Gupta (vipulgupta2048) design explorations, posters, and vis
         <img src={require("./img/design/4.webp").default} /><p><a href="https://www.meetup.com/ilugdelhi/events/jkbtdqyznbqb/">[Meetup]</a> Had tons of fun designing this black beauty using Canva Pro, picked a fashion design template, added polaroid and glimmer circle. Used Hindi to re-introduce the funk back into design.</p>
       </td>
       <td align="center">
-        <img src={require("./img/design/5.webp").default} /><a href="https://mixster.dev/2019/11/16/insync-onedrive-client-for-linux/">[Blog]</a><p>A sweet &amp; simple poster designed for a sponsor on their new OneDrive Linux client release blog.</p>
+        <img src={require("./img/design/5.webp").default} /><a href="https://mixster.dev/2019/11/16/insync-onedrive-client-for-linux/">[Blog]</a><p>A sweet and simple poster designed for a sponsor on their new OneDrive Linux client release blog.</p>
       </td>
       <td align="center">
         <img src={require("./img/design/6.webp").default} /><p><a href="https://www.meetup.com/pydelhi/events/267949805/">[Meetup]</a> Saw this poster design, tweaked color palette and fonts to represent Python syntax with highlighting, originally for 9th Anniversary of PyDelhi.</p>

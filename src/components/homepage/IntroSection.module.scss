@@ -1,0 +1,357 @@
+@use "../../css/mixins" as *;
+
+.section {
+  position: relative;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  background: var(--vg-bg-primary);
+  overflow: hidden;
+  padding: 6rem 0;
+  
+  @include small-size {
+    min-height: auto;
+    padding: 4rem 0;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  
+  @include small-size {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    text-align: center;
+  }
+}
+
+// Left Content
+.content {
+  @include small-size {
+    order: 2;
+  }
+}
+
+.greeting {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  
+  @include small-size {
+    justify-content: center;
+  }
+}
+
+.wave {
+  font-size: 2rem;
+  animation: wave 2.5s infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave {
+  0%, 60%, 100% { transform: rotate(0deg); }
+  10%, 30% { transform: rotate(14deg); }
+  20% { transform: rotate(-8deg); }
+  40% { transform: rotate(-4deg); }
+  50% { transform: rotate(10deg); }
+}
+
+.hello {
+  font-family: var(--font-mono);
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--vg-text-muted);
+  letter-spacing: 0.5px;
+}
+
+.name {
+  font-size: 4.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin: 0 0 1rem;
+  color: var(--vg-text-primary);
+  letter-spacing: -0.03em;
+  
+  @include small-size {
+    font-size: 3rem;
+  }
+}
+
+.lastName {
+  display: block;
+  color: var(--vg-accent);
+}
+
+.title {
+  font-family: var(--font-mono);
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--vg-accent);
+  margin: 0 0 1.5rem;
+  
+  @include small-size {
+    font-size: 1rem;
+  }
+}
+
+.bio {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--vg-text-muted);
+  margin: 0 0 2rem;
+  max-width: 500px;
+  
+  @include small-size {
+    max-width: 100%;
+    font-size: 1rem;
+  }
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 2.5rem;
+  
+  @include small-size {
+    justify-content: center;
+  }
+}
+
+.skill {
+  padding: 0.5rem 1rem;
+  background: var(--vg-bg-card);
+  border: 1px solid var(--vg-border);
+  border-radius: 6px;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--vg-text-secondary);
+  transition: all 0.3s ease;
+  
+  &:hover {
+    background: rgba(184, 251, 60, 0.1);
+    color: var(--vg-accent);
+    border-color: var(--vg-accent);
+    transform: translateY(-2px);
+  }
+}
+
+.cta {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  
+  @include small-size {
+    justify-content: center;
+  }
+}
+
+.primaryBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  background: var(--vg-accent);
+  color: var(--vg-bg-primary);
+  border-radius: 8px;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 40px rgba(184, 251, 60, 0.4);
+    color: var(--vg-bg-primary);
+    text-decoration: none;
+  }
+  
+  svg {
+    transition: transform 0.3s ease;
+  }
+  
+  &:hover svg {
+    transform: translateX(4px);
+  }
+}
+
+.secondaryBtn {
+  display: inline-flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: transparent;
+  color: var(--vg-accent);
+  border: 1px solid var(--vg-accent);
+  border-radius: 8px;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    border-color: var(--vg-accent);
+    background: rgba(184, 251, 60, 0.1);
+    color: var(--vg-accent);
+    text-decoration: none;
+    transform: translateY(-3px);
+  }
+}
+
+// Right Image Section
+.imageWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  @include small-size {
+    order: 1;
+  }
+}
+
+.imageContainer {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  
+  @include small-size {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+.avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  position: relative;
+  z-index: 2;
+  border: 2px solid var(--vg-border);
+  transition: border-color 0.3s ease;
+  
+  &:hover {
+    border-color: var(--vg-accent);
+  }
+}
+
+@keyframes morph {
+  0%, 100% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+  25% { border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%; }
+  50% { border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%; }
+  75% { border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%; }
+}
+
+.imageDecor {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 100%;
+  height: 100%;
+  background: var(--vg-accent);
+  border-radius: 20px;
+  z-index: 1;
+  opacity: 0.15;
+}
+
+.imageDecor2 {
+  position: absolute;
+  bottom: -8px;
+  left: -8px;
+  width: 80%;
+  height: 80%;
+  background: var(--vg-accent);
+  border-radius: 16px;
+  z-index: 0;
+  opacity: 0.08;
+}
+
+// Stats
+.statsFloat {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+  padding: 1.5rem 2rem;
+  background: var(--vg-bg-card);
+  border-radius: 12px;
+  border: 1px solid var(--vg-border);
+  
+  @include small-size {
+    gap: 1.5rem;
+    padding: 1rem 1.5rem;
+  }
+}
+
+.stat {
+  text-align: center;
+}
+
+.statNumber {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--vg-accent);
+  
+  @include small-size {
+    font-size: 1.4rem;
+  }
+}
+
+.statLabel {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--vg-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+// Background Decorations
+.bgShape1 {
+  position: absolute;
+  top: -10%;
+  right: -5%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(184, 251, 60, 0.05), transparent 70%);
+  border-radius: 50%;
+  z-index: 1;
+  
+  @include small-size {
+    width: 300px;
+    height: 300px;
+    top: -5%;
+  }
+}
+
+.bgShape2 {
+  position: absolute;
+  bottom: -20%;
+  left: -10%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(184, 251, 60, 0.03), transparent 70%);
+  border-radius: 50%;
+  z-index: 1;
+  
+  @include small-size {
+    width: 250px;
+    height: 250px;
+    bottom: -10%;
+  }
+}
+

@@ -60,7 +60,7 @@
   }
 }
 // Optimized font loading with display: swap for better CLS
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap");
 
 h1,
 h2,
@@ -71,10 +71,52 @@ h5 {
   font-weight: 700;
 }
 
+/* ============================================
+   ELECTRIC MINT DESIGN SYSTEM - Vipul Gupta Portfolio
+   ============================================ */
+
 /* You can override the default Infima variables here. */
 :root {
+  // Brand Colors
   --pk-blue: #0054ad;
   --pk-green: #b8fb3c;
+  
+  // Electric Mint Palette
+  --vg-bg-deep: #030303;
+  --vg-bg-primary: #050505;
+  --vg-bg-secondary: #0a0a0a;
+  --vg-bg-elevated: #111111;
+  --vg-bg-card: #0d0d0d;
+  
+  // Accent Colors
+  --vg-accent: #b8fb3c;
+  --vg-accent-hover: #c8ff5c;
+  --vg-accent-dim: rgba(184, 251, 60, 0.15);
+  --vg-accent-glow: 0 0 40px rgba(184, 251, 60, 0.35);
+  --vg-accent-glow-strong: 0 0 60px rgba(184, 251, 60, 0.5);
+  
+  // Warm Whites for Contrast
+  --vg-text-primary: #fafaf9;
+  --vg-text-secondary: #a1a1aa;
+  --vg-text-muted: #71717a;
+  --vg-text-inverse: #050505;
+  
+  // Borders
+  --vg-border: rgba(255, 255, 255, 0.08);
+  --vg-border-subtle: rgba(255, 255, 255, 0.04);
+  --vg-border-hover: rgba(184, 251, 60, 0.4);
+  --vg-border-accent: rgba(184, 251, 60, 0.6);
+  
+  // Supporting Colors
+  --vg-success: #22c55e;
+  --vg-warning: #f59e0b;
+  --vg-error: #ef4444;
+  --vg-info: #3b82f6;
+  
+  // Gradients
+  --vg-gradient-accent: linear-gradient(135deg, #b8fb3c 0%, #7dd600 100%);
+  --vg-gradient-dark: linear-gradient(180deg, #0a0a0a 0%, #050505 100%);
+  --vg-gradient-glow: radial-gradient(ellipse at center, rgba(184, 251, 60, 0.15) 0%, transparent 70%);
 
   --ifm-color-primary: var(--pk-blue);
   --ifm-color-primary-dark: #004c9c;
@@ -85,13 +127,14 @@ h5 {
   --ifm-color-primary-lightest: #006de1;
   --ifm-code-font-size: 95%;
   --ifm-font-family-base: "Inter", sans-serif;
+  --ifm-font-family-monospace: "JetBrains Mono", "Fira Code", monospace;
   --ifm-font-size-base: 17px;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 
   --ifm-footer-background-color: transparent;
   --ifm-footer-padding-vertical: calc(var(--ifm-spacing-vertical) * 3);
 
-  --ifm-global-radius: 0.3rem;
+  --ifm-global-radius: 0.4rem;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -107,19 +150,60 @@ h5 {
 }
 
 html[data-theme="dark"] {
-  --ifm-background-color: #101010;
-  --ifm-background-surface-color: #101010;
+  --ifm-background-color: var(--vg-bg-primary);
+  --ifm-background-surface-color: var(--vg-bg-secondary);
 
   .navbar {
-    border-bottom: 1px solid var(--ifm-color-emphasis-200);
+    background: rgba(5, 5, 5, 0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--vg-border);
+    
+    &__title {
+      color: var(--vg-text-primary);
+      font-weight: 700;
+    }
+    
+    &__link {
+      color: var(--vg-text-secondary);
+      transition: color 0.2s ease;
+      
+      &:hover, &--active {
+        color: var(--vg-accent);
+      }
+    }
   }
 }
 
+/* Force dark theme on homepage for consistency */
+html:not([data-theme="dark"]) {
+  /* Apply dark homepage styles even in light mode for homepage sections */
+}
+
 .footer {
-  border-top: 1px solid var(--ifm-color-emphasis-200);
+  background: var(--vg-bg-deep);
+  border-top: 1px solid var(--vg-border);
 
   &__bottom {
     margin-top: 4rem;
+  }
+  
+  &__title {
+    color: var(--vg-text-primary);
+    font-weight: 700;
+  }
+  
+  &__link-item {
+    color: var(--vg-text-secondary);
+    transition: color 0.2s ease;
+    
+    &:hover {
+      color: var(--vg-accent);
+      text-decoration: none;
+    }
+  }
+  
+  &__copyright {
+    color: var(--vg-text-muted);
   }
 }
 
@@ -475,4 +559,285 @@ img {
 [data-theme="dark"] .markdown div[style*="background: var(--ifm-color-primary-lightest)"] {
   background: rgba(173, 250, 30, 0.1) !important;
   border: 1px solid rgba(173, 250, 30, 0.3) !important;
+}
+
+/* ============================================
+   WORKSHOPS PAGE - Editorial Design System
+   ============================================ */
+
+/* Color Variables for Workshops */
+:root {
+  --workshop-primary: #1e3a5f;
+  --workshop-accent: #63d297;
+  --workshop-accent-light: rgba(99, 210, 151, 0.15);
+}
+
+[data-theme="dark"] {
+  --workshop-primary: #63d297;
+  --workshop-accent: #63d297;
+  --workshop-accent-light: rgba(99, 210, 151, 0.2);
+}
+
+/* Workshop Hero Section */
+.workshop-hero {
+  transition: transform 0.3s ease;
+}
+
+/* Stat Cards with Hover Effect */
+.stat-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 8px 24px rgba(30, 58, 95, 0.12) !important;
+}
+
+[data-theme="dark"] .stat-card:hover {
+  box-shadow: 0 8px 24px rgba(99, 210, 151, 0.15) !important;
+}
+
+/* Stat Numbers - Dark Mode */
+[data-theme="dark"] .stat-number {
+  color: var(--workshop-accent) !important;
+}
+
+/* Workshop Cards */
+.workshop-card {
+  transition: box-shadow 0.3s ease, transform 0.2s ease !important;
+}
+
+.workshop-card:hover {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1) !important;
+}
+
+[data-theme="dark"] .workshop-card:hover {
+  box-shadow: 0 12px 40px rgba(255, 255, 255, 0.05) !important;
+}
+
+.workshop-card.featured {
+  box-shadow: 0 4px 20px rgba(30, 58, 95, 0.15);
+}
+
+[data-theme="dark"] .workshop-card.featured {
+  border-color: var(--workshop-accent) !important;
+  box-shadow: 0 4px 20px rgba(99, 210, 151, 0.15);
+}
+
+/* Workshop Card Links - Hover States */
+.workshop-card a {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, color 0.2s ease !important;
+}
+
+.workshop-card a:hover {
+  transform: translateY(-2px) !important;
+  text-decoration: none !important;
+}
+
+/* Primary Buttons */
+.btn-primary {
+  background: var(--workshop-primary) !important;
+}
+
+.btn-primary:hover {
+  box-shadow: 0 4px 12px rgba(30, 58, 95, 0.3) !important;
+}
+
+[data-theme="dark"] .btn-primary {
+  background: var(--workshop-accent) !important;
+  color: #0f2744 !important;
+}
+
+[data-theme="dark"] .btn-primary:hover {
+  box-shadow: 0 4px 12px rgba(99, 210, 151, 0.4) !important;
+}
+
+/* Outline Buttons */
+.btn-outline {
+  border-color: var(--workshop-primary) !important;
+  color: var(--workshop-primary) !important;
+}
+
+[data-theme="dark"] .btn-outline {
+  border-color: var(--workshop-accent) !important;
+  color: var(--workshop-accent) !important;
+}
+
+.btn-outline:hover {
+  background: rgba(30, 58, 95, 0.08) !important;
+}
+
+[data-theme="dark"] .btn-outline:hover {
+  background: rgba(99, 210, 151, 0.1) !important;
+}
+
+/* Tags */
+[data-theme="dark"] .tag-gdg {
+  background: rgba(66, 133, 244, 0.25) !important;
+  color: #79a8f5 !important;
+}
+
+/* Feedback Cards */
+.feedback-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.feedback-card:hover {
+  transform: scale(1.02) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12) !important;
+}
+
+/* Feedback Section */
+[data-theme="dark"] .feedback-section {
+  background: var(--ifm-color-emphasis-100) !important;
+}
+
+/* Dark Mode Adjustments for Workshop Page */
+[data-theme="dark"] .workshop-card {
+  background: var(--ifm-background-surface-color) !important;
+  border-color: var(--ifm-color-emphasis-300) !important;
+}
+
+[data-theme="dark"] .workshop-card p[style*="color: var(--ifm-color-emphasis-700)"] {
+  color: var(--ifm-color-emphasis-500) !important;
+}
+
+/* CTA Section Dark Mode */
+[data-theme="dark"] .cta-section {
+  background: linear-gradient(135deg, rgba(99, 210, 151, 0.08) 0%, rgba(30, 58, 95, 0.08) 100%) !important;
+  border-color: rgba(99, 210, 151, 0.2) !important;
+}
+
+/* Stats Grid Layout */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) !important;
+  max-width: 600px;
+  margin: 0 auto 3.5rem !important;
+}
+
+/* Workshop Tags */
+.workshop-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* Mobile Responsiveness for Workshops */
+@media (max-width: 768px) {
+  .workshop-hero {
+    padding: 2rem 1.5rem !important;
+  }
+  
+  .workshop-card > div[style*="padding: '2rem'"] {
+    padding: 1.25rem !important;
+  }
+  
+  .workshop-card a {
+    padding: 0.6rem 0.9rem !important;
+    font-size: 0.8rem !important;
+  }
+  
+  .stat-card {
+    padding: 1rem 0.75rem !important;
+  }
+  
+  .stat-card > div:first-child {
+    font-size: 1.5rem !important;
+  }
+  
+  /* Stack stats vertically on tablet */
+  .stats-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 0.75rem !important;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .workshop-hero {
+    padding: 1.5rem 1rem !important;
+    border-radius: 12px !important;
+  }
+  
+  .workshop-card {
+    border-radius: 12px !important;
+  }
+  
+  .workshop-card > div[style*="padding: '2rem'"] {
+    padding: 1rem !important;
+  }
+  
+  /* Stack buttons vertically on very small screens */
+  .workshop-card div[style*="display: 'flex'"][style*="gap: '0.75rem'"] {
+    flex-direction: column !important;
+  }
+  
+  .workshop-card a {
+    justify-content: center !important;
+    width: 100% !important;
+  }
+  
+  /* Stack stats vertically on mobile */
+  .stats-grid {
+    grid-template-columns: 1fr !important;
+    max-width: 280px !important;
+    gap: 0.75rem !important;
+  }
+  
+  .stat-card {
+    padding: 1rem !important;
+  }
+  
+  .stat-number {
+    font-size: 1.75rem !important;
+  }
+  
+  /* Stack tags vertically on small screens */
+  .workshop-tags {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+  
+  .workshop-tags span {
+    width: auto !important;
+  }
+}
+
+/* Accessibility - Focus States */
+.workshop-card a:focus-visible,
+.stat-card:focus-visible {
+  outline: 3px solid var(--workshop-primary) !important;
+  outline-offset: 2px !important;
+}
+
+[data-theme="dark"] .workshop-card a:focus-visible,
+[data-theme="dark"] .stat-card:focus-visible {
+  outline-color: var(--workshop-accent) !important;
+}
+
+/* Reduce Motion for Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .workshop-card,
+  .stat-card,
+  .feedback-card,
+  .workshop-card a {
+    transition: none !important;
+  }
+  
+  .workshop-card:hover,
+  .stat-card:hover,
+  .feedback-card:hover {
+    transform: none !important;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .workshop-hero,
+  .workshop-card {
+    break-inside: avoid;
+    box-shadow: none !important;
+    border: 1px solid #ccc !important;
+  }
 }

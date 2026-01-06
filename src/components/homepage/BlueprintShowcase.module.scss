@@ -1,0 +1,246 @@
+@use "../../css/mixins" as *;
+
+.blueprintSection {
+  margin: 0;
+  padding: 6rem 2rem;
+  background: var(--vg-bg-secondary);
+  color: var(--vg-text-primary);
+  position: relative;
+  overflow: hidden;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+      radial-gradient(circle at 10% 20%, rgba(184, 251, 60, 0.03), transparent 40%),
+      radial-gradient(circle at 90% 80%, rgba(184, 251, 60, 0.02), transparent 40%);
+    pointer-events: none;
+  }
+}
+
+.headingRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto 2rem;
+  position: relative;
+  z-index: 1;
+  
+  @include small-size {
+    flex-direction: column;
+  }
+}
+
+.kicker {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 0.75rem;
+  color: var(--vg-accent);
+  margin-bottom: 0.5rem;
+  
+  &::before {
+    content: '// ';
+    opacity: 0.6;
+  }
+}
+
+.blueprintSection h2 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: 800;
+  margin: 0 0 0.75rem;
+  color: var(--vg-text-primary);
+  letter-spacing: -0.02em;
+}
+
+.summary {
+  color: var(--vg-text-muted);
+  max-width: 640px;
+  margin: 0;
+  line-height: 1.7;
+}
+
+.gridBadge {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: 1px solid var(--vg-accent);
+  color: var(--vg-accent);
+  background: rgba(184, 251, 60, 0.08);
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  
+  @include small-size {
+    grid-template-columns: 1fr;
+  }
+}
+
+.phases {
+  display: grid;
+  gap: 1rem;
+  position: relative;
+}
+
+.step {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  padding: 1.25rem;
+  border-radius: 12px;
+  border: 1px solid var(--vg-border);
+  background: var(--vg-bg-card);
+  align-items: center;
+  transform: translateY(8px);
+  opacity: 0;
+  animation: rise 0.5s ease forwards;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    border-color: var(--vg-border-hover);
+    transform: translateY(0) translateX(4px);
+  }
+  
+  @for $i from 1 through 4 {
+    &:nth-child(#{$i}) {
+      animation-delay: #{$i * 0.1}s;
+    }
+  }
+}
+
+.marker {
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  background: rgba(184, 251, 60, 0.15);
+  border: 1px solid rgba(184, 251, 60, 0.3);
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--vg-accent);
+}
+
+.step h3 {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--vg-text-primary);
+}
+
+.step p {
+  margin: 0.25rem 0 0;
+  color: var(--vg-text-muted);
+  font-size: 0.9rem;
+}
+
+.specs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  padding: 1.25rem;
+  border-radius: 12px;
+  border: 1px solid var(--vg-border);
+  background: var(--vg-bg-card);
+  min-height: 150px;
+  transform: translateY(8px);
+  opacity: 0;
+  animation: rise 0.5s ease forwards;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    border-color: var(--vg-border-hover);
+    transform: translateY(-4px);
+  }
+  
+  @for $i from 1 through 4 {
+    &:nth-child(#{$i}) {
+      animation-delay: #{$i * 0.15}s;
+    }
+  }
+}
+
+.card header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.cardBadge {
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  background: rgba(184, 251, 60, 0.1);
+  color: var(--vg-accent);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 500;
+  border: 1px solid rgba(184, 251, 60, 0.2);
+}
+
+.card strong { 
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--vg-text-primary);
+}
+
+.card p { 
+  color: var(--vg-text-muted); 
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.tags { 
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 0.5rem; 
+  margin-top: 0.75rem; 
+}
+
+.tag {
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  border: 1px solid var(--vg-border);
+  color: var(--vg-text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  transition: all 0.2s ease;
+  
+  &:hover {
+    border-color: var(--vg-accent);
+    color: var(--vg-accent);
+  }
+}
+
+@keyframes rise {
+  to { 
+    transform: translateY(0); 
+    opacity: 1; 
+  }
+}
+
+@media (max-width: 960px) {
+  .headingRow { flex-direction: column; }
+  .grid { grid-template-columns: 1fr; }
+}

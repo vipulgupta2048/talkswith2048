@@ -42,6 +42,7 @@ export default memo(function SEO({
       <title>{seo.title}</title>
       <meta name="title" content={seo.title} />
       <meta name="description" content={seo.description} />
+      <meta name="author" content="Vipul Gupta" />
       {seo.keywords && <meta name="keywords" content={seo.keywords} />}
 
       {/* Canonical URL */}
@@ -56,6 +57,7 @@ export default memo(function SEO({
       <meta property="og:image:alt" content={seo.title} />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
+      <meta property="og:site_name" content={siteConfig.title} />
 
       {/* Article-specific Open Graph tags */}
       {type === "article" && publishedTime && (
@@ -75,6 +77,7 @@ export default memo(function SEO({
       <meta name="twitter:description" content={seo.description} />
       <meta name="twitter:image" content={seo.image} />
       <meta name="twitter:image:alt" content={seo.title} />
+      <meta name="twitter:creator" content="@vipulgupta2048" />
 
       {/* JSON-LD Structured Data for pages */}
       {type === "article" && (

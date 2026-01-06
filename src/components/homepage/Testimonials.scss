@@ -1,27 +1,10 @@
 .testimonials-section {
-  padding: 4rem 0;
-  background: linear-gradient(
-    135deg,
-    var(--ifm-background-color) 0%,
-    var(--ifm-background-surface-color) 100%
-  );
+  padding: 6rem 0;
+  background: var(--vg-bg-secondary);
   position: relative;
   overflow: hidden;
-  /* Performance optimizations */
   contain: layout style paint;
   will-change: auto;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f8f9fa' fill-opacity='0.03'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")
-      repeat;
-    pointer-events: none;
-  }
 
   .container {
     position: relative;
@@ -34,23 +17,18 @@
 
     h2 {
       font-size: 2.5rem;
-      font-weight: 700;
+      font-weight: 800;
       margin-bottom: 1rem;
-      background: linear-gradient(
-        135deg,
-        var(--ifm-color-primary),
-        var(--ifm-color-secondary)
-      );
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
+      color: var(--vg-text-primary);
+      letter-spacing: -0.02em;
     }
 
     p {
-      font-size: 1.2rem;
-      color: var(--ifm-color-emphasis-700);
+      font-size: 1.1rem;
+      color: var(--vg-text-muted);
       max-width: 600px;
       margin: 0 auto;
+      line-height: 1.7;
     }
   }
 
@@ -62,24 +40,22 @@
     margin-bottom: 2rem;
 
     .marquee-control {
-      background: var(--ifm-color-primary);
+      background: var(--vg-accent);
       border: none;
-      border-radius: 50%;
+      border-radius: 8px;
       width: 48px;
       height: 48px;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: white;
+      color: var(--vg-bg-primary);
       cursor: pointer;
       transition: all 0.3s ease;
       z-index: 10;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 
       &:hover {
-        background: var(--ifm-color-primary-dark);
         transform: translateY(-2px);
-        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0 30px rgba(184, 251, 60, 0.4);
       }
 
       &:active {
@@ -118,12 +94,11 @@
 }
 
 .testimonial-card {
-  background: var(--ifm-card-background-color);
-  border-radius: 16px;
+  background: var(--vg-bg-card);
+  border-radius: 12px;
   padding: 2rem;
   margin: 0 1rem;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-  border: 1px solid var(--ifm-color-emphasis-200);
+  border: 1px solid var(--vg-border);
   width: 400px;
   min-height: 280px;
   display: flex;
@@ -132,28 +107,30 @@
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
-  /* Performance optimizations */
   contain: layout style paint;
   will-change: transform;
-  transform: translateZ(0); /* Force GPU acceleration */
+  transform: translateZ(0);
 
   &::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
-    height: 4px;
-    background: linear-gradient(
-      90deg,
-      var(--ifm-color-primary),
-      var(--ifm-color-secondary)
-    );
+    width: 3px;
+    height: 100%;
+    background: var(--vg-accent);
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.3s ease;
   }
 
   &:hover {
     transform: translateY(-4px);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+    border-color: var(--vg-border-hover);
+    
+    &::before {
+      transform: scaleY(1);
+    }
   }
 
   .testimonial-content {
@@ -161,16 +138,17 @@
 
     .quote-icon {
       font-size: 3rem;
-      color: var(--ifm-color-primary);
+      color: var(--vg-accent);
       line-height: 1;
       margin-bottom: 1rem;
       font-family: serif;
+      opacity: 0.8;
     }
 
     .testimonial-text {
       font-size: 1rem;
-      line-height: 1.6;
-      color: var(--ifm-color-emphasis-800);
+      line-height: 1.7;
+      color: var(--vg-text-secondary);
       margin-bottom: 1.5rem;
       font-style: italic;
     }
@@ -182,11 +160,11 @@
 
       .star {
         font-size: 1.2rem;
-        color: var(--ifm-color-emphasis-300);
+        color: var(--vg-border);
         transition: color 0.2s ease;
 
         &.filled {
-          color: #ffc107;
+          color: var(--vg-accent);
         }
       }
     }
@@ -197,14 +175,14 @@
     align-items: center;
     gap: 1rem;
     padding-top: 1rem;
-    border-top: 1px solid var(--ifm-color-emphasis-200);
+    border-top: 1px solid var(--vg-border);
 
     .avatar {
       width: 60px;
       height: 60px;
       border-radius: 50%;
       overflow: hidden;
-      border: 3px solid var(--ifm-color-primary-lighter);
+      border: 2px solid var(--vg-accent);
       flex-shrink: 0;
 
       img {
@@ -220,20 +198,21 @@
       .author-name {
         font-weight: 600;
         font-size: 1.1rem;
-        color: var(--ifm-color-emphasis-900);
+        color: var(--vg-text-primary);
         margin-bottom: 0.25rem;
       }
 
       .author-role {
-        font-size: 0.9rem;
-        color: var(--ifm-color-primary);
+        font-family: var(--font-mono);
+        font-size: 0.85rem;
+        color: var(--vg-accent);
         font-weight: 500;
         margin-bottom: 0.125rem;
       }
 
       .author-company {
         font-size: 0.85rem;
-        color: var(--ifm-color-emphasis-600);
+        color: var(--vg-text-muted);
       }
     }
   }
@@ -242,7 +221,7 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .testimonials-section {
-    padding: 3rem 0;
+    padding: 4rem 0;
 
     .testimonials-header {
       h2 {
@@ -250,7 +229,7 @@
       }
 
       p {
-        font-size: 1.1rem;
+        font-size: 1rem;
       }
     }
 
@@ -301,39 +280,13 @@
         }
 
         .author-role {
-          font-size: 0.85rem;
+          font-size: 0.8rem;
         }
 
         .author-company {
-          font-size: 0.8rem;
+          font-size: 0.75rem;
         }
       }
-    }
-  }
-}
-
-/* Dark mode adjustments */
-[data-theme="dark"] {
-  .testimonials-section {
-    background: linear-gradient(
-      135deg,
-      var(--ifm-background-color) 0%,
-      #1a1a1a 100%
-    );
-
-    &::before {
-      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.02'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")
-        repeat;
-    }
-  }
-
-  .testimonial-card {
-    background: var(--ifm-card-background-color);
-    border-color: var(--ifm-color-emphasis-300);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-
-    &:hover {
-      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
     }
   }
 }

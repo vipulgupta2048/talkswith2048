@@ -1,0 +1,301 @@
+@use "../../css/mixins" as *;
+
+.timelineSection {
+  margin: 0;
+  padding: clamp(3rem, 5vw, 5rem) clamp(1.5rem, 3vw, 3rem);
+  background: var(--vg-bg-primary, #050505);
+  border-bottom: 1px solid var(--vg-border-subtle, rgba(255, 255, 255, 0.04));
+  color: var(--vg-text-primary, #fafaf9);
+  position: relative;
+  overflow: hidden;
+}
+
+.headerRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto 2.5rem;
+
+  @include small-size {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+.kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--vg-accent, #b8fb3c);
+  margin-bottom: 0.5rem;
+}
+
+.timelineSection h2 {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 800;
+  margin: 0 0 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.summary {
+  color: var(--vg-text-secondary, #a1a1aa);
+  max-width: 500px;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.6rem 1.1rem;
+  border-radius: 999px;
+  border: 1px solid var(--vg-border, rgba(255, 255, 255, 0.08));
+  background: var(--vg-bg-card, #0d0d0d);
+  color: var(--vg-text-secondary, #a1a1aa);
+  font-weight: 500;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+.currentYear {
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 700;
+  color: var(--vg-accent, #b8fb3c);
+  padding: 0.2rem 0.5rem;
+  background: rgba(184, 251, 60, 0.15);
+  border-radius: 4px;
+}
+
+.timelineContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Year Rail */
+.yearRail {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.railLine {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 2px;
+  background: var(--vg-border, rgba(255, 255, 255, 0.08));
+  transform: translateY(-50%);
+  z-index: 0;
+}
+
+.railProgress {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 2px;
+  background: var(--vg-accent, #b8fb3c);
+  transform: translateY(-50%);
+  z-index: 1;
+  transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 0 12px rgba(184, 251, 60, 0.5);
+}
+
+.yearMarker {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover .yearDot,
+  &.hovered .yearDot {
+    transform: scale(1.5);
+    background: var(--vg-accent, #b8fb3c);
+    box-shadow: 0 0 20px rgba(184, 251, 60, 0.6);
+  }
+
+  &:hover .yearLabel,
+  &.hovered .yearLabel {
+    color: var(--vg-accent, #b8fb3c);
+  }
+}
+
+.yearDot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--vg-text-muted, #71717a);
+  border: 2px solid var(--vg-bg-primary, #050505);
+  transition: all 0.3s ease;
+}
+
+.active .yearDot {
+  width: 16px;
+  height: 16px;
+  background: var(--vg-accent, #b8fb3c);
+  box-shadow: 0 0 24px rgba(184, 251, 60, 0.7);
+}
+
+.yearLabel {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--vg-text-muted, #71717a);
+  transition: color 0.3s ease;
+
+  @include small-size {
+    font-size: 0.65rem;
+  }
+}
+
+.active .yearLabel {
+  color: var(--vg-accent, #b8fb3c);
+  font-weight: 700;
+}
+
+/* Detail Panel */
+.detailPanel {
+  border-radius: 20px;
+  border: 1px solid var(--vg-border, rgba(255, 255, 255, 0.08));
+  background: var(--vg-bg-card, #0d0d0d);
+  padding: 2rem;
+  min-height: 280px;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}
+
+.panelHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.panelYear {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--vg-accent, #b8fb3c);
+  text-shadow: 0 0 30px rgba(184, 251, 60, 0.4);
+  line-height: 1;
+}
+
+.panelHeadline {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--vg-text-primary, #fafaf9);
+}
+
+.eventsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.eventCard {
+  padding: 1.25rem;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid var(--vg-border, rgba(255, 255, 255, 0.08));
+  opacity: 0;
+  transform: translateY(12px);
+  animation: eventReveal 0.4s ease forwards;
+
+  &:hover {
+    border-color: rgba(184, 251, 60, 0.3);
+    background: rgba(184, 251, 60, 0.05);
+  }
+
+  h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem;
+    color: var(--vg-text-primary, #fafaf9);
+  }
+
+  p {
+    font-size: 0.875rem;
+    color: var(--vg-text-secondary, #a1a1aa);
+    margin: 0;
+    line-height: 1.5;
+  }
+}
+
+@keyframes eventReveal {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 960px) {
+  .yearRail {
+    overflow-x: auto;
+    padding-bottom: 1rem;
+    justify-content: flex-start;
+    gap: 0.5rem;
+
+    &::-webkit-scrollbar {
+      height: 4px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: var(--vg-bg-card, #0d0d0d);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: var(--vg-accent, #b8fb3c);
+      border-radius: 2px;
+    }
+  }
+
+  .yearMarker {
+    flex-shrink: 0;
+  }
+
+  .railLine, .railProgress {
+    display: none;
+  }
+
+  .panelYear {
+    font-size: 2rem;
+  }
+
+  .panelHeadline {
+    font-size: 1.25rem;
+  }
+
+  .eventsGrid {
+    grid-template-columns: 1fr;
+  }
+}

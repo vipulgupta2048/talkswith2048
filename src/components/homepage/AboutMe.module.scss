@@ -1,86 +1,301 @@
 @use "../../css/mixins" as *;
 
-.avatarContainer {
-  margin-left: 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+.aboutSection {
+  padding: 4rem 0;
+  background: var(--ifm-background-color);
+  color: var(--ifm-font-color-base);
 
   @include small-size {
-    margin: 2rem 0 0;
+    padding: 3rem 0;
   }
 }
 
-$avatar-size: 410px;
-.avatar {
-  display: block;
-  max-width: $avatar-size;
-  max-height: $avatar-size;
-
-  img,
-  & > div {
-    border-radius: 999px;
-    max-height: $avatar-size;
-  }
+.hook {
+  max-width: 800px;
+  margin: 0 0 3rem;
 
   @include small-size {
-    margin: 0 auto;
+    margin-bottom: 2rem;
   }
 }
 
-.imageContainer {
-  margin: 2rem 0;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.hookTitle {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  color: var(--ifm-font-color-base);
 
   @include small-size {
-    margin: 1.5rem 0;
+    font-size: 2rem;
   }
 }
 
-.careerPivotImage {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+.hookText {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--ifm-color-emphasis-800);
+  margin-bottom: 1rem;
+
+  strong {
+    color: var(--ifm-color-primary);
+    font-weight: 700;
+  }
+
+  @include small-size {
+    font-size: 1rem;
+  }
+}
+
+.currentFocus {
+  margin-bottom: 3rem;
+
+  @include small-size {
+    margin-bottom: 2rem;
+  }
+}
+
+.focusTitle {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  color: var(--ifm-font-color-base);
+
+  @include small-size {
+    font-size: 1.5rem;
+  }
+}
+
+.focusGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+
+  @include small-size {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+.focusCard {
+  background: var(--ifm-background-surface-color);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  transition: all 0.3s ease;
 
   &:hover {
-    transform: scale(1.02);
+    background: var(--ifm-color-emphasis-100);
+    border-color: var(--ifm-color-primary);
+    transform: translateY(-2px);
   }
 
   @include small-size {
-    max-width: 100%;
-    border-radius: 8px;
+    padding: 1.25rem;
   }
 }
 
-.hackmitImage {
+.focusLabel {
+  display: inline-block;
+  background: var(--ifm-color-primary-lightest);
+  color: var(--ifm-color-primary-dark);
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.75rem;
+}
+
+.focusContent {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--ifm-color-emphasis-800);
+  margin: 0;
+
+  strong {
+    color: var(--ifm-color-primary);
+    font-weight: 700;
+  }
+
+  @include small-size {
+    font-size: 0.95rem;
+  }
+}
+
+.expandableSection {
+  margin-bottom: 3rem;
+
+  @include small-size {
+    margin-bottom: 2rem;
+  }
+}
+
+.expandTitle {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  color: var(--ifm-font-color-base);
+
+  @include small-size {
+    font-size: 1.5rem;
+  }
+}
+
+.accordions {
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.accordion {
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+
+  &.expanded {
+    background: var(--ifm-color-emphasis-100);
+    border-color: var(--ifm-color-primary);
+  }
+}
+
+.accordionHeader {
   width: 100%;
-  max-width: $avatar-size;
-  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease;
 
-  img {
-    width: 100%;
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+  &:hover {
+    background: var(--ifm-color-emphasis-100);
+  }
 
-    &:hover {
+  @include small-size {
+    padding: 1rem;
+  }
+}
+
+.accordionIcon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+
+  @include small-size {
+    font-size: 1.25rem;
+  }
+}
+
+.accordionTitle {
+  flex: 1;
+  text-align: left;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--ifm-font-color-base);
+
+  @include small-size {
+    font-size: 1rem;
+  }
+}
+
+.accordionArrow {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--ifm-color-primary);
+  flex-shrink: 0;
+}
+
+.accordionContent {
+  padding: 0 1.25rem 1.25rem;
+
+  p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--ifm-color-emphasis-800);
+    margin-bottom: 1rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @include small-size {
+    padding: 0 1rem 1rem;
+
+    p {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+.visualSection {
+  margin-top: 3rem;
+
+  @include small-size {
+    margin-top: 2rem;
+  }
+}
+
+.imageGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+
+  @include small-size {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+.imageCard {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  border: 1px solid var(--ifm-color-emphasis-200);
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    border-color: var(--ifm-color-primary);
+
+    img {
       transform: scale(1.02);
     }
   }
 
-  @include small-size {
-    max-width: 100%;
-    margin: 1rem auto 0;
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+}
 
-    img {
-      border-radius: 8px;
-    }
+.imageCaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(
+    to top,
+    var(--ifm-background-color) 0%,
+    transparent 100%
+  );
+  color: var(--ifm-font-color-base);
+  padding: 2rem 1rem 1rem;
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-align: center;
+
+  @include small-size {
+    font-size: 0.9rem;
   }
 }
