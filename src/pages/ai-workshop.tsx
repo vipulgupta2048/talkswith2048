@@ -1,67 +1,10 @@
-import React, { useCallback, useState } from "react";
+import React from "react";
 import Head from "@docusaurus/Head";
+import BrowserOnly from "@docusaurus/BrowserOnly";
 import SEO from "../components/SEO";
 
 export default function AIWorkshop() {
   const siteUrl = "https://docs.mixster.dev";
-  const [isGenerating, setIsGenerating] = useState(false);
-
-  const handleDownloadPDF = useCallback(async () => {
-    setIsGenerating(true);
-
-    try {
-      // Load jsPDF and html2canvas for proper multi-page PDF generation
-      const [{ default: jsPDF }, { default: html2canvas }] = await Promise.all([
-        import("jspdf"),
-        import("html2canvas"),
-      ]);
-
-      const pdf = new jsPDF({
-        orientation: "portrait",
-        unit: "mm",
-        format: "a4",
-      });
-
-      const pages = document.querySelectorAll(".workshop-page .page");
-      const pdfWidth = 210; // A4 width in mm
-      const pdfHeight = 297; // A4 height in mm
-
-      for (let i = 0; i < pages.length; i++) {
-        const page = pages[i] as HTMLElement;
-
-        // Render each page section to canvas
-        const canvas = await html2canvas(page, {
-          scale: 2, // Higher quality
-          useCORS: true,
-          allowTaint: true,
-          backgroundColor: "#ffffff",
-          width: page.offsetWidth,
-          height: page.offsetHeight,
-        });
-
-        // Convert canvas to image and add to PDF
-        const imgData = canvas.toDataURL("image/jpeg", 0.95);
-        const imgWidth = pdfWidth;
-        const imgHeight = (canvas.height * pdfWidth) / canvas.width;
-
-        if (i > 0) {
-          pdf.addPage();
-        }
-
-        // Center the image if it's shorter than A4
-        const yOffset = imgHeight < pdfHeight ? (pdfHeight - imgHeight) / 2 : 0;
-        pdf.addImage(imgData, "JPEG", 0, yOffset, imgWidth, imgHeight);
-      }
-
-      pdf.save("AI-Workshop-Proposal-Vipul-Gupta.pdf");
-    } catch (error) {
-      console.error("PDF generation failed:", error);
-      // Fallback to print dialog
-      window.print();
-    } finally {
-      setIsGenerating(false);
-    }
-  }, []);
 
   return (
     <>
@@ -1421,27 +1364,37 @@ export default function AIWorkshop() {
         }
       `}</style>
       <div className="workshop-page">
-        {/* Download PDF Button */}
-        <button
-          className="download-btn"
-          onClick={handleDownloadPDF}
-          disabled={isGenerating}
-          title="Download proposal as PDF"
-        >
-          {isGenerating ? (
-            <>
-              <span className="spinner" />
-              Generating...
-            </>
-          ) : (
-            <>
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" />
-              </svg>
-              Download PDF
-            </>
-          )}
-        </button>
+        {/* Download PDF Button - Only render in browser */}
+        <BrowserOnly fallback={<div className="download-btn">Loading...</div>}>
+          {() => {
+            // Dynamic imports for browser-only PDF components
+            const { PDFDownloadLink } = require("@react-pdf/renderer");
+            const WorkshopPDF = require("../components/WorkshopPDF").default;
+            return (
+              <PDFDownloadLink
+                document={<WorkshopPDF />}
+                fileName="AI-Workshop-Proposal-Vipul-Gupta.pdf"
+                className="download-btn"
+              >
+                {({ loading }: { loading: boolean }) =>
+                  loading ? (
+                    <>
+                      <span className="spinner" />
+                      Generating...
+                    </>
+                  ) : (
+                    <>
+                      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" />
+                      </svg>
+                      Download PDF
+                    </>
+                  )
+                }
+              </PDFDownloadLink>
+            );
+          }}
+        </BrowserOnly>
 
         {/* Page 1: Cover */}
         <div className="page cover">

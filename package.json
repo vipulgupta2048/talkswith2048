@@ -30,6 +30,7 @@
     "@docusaurus/preset-classic": "^3.9.2",
     "@docusaurus/utils-validation": "^3.9.2",
     "@mdx-js/react": "^3.1.1",
+    "@react-pdf/renderer": "^4.3.2",
     "clsx": "^2.1.1",
     "docusaurus-plugin-sass": "^0.2.6",
     "html2canvas": "^1.4.1",
