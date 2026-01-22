@@ -2,35 +2,33 @@ import React from "react";
 import Head from "@docusaurus/Head";
 import BrowserOnly from "@docusaurus/BrowserOnly";
 import SEO from "../components/SEO";
+// Shared content - single source of truth for web + PDF
+import {
+  siteConfig,
+  seoContent,
+  coverContent,
+  instructor,
+  outcomes,
+  capstone,
+  sessions,
+  testimonials,
+  deliverables,
+  postWorkshopSupport,
+  premiumAddons,
+  roiMetrics,
+  ctaContent,
+} from "../data/workshopData";
 
 export default function AIWorkshop() {
-  const siteUrl = "https://docs.mixster.dev";
-
   return (
     <>
       <SEO
-        title="AI-Powered Development & Test Automation Workshop"
-        description="Half-day hands-on workshop teaching teams AI-assisted coding, self-healing test automation, and CI/CD integration. Led by Vipul Gupta, GitHub Star 2025 with 10 years of open source experience. Live coding, practical labs, and take-home frameworks."
+        title={seoContent.title}
+        description={seoContent.description}
         pathname="ai-workshop"
-        image={`${siteUrl}/img/og-image.webp`}
+        image={`${siteConfig.url}/img/og-image.webp`}
         type="website"
-        keywords={[
-          "AI workshop",
-          "AI-powered development",
-          "test automation workshop",
-          "GitHub Copilot training",
-          "Claude Code workshop",
-          "Cursor IDE training",
-          "self-healing tests",
-          "AI coding assistant",
-          "corporate training",
-          "developer workshop",
-          "Vipul Gupta",
-          "AI engineer",
-          "paid workshop",
-          "hands-on workshop",
-          "CI/CD automation",
-        ]}
+        keywords={seoContent.keywords}
       />
       <Head>
         <link
@@ -42,32 +40,26 @@ export default function AIWorkshop() {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Course",
-            name: "AI-Powered Development & Test Automation Workshop",
-            description:
-              "Half-day hands-on workshop teaching teams AI-assisted coding, self-healing test automation, and CI/CD integration with practical labs and take-home frameworks.",
+            name: seoContent.title,
+            description: seoContent.description,
             provider: {
               "@type": "Person",
-              name: "Vipul Gupta",
-              url: siteUrl,
+              name: instructor.name,
+              url: siteConfig.url,
               sameAs: [
-                "https://github.com/vipulgupta2048",
-                "https://linkedin.com/in/vipulgupta2048",
+                siteConfig.socialLinks.github,
+                siteConfig.socialLinks.linkedin,
               ],
             },
             courseMode: "onsite",
             educationalLevel: "Intermediate",
-            teaches: [
-              "AI-assisted code generation",
-              "Self-healing test automation",
-              "CI/CD integration with AI tools",
-              "Prompt engineering for developers",
-            ],
+            teaches: outcomes.map((o) => o.title),
             hasCourseInstance: {
               "@type": "CourseInstance",
               courseMode: "onsite",
               instructor: {
                 "@type": "Person",
-                name: "Vipul Gupta",
+                name: instructor.name,
                 jobTitle: "AI Engineer",
               },
             },
@@ -79,13 +71,12 @@ export default function AIWorkshop() {
             "@context": "https://schema.org",
             "@type": "Service",
             serviceType: "Corporate Training Workshop",
-            name: "AI-Powered Development Workshop",
-            description:
-              "Professional training workshop for engineering teams on AI-assisted development and test automation.",
+            name: seoContent.title,
+            description: seoContent.description,
             provider: {
               "@type": "Person",
-              name: "Vipul Gupta",
-              url: siteUrl,
+              name: instructor.name,
+              url: siteConfig.url,
             },
             areaServed: "Worldwide",
             hasOfferCatalog: {
@@ -96,7 +87,7 @@ export default function AIWorkshop() {
                   "@type": "Offer",
                   itemOffered: {
                     "@type": "Service",
-                    name: "Half-Day Workshop (4 Hours)",
+                    name: coverContent.meta[0].value,
                   },
                 },
                 {
@@ -1566,64 +1557,54 @@ export default function AIWorkshop() {
           }}
         </BrowserOnly>
 
-        {/* Page 1: Cover */}
+        {/* Page 1: Cover - Content from workshopData.ts */}
         <div className="page cover">
           <div className="cover-content">
             <div className="cover-eyebrow">
               <div className="live-dot"></div>
-              <span>Workshop Proposal</span>
+              <span>{coverContent.eyebrow}</span>
             </div>
 
             <h1>
-              AI-Powered Development &amp; <em>Test Automation</em>
+              {coverContent.title} <em>{coverContent.titleEmphasis}</em>
             </h1>
 
-            <p className="cover-description">
-              A decade of experience building hard-tech systems. Now an AI
-              Engineer teaching teams how to ship faster with tools that
-              actually work in production.
-            </p>
+            <p className="cover-description">{coverContent.description}</p>
 
             <div className="cover-meta">
-              <div className="meta-item">
-                <span className="meta-label">Duration</span>
-                <span className="meta-value">Half Day (4 Hours)</span>
-              </div>
-              <div className="meta-item">
-                <span className="meta-label">Format</span>
-                <span className="meta-value">Live Coding + Labs</span>
-              </div>
-              <div className="meta-item">
-                <span className="meta-label">Audience</span>
-                <span className="meta-value">
-                  Engineers, QA, DevOps &amp; Leadership
-                </span>
-              </div>
+              {coverContent.meta.map((item, i) => (
+                <div className="meta-item" key={i}>
+                  <span className="meta-label">{item.label}</span>
+                  <span className="meta-value">{item.value}</span>
+                </div>
+              ))}
             </div>
           </div>
 
           <div className="cover-footer">
             <img
-              src="/img/avatar.webp"
-              alt="Vipul Gupta"
+              src={instructor.avatar}
+              alt={instructor.name}
               className="instructor-avatar"
             />
             <div className="instructor-preview-info">
-              <h3>Vipul Gupta</h3>
-              <p>
-                AI Engineer building production agents. Previously shipped
-                systems at Balena that saved $250K+ annually.
-              </p>
+              <h3>{instructor.name}</h3>
+              <p>{instructor.shortDescription}</p>
               <div className="credential-pills">
-                <span className="pill highlight">GitHub Star 2025</span>
-                <span className="pill">Google Cloud Architect</span>
-                <span className="pill">10 Years OSS</span>
+                {instructor.credentials.map((cred, i) => (
+                  <span
+                    key={i}
+                    className={`pill ${cred.highlight ? "highlight" : ""}`}
+                  >
+                    {cred.text}
+                  </span>
+                ))}
               </div>
             </div>
           </div>
         </div>
 
-        {/* Page 2: About + Outcomes */}
+        {/* Page 2: About + Outcomes - Content from workshopData.ts */}
         <div className="page content-page">
           <div className="page-header">
             <div className="page-label">About the Instructor</div>
@@ -1637,41 +1618,28 @@ export default function AIWorkshop() {
           <div className="instructor-card">
             <div className="instructor-photo-section">
               <img
-                src="/img/avatar.webp"
-                alt="Vipul Gupta"
+                src={instructor.avatar}
+                alt={instructor.name}
                 className="instructor-photo"
               />
-              <span className="photo-caption">GitHub Star 2025</span>
+              <span className="photo-caption">
+                {instructor.credentials[0].text}
+              </span>
             </div>
             <div className="instructor-content">
-              <h3>Vipul Gupta</h3>
-              <p className="instructor-role">
-                AI Engineer @ Command Code · Founder, Mixster · Ex-Balena
-              </p>
+              <h3>{instructor.name}</h3>
+              <p className="instructor-role">{instructor.role}</p>
               <div className="instructor-tags">
-                <span className="tag accent">GitHub Star 2025</span>
-                <span className="tag">Google Cloud Architect</span>
+                {instructor.credentials.slice(0, 2).map((cred, i) => (
+                  <span key={i} className={`tag ${i === 0 ? "accent" : ""}`}>
+                    {cred.text}
+                  </span>
+                ))}
               </div>
               <div className="instructor-bio">
-                <p>
-                  Vipul builds{" "}
-                  <strong>neuro-symbolic AI agents at Command Code</strong> that
-                  learn developer preferences and coding styles. Previously, he
-                  led product and engineering at Balena, where he built{" "}
-                  <strong>Leviathan</strong>—the first open-source
-                  Hardware-in-the-Loop testing system for IoT. It reduced OS
-                  release cycles from 6 weeks to 3 hours and delivered{" "}
-                  <strong>$250K+ in annual savings</strong>.
-                </p>
-                <p>
-                  Over the past decade, he has delivered{" "}
-                  <strong>127+ technical sessions</strong> at conferences
-                  including GDG DevFest, OpenSSF India, Open Source Summit
-                  (Europe &amp; Japan), PyCon India, and Mozilla Festival. He
-                  has contributed to open source since 2016, completed Google
-                  Summer of Code twice, and helped grow{" "}
-                  <strong>GitTogether Delhi to 5,000+ members</strong>.
-                </p>
+                {instructor.bio.map((paragraph, i) => (
+                  <p key={i}>{paragraph.text}</p>
+                ))}
               </div>
             </div>
           </div>
@@ -1679,86 +1647,48 @@ export default function AIWorkshop() {
           <div className="outcomes-section">
             <h3 className="outcomes-header">What Your Team Will Learn</h3>
             <div className="outcomes-grid">
-              <div className="outcome-card">
-                <span className="outcome-icon">💻</span>
-                <h4>Production Code Generation</h4>
-                <p>
-                  Master AI assistants (Copilot, Claude, Cursor) for writing,
-                  refactoring, and debugging real code with tests.
-                </p>
-              </div>
-              <div className="outcome-card">
-                <span className="outcome-icon">🧪</span>
-                <h4>Self-Healing Test Automation</h4>
-                <p>
-                  Create test frameworks that adapt when UI changes. Generate
-                  test suites from requirements.
-                </p>
-              </div>
-              <div className="outcome-card">
-                <span className="outcome-icon">🔧</span>
-                <h4>CI/CD Integration</h4>
-                <p>
-                  Integrate AI into your pipelines. Automate code review,
-                  security scanning, and quality gates.
-                </p>
-              </div>
-              <div className="outcome-card">
-                <span className="outcome-icon">📈</span>
-                <h4>Adoption Strategy</h4>
-                <p>
-                  Get a roadmap for rolling out AI tools with clear metrics to
-                  measure success.
-                </p>
-              </div>
+              {outcomes.map((outcome, i) => (
+                <div className="outcome-card" key={i}>
+                  <span className="outcome-icon">{outcome.icon}</span>
+                  <h4>{outcome.title}</h4>
+                  <p>{outcome.description}</p>
+                </div>
+              ))}
             </div>
           </div>
 
           <div className="capstone-section">
             <div className="capstone-header">
-              <span className="capstone-badge">Capstone Project</span>
-              <h3>Leave With Working Code</h3>
+              <span className="capstone-badge">{capstone.badge}</span>
+              <h3>{capstone.title}</h3>
             </div>
-            <p className="capstone-description">
-              Every participant completes a <strong>hands-on capstone project</strong> using
-              their own codebase or a provided sample. You don't just learn concepts—you
-              build something real that proves immediate ROI to your team.
-            </p>
+            <p className="capstone-description">{capstone.description}</p>
             <div className="capstone-examples">
-              <div className="capstone-example">
-                <span className="capstone-icon">🚀</span>
-                <div>
-                  <strong>Option A:</strong> AI-powered feature in YOUR codebase
-                  <span className="capstone-detail">Bring a real task from your backlog</span>
+              {capstone.options.map((option, i) => (
+                <div className="capstone-example" key={i}>
+                  <span className="capstone-icon">{option.icon}</span>
+                  <div>
+                    <strong>{option.title}</strong>
+                    <span className="capstone-detail">{option.detail}</span>
+                  </div>
                 </div>
-              </div>
-              <div className="capstone-example">
-                <span className="capstone-icon">🧪</span>
-                <div>
-                  <strong>Option B:</strong> Self-healing test suite for YOUR app
-                  <span className="capstone-detail">Convert existing brittle tests to adaptive ones</span>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
 
           <div className="testimonial">
-            <p className="testimonial-quote">
-              Vipul's LLM evals talk was thoughtful, relevant, and deeply
-              technical. His leadership in the GitTogether community reflects
-              his commitment to fostering collaboration.
-            </p>
-            <p className="testimonial-author">Arun Singh</p>
-            <p className="testimonial-role">Tech Lead - India, Tech Mahindra</p>
+            <p className="testimonial-quote">{testimonials[0].quote}</p>
+            <p className="testimonial-author">{testimonials[0].author}</p>
+            <p className="testimonial-role">{testimonials[0].role}</p>
           </div>
 
           <div className="page-footer">
-            <span>AI Workshop Proposal · Vipul Gupta</span>
+            <span>AI Workshop Proposal · {instructor.name}</span>
             <span>Page 1</span>
           </div>
         </div>
 
-        {/* Page 3: Agenda Part 1 */}
+        {/* Page 3: Agenda Part 1 - Content from workshopData.ts */}
         <div className="page content-page">
           <div className="page-header">
             <div className="page-label">Workshop Agenda</div>
@@ -1769,244 +1699,135 @@ export default function AIWorkshop() {
             </p>
           </div>
 
-          <div className="session-card">
-            <div className="session-header">
-              <div className="session-top-bar">
-                <div className="session-number">Session 1 · 45 min</div>
-                <div className="session-badges">
-                  <span className="badge badge-demo">Live Demo</span>
+          {sessions.slice(0, 2).map((session) => (
+            <div className="session-card" key={session.number}>
+              <div className="session-header">
+                <div className="session-top-bar">
+                  <div className="session-number">
+                    Session {session.number} · {session.duration}
+                  </div>
+                  <div className="session-badges">
+                    {session.badges.map((badge, i) => (
+                      <span key={i} className={`badge badge-${badge.variant}`}>
+                        {badge.text}
+                      </span>
+                    ))}
+                  </div>
                 </div>
+                <div className="session-title">{session.title}</div>
+                <div className="session-type">{session.type}</div>
               </div>
-              <div className="session-title">AI Coding Landscape</div>
-              <div className="session-type">
-                Interactive Discussion + Demonstrations
+              <div className="session-body">
+                <p className="session-intro">{session.intro}</p>
+
+                <div className="content-section">
+                  <div className="section-label">{session.sectionLabel}</div>
+                  <div className="topics-grid">
+                    {session.topics.map((topic, i) => (
+                      <div className="topic-item" key={i}>
+                        {topic.text}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {session.demos && (
+                  <div className="content-section">
+                    <div className="section-label">Live Demo</div>
+                    {session.demos.map((demo, i) => (
+                      <div className="demo-item" key={i}>
+                        <strong>{demo.title}:</strong> {demo.description}
+                      </div>
+                    ))}
+                  </div>
+                )}
+
+                <div className="deliverables-row">
+                  {session.deliverables.map((d, i) => (
+                    <span className="deliverable-chip" key={i}>
+                      {d.text}
+                    </span>
+                  ))}
+                </div>
               </div>
             </div>
-            <div className="session-body">
-              <p className="session-intro">
-                Understand where AI coding tools actually are today. Benchmark
-                your team's readiness and identify quick wins.
-              </p>
-
-              <div className="content-section">
-                <div className="section-label">We'll Cover</div>
-                <div className="topics-grid">
-                  <div className="topic-item">
-                    Current state of AI coding assistants
-                  </div>
-                  <div className="topic-item">
-                    SWE-bench scores &amp; what they mean
-                  </div>
-                  <div className="topic-item">
-                    GitHub Copilot vs Claude vs Cursor
-                  </div>
-                  <div className="topic-item">When to use each tool</div>
-                  <div className="topic-item">Team readiness assessment</div>
-                  <div className="topic-item">ROI baseline metrics</div>
-                </div>
-              </div>
-
-              <div className="content-section">
-                <div className="section-label">Live Demo</div>
-                <div className="demo-list">
-                  <div className="demo-item">
-                    <strong>Side-by-Side Build:</strong> Same REST endpoint
-                    built traditionally vs. with AI. Measure real differences in
-                    time and quality.
-                  </div>
-                </div>
-              </div>
-
-              <div className="deliverables-row">
-                <span className="deliverable-chip">Team assessment report</span>
-                <span className="deliverable-chip">
-                  Baseline metrics dashboard
-                </span>
-                <span className="deliverable-chip">Tool comparison matrix</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="session-card">
-            <div className="session-header">
-              <div className="session-top-bar">
-                <div className="session-number">Session 2 · 75 min</div>
-                <div className="session-badges">
-                  <span className="badge badge-labs">3 Labs</span>
-                  <span className="badge badge-demo">Live Coding</span>
-                </div>
-              </div>
-              <div className="session-title">Hands-On Code Generation</div>
-              <div className="session-type">Live Coding + Pair Programming</div>
-            </div>
-            <div className="session-body">
-              <p className="session-intro">
-                This is where you write code. Watch a complete feature built
-                live, then build one yourself with AI assistance.
-              </p>
-
-              <div className="content-section">
-                <div className="section-label">Fundamentals First</div>
-                <div className="topics-grid">
-                  <div className="topic-item">Prompt engineering basics</div>
-                  <div className="topic-item">Context window management</div>
-                  <div className="topic-item">
-                    Multi-step problem decomposition
-                  </div>
-                  <div className="topic-item">Iterative refinement patterns</div>
-                  <div className="topic-item">AI pair programming workflows</div>
-                  <div className="topic-item">When AI helps vs. hurts</div>
-                </div>
-              </div>
-
-              <div className="content-section">
-                <div className="section-label">Live Coding Demo</div>
-                <div className="demo-list">
-                  <div className="demo-item">
-                    <strong>Full-Stack Feature:</strong> Build user auth from
-                    scratch (JWT, middleware, validation, tests) using AI in
-                    Python/FastAPI or Node/Express.
-                  </div>
-                  <div className="demo-item">
-                    <strong>Legacy Refactor:</strong> Transform messy code into
-                    clean architecture with AI guidance.
-                  </div>
-                </div>
-              </div>
-
-              <div className="deliverables-row">
-                <span className="deliverable-chip">
-                  Working REST API you built
-                </span>
-                <span className="deliverable-chip">
-                  20+ prompt patterns playbook
-                </span>
-              </div>
-            </div>
-          </div>
+          ))}
 
           <div className="page-footer">
-            <span>AI Workshop Proposal · Vipul Gupta</span>
+            <span>AI Workshop Proposal · {instructor.name}</span>
             <span>Page 2</span>
           </div>
         </div>
 
-        {/* Page 4: Agenda Part 2 */}
+        {/* Page 4: Agenda Part 2 - Content from workshopData.ts */}
         <div className="page content-page">
-          <div className="session-card">
-            <div className="session-header">
-              <div className="session-top-bar">
-                <div className="session-number">Session 3 · 90 min</div>
-                <div className="session-badges">
-                  <span className="badge badge-labs">3 Labs</span>
-                  <span className="badge badge-demo">Framework Build</span>
-                </div>
-              </div>
-              <div className="session-title">AI-Powered Test Automation</div>
-              <div className="session-type">
-                Framework Building + Live Testing
-              </div>
-            </div>
-            <div className="session-body">
-              <p className="session-intro">
-                Build test frameworks that don't break when your UI changes.
-                Especially valuable for teams drowning in flaky tests.
-              </p>
-
-              <div className="content-section">
-                <div className="section-label">Fundamentals First</div>
-                <div className="topics-grid">
-                  <div className="topic-item">Self-healing test architecture</div>
-                  <div className="topic-item">Semantic vs brittle selectors</div>
-                  <div className="topic-item">AI-powered element location</div>
-                  <div className="topic-item">Test data generation</div>
-                  <div className="topic-item">Flaky test detection patterns</div>
-                  <div className="topic-item">CI/CD integration strategies</div>
-                </div>
-              </div>
-
-              <div className="content-section">
-                <div className="section-label">Live Demo</div>
-                <div className="demo-list">
-                  <div className="demo-item">
-                    <strong>Self-Healing Tests:</strong> Watch AI-powered tests
-                    automatically adapt when UI selectors change.
+          {sessions.slice(2, 4).map((session) => (
+            <div className="session-card" key={session.number}>
+              <div className="session-header">
+                <div className="session-top-bar">
+                  <div className="session-number">
+                    Session {session.number} · {session.duration}
                   </div>
-                  <div className="demo-item">
-                    <strong>Requirement → Test Suite:</strong> Transform a user
-                    story into complete Playwright tests with edge cases.
+                  <div className="session-badges">
+                    {session.badges.map((badge, i) => (
+                      <span key={i} className={`badge badge-${badge.variant}`}>
+                        {badge.text}
+                      </span>
+                    ))}
                   </div>
                 </div>
+                <div className="session-title">{session.title}</div>
+                <div className="session-type">{session.type}</div>
               </div>
+              <div className="session-body">
+                <p className="session-intro">{session.intro}</p>
 
-              <div className="deliverables-row">
-                <span className="deliverable-chip">
-                  Self-healing test framework
-                </span>
-                <span className="deliverable-chip">CI/CD pipeline config</span>
-                <span className="deliverable-chip">Flaky test strategy</span>
-              </div>
-            </div>
-          </div>
+                <div className="content-section">
+                  <div className="section-label">{session.sectionLabel}</div>
+                  <div className="topics-grid">
+                    {session.topics.map((topic, i) => (
+                      <div className="topic-item" key={i}>
+                        {topic.text}
+                      </div>
+                    ))}
+                  </div>
+                </div>
 
-          <div className="session-card">
-            <div className="session-header">
-              <div className="session-top-bar">
-                <div className="session-number">Session 4 · 30 min</div>
-                <div className="session-badges">
-                  <span className="badge badge-qa">Q&amp;A</span>
+                {session.demos && (
+                  <div className="content-section">
+                    <div className="section-label">Live Demo</div>
+                    {session.demos.map((demo, i) => (
+                      <div className="demo-item" key={i}>
+                        <strong>{demo.title}:</strong> {demo.description}
+                      </div>
+                    ))}
+                  </div>
+                )}
+
+                <div className="deliverables-row">
+                  {session.deliverables.map((d, i) => (
+                    <span className="deliverable-chip" key={i}>
+                      {d.text}
+                    </span>
+                  ))}
                 </div>
               </div>
-              <div className="session-title">Implementation Strategy</div>
-              <div className="session-type">Planning + Discussion</div>
             </div>
-            <div className="session-body">
-              <p className="session-intro">
-                Turn what you learned into an action plan. Build a realistic
-                adoption roadmap for your specific team.
-              </p>
-
-              <div className="content-section">
-                <div className="section-label">We'll Cover</div>
-                <div className="topics-grid">
-                  <div className="topic-item">Phased rollout strategy</div>
-                  <div className="topic-item">Week 1 pilot program</div>
-                  <div className="topic-item">Month 1 team adoption</div>
-                  <div className="topic-item">Tool selection criteria</div>
-                  <div className="topic-item">Governance &amp; guardrails</div>
-                  <div className="topic-item">Measuring success</div>
-                </div>
-              </div>
-
-              <div className="deliverables-row">
-                <span className="deliverable-chip">90-day adoption roadmap</span>
-                <span className="deliverable-chip">
-                  Governance policy template
-                </span>
-                <span className="deliverable-chip">ROI metrics dashboard</span>
-              </div>
-            </div>
-          </div>
+          ))}
 
           <div className="testimonial">
-            <p className="testimonial-quote">
-              HUGE gratitude to Vipul for being the most supportive and
-              incredible mentor. An amazing GitHub Copilot talk from beginner to
-              advanced level.
-            </p>
-            <p className="testimonial-author">Nitya Pandey</p>
-            <p className="testimonial-role">
-              GitHub Campus Expert · Engineering @ Soti
-            </p>
+            <p className="testimonial-quote">{testimonials[1].quote}</p>
+            <p className="testimonial-author">{testimonials[1].author}</p>
+            <p className="testimonial-role">{testimonials[1].role}</p>
           </div>
 
           <div className="page-footer">
-            <span>AI Workshop Proposal · Vipul Gupta</span>
+            <span>AI Workshop Proposal · {instructor.name}</span>
             <span>Page 3</span>
           </div>
         </div>
 
-        {/* Page 5: Deliverables + Premium */}
+        {/* Page 5: Deliverables + Premium - Content from workshopData.ts */}
         <div className="page content-page">
           <div className="page-header">
             <div className="page-label">What You Get</div>
@@ -2024,82 +1845,42 @@ export default function AIWorkshop() {
           </div>
 
           <div className="deliverables-grid">
-            <div className="deliverable-card">
-              <div className="deliverable-icon">📦</div>
-              <h4>Code &amp; Templates</h4>
-              <ul>
-                <li>Complete GitHub repo with workshop code</li>
-                <li>Production-ready templates</li>
-                <li>CI/CD pipeline configurations</li>
-                <li>Self-healing test framework starter</li>
-              </ul>
-            </div>
-            <div className="deliverable-card">
-              <div className="deliverable-icon">📚</div>
-              <h4>Documentation</h4>
-              <ul>
-                <li>Workshop slide deck (PDF)</li>
-                <li>Prompt engineering cheat sheets</li>
-                <li>Quick reference guides per tool</li>
-                <li>Best practices playbook</li>
-              </ul>
-            </div>
-            <div className="deliverable-card">
-              <div className="deliverable-icon">🛠️</div>
-              <h4>Setup Guides</h4>
-              <ul>
-                <li>Step-by-step tool installation</li>
-                <li>IDE integration tutorials</li>
-                <li>Configuration examples</li>
-                <li>Troubleshooting guide</li>
-              </ul>
-            </div>
-            <div className="deliverable-card">
-              <div className="deliverable-icon">📊</div>
-              <h4>Planning Tools</h4>
-              <ul>
-                <li>ROI calculator spreadsheet</li>
-                <li>Adoption roadmap templates</li>
-                <li>Governance guidelines</li>
-                <li>Metrics dashboard templates</li>
-              </ul>
-            </div>
+            {deliverables.map((item, i) => (
+              <div className="deliverable-card" key={i}>
+                <div className="deliverable-icon">{item.icon}</div>
+                <h4>{item.title}</h4>
+                <ul>
+                  {item.items.map((li, j) => (
+                    <li key={j}>{li}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
 
           <div className="support-highlight">
             <div className="support-highlight-header">
-              <div className="support-icon">🤝</div>
+              <div className="support-icon">{postWorkshopSupport.icon}</div>
               <div>
-                <h4>Post-Workshop Support <span className="free-badge">Included Free</span></h4>
-                <p>The learning doesn't stop when the workshop ends</p>
+                <h4>
+                  {postWorkshopSupport.title}{" "}
+                  <span className="free-badge">{postWorkshopSupport.badge}</span>
+                </h4>
+                <p>{postWorkshopSupport.subtitle}</p>
               </div>
             </div>
             <div className="support-items">
-              <div className="support-item">
-                <span className="check-icon">✓</span>
-                <div>
-                  <strong>1 Follow-Up Call (30 min)</strong>
-                  <span>Troubleshoot blockers, review your capstone progress</span>
+              {postWorkshopSupport.items.map((item, i) => (
+                <div className="support-item" key={i}>
+                  <span className="check-icon">✓</span>
+                  <div>
+                    <strong>{item.title}</strong>
+                    <span>{item.description}</span>
+                  </div>
                 </div>
-              </div>
-              <div className="support-item">
-                <span className="check-icon">✓</span>
-                <div>
-                  <strong>7-Day Email Support</strong>
-                  <span>Quick questions answered within 24 hours</span>
-                </div>
-              </div>
-              <div className="support-item">
-                <span className="check-icon">✓</span>
-                <div>
-                  <strong>Session Q&amp;A Documentation</strong>
-                  <span>All questions from your workshop, documented with answers</span>
-                </div>
-              </div>
+              ))}
             </div>
-            <p className="support-upgrade">
-              Need more? Upgrade to <strong>Extended Support</strong> for 30-day access, weekly office hours, and ongoing guidance.
-            </p>
+            <p className="support-upgrade">{postWorkshopSupport.upgradeText}</p>
           </div>
 
           <div className="premium-section">
@@ -2115,58 +1896,24 @@ export default function AIWorkshop() {
             </div>
 
             <div className="premium-grid">
-              <div className="premium-card">
-                <h4>🎥 Recorded Workshop + Videos</h4>
-                <p>
-                  Full recording with timestamps, live coding sessions, bonus
-                  tool comparison series.
-                </p>
-              </div>
-              <div className="premium-card">
-                <h4>💬 Extended Support</h4>
-                <p>
-                  30-day Slack/email support, 4 weekly office hours, private
-                  Discord, quarterly check-in.
-                </p>
-              </div>
-              <div className="premium-card">
-                <h4>🔄 Testing Feedback Loop</h4>
-                <p>
-                  Design and implement AI-powered testing feedback loops for
-                  your codebase and CI/CD.
-                </p>
-              </div>
-              <div className="premium-card">
-                <h4>🤖 Custom Claude Bot</h4>
-                <p>
-                  Deploy Claude Slack/Teams bot with custom prompts, codebase
-                  context, and team workflows.
-                </p>
-              </div>
-              <div className="premium-card">
-                <h4>📝 Implementation Consulting</h4>
-                <p>
-                  Post-workshop sessions to review progress, troubleshoot
-                  blockers, refine strategy.
-                </p>
-              </div>
-              <div className="premium-card">
-                <h4>🏗️ Project + Code Reviews</h4>
-                <p>
-                  Structured implementation project with weekly check-ins and
-                  detailed code reviews.
-                </p>
-              </div>
+              {premiumAddons.map((addon, i) => (
+                <div className="premium-card" key={i}>
+                  <h4>
+                    {addon.icon} {addon.title}
+                  </h4>
+                  <p>{addon.description}</p>
+                </div>
+              ))}
             </div>
           </div>
 
           <div className="page-footer">
-            <span>AI Workshop Proposal · Vipul Gupta</span>
+            <span>AI Workshop Proposal · {instructor.name}</span>
             <span>Page 4</span>
           </div>
         </div>
 
-        {/* Page 6: ROI + Contact */}
+        {/* Page 6: ROI + Contact - Content from workshopData.ts */}
         <div className="page content-page">
           <div className="roi-section">
             <div className="roi-header">
@@ -2177,98 +1924,80 @@ export default function AIWorkshop() {
               </p>
             </div>
             <div className="roi-grid">
-              <div className="roi-card">
-                <div className="roi-value">40%</div>
-                <div className="roi-label">Faster Development</div>
-                <div className="roi-desc">
-                  Feature request to production-ready code
+              {roiMetrics.map((metric, i) => (
+                <div className="roi-card" key={i}>
+                  <div className="roi-value">{metric.value}</div>
+                  <div className="roi-label">{metric.label}</div>
+                  <div className="roi-desc">{metric.description}</div>
                 </div>
-              </div>
-              <div className="roi-card">
-                <div className="roi-value">55%</div>
-                <div className="roi-label">Faster Reviews</div>
-                <div className="roi-desc">
-                  Code review cycles with AI-assisted checks
-                </div>
-              </div>
-              <div className="roi-card">
-                <div className="roi-value">3-5x</div>
-                <div className="roi-label">Test Coverage</div>
-                <div className="roi-desc">
-                  Automated test scenarios per sprint
-                </div>
-              </div>
-              <div className="roi-card">
-                <div className="roi-value">35%</div>
-                <div className="roi-label">Fewer Bugs</div>
-                <div className="roi-desc">
-                  Reduction in production incidents
-                </div>
-              </div>
-              <div className="roi-card">
-                <div className="roi-value">80%</div>
-                <div className="roi-label">Tool Adoption</div>
-                <div className="roi-desc">
-                  Engineers using AI tools daily at 90 days
-                </div>
-              </div>
-              <div className="roi-card">
-                <div className="roi-value">$38K</div>
-                <div className="roi-label">Annual Savings</div>
-                <div className="roi-desc">
-                  Varies by team size (10-50 engineers)
-                </div>
-              </div>
+              ))}
             </div>
           </div>
 
           <div className="cta-section">
             <div className="cta-header">
-              <h3>Let's Talk</h3>
-              <p>
-                Send your team size, tech stack, and challenges. I'll respond
-                with a customized plan.
-              </p>
+              <h3>{ctaContent.title}</h3>
+              <p>{ctaContent.subtitle}</p>
             </div>
 
             <div className="contact-grid">
-              <div className="contact-card">
-                <h4>Email</h4>
-                <a href="mailto:vipulgupta2048@gmail.com">
-                  vipulgupta2048@gmail.com
+              {ctaContent.contacts.map((contact, i) => (
+                <a
+                  key={i}
+                  href={contact.link}
+                  className="contact-card"
+                  target={contact.link.startsWith("mailto") ? undefined : "_blank"}
+                  rel={
+                    contact.link.startsWith("mailto")
+                      ? undefined
+                      : "noopener noreferrer"
+                  }
+                >
+                  <h4>{contact.title}</h4>
+                  <span className="contact-link">{contact.linkText}</span>
+                  <p>{contact.description}</p>
                 </a>
-                <p>Share requirements. Customized proposal within 24 hours.</p>
-              </div>
-              <div className="contact-card">
-                <h4>Schedule a Call</h4>
-                <a href="https://cal.com/vipulgupta2048">
-                  cal.com/vipulgupta2048
-                </a>
-                <p>
-                  30-minute discovery call to discuss objectives and format.
-                </p>
-              </div>
+              ))}
             </div>
 
             <div className="cta-footer">
-              <p>
-                <strong>Customization:</strong> Adapts to your tech stack
-                (Python, JS/TS, Java, Go, Rust, C#), industry, team size, and AI
-                maturity. <strong>Full-day and multi-day formats available</strong>{" "}
-                for comprehensive implementation.
-              </p>
+              <p>{ctaContent.footer}</p>
               <div className="cta-links">
-                <a href="https://mixster.dev">Blog</a>
-                <a href="https://linkedin.com/in/vipulgupta2048">LinkedIn</a>
-                <a href="https://github.com/vipulgupta2048">GitHub</a>
-                <a href="https://docs.mixster.dev/">Open Source journey</a>
+                <a
+                  href={siteConfig.socialLinks.blog}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Blog
+                </a>
+                <a
+                  href={siteConfig.socialLinks.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  LinkedIn
+                </a>
+                <a
+                  href={siteConfig.socialLinks.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub
+                </a>
+                <a
+                  href={siteConfig.socialLinks.docs}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Open Source
+                </a>
               </div>
             </div>
           </div>
 
           <div className="page-footer">
-            <span>AI Workshop Proposal · Vipul Gupta</span>
-            <span>© 2026 Vipul Gupta · Mixster</span>
+            <span>AI Workshop Proposal · {instructor.name}</span>
+            <span>2025 {instructor.name} · Mixster</span>
           </div>
         </div>
       </div>

@@ -11,6 +11,31 @@ import {
 } from "@react-pdf/renderer";
 
 /**
+ * Workshop PDF Document
+ * =====================
+ * Uses shared content from workshopData.ts
+ * This ensures web page and PDF stay in sync.
+ *
+ * @see src/data/workshopData.ts - Single source of truth
+ * @see src/pages/ai-workshop.tsx - Web page version
+ */
+import {
+  siteConfig,
+  pdfMetadata,
+  coverContent,
+  instructor,
+  outcomes,
+  capstone,
+  sessions,
+  testimonials,
+  deliverables,
+  postWorkshopSupport,
+  premiumAddons,
+  roiMetrics,
+  ctaContent,
+} from "../data/workshopData";
+
+/**
  * Font Registration for PDF
  * Using fontsource CDN for reliable font loading
  * @see https://react-pdf.org/fonts
@@ -870,67 +895,60 @@ const styles = StyleSheet.create({
 
 const WorkshopPDF = () => (
   <Document
-    title="AI-Powered Development Workshop Proposal - Vipul Gupta"
-    author="Vipul Gupta"
-    subject="Workshop Proposal"
-    keywords="AI, workshop, development, test automation"
+    title={pdfMetadata.title}
+    author={pdfMetadata.author}
+    subject={pdfMetadata.subject}
+    keywords={pdfMetadata.keywords}
   >
-    {/* Page 1: Cover */}
+    {/* Page 1: Cover - Content from workshopData.ts */}
     <Page size="A4" style={styles.coverPage}>
       <View style={styles.coverContent}>
         <View style={styles.coverEyebrow}>
           <View style={styles.liveDot} />
-          <Text style={styles.eyebrowText}>Workshop Proposal</Text>
+          <Text style={styles.eyebrowText}>{coverContent.eyebrow}</Text>
         </View>
 
         <Text style={styles.coverTitle}>
-          AI-Powered Development &{"\n"}
-          <Text style={styles.coverTitleItalic}>Test Automation</Text>
+          {coverContent.title}
+          {"\n"}
+          <Text style={styles.coverTitleItalic}>{coverContent.titleEmphasis}</Text>
         </Text>
 
-        <Text style={styles.coverDescription}>
-          A decade of experience building hard-tech systems. Now an AI Engineer
-          teaching teams how to ship faster with tools that actually work in
-          production.
-        </Text>
+        <Text style={styles.coverDescription}>{coverContent.description}</Text>
 
         <View style={styles.coverMeta}>
-          <View style={styles.metaItem}>
-            <Text style={styles.metaLabel}>Duration</Text>
-            <Text style={styles.metaValue}>Half Day (4 Hours)</Text>
-          </View>
-          <View style={styles.metaItem}>
-            <Text style={styles.metaLabel}>Format</Text>
-            <Text style={styles.metaValue}>Live Coding + Labs</Text>
-          </View>
-          <View style={styles.metaItem}>
-            <Text style={styles.metaLabel}>Audience</Text>
-            <Text style={styles.metaValue}>Engineers, QA, DevOps & Leadership</Text>
-          </View>
+          {coverContent.meta.map((item, i) => (
+            <View style={styles.metaItem} key={i}>
+              <Text style={styles.metaLabel}>{item.label}</Text>
+              <Text style={styles.metaValue}>{item.value}</Text>
+            </View>
+          ))}
         </View>
       </View>
 
       <View style={styles.coverFooter}>
         <Image
           style={styles.avatar}
-          src="https://docs.mixster.dev/img/avatar.png"
+          src={`${siteConfig.url}/img/avatar.png`}
         />
         <View style={styles.instructorPreview}>
-          <Text style={styles.instructorName}>Vipul Gupta</Text>
-          <Text style={styles.instructorDesc}>
-            AI Engineer building production agents. Previously shipped systems at
-            Balena that saved $250K+ annually.
-          </Text>
+          <Text style={styles.instructorName}>{instructor.name}</Text>
+          <Text style={styles.instructorDesc}>{instructor.shortDescription}</Text>
           <View style={styles.pillRow}>
-            <Text style={[styles.pill, styles.pillHighlight]}>GitHub Star 2025</Text>
-            <Text style={styles.pill}>Google Cloud Architect</Text>
-            <Text style={styles.pill}>10 Years OSS</Text>
+            {instructor.credentials.map((cred, i) => (
+              <Text
+                key={i}
+                style={[styles.pill, cred.highlight && styles.pillHighlight]}
+              >
+                {cred.text}
+              </Text>
+            ))}
           </View>
         </View>
       </View>
     </Page>
 
-    {/* Page 2: About + Outcomes */}
+    {/* Page 2: About + Outcomes - Content from workshopData.ts */}
     <Page size="A4" style={[styles.page, styles.contentPage]}>
       <Text style={styles.pageLabel}>About the Instructor</Text>
       <Text style={styles.pageTitle}>Learn from a Practitioner</Text>
@@ -942,101 +960,61 @@ const WorkshopPDF = () => (
       <View style={styles.instructorCard}>
         <Image
           style={styles.instructorPhoto}
-          src="https://docs.mixster.dev/img/avatar.png"
+          src={`${siteConfig.url}/img/avatar.png`}
         />
         <View style={styles.instructorContent}>
-          <Text style={styles.instructorName}>Vipul Gupta</Text>
-          <Text style={styles.instructorRole}>
-            AI Engineer @ Command Code - Founder, Mixster - Ex-Balena
-          </Text>
+          <Text style={styles.instructorName}>{instructor.name}</Text>
+          <Text style={styles.instructorRole}>{instructor.role}</Text>
           <View style={styles.tagRow}>
-            <Text style={[styles.tag, styles.tagAccent]}>GitHub Star 2025</Text>
-            <Text style={styles.tag}>Google Cloud Architect</Text>
+            {instructor.credentials.slice(0, 2).map((cred, i) => (
+              <Text key={i} style={[styles.tag, i === 0 && styles.tagAccent]}>
+                {cred.text}
+              </Text>
+            ))}
           </View>
-          <Text style={styles.bioText}>
-            Vipul builds <Text style={styles.bold}>neuro-symbolic AI agents at Command Code</Text> that
-            learn developer preferences. Previously at Balena, he built <Text style={styles.bold}>Leviathan</Text> -
-            the first open-source HIL testing system for IoT, reducing OS release cycles from 6 weeks
-            to 3 hours and delivering <Text style={styles.bold}>$250K+ annual savings</Text>.
-          </Text>
-          <Text style={styles.bioText}>
-            Over the past decade: <Text style={styles.bold}>127+ technical sessions</Text> at GDG DevFest,
-            OpenSSF India, Open Source Summit, PyCon India, Mozilla Festival. Google Summer of Code x2.
-            Grew <Text style={styles.bold}>GitTogether Delhi to 5,000+ members</Text>.
-          </Text>
+          {instructor.bio.map((paragraph, i) => (
+            <Text key={i} style={styles.bioText}>{paragraph.text}</Text>
+          ))}
         </View>
       </View>
 
       <Text style={styles.outcomesHeader}>What Your Team Will Learn</Text>
       <View style={styles.outcomesGrid}>
-        <View style={styles.outcomeCard}>
-          <Text style={styles.outcomeTitle}>Production Code Generation</Text>
-          <Text style={styles.outcomeDesc}>
-            Master AI assistants (Copilot, Claude, Cursor) for writing, refactoring,
-            and debugging real code with tests.
-          </Text>
-        </View>
-        <View style={styles.outcomeCard}>
-          <Text style={styles.outcomeTitle}>Self-Healing Test Automation</Text>
-          <Text style={styles.outcomeDesc}>
-            Create test frameworks that adapt when UI changes. Generate test suites
-            from requirements.
-          </Text>
-        </View>
-        <View style={styles.outcomeCard}>
-          <Text style={styles.outcomeTitle}>CI/CD Integration</Text>
-          <Text style={styles.outcomeDesc}>
-            Integrate AI into your pipelines. Automate code review, security scanning,
-            and quality gates.
-          </Text>
-        </View>
-        <View style={styles.outcomeCard}>
-          <Text style={styles.outcomeTitle}>Adoption Strategy</Text>
-          <Text style={styles.outcomeDesc}>
-            Get a roadmap for rolling out AI tools with clear metrics to measure success.
-          </Text>
-        </View>
+        {outcomes.map((outcome, i) => (
+          <View key={i} style={styles.outcomeCard}>
+            <Text style={styles.outcomeTitle}>{outcome.title}</Text>
+            <Text style={styles.outcomeDesc}>{outcome.description}</Text>
+          </View>
+        ))}
       </View>
 
       <View style={styles.capstoneSection}>
         <View style={styles.capstoneHeader}>
-          <Text style={styles.capstoneBadge}>Capstone Project</Text>
-          <Text style={styles.capstoneTitle}>Leave With Working Code</Text>
+          <Text style={styles.capstoneBadge}>{capstone.badge}</Text>
+          <Text style={styles.capstoneTitle}>{capstone.title}</Text>
         </View>
-        <Text style={styles.capstoneDesc}>
-          Every participant completes a hands-on capstone project using their own codebase
-          or a provided sample. You don't just learn concepts - you build something real.
-        </Text>
+        <Text style={styles.capstoneDesc}>{capstone.description}</Text>
         <View style={styles.capstoneExamples}>
-          <View style={styles.capstoneExample}>
-            <Text style={styles.capstoneIcon}>🚀</Text>
-            <View style={styles.capstoneExampleText}>
-              <Text style={styles.capstoneExampleTitle}>Option A: AI feature in YOUR codebase</Text>
-              <Text style={styles.capstoneExampleDetail}>Bring a real task from your backlog</Text>
+          {capstone.options.map((option, i) => (
+            <View key={i} style={styles.capstoneExample}>
+              <Text style={styles.capstoneIcon}>{option.icon}</Text>
+              <View style={styles.capstoneExampleText}>
+                <Text style={styles.capstoneExampleTitle}>{option.title}</Text>
+                <Text style={styles.capstoneExampleDetail}>{option.detail}</Text>
+              </View>
             </View>
-          </View>
-          <View style={styles.capstoneExample}>
-            <Text style={styles.capstoneIcon}>🧪</Text>
-            <View style={styles.capstoneExampleText}>
-              <Text style={styles.capstoneExampleTitle}>Option B: Self-healing test suite</Text>
-              <Text style={styles.capstoneExampleDetail}>Convert existing brittle tests to adaptive</Text>
-            </View>
-          </View>
+          ))}
         </View>
       </View>
 
       <View style={styles.testimonial}>
-        <Text style={styles.testimonialQuote}>
-          "Vipul's LLM evals talk was thoughtful, relevant, and deeply technical.
-          His leadership in the GitTogether community reflects his commitment to
-          fostering collaboration."
-        </Text>
-        <Text style={styles.testimonialAuthor}>Arun Singh</Text>
-        <Text style={styles.testimonialRole}>Tech Lead - India, Tech Mahindra</Text>
+        <Text style={styles.testimonialQuote}>"{testimonials[0].quote}"</Text>
+        <Text style={styles.testimonialAuthor}>{testimonials[0].author}</Text>
+        <Text style={styles.testimonialRole}>{testimonials[0].role}</Text>
       </View>
 
       <View style={styles.pageFooter}>
-        <Text>AI Workshop Proposal - Vipul Gupta</Text>
+        <Text>AI Workshop Proposal - {instructor.name}</Text>
         <Text>Page 1</Text>
       </View>
     </Page>
