@@ -33,7 +33,7 @@ description: "Vipul Gupta (vipulgupta2048) introduction covering open source lea
 
 <div style={{background: 'var(--ifm-color-primary-lightest)', padding: '1.5rem', borderRadius: '8px', margin: '1.5rem 0', border: '1px solid var(--ifm-color-primary-light)'}}>
   <p style={{marginBottom: '0.5rem', fontSize: '1.1rem'}}><strong>💼 Ready to work together?</strong></p>
-  <p style={{marginBottom: '0'}}>If you like what you see and how I approach open-source, <a href="mailto:vipulgupta2048@gmail.com">let's connect</a>! I'm excited to discuss new opportunities and collaborations.</p>
+  <p style={{marginBottom: '0'}}>If you like what you see and how I approach open-source, <a href="mailto:vipulgupta2048@gmail.com">let's connect</a>! I'm excited to discuss new opportunities and collaborations. Looking to upskill your team? Check out my <a href="/ai-workshop">AI-Powered Development Workshop</a> for hands-on training.</p>
 </div>
 
 ### The Reality: Failures of 2048

@@ -1,19 +1,113 @@
 import React from "react";
 import Head from "@docusaurus/Head";
+import SEO from "../components/SEO";
 
 export default function AIWorkshop() {
+  const siteUrl = "https://docs.mixster.dev";
+
   return (
     <>
+      <SEO
+        title="AI-Powered Development & Test Automation Workshop"
+        description="Half-day hands-on workshop teaching teams AI-assisted coding, self-healing test automation, and CI/CD integration. Led by Vipul Gupta, GitHub Star 2025 with 10 years of open source experience. Live coding, practical labs, and take-home frameworks."
+        pathname="ai-workshop"
+        type="website"
+        keywords={[
+          "AI workshop",
+          "AI-powered development",
+          "test automation workshop",
+          "GitHub Copilot training",
+          "Claude Code workshop",
+          "Cursor IDE training",
+          "self-healing tests",
+          "AI coding assistant",
+          "corporate training",
+          "developer workshop",
+          "Vipul Gupta",
+          "AI engineer",
+          "paid workshop",
+          "hands-on workshop",
+          "CI/CD automation",
+        ]}
+      />
       <Head>
-        <title>AI-Powered Development Workshop | Vipul Gupta</title>
-        <meta
-          name="description"
-          content="A decade of experience building hard-tech systems. Now an AI Engineer teaching teams how to ship faster with tools that actually work in production."
-        />
         <link
           href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&family=Outfit:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
           rel="stylesheet"
         />
+        {/* Course/Event structured data for rich snippets */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Course",
+            name: "AI-Powered Development & Test Automation Workshop",
+            description:
+              "Half-day hands-on workshop teaching teams AI-assisted coding, self-healing test automation, and CI/CD integration with practical labs and take-home frameworks.",
+            provider: {
+              "@type": "Person",
+              name: "Vipul Gupta",
+              url: siteUrl,
+              sameAs: [
+                "https://github.com/vipulgupta2048",
+                "https://linkedin.com/in/vipulgupta2048",
+              ],
+            },
+            courseMode: "onsite",
+            educationalLevel: "Intermediate",
+            teaches: [
+              "AI-assisted code generation",
+              "Self-healing test automation",
+              "CI/CD integration with AI tools",
+              "Prompt engineering for developers",
+            ],
+            hasCourseInstance: {
+              "@type": "CourseInstance",
+              courseMode: "onsite",
+              instructor: {
+                "@type": "Person",
+                name: "Vipul Gupta",
+                jobTitle: "AI Engineer",
+              },
+            },
+          })}
+        </script>
+        {/* Service structured data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            serviceType: "Corporate Training Workshop",
+            name: "AI-Powered Development Workshop",
+            description:
+              "Professional training workshop for engineering teams on AI-assisted development and test automation.",
+            provider: {
+              "@type": "Person",
+              name: "Vipul Gupta",
+              url: siteUrl,
+            },
+            areaServed: "Worldwide",
+            hasOfferCatalog: {
+              "@type": "OfferCatalog",
+              name: "Workshop Packages",
+              itemListElement: [
+                {
+                  "@type": "Offer",
+                  itemOffered: {
+                    "@type": "Service",
+                    name: "Half-Day Workshop (4 Hours)",
+                  },
+                },
+                {
+                  "@type": "Offer",
+                  itemOffered: {
+                    "@type": "Service",
+                    name: "Full-Day Workshop",
+                  },
+                },
+              ],
+            },
+          })}
+        </script>
       </Head>
       <style>{`
         @keyframes fadeUp {

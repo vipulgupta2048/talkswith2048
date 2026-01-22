@@ -259,6 +259,9 @@ const config = {
               "/Projects": 0.6,
               "/Communities": 0.6,
 
+              // Professional services - highest priority (paid offerings)
+              "/ai-workshop": 0.95,
+
               // Professional content - medium-high priority
               "/Talks": 0.9,
               "/Workshops": 0.9,

@@ -4,7 +4,26 @@ title: "Workshops by Vipul Gupta"
 description: "Vipul Gupta (vipulgupta2048) workshops on Git, GitHub, CI, and developer education with hands-on sessions."
 ---
 
-Through my workshops, I strive to not just inform but to connect, making each concept relatable and each session memorable. I still have a lot to learn, and you can find me collecting feedback from the audience after the talk. I intend to bring my unqiue brand of firestarter into each session I execute. No repeats, no boring monologue, and if I can help it - then a good story. Served on a stage near you. 
+Through my workshops, I strive to not just inform but to connect, making each concept relatable and each session memorable. I still have a lot to learn, and you can find me collecting feedback from the audience after the talk. I intend to bring my unqiue brand of firestarter into each session I execute. No repeats, no boring monologue, and if I can help it - then a good story. Served on a stage near you.
+
+---
+
+## Book a Paid Workshop for Your Team
+
+**Looking to upskill your engineering team on AI-powered development?**
+
+I offer a comprehensive **[AI-Powered Development & Test Automation Workshop](/ai-workshop)** designed for engineering teams, QA professionals, and technical leadership. This half-day hands-on session covers:
+
+- Production code generation with GitHub Copilot, Claude, and Cursor
+- Self-healing test automation frameworks
+- CI/CD integration with AI tools
+- Adoption strategy and ROI metrics
+
+**[View the full workshop proposal and book a session →](/ai-workshop)**
+
+---
+
+## Past Workshops 
 
 ## 🎓 IIMT University: GDG on Campus Meerut - #GitToGather Event
 

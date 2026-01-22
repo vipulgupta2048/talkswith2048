@@ -5,12 +5,16 @@ description: "Vipul Gupta (vipulgupta2048) talks, workshops, and conferences acr
 
 From local meetups to global conferences, I've aimed to weave technical concepts into unconventional, witty narratives. I believe deeply in the impact of a good story. Through my talks, I strive to not just inform but to connect, making each concept relatable and each session memorable. I still have a lot to learn, and you can find me collecting feedback from the audience after the talk. I intend to bring my unique brand of fun into each session I propose. No repeats, no boring monologue, if I can help it - Just a good, fun story. Served on a stage near you. Next time, please pull me in for feedback that you can provide.
 
-## Stats 
+## Stats
 
 - **Years of Experience:** 8+ years since 2017
-- **Total Sessions:** 100+ online/offline 
+- **Total Sessions:** 100+ online/offline
 - **Audience Reach:** 100,000+ senior engineers, early-career devs, and engineering students.
 - **Geographic Reach:** 15+ countries, US, Canada, Japan, India, Spain, China, and more.
+
+:::tip Looking for hands-on training for your team?
+I offer a **[paid AI-Powered Development Workshop](/ai-workshop)** for engineering teams looking to upskill on AI-assisted coding and test automation. [Learn more →](/ai-workshop)
+:::
 
 <details>
   <summary>2025</summary>
