@@ -1275,7 +1275,7 @@ export default function AIWorkshop() {
 
           <div className="cover-footer">
             <img
-              src="https://avatars0.githubusercontent.com/u/22801822"
+              src="/img/avatar.webp"
               alt="Vipul Gupta"
               className="instructor-avatar"
             />
@@ -1308,7 +1308,7 @@ export default function AIWorkshop() {
           <div className="instructor-card">
             <div className="instructor-photo-section">
               <img
-                src="https://avatars0.githubusercontent.com/u/22801822"
+                src="/img/avatar.webp"
                 alt="Vipul Gupta"
                 className="instructor-photo"
               />
