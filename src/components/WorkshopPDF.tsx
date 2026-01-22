@@ -1019,7 +1019,7 @@ const WorkshopPDF = () => (
       </View>
     </Page>
 
-    {/* Page 3: Agenda Part 1 */}
+    {/* Page 3: Agenda Part 1 - Content from workshopData.ts */}
     <Page size="A4" style={[styles.page, styles.contentPage]}>
       <Text style={styles.pageLabel}>Workshop Agenda</Text>
       <Text style={styles.pageTitle}>Session Overview</Text>
@@ -1028,168 +1028,121 @@ const WorkshopPDF = () => (
         includes working code you take home.
       </Text>
 
-      <View style={styles.sessionCard}>
-        <View style={styles.sessionHeader}>
-          <View style={styles.sessionTopBar}>
-            <Text style={styles.sessionNumber}>Session 1 - 45 min</Text>
-            <Text style={[styles.badge, styles.badgeDemo]}>Live Demo</Text>
+      {sessions.slice(0, 2).map((session) => (
+        <View key={session.number} style={styles.sessionCard}>
+          <View style={styles.sessionHeader}>
+            <View style={styles.sessionTopBar}>
+              <Text style={styles.sessionNumber}>
+                Session {session.number} - {session.duration}
+              </Text>
+              {session.badges.map((badge, i) => (
+                <Text
+                  key={i}
+                  style={[
+                    styles.badge,
+                    badge.variant === "demo" && styles.badgeDemo,
+                    badge.variant === "labs" && styles.badgeLabs,
+                    badge.variant === "qa" && styles.badgeQA,
+                  ]}
+                >
+                  {badge.text}
+                </Text>
+              ))}
+            </View>
+            <Text style={styles.sessionTitle}>{session.title}</Text>
+            <Text style={styles.sessionType}>{session.type}</Text>
           </View>
-          <Text style={styles.sessionTitle}>AI Coding Landscape</Text>
-          <Text style={styles.sessionType}>Interactive Discussion + Demonstrations</Text>
-        </View>
-        <View style={styles.sessionBody}>
-          <Text style={styles.sessionIntro}>
-            Understand where AI coding tools actually are today. Benchmark your team's
-            readiness and identify quick wins.
-          </Text>
-          <Text style={styles.sectionLabel}>We'll Cover</Text>
-          <View style={styles.topicsGrid}>
-            <Text style={styles.topicItem}>Current state of AI coding assistants</Text>
-            <Text style={styles.topicItem}>SWE-bench scores & what they mean</Text>
-            <Text style={styles.topicItem}>GitHub Copilot vs Claude vs Cursor</Text>
-            <Text style={styles.topicItem}>When to use each tool</Text>
-            <Text style={styles.topicItem}>Team readiness assessment</Text>
-            <Text style={styles.topicItem}>ROI baseline metrics</Text>
-          </View>
-          <View style={styles.deliverablesRow}>
-            <Text style={styles.deliverableChip}>Team assessment report</Text>
-            <Text style={styles.deliverableChip}>Baseline metrics dashboard</Text>
-            <Text style={styles.deliverableChip}>Tool comparison matrix</Text>
-          </View>
-        </View>
-      </View>
-
-      <View style={styles.sessionCard}>
-        <View style={styles.sessionHeader}>
-          <View style={styles.sessionTopBar}>
-            <Text style={styles.sessionNumber}>Session 2 - 75 min</Text>
-            <Text style={[styles.badge, styles.badgeLabs]}>3 Labs</Text>
-            <Text style={[styles.badge, styles.badgeDemo]}>Live Coding</Text>
-          </View>
-          <Text style={styles.sessionTitle}>Hands-On Code Generation</Text>
-          <Text style={styles.sessionType}>Live Coding + Pair Programming</Text>
-        </View>
-        <View style={styles.sessionBody}>
-          <Text style={styles.sessionIntro}>
-            This is where you write code. Watch a complete feature built live, then
-            build one yourself with AI assistance.
-          </Text>
-          <Text style={styles.sectionLabel}>Fundamentals First</Text>
-          <View style={styles.topicsGrid}>
-            <Text style={styles.topicItem}>Prompt engineering basics</Text>
-            <Text style={styles.topicItem}>Context window management</Text>
-            <Text style={styles.topicItem}>Multi-step problem decomposition</Text>
-            <Text style={styles.topicItem}>Iterative refinement patterns</Text>
-            <Text style={styles.topicItem}>AI pair programming workflows</Text>
-            <Text style={styles.topicItem}>When AI helps vs. hurts</Text>
-          </View>
-          <View style={styles.deliverablesRow}>
-            <Text style={styles.deliverableChip}>Working REST API you built</Text>
-            <Text style={styles.deliverableChip}>20+ prompt patterns playbook</Text>
+          <View style={styles.sessionBody}>
+            <Text style={styles.sessionIntro}>{session.intro}</Text>
+            <Text style={styles.sectionLabel}>{session.sectionLabel}</Text>
+            <View style={styles.topicsGrid}>
+              {session.topics.map((topic, i) => (
+                <Text key={i} style={styles.topicItem}>{topic.text}</Text>
+              ))}
+            </View>
+            <View style={styles.deliverablesRow}>
+              {session.deliverables.map((d, i) => (
+                <Text key={i} style={styles.deliverableChip}>{d.text}</Text>
+              ))}
+            </View>
           </View>
         </View>
-      </View>
+      ))}
 
       <View style={styles.pageFooter}>
-        <Text>AI Workshop Proposal - Vipul Gupta</Text>
+        <Text>AI Workshop Proposal - {instructor.name}</Text>
         <Text>Page 2</Text>
       </View>
     </Page>
 
-    {/* Page 4: Agenda Part 2 */}
+    {/* Page 4: Agenda Part 2 - Content from workshopData.ts */}
     <Page size="A4" style={[styles.page, styles.contentPage]}>
-      <View style={styles.sessionCard}>
-        <View style={styles.sessionHeader}>
-          <View style={styles.sessionTopBar}>
-            <Text style={styles.sessionNumber}>Session 3 - 90 min</Text>
-            <Text style={[styles.badge, styles.badgeLabs]}>3 Labs</Text>
-            <Text style={[styles.badge, styles.badgeDemo]}>Framework Build</Text>
+      {sessions.slice(2, 4).map((session) => (
+        <View key={session.number} style={styles.sessionCard}>
+          <View style={styles.sessionHeader}>
+            <View style={styles.sessionTopBar}>
+              <Text style={styles.sessionNumber}>
+                Session {session.number} - {session.duration}
+              </Text>
+              {session.badges.map((badge, i) => (
+                <Text
+                  key={i}
+                  style={[
+                    styles.badge,
+                    badge.variant === "demo" && styles.badgeDemo,
+                    badge.variant === "labs" && styles.badgeLabs,
+                    badge.variant === "qa" && styles.badgeQA,
+                  ]}
+                >
+                  {badge.text}
+                </Text>
+              ))}
+            </View>
+            <Text style={styles.sessionTitle}>{session.title}</Text>
+            <Text style={styles.sessionType}>{session.type}</Text>
           </View>
-          <Text style={styles.sessionTitle}>AI-Powered Test Automation</Text>
-          <Text style={styles.sessionType}>Framework Building + Live Testing</Text>
-        </View>
-        <View style={styles.sessionBody}>
-          <Text style={styles.sessionIntro}>
-            Build test frameworks that don't break when your UI changes. Especially
-            valuable for teams drowning in flaky tests.
-          </Text>
-          <Text style={styles.sectionLabel}>Fundamentals First</Text>
-          <View style={styles.topicsGrid}>
-            <Text style={styles.topicItem}>Self-healing test architecture</Text>
-            <Text style={styles.topicItem}>Semantic vs brittle selectors</Text>
-            <Text style={styles.topicItem}>AI-powered element location</Text>
-            <Text style={styles.topicItem}>Test data generation</Text>
-            <Text style={styles.topicItem}>Flaky test detection patterns</Text>
-            <Text style={styles.topicItem}>CI/CD integration strategies</Text>
-          </View>
-          <Text style={styles.sectionLabel}>Live Demo</Text>
-          <View style={styles.demoItem}>
-            <Text>
-              <Text style={styles.bold}>Self-Healing Tests:</Text> Watch AI-powered tests
-              automatically adapt when UI selectors change.
-            </Text>
-          </View>
-          <View style={styles.demoItem}>
-            <Text>
-              <Text style={styles.bold}>Requirement to Test Suite:</Text> Transform a user
-              story into complete Playwright tests with edge cases.
-            </Text>
-          </View>
-          <View style={styles.deliverablesRow}>
-            <Text style={styles.deliverableChip}>Self-healing test framework</Text>
-            <Text style={styles.deliverableChip}>CI/CD pipeline config</Text>
-            <Text style={styles.deliverableChip}>Flaky test strategy</Text>
-          </View>
-        </View>
-      </View>
-
-      <View style={styles.sessionCard}>
-        <View style={styles.sessionHeader}>
-          <View style={styles.sessionTopBar}>
-            <Text style={styles.sessionNumber}>Session 4 - 30 min</Text>
-            <Text style={[styles.badge, styles.badgeQA]}>Q&A</Text>
-          </View>
-          <Text style={styles.sessionTitle}>Implementation Strategy</Text>
-          <Text style={styles.sessionType}>Planning + Discussion</Text>
-        </View>
-        <View style={styles.sessionBody}>
-          <Text style={styles.sessionIntro}>
-            Turn what you learned into an action plan. Build a realistic adoption
-            roadmap for your specific team.
-          </Text>
-          <Text style={styles.sectionLabel}>We'll Cover</Text>
-          <View style={styles.topicsGrid}>
-            <Text style={styles.topicItem}>Phased rollout strategy</Text>
-            <Text style={styles.topicItem}>Week 1 pilot program</Text>
-            <Text style={styles.topicItem}>Month 1 team adoption</Text>
-            <Text style={styles.topicItem}>Tool selection criteria</Text>
-            <Text style={styles.topicItem}>Governance & guardrails</Text>
-            <Text style={styles.topicItem}>Measuring success</Text>
-          </View>
-          <View style={styles.deliverablesRow}>
-            <Text style={styles.deliverableChip}>90-day adoption roadmap</Text>
-            <Text style={styles.deliverableChip}>Governance policy template</Text>
-            <Text style={styles.deliverableChip}>ROI metrics dashboard</Text>
+          <View style={styles.sessionBody}>
+            <Text style={styles.sessionIntro}>{session.intro}</Text>
+            <Text style={styles.sectionLabel}>{session.sectionLabel}</Text>
+            <View style={styles.topicsGrid}>
+              {session.topics.map((topic, i) => (
+                <Text key={i} style={styles.topicItem}>{topic.text}</Text>
+              ))}
+            </View>
+            {session.demos && (
+              <>
+                <Text style={styles.sectionLabel}>Live Demo</Text>
+                {session.demos.map((demo, i) => (
+                  <View key={i} style={styles.demoItem}>
+                    <Text>
+                      <Text style={styles.bold}>{demo.title}:</Text> {demo.description}
+                    </Text>
+                  </View>
+                ))}
+              </>
+            )}
+            <View style={styles.deliverablesRow}>
+              {session.deliverables.map((d, i) => (
+                <Text key={i} style={styles.deliverableChip}>{d.text}</Text>
+              ))}
+            </View>
           </View>
         </View>
-      </View>
+      ))}
 
       <View style={styles.testimonial}>
-        <Text style={styles.testimonialQuote}>
-          "HUGE gratitude to Vipul for being the most supportive and incredible mentor.
-          An amazing GitHub Copilot talk from beginner to advanced level."
-        </Text>
-        <Text style={styles.testimonialAuthor}>Nitya Pandey</Text>
-        <Text style={styles.testimonialRole}>GitHub Campus Expert - Engineering @ Soti</Text>
+        <Text style={styles.testimonialQuote}>"{testimonials[1].quote}"</Text>
+        <Text style={styles.testimonialAuthor}>{testimonials[1].author}</Text>
+        <Text style={styles.testimonialRole}>{testimonials[1].role}</Text>
       </View>
 
       <View style={styles.pageFooter}>
-        <Text>AI Workshop Proposal - Vipul Gupta</Text>
+        <Text>AI Workshop Proposal - {instructor.name}</Text>
         <Text>Page 3</Text>
       </View>
     </Page>
 
-    {/* Page 5: Deliverables + Premium */}
+    {/* Page 5: Deliverables + Premium - Content from workshopData.ts */}
     <Page size="A4" style={[styles.page, styles.contentPage]}>
       <Text style={styles.pageLabel}>What You Get</Text>
       <Text style={styles.pageTitle}>Workshop Deliverables</Text>
@@ -1201,80 +1154,41 @@ const WorkshopPDF = () => (
       <Text style={styles.tierLabel}>Included in Workshop</Text>
 
       <View style={styles.deliverablesGrid}>
-        <View style={styles.deliverableCard}>
-          <Text style={styles.deliverableTitle}>Code & Templates</Text>
-          <View style={styles.deliverableList}>
-            <Text style={styles.deliverableListItem}>* Complete GitHub repo with workshop code</Text>
-            <Text style={styles.deliverableListItem}>* Production-ready templates</Text>
-            <Text style={styles.deliverableListItem}>* CI/CD pipeline configurations</Text>
-            <Text style={styles.deliverableListItem}>* Self-healing test framework starter</Text>
+        {deliverables.map((item, i) => (
+          <View key={i} style={styles.deliverableCard}>
+            <Text style={styles.deliverableTitle}>{item.title}</Text>
+            <View style={styles.deliverableList}>
+              {item.items.map((li, j) => (
+                <Text key={j} style={styles.deliverableListItem}>* {li}</Text>
+              ))}
+            </View>
           </View>
-        </View>
-        <View style={styles.deliverableCard}>
-          <Text style={styles.deliverableTitle}>Documentation</Text>
-          <View style={styles.deliverableList}>
-            <Text style={styles.deliverableListItem}>* Workshop slide deck (PDF)</Text>
-            <Text style={styles.deliverableListItem}>* Prompt engineering cheat sheets</Text>
-            <Text style={styles.deliverableListItem}>* Quick reference guides per tool</Text>
-            <Text style={styles.deliverableListItem}>* Best practices playbook</Text>
-          </View>
-        </View>
-        <View style={styles.deliverableCard}>
-          <Text style={styles.deliverableTitle}>Setup Guides</Text>
-          <View style={styles.deliverableList}>
-            <Text style={styles.deliverableListItem}>* Step-by-step tool installation</Text>
-            <Text style={styles.deliverableListItem}>* IDE integration tutorials</Text>
-            <Text style={styles.deliverableListItem}>* Configuration examples</Text>
-            <Text style={styles.deliverableListItem}>* Troubleshooting guide</Text>
-          </View>
-        </View>
-        <View style={styles.deliverableCard}>
-          <Text style={styles.deliverableTitle}>Planning Tools</Text>
-          <View style={styles.deliverableList}>
-            <Text style={styles.deliverableListItem}>* ROI calculator spreadsheet</Text>
-            <Text style={styles.deliverableListItem}>* Adoption roadmap templates</Text>
-            <Text style={styles.deliverableListItem}>* Governance guidelines</Text>
-            <Text style={styles.deliverableListItem}>* Metrics dashboard templates</Text>
-          </View>
-        </View>
+        ))}
       </View>
 
       <View style={styles.supportHighlight}>
         <View style={styles.supportHeader}>
-          <Text style={styles.supportIcon}>🤝</Text>
+          <Text style={styles.supportIcon}>{postWorkshopSupport.icon}</Text>
           <View>
             <Text style={styles.supportTitle}>
-              Post-Workshop Support <Text style={styles.freeBadge}>Included Free</Text>
+              {postWorkshopSupport.title}{" "}
+              <Text style={styles.freeBadge}>{postWorkshopSupport.badge}</Text>
             </Text>
-            <Text style={styles.supportSubtitle}>The learning doesn't stop when the workshop ends</Text>
+            <Text style={styles.supportSubtitle}>{postWorkshopSupport.subtitle}</Text>
           </View>
         </View>
         <View style={styles.supportItems}>
-          <View style={styles.supportItem}>
-            <Text style={styles.checkIcon}>✓</Text>
-            <View>
-              <Text style={styles.supportItemTitle}>1 Follow-Up Call (30 min)</Text>
-              <Text style={styles.supportItemDesc}>Troubleshoot blockers, review capstone progress</Text>
+          {postWorkshopSupport.items.map((item, i) => (
+            <View key={i} style={styles.supportItem}>
+              <Text style={styles.checkIcon}>✓</Text>
+              <View>
+                <Text style={styles.supportItemTitle}>{item.title}</Text>
+                <Text style={styles.supportItemDesc}>{item.description}</Text>
+              </View>
             </View>
-          </View>
-          <View style={styles.supportItem}>
-            <Text style={styles.checkIcon}>✓</Text>
-            <View>
-              <Text style={styles.supportItemTitle}>7-Day Email Support</Text>
-              <Text style={styles.supportItemDesc}>Quick questions answered within 24 hours</Text>
-            </View>
-          </View>
-          <View style={styles.supportItem}>
-            <Text style={styles.checkIcon}>✓</Text>
-            <View>
-              <Text style={styles.supportItemTitle}>Session Q&A Documentation</Text>
-              <Text style={styles.supportItemDesc}>All questions from your workshop, documented</Text>
-            </View>
-          </View>
+          ))}
         </View>
-        <Text style={styles.supportUpgrade}>
-          Need more? Upgrade to Extended Support for 30-day access and weekly office hours.
-        </Text>
+        <Text style={styles.supportUpgrade}>{postWorkshopSupport.upgradeText}</Text>
       </View>
 
       <View style={styles.premiumSection}>
@@ -1288,35 +1202,17 @@ const WorkshopPDF = () => (
           <Text style={styles.premiumBadge}>Optional</Text>
         </View>
         <View style={styles.premiumGrid}>
-          <View style={styles.premiumCard}>
-            <Text style={styles.premiumCardTitle}>Recorded Workshop + Videos</Text>
-            <Text style={styles.premiumCardDesc}>
-              Full recording with timestamps, live coding sessions, bonus tool comparison series.
-            </Text>
-          </View>
-          <View style={styles.premiumCard}>
-            <Text style={styles.premiumCardTitle}>Extended Support</Text>
-            <Text style={styles.premiumCardDesc}>
-              30-day Slack/email support, 4 weekly office hours, private Discord, quarterly check-in.
-            </Text>
-          </View>
-          <View style={styles.premiumCard}>
-            <Text style={styles.premiumCardTitle}>Testing Feedback Loop</Text>
-            <Text style={styles.premiumCardDesc}>
-              Design and implement AI-powered testing feedback loops for your codebase and CI/CD.
-            </Text>
-          </View>
-          <View style={styles.premiumCard}>
-            <Text style={styles.premiumCardTitle}>Custom Claude Bot</Text>
-            <Text style={styles.premiumCardDesc}>
-              Deploy Claude Slack/Teams bot with custom prompts, codebase context, and team workflows.
-            </Text>
-          </View>
+          {premiumAddons.slice(0, 4).map((addon, i) => (
+            <View key={i} style={styles.premiumCard}>
+              <Text style={styles.premiumCardTitle}>{addon.title}</Text>
+              <Text style={styles.premiumCardDesc}>{addon.description}</Text>
+            </View>
+          ))}
         </View>
       </View>
 
       <View style={styles.pageFooter}>
-        <Text>AI Workshop Proposal - Vipul Gupta</Text>
+        <Text>AI Workshop Proposal - {instructor.name}</Text>
         <Text>Page 4</Text>
       </View>
     </Page>
@@ -1332,85 +1228,48 @@ const WorkshopPDF = () => (
           </Text>
         </View>
         <View style={styles.roiGrid}>
-          <View style={styles.roiCard}>
-            <Text style={styles.roiValue}>40%</Text>
-            <Text style={styles.roiLabel}>Faster Development</Text>
-            <Text style={styles.roiDesc}>Feature request to production-ready code</Text>
-          </View>
-          <View style={styles.roiCard}>
-            <Text style={styles.roiValue}>55%</Text>
-            <Text style={styles.roiLabel}>Faster Reviews</Text>
-            <Text style={styles.roiDesc}>Code review cycles with AI-assisted checks</Text>
-          </View>
-          <View style={styles.roiCard}>
-            <Text style={styles.roiValue}>3-5x</Text>
-            <Text style={styles.roiLabel}>Test Coverage</Text>
-            <Text style={styles.roiDesc}>Automated test scenarios per sprint</Text>
-          </View>
-          <View style={styles.roiCard}>
-            <Text style={styles.roiValue}>35%</Text>
-            <Text style={styles.roiLabel}>Fewer Bugs</Text>
-            <Text style={styles.roiDesc}>Reduction in production incidents</Text>
-          </View>
-          <View style={styles.roiCard}>
-            <Text style={styles.roiValue}>80%</Text>
-            <Text style={styles.roiLabel}>Tool Adoption</Text>
-            <Text style={styles.roiDesc}>Engineers using AI tools daily at 90 days</Text>
-          </View>
-          <View style={styles.roiCard}>
-            <Text style={styles.roiValue}>$38K</Text>
-            <Text style={styles.roiLabel}>Annual Savings</Text>
-            <Text style={styles.roiDesc}>Varies by team size (10-50 engineers)</Text>
-          </View>
+          {roiMetrics.map((metric, i) => (
+            <View key={i} style={styles.roiCard}>
+              <Text style={styles.roiValue}>{metric.value}</Text>
+              <Text style={styles.roiLabel}>{metric.label}</Text>
+              <Text style={styles.roiDesc}>{metric.description}</Text>
+            </View>
+          ))}
         </View>
       </View>
 
       <View style={styles.ctaSection}>
         <View style={styles.ctaHeader}>
-          <Text style={styles.ctaTitle}>Let's Talk</Text>
-          <Text style={styles.ctaSubtitle}>
-            Send your team size, tech stack, and challenges. I'll respond with a customized plan.
-          </Text>
+          <Text style={styles.ctaTitle}>{ctaContent.title}</Text>
+          <Text style={styles.ctaSubtitle}>{ctaContent.subtitle}</Text>
         </View>
 
         <View style={styles.contactGrid}>
-          <View style={styles.contactCard}>
-            <Text style={styles.contactTitle}>Email</Text>
-            <Link style={styles.contactLink} src="mailto:vipulgupta2048@gmail.com">
-              vipulgupta2048@gmail.com
-            </Link>
-            <Text style={styles.contactDesc}>
-              Share requirements. Customized proposal within 24 hours.
-            </Text>
-          </View>
-          <View style={styles.contactCard}>
-            <Text style={styles.contactTitle}>Schedule a Call</Text>
-            <Link style={styles.contactLink} src="https://cal.com/vipulgupta2048">
-              cal.com/vipulgupta2048
-            </Link>
-            <Text style={styles.contactDesc}>
-              30-minute discovery call to discuss objectives and format.
-            </Text>
-          </View>
+          {ctaContent.contacts.map((contact, i) => (
+            <View key={i} style={styles.contactCard}>
+              <Text style={styles.contactTitle}>{contact.title}</Text>
+              <Link style={styles.contactLink} src={contact.link}>
+                {contact.linkText}
+              </Link>
+              <Text style={styles.contactDesc}>{contact.description}</Text>
+            </View>
+          ))}
         </View>
 
         <View style={styles.ctaFooter}>
-          <Text style={styles.ctaFooterText}>
-            Customization: Adapts to your tech stack (Python, JS/TS, Java, Go, Rust, C#),
-            industry, team size, and AI maturity. Full-day and multi-day formats available.
-          </Text>
+          <Text style={styles.ctaFooterText}>{ctaContent.footer}</Text>
           <View style={styles.ctaLinks}>
-            <Link style={styles.ctaLink} src="https://mixster.dev">Blog</Link>
-            <Link style={styles.ctaLink} src="https://linkedin.com/in/vipulgupta2048">LinkedIn</Link>
-            <Link style={styles.ctaLink} src="https://github.com/vipulgupta2048">GitHub</Link>
-            <Link style={styles.ctaLink} src="https://docs.mixster.dev/">Open Source</Link>
+            <Link style={styles.ctaLink} src={siteConfig.socialLinks.blog}>Blog</Link>
+            <Link style={styles.ctaLink} src={siteConfig.socialLinks.linkedin}>LinkedIn</Link>
+            <Link style={styles.ctaLink} src={siteConfig.socialLinks.github}>GitHub</Link>
+            <Link style={styles.ctaLink} src={siteConfig.socialLinks.docs}>Open Source</Link>
           </View>
         </View>
       </View>
 
       <View style={styles.pageFooter}>
-        <Text>AI Workshop Proposal - Vipul Gupta</Text>
-        <Text>2025 Vipul Gupta - Mixster</Text>
+        <Text>AI Workshop Proposal - {instructor.name}</Text>
+        <Text>2025 {instructor.name} - Mixster</Text>
       </View>
     </Page>
   </Document>
