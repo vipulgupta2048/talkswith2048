@@ -10,13 +10,9 @@ export default function AIWorkshop() {
     setIsGenerating(true);
 
     try {
-      // Dynamically load html2pdf.js
-      const html2pdfModule = await import(
-        // @ts-ignore
-        "https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
-      ).catch(() => {
-        // Fallback: load via script tag
-        return new Promise((resolve, reject) => {
+      // Load html2pdf.js via script tag (CDN dynamic imports not supported by Webpack)
+      const loadHtml2Pdf = (): Promise<any> =>
+        new Promise((resolve, reject) => {
           if ((window as any).html2pdf) {
             resolve((window as any).html2pdf);
             return;
@@ -28,8 +24,8 @@ export default function AIWorkshop() {
           script.onerror = reject;
           document.head.appendChild(script);
         });
-      });
 
+      await loadHtml2Pdf();
       const html2pdf = (window as any).html2pdf;
       const element = document.querySelector(".workshop-page");
 
@@ -2013,10 +2009,10 @@ export default function AIWorkshop() {
                 for comprehensive implementation.
               </p>
               <div className="cta-links">
-                <a href="https://mixster.dev">mixster.dev</a>
+                <a href="https://mixster.dev">Blog</a>
                 <a href="https://linkedin.com/in/vipulgupta2048">LinkedIn</a>
                 <a href="https://github.com/vipulgupta2048">GitHub</a>
-                <a href="https://talkswith.dev">talkswith.dev</a>
+                <a href="https://docs.mixster.dev/">Open Source journey</a>
               </div>
             </div>
           </div>

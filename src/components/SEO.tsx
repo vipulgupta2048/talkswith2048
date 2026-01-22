@@ -31,7 +31,7 @@ export default memo(function SEO({
     image: image || `${siteConfig.url}/img/og-image.webp`,
     url:
       `${siteConfig.url}${siteConfig.baseUrl}${pathname}`
-        .replace(/\/+/g, "/")
+        .replace(/([^:])\/+/g, "$1/")
         .replace(/\/$/, "") || siteConfig.url,
     keywords: [...keywords].join(", "),
   };
@@ -48,6 +48,7 @@ export default memo(function SEO({
       <link rel="canonical" href={seo.url} />
 
       {/* Open Graph / Facebook */}
+      <meta property="og:site_name" content={siteConfig.title} />
       <meta property="og:type" content={type} />
       <meta property="og:url" content={seo.url} />
       <meta property="og:title" content={seo.title} />
