@@ -70,6 +70,7 @@ export default function AIWorkshop() {
         title="AI-Powered Development & Test Automation Workshop"
         description="Half-day hands-on workshop teaching teams AI-assisted coding, self-healing test automation, and CI/CD integration. Led by Vipul Gupta, GitHub Star 2025 with 10 years of open source experience. Live coding, practical labs, and take-home frameworks."
         pathname="ai-workshop"
+        image={`${siteUrl}/img/og-image.webp`}
         type="website"
         keywords={[
           "AI workshop",

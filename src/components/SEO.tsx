@@ -28,7 +28,7 @@ export default memo(function SEO({
   const seo = {
     title: title ? `${title} | ${siteConfig.title}` : siteConfig.title,
     description: description || siteConfig.tagline,
-    image: image || `${siteConfig.url}/img/avatar.webp`,
+    image: image || `${siteConfig.url}/img/og-image.webp`,
     url:
       `${siteConfig.url}${siteConfig.baseUrl}${pathname}`
         .replace(/\/+/g, "/")
