@@ -232,6 +232,10 @@ export default function AIWorkshop() {
             line-height: 1.5;
         }
 
+        .workshop-page .instructor-preview-info .credential-pills {
+            margin-top: 12px;
+        }
+
         .workshop-page .credential-pills {
             display: flex;
             gap: 8px;
@@ -1187,11 +1191,11 @@ export default function AIWorkshop() {
                 AI Engineer building production agents. Previously shipped
                 systems at Balena that saved $250K+ annually.
               </p>
-            </div>
-            <div className="credential-pills">
-              <span className="pill highlight">GitHub Star 2025</span>
-              <span className="pill">Google Cloud Architect</span>
-              <span className="pill">9 Years OSS</span>
+              <div className="credential-pills">
+                <span className="pill highlight">GitHub Star 2025</span>
+                <span className="pill">Google Cloud Architect</span>
+                <span className="pill">10 Years OSS</span>
+              </div>
             </div>
           </div>
         </div>
