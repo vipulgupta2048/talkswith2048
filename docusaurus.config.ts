@@ -174,6 +174,21 @@ const config = {
 
   plugins: [
     ["docusaurus-plugin-sass", {}],
+    // Client-side redirects for trailing slashes (SEO best practice)
+    // Since trailingSlash: false, redirect /path/ → /path for all pages
+    [
+      "@docusaurus/plugin-client-redirects",
+      {
+        createRedirects(existingPath: string) {
+          // For every page without trailing slash, create redirect from trailing slash version
+          // e.g., /ai-workshop exists → redirect /ai-workshop/ to /ai-workshop
+          if (existingPath !== "/" && !existingPath.endsWith("/")) {
+            return [`${existingPath}/`];
+          }
+          return undefined;
+        },
+      },
+    ],
     // Ideal Image Plugin for automatic image optimization
     [
       "@docusaurus/plugin-ideal-image",
