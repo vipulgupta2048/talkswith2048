@@ -32,11 +32,13 @@
     "@mdx-js/react": "^3.1.1",
     "clsx": "^2.1.1",
     "docusaurus-plugin-sass": "^0.2.6",
-    "react-split-flap": "^0.1.7",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^4.0.0",
     "prism-react-renderer": "^2.4.1",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-fast-marquee": "^1.6.5",
+    "react-split-flap": "^0.1.7",
     "sass": "^1.94.2"
   },
   "devDependencies": {
