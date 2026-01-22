@@ -1,63 +1,14 @@
-import React, { useState, useCallback } from "react";
+import React, { useCallback } from "react";
 import Head from "@docusaurus/Head";
 import SEO from "../components/SEO";
 
 export default function AIWorkshop() {
   const siteUrl = "https://docs.mixster.dev";
-  const [isGenerating, setIsGenerating] = useState(false);
 
-  const handleDownloadPDF = useCallback(async () => {
-    setIsGenerating(true);
-
-    try {
-      // Load html2pdf.js via script tag (CDN dynamic imports not supported by Webpack)
-      const loadHtml2Pdf = (): Promise<any> =>
-        new Promise((resolve, reject) => {
-          if ((window as any).html2pdf) {
-            resolve((window as any).html2pdf);
-            return;
-          }
-          const script = document.createElement("script");
-          script.src =
-            "https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js";
-          script.onload = () => resolve((window as any).html2pdf);
-          script.onerror = reject;
-          document.head.appendChild(script);
-        });
-
-      await loadHtml2Pdf();
-      const html2pdf = (window as any).html2pdf;
-      const element = document.querySelector(".workshop-page");
-
-      if (!element || !html2pdf) {
-        throw new Error("Could not initialize PDF generator");
-      }
-
-      const opt = {
-        margin: 0,
-        filename: "AI-Workshop-Proposal-Vipul-Gupta.pdf",
-        image: { type: "jpeg", quality: 0.98 },
-        html2canvas: {
-          scale: 2,
-          useCORS: true,
-          letterRendering: true,
-        },
-        jsPDF: {
-          unit: "mm",
-          format: "a4",
-          orientation: "portrait",
-        },
-        pagebreak: { mode: ["css", "legacy"], before: ".page" },
-      };
-
-      await html2pdf().set(opt).from(element).save();
-    } catch (error) {
-      console.error("PDF generation failed:", error);
-      // Fallback to print dialog
-      window.print();
-    } finally {
-      setIsGenerating(false);
-    }
+  const handleDownloadPDF = useCallback(() => {
+    // Use browser's native print-to-PDF for best quality and proper page breaks
+    // The print CSS ensures each .page section fits exactly one A4 page
+    window.print();
   }, []);
 
   return (
@@ -1273,36 +1224,76 @@ export default function AIWorkshop() {
             transform: translateY(0);
         }
 
-        .workshop-page .download-btn:disabled {
-            opacity: 0.7;
-            cursor: not-allowed;
-            transform: none;
-        }
-
         .workshop-page .download-btn svg {
             width: 18px;
             height: 18px;
             fill: currentColor;
         }
 
-        .workshop-page .download-btn .spinner {
-            width: 18px;
-            height: 18px;
-            border: 2px solid rgba(255,255,255,0.3);
-            border-top-color: white;
-            border-radius: 50%;
-            animation: spin 0.8s linear infinite;
-        }
-
-        @keyframes spin {
-            to { transform: rotate(360deg); }
-        }
-
         @media print {
-            .workshop-page { background: white; }
-            .workshop-page .page { margin: 0; box-shadow: none; page-break-after: always; }
-            .workshop-page .download-btn { display: none; }
-            @page { margin: 0; }
+            /* Reset everything for print */
+            * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+
+            html, body {
+                margin: 0 !important;
+                padding: 0 !important;
+                background: white !important;
+            }
+
+            /* Hide Docusaurus chrome */
+            nav, .navbar, .footer, .theme-doc-sidebar-container,
+            [class*="docSidebar"], [class*="navbar"], [class*="footer"],
+            .pagination-nav, .theme-doc-footer {
+                display: none !important;
+            }
+
+            .workshop-page {
+                background: white !important;
+                padding: 0 !important;
+                margin: 0 !important;
+            }
+
+            .workshop-page .page {
+                width: 210mm !important;
+                height: 297mm !important;
+                min-height: 297mm !important;
+                max-height: 297mm !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                box-shadow: none !important;
+                page-break-after: always !important;
+                page-break-inside: avoid !important;
+                overflow: hidden !important;
+                position: relative !important;
+            }
+
+            .workshop-page .page:last-child {
+                page-break-after: auto !important;
+            }
+
+            /* Ensure cover page prints correctly */
+            .workshop-page .cover {
+                height: 297mm !important;
+            }
+
+            /* Ensure content pages fit */
+            .workshop-page .content-page {
+                height: 297mm !important;
+                padding: 40px 50px !important;
+            }
+
+            .workshop-page .download-btn { display: none !important; }
+
+            /* Remove animations for print */
+            .workshop-page * {
+                animation: none !important;
+                transition: none !important;
+            }
+
+            @page {
+                size: A4 portrait;
+                margin: 0;
+            }
         }
 
         @media (max-width: 900px) {
@@ -1359,26 +1350,16 @@ export default function AIWorkshop() {
         }
       `}</style>
       <div className="workshop-page">
-        {/* Download PDF Button */}
+        {/* Download PDF Button - uses browser print for best quality */}
         <button
           className="download-btn"
           onClick={handleDownloadPDF}
-          disabled={isGenerating}
-          title="Download proposal as PDF"
+          title="Download proposal as PDF (opens print dialog)"
         >
-          {isGenerating ? (
-            <>
-              <span className="spinner" />
-              Generating...
-            </>
-          ) : (
-            <>
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" />
-              </svg>
-              Download PDF
-            </>
-          )}
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" />
+          </svg>
+          Download PDF
         </button>
 
         {/* Page 1: Cover */}
