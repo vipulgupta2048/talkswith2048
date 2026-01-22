@@ -10,28 +10,38 @@ import {
   Link,
 } from "@react-pdf/renderer";
 
-// Register fonts
+/**
+ * Font Registration for PDF
+ * Using fontsource CDN for reliable font loading
+ * @see https://react-pdf.org/fonts
+ */
+
+// Disable hyphenation to avoid font issues
+Font.registerHyphenationCallback((word) => [word]);
+
+// Register Helvetica-like system font as fallback (always available)
+// For custom fonts, we use Google Fonts direct TTF links
 Font.register({
   family: "Outfit",
   fonts: [
     {
-      src: "https://fonts.gstatic.com/s/outfit/v11/QGYyz_MVcBeNP4NjuGObqx1XmO1I4TC0C4G-EiAou6Y.ttf",
+      src: "https://cdn.jsdelivr.net/fontsource/fonts/outfit@latest/latin-400-normal.ttf",
       fontWeight: 400,
     },
     {
-      src: "https://fonts.gstatic.com/s/outfit/v11/QGYyz_MVcBeNP4NjuGObqx1XmO1I4W60C4G-EiAou6Y.ttf",
+      src: "https://cdn.jsdelivr.net/fontsource/fonts/outfit@latest/latin-500-normal.ttf",
       fontWeight: 500,
     },
     {
-      src: "https://fonts.gstatic.com/s/outfit/v11/QGYyz_MVcBeNP4NjuGObqx1XmO1I4bKzC4G-EiAou6Y.ttf",
+      src: "https://cdn.jsdelivr.net/fontsource/fonts/outfit@latest/latin-600-normal.ttf",
       fontWeight: 600,
     },
     {
-      src: "https://fonts.gstatic.com/s/outfit/v11/QGYyz_MVcBeNP4NjuGObqx1XmO1I4YuzC4G-EiAou6Y.ttf",
+      src: "https://cdn.jsdelivr.net/fontsource/fonts/outfit@latest/latin-700-normal.ttf",
       fontWeight: 700,
     },
     {
-      src: "https://fonts.gstatic.com/s/outfit/v11/QGYyz_MVcBeNP4NjuGObqx1XmO1I4fCzC4G-EiAou6Y.ttf",
+      src: "https://cdn.jsdelivr.net/fontsource/fonts/outfit@latest/latin-800-normal.ttf",
       fontWeight: 800,
     },
   ],
@@ -41,15 +51,15 @@ Font.register({
   family: "Playfair",
   fonts: [
     {
-      src: "https://fonts.gstatic.com/s/playfairdisplay/v37/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKdFvXDXbtXK-F2qC0s.ttf",
+      src: "https://cdn.jsdelivr.net/fontsource/fonts/playfair-display@latest/latin-400-normal.ttf",
       fontWeight: 400,
     },
     {
-      src: "https://fonts.gstatic.com/s/playfairdisplay/v37/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKdFvULXbtXK-F2qC0s.ttf",
+      src: "https://cdn.jsdelivr.net/fontsource/fonts/playfair-display@latest/latin-500-normal.ttf",
       fontWeight: 500,
     },
     {
-      src: "https://fonts.gstatic.com/s/playfairdisplay/v37/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKdFvUbYbtXK-F2qC0s.ttf",
+      src: "https://cdn.jsdelivr.net/fontsource/fonts/playfair-display@latest/latin-700-normal.ttf",
       fontWeight: 700,
     },
   ],
@@ -57,7 +67,7 @@ Font.register({
 
 Font.register({
   family: "IBMPlexMono",
-  src: "https://fonts.gstatic.com/s/ibmplexmono/v19/-F63fjptAgt5VM-kVkqdyU8n5igg1l9kn-s.ttf",
+  src: "https://cdn.jsdelivr.net/fontsource/fonts/ibm-plex-mono@latest/latin-400-normal.ttf",
 });
 
 const colors = {
@@ -903,7 +913,7 @@ const WorkshopPDF = () => (
       <View style={styles.coverFooter}>
         <Image
           style={styles.avatar}
-          src="https://docs.mixster.dev/img/avatar.webp"
+          src="https://docs.mixster.dev/img/avatar.png"
         />
         <View style={styles.instructorPreview}>
           <Text style={styles.instructorName}>Vipul Gupta</Text>
@@ -932,7 +942,7 @@ const WorkshopPDF = () => (
       <View style={styles.instructorCard}>
         <Image
           style={styles.instructorPhoto}
-          src="https://docs.mixster.dev/img/avatar.webp"
+          src="https://docs.mixster.dev/img/avatar.png"
         />
         <View style={styles.instructorContent}>
           <Text style={styles.instructorName}>Vipul Gupta</Text>
