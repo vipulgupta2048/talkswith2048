@@ -318,6 +318,152 @@ const styles = StyleSheet.create({
     color: colors.slate,
     lineHeight: 1.5,
   },
+  // Capstone Section
+  capstoneSection: {
+    marginTop: 16,
+    padding: 18,
+    backgroundColor: "rgba(59, 130, 246, 0.06)",
+    borderRadius: 10,
+    borderWidth: 1,
+    borderColor: "rgba(59, 130, 246, 0.2)",
+  },
+  capstoneHeader: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 10,
+    marginBottom: 10,
+  },
+  capstoneBadge: {
+    fontFamily: "IBMPlexMono",
+    fontSize: 8,
+    fontWeight: 700,
+    letterSpacing: 0.5,
+    textTransform: "uppercase",
+    padding: "4pt 10pt",
+    backgroundColor: colors.electric,
+    color: colors.white,
+    borderRadius: 4,
+  },
+  capstoneTitle: {
+    fontFamily: "Playfair",
+    fontSize: 16,
+    fontWeight: 500,
+    color: colors.black,
+  },
+  capstoneDesc: {
+    fontSize: 10,
+    color: colors.slate,
+    lineHeight: 1.6,
+    marginBottom: 12,
+  },
+  capstoneExamples: {
+    flexDirection: "row",
+    gap: 10,
+  },
+  capstoneExample: {
+    flex: 1,
+    flexDirection: "row",
+    gap: 8,
+    padding: 12,
+    backgroundColor: colors.white,
+    borderRadius: 6,
+    borderWidth: 1,
+    borderColor: colors.mist,
+  },
+  capstoneIcon: {
+    fontSize: 16,
+  },
+  capstoneExampleText: {
+    flex: 1,
+  },
+  capstoneExampleTitle: {
+    fontSize: 10,
+    fontWeight: 600,
+    color: colors.charcoal,
+    marginBottom: 2,
+  },
+  capstoneExampleDetail: {
+    fontSize: 8,
+    color: colors.ash,
+  },
+  // Support Highlight
+  supportHighlight: {
+    marginTop: 14,
+    padding: 18,
+    backgroundColor: "rgba(16, 185, 129, 0.06)",
+    borderRadius: 10,
+    borderWidth: 1,
+    borderColor: "rgba(16, 185, 129, 0.2)",
+  },
+  supportHeader: {
+    flexDirection: "row",
+    alignItems: "flex-start",
+    gap: 12,
+    marginBottom: 12,
+  },
+  supportIcon: {
+    fontSize: 22,
+  },
+  supportTitle: {
+    fontSize: 14,
+    fontWeight: 700,
+    color: colors.charcoal,
+    marginBottom: 2,
+  },
+  freeBadge: {
+    fontFamily: "IBMPlexMono",
+    fontSize: 7,
+    fontWeight: 700,
+    letterSpacing: 0.3,
+    textTransform: "uppercase",
+    padding: "3pt 8pt",
+    backgroundColor: colors.mint,
+    color: colors.white,
+    borderRadius: 3,
+    marginLeft: 8,
+  },
+  supportSubtitle: {
+    fontSize: 10,
+    color: colors.slate,
+  },
+  supportItems: {
+    gap: 8,
+    marginBottom: 10,
+  },
+  supportItem: {
+    flexDirection: "row",
+    alignItems: "flex-start",
+    gap: 8,
+    padding: 10,
+    backgroundColor: colors.white,
+    borderRadius: 6,
+    borderWidth: 1,
+    borderColor: colors.mist,
+  },
+  checkIcon: {
+    fontSize: 12,
+    fontWeight: 700,
+    color: colors.mint,
+  },
+  supportItemTitle: {
+    fontSize: 10,
+    fontWeight: 600,
+    color: colors.charcoal,
+    marginBottom: 1,
+  },
+  supportItemDesc: {
+    fontSize: 8,
+    color: colors.ash,
+  },
+  supportUpgrade: {
+    fontSize: 9,
+    color: colors.slate,
+    textAlign: "center",
+    paddingTop: 10,
+    borderTopWidth: 1,
+    borderTopColor: colors.fog,
+    borderStyle: "dashed",
+  },
   // Testimonial
   testimonial: {
     padding: "18pt 22pt",
@@ -842,6 +988,33 @@ const WorkshopPDF = () => (
         </View>
       </View>
 
+      <View style={styles.capstoneSection}>
+        <View style={styles.capstoneHeader}>
+          <Text style={styles.capstoneBadge}>Capstone Project</Text>
+          <Text style={styles.capstoneTitle}>Leave With Working Code</Text>
+        </View>
+        <Text style={styles.capstoneDesc}>
+          Every participant completes a hands-on capstone project using their own codebase
+          or a provided sample. You don't just learn concepts - you build something real.
+        </Text>
+        <View style={styles.capstoneExamples}>
+          <View style={styles.capstoneExample}>
+            <Text style={styles.capstoneIcon}>🚀</Text>
+            <View style={styles.capstoneExampleText}>
+              <Text style={styles.capstoneExampleTitle}>Option A: AI feature in YOUR codebase</Text>
+              <Text style={styles.capstoneExampleDetail}>Bring a real task from your backlog</Text>
+            </View>
+          </View>
+          <View style={styles.capstoneExample}>
+            <Text style={styles.capstoneIcon}>🧪</Text>
+            <View style={styles.capstoneExampleText}>
+              <Text style={styles.capstoneExampleTitle}>Option B: Self-healing test suite</Text>
+              <Text style={styles.capstoneExampleDetail}>Convert existing brittle tests to adaptive</Text>
+            </View>
+          </View>
+        </View>
+      </View>
+
       <View style={styles.testimonial}>
         <Text style={styles.testimonialQuote}>
           "Vipul's LLM evals talk was thoughtful, relevant, and deeply technical.
@@ -1076,6 +1249,44 @@ const WorkshopPDF = () => (
             <Text style={styles.deliverableListItem}>* Metrics dashboard templates</Text>
           </View>
         </View>
+      </View>
+
+      <View style={styles.supportHighlight}>
+        <View style={styles.supportHeader}>
+          <Text style={styles.supportIcon}>🤝</Text>
+          <View>
+            <Text style={styles.supportTitle}>
+              Post-Workshop Support <Text style={styles.freeBadge}>Included Free</Text>
+            </Text>
+            <Text style={styles.supportSubtitle}>The learning doesn't stop when the workshop ends</Text>
+          </View>
+        </View>
+        <View style={styles.supportItems}>
+          <View style={styles.supportItem}>
+            <Text style={styles.checkIcon}>✓</Text>
+            <View>
+              <Text style={styles.supportItemTitle}>1 Follow-Up Call (30 min)</Text>
+              <Text style={styles.supportItemDesc}>Troubleshoot blockers, review capstone progress</Text>
+            </View>
+          </View>
+          <View style={styles.supportItem}>
+            <Text style={styles.checkIcon}>✓</Text>
+            <View>
+              <Text style={styles.supportItemTitle}>7-Day Email Support</Text>
+              <Text style={styles.supportItemDesc}>Quick questions answered within 24 hours</Text>
+            </View>
+          </View>
+          <View style={styles.supportItem}>
+            <Text style={styles.checkIcon}>✓</Text>
+            <View>
+              <Text style={styles.supportItemTitle}>Session Q&A Documentation</Text>
+              <Text style={styles.supportItemDesc}>All questions from your workshop, documented</Text>
+            </View>
+          </View>
+        </View>
+        <Text style={styles.supportUpgrade}>
+          Need more? Upgrade to Extended Support for 30-day access and weekly office hours.
+        </Text>
       </View>
 
       <View style={styles.premiumSection}>

@@ -758,6 +758,176 @@ export default function AIWorkshop() {
             border: 2px solid rgba(16, 185, 129, 0.3);
         }
 
+        /* Capstone Section */
+        .workshop-page .capstone-section {
+            margin-top: 24px;
+            padding: 24px 28px;
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.08) 0%, rgba(139, 92, 246, 0.06) 100%);
+            border-radius: 14px;
+            border: 2px solid rgba(59, 130, 246, 0.2);
+            animation: fadeUp 0.6s ease-out 0.3s both;
+        }
+
+        .workshop-page .capstone-header {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 14px;
+        }
+
+        .workshop-page .capstone-badge {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding: 6px 14px;
+            background: linear-gradient(135deg, var(--electric) 0%, var(--violet) 100%);
+            color: var(--white);
+            border-radius: 6px;
+        }
+
+        .workshop-page .capstone-header h3 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 22px;
+            font-weight: 500;
+            color: var(--black);
+            margin: 0;
+        }
+
+        .workshop-page .capstone-description {
+            font-size: 14px;
+            color: var(--slate);
+            line-height: 1.7;
+            margin-bottom: 18px;
+        }
+
+        .workshop-page .capstone-examples {
+            display: flex;
+            gap: 16px;
+        }
+
+        .workshop-page .capstone-example {
+            flex: 1;
+            display: flex;
+            gap: 12px;
+            padding: 16px;
+            background: var(--white);
+            border-radius: 10px;
+            border: 1px solid var(--mist);
+        }
+
+        .workshop-page .capstone-icon {
+            font-size: 24px;
+        }
+
+        .workshop-page .capstone-example strong {
+            display: block;
+            font-size: 13px;
+            color: var(--charcoal);
+            margin-bottom: 4px;
+        }
+
+        .workshop-page .capstone-detail {
+            display: block;
+            font-size: 11px;
+            color: var(--ash);
+        }
+
+        /* Post-Workshop Support Highlight */
+        .workshop-page .support-highlight {
+            margin-top: 20px;
+            padding: 24px 28px;
+            background: linear-gradient(135deg, var(--snow) 0%, rgba(16, 185, 129, 0.06) 100%);
+            border-radius: 14px;
+            border: 2px solid rgba(16, 185, 129, 0.25);
+        }
+
+        .workshop-page .support-highlight-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            margin-bottom: 18px;
+        }
+
+        .workshop-page .support-icon {
+            font-size: 32px;
+        }
+
+        .workshop-page .support-highlight-header h4 {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--charcoal);
+            margin: 0 0 4px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .workshop-page .free-badge {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 9px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            padding: 4px 10px;
+            background: var(--mint);
+            color: var(--white);
+            border-radius: 4px;
+        }
+
+        .workshop-page .support-highlight-header p {
+            font-size: 13px;
+            color: var(--slate);
+            margin: 0;
+        }
+
+        .workshop-page .support-items {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .workshop-page .support-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 14px 16px;
+            background: var(--white);
+            border-radius: 10px;
+            border: 1px solid var(--mist);
+        }
+
+        .workshop-page .check-icon {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--mint);
+            flex-shrink: 0;
+        }
+
+        .workshop-page .support-item strong {
+            display: block;
+            font-size: 13px;
+            color: var(--charcoal);
+            margin-bottom: 2px;
+        }
+
+        .workshop-page .support-item span {
+            display: block;
+            font-size: 11px;
+            color: var(--ash);
+        }
+
+        .workshop-page .support-upgrade {
+            font-size: 12px;
+            color: var(--slate);
+            text-align: center;
+            padding-top: 12px;
+            border-top: 1px dashed var(--fog);
+            margin: 0;
+        }
+
         /* Testimonial */
         .workshop-page .testimonial {
             padding: 28px 32px;
@@ -1544,6 +1714,34 @@ export default function AIWorkshop() {
             </div>
           </div>
 
+          <div className="capstone-section">
+            <div className="capstone-header">
+              <span className="capstone-badge">Capstone Project</span>
+              <h3>Leave With Working Code</h3>
+            </div>
+            <p className="capstone-description">
+              Every participant completes a <strong>hands-on capstone project</strong> using
+              their own codebase or a provided sample. You don't just learn concepts—you
+              build something real that proves immediate ROI to your team.
+            </p>
+            <div className="capstone-examples">
+              <div className="capstone-example">
+                <span className="capstone-icon">🚀</span>
+                <div>
+                  <strong>Option A:</strong> AI-powered feature in YOUR codebase
+                  <span className="capstone-detail">Bring a real task from your backlog</span>
+                </div>
+              </div>
+              <div className="capstone-example">
+                <span className="capstone-icon">🧪</span>
+                <div>
+                  <strong>Option B:</strong> Self-healing test suite for YOUR app
+                  <span className="capstone-detail">Convert existing brittle tests to adaptive ones</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div className="testimonial">
             <p className="testimonial-quote">
               Vipul's LLM evals talk was thoughtful, relevant, and deeply
@@ -1866,6 +2064,42 @@ export default function AIWorkshop() {
                 <li>Metrics dashboard templates</li>
               </ul>
             </div>
+          </div>
+
+          <div className="support-highlight">
+            <div className="support-highlight-header">
+              <div className="support-icon">🤝</div>
+              <div>
+                <h4>Post-Workshop Support <span className="free-badge">Included Free</span></h4>
+                <p>The learning doesn't stop when the workshop ends</p>
+              </div>
+            </div>
+            <div className="support-items">
+              <div className="support-item">
+                <span className="check-icon">✓</span>
+                <div>
+                  <strong>1 Follow-Up Call (30 min)</strong>
+                  <span>Troubleshoot blockers, review your capstone progress</span>
+                </div>
+              </div>
+              <div className="support-item">
+                <span className="check-icon">✓</span>
+                <div>
+                  <strong>7-Day Email Support</strong>
+                  <span>Quick questions answered within 24 hours</span>
+                </div>
+              </div>
+              <div className="support-item">
+                <span className="check-icon">✓</span>
+                <div>
+                  <strong>Session Q&amp;A Documentation</strong>
+                  <span>All questions from your workshop, documented with answers</span>
+                </div>
+              </div>
+            </div>
+            <p className="support-upgrade">
+              Need more? Upgrade to <strong>Extended Support</strong> for 30-day access, weekly office hours, and ongoing guidance.
+            </p>
           </div>
 
           <div className="premium-section">
