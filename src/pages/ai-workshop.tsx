@@ -1,9 +1,68 @@
-import React from "react";
+import React, { useState, useCallback } from "react";
 import Head from "@docusaurus/Head";
 import SEO from "../components/SEO";
 
 export default function AIWorkshop() {
   const siteUrl = "https://docs.mixster.dev";
+  const [isGenerating, setIsGenerating] = useState(false);
+
+  const handleDownloadPDF = useCallback(async () => {
+    setIsGenerating(true);
+
+    try {
+      // Dynamically load html2pdf.js
+      const html2pdfModule = await import(
+        // @ts-ignore
+        "https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+      ).catch(() => {
+        // Fallback: load via script tag
+        return new Promise((resolve, reject) => {
+          if ((window as any).html2pdf) {
+            resolve((window as any).html2pdf);
+            return;
+          }
+          const script = document.createElement("script");
+          script.src =
+            "https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js";
+          script.onload = () => resolve((window as any).html2pdf);
+          script.onerror = reject;
+          document.head.appendChild(script);
+        });
+      });
+
+      const html2pdf = (window as any).html2pdf;
+      const element = document.querySelector(".workshop-page");
+
+      if (!element || !html2pdf) {
+        throw new Error("Could not initialize PDF generator");
+      }
+
+      const opt = {
+        margin: 0,
+        filename: "AI-Workshop-Proposal-Vipul-Gupta.pdf",
+        image: { type: "jpeg", quality: 0.98 },
+        html2canvas: {
+          scale: 2,
+          useCORS: true,
+          letterRendering: true,
+        },
+        jsPDF: {
+          unit: "mm",
+          format: "a4",
+          orientation: "portrait",
+        },
+        pagebreak: { mode: ["css", "legacy"], before: ".page" },
+      };
+
+      await html2pdf().set(opt).from(element).save();
+    } catch (error) {
+      console.error("PDF generation failed:", error);
+      // Fallback to print dialog
+      window.print();
+    } finally {
+      setIsGenerating(false);
+    }
+  }, []);
 
   return (
     <>
@@ -1185,9 +1244,67 @@ export default function AIWorkshop() {
             letter-spacing: 0.5px;
         }
 
+        /* Download Button */
+        .workshop-page .download-btn {
+            position: fixed;
+            top: 80px;
+            right: 24px;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 24px;
+            background: linear-gradient(135deg, var(--electric) 0%, var(--electric-dim) 100%);
+            color: var(--white);
+            border: none;
+            border-radius: 12px;
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+            box-shadow: 0 4px 20px rgba(59, 130, 246, 0.4), 0 2px 8px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+        }
+
+        .workshop-page .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 28px rgba(59, 130, 246, 0.5), 0 4px 12px rgba(0,0,0,0.25);
+        }
+
+        .workshop-page .download-btn:active {
+            transform: translateY(0);
+        }
+
+        .workshop-page .download-btn:disabled {
+            opacity: 0.7;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .workshop-page .download-btn svg {
+            width: 18px;
+            height: 18px;
+            fill: currentColor;
+        }
+
+        .workshop-page .download-btn .spinner {
+            width: 18px;
+            height: 18px;
+            border: 2px solid rgba(255,255,255,0.3);
+            border-top-color: white;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
         @media print {
             .workshop-page { background: white; }
             .workshop-page .page { margin: 0; box-shadow: none; page-break-after: always; }
+            .workshop-page .download-btn { display: none; }
             @page { margin: 0; }
         }
 
@@ -1234,9 +1351,39 @@ export default function AIWorkshop() {
                 margin-top: 32px;
                 padding: 0 24px;
             }
+            .workshop-page .download-btn {
+                top: auto;
+                bottom: 24px;
+                right: 16px;
+                padding: 12px 18px;
+                font-size: 12px;
+                border-radius: 10px;
+            }
         }
       `}</style>
       <div className="workshop-page">
+        {/* Download PDF Button */}
+        <button
+          className="download-btn"
+          onClick={handleDownloadPDF}
+          disabled={isGenerating}
+          title="Download proposal as PDF"
+        >
+          {isGenerating ? (
+            <>
+              <span className="spinner" />
+              Generating...
+            </>
+          ) : (
+            <>
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" />
+              </svg>
+              Download PDF
+            </>
+          )}
+        </button>
+
         {/* Page 1: Cover */}
         <div className="page cover">
           <div className="cover-content">
