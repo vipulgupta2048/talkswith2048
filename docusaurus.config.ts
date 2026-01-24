@@ -174,6 +174,26 @@ const config = {
 
   plugins: [
     ["docusaurus-plugin-sass", {}],
+    // Webpack plugin to provide Buffer polyfill for @react-pdf/renderer
+    function bufferPolyfillPlugin() {
+      return {
+        name: "buffer-polyfill",
+        configureWebpack() {
+          return {
+            resolve: {
+              fallback: {
+                buffer: require.resolve("buffer/"),
+              },
+            },
+            plugins: [
+              new (require("webpack").ProvidePlugin)({
+                Buffer: ["buffer", "Buffer"],
+              }),
+            ],
+          };
+        },
+      };
+    },
     // Client-side redirects for trailing slashes (SEO best practice)
     // Since trailingSlash: false, redirect /path/ → /path for all pages
     [
