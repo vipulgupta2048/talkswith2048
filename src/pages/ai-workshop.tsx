@@ -60,7 +60,7 @@ export default function AIWorkshop() {
               instructor: {
                 "@type": "Person",
                 name: instructor.name,
-                jobTitle: "AI Engineer",
+                jobTitle: instructor.role.split(" · ")[0],
               },
             },
           })}
@@ -1506,6 +1506,12 @@ export default function AIWorkshop() {
             .workshop-page .roi-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
+            .workshop-page .cover h1 {
+                max-width: 100%;
+            }
+            .workshop-page .cover-description {
+                max-width: 100%;
+            }
             .workshop-page .page-footer {
                 position: relative;
                 bottom: auto;
@@ -1523,6 +1529,21 @@ export default function AIWorkshop() {
                 border-radius: 10px;
             }
         }
+
+        @media (max-width: 600px) {
+            .workshop-page .roi-grid {
+                grid-template-columns: 1fr;
+            }
+            .workshop-page .roi-card {
+                padding: 20px 16px;
+            }
+            .workshop-page .roi-value {
+                font-size: 36px;
+            }
+            .workshop-page .capstone-examples {
+                flex-direction: column;
+            }
+        }
       `}</style>
       <div className="workshop-page">
         {/* Download PDF Button - Only render in browser */}
@@ -1537,8 +1558,15 @@ export default function AIWorkshop() {
                 fileName="AI-Workshop-Proposal-Vipul-Gupta.pdf"
                 className="download-btn"
               >
-                {({ loading }: { loading: boolean }) =>
-                  loading ? (
+                {({ loading, error }: { loading: boolean; error: Error | null }) =>
+                  error ? (
+                    <>
+                      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z" />
+                      </svg>
+                      Retry Download
+                    </>
+                  ) : loading ? (
                     <>
                       <span className="spinner" />
                       Generating...
