@@ -1997,7 +1997,7 @@ export default function AIWorkshop() {
 
           <div className="page-footer">
             <span>AI Workshop Proposal · {instructor.name}</span>
-            <span>2025 {instructor.name} · Mixster</span>
+            <span>{new Date().getFullYear()} {instructor.name} · Mixster</span>
           </div>
         </div>
       </div>

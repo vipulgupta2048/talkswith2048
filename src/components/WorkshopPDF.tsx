@@ -1269,7 +1269,7 @@ const WorkshopPDF = () => (
 
       <View style={styles.pageFooter}>
         <Text>AI Workshop Proposal - {instructor.name}</Text>
-        <Text>2025 {instructor.name} - Mixster</Text>
+        <Text>{new Date().getFullYear()} {instructor.name} - Mixster</Text>
       </View>
     </Page>
   </Document>
