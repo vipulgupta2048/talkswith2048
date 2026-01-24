@@ -1,4 +1,21 @@
 import React from "react";
+
+// Polyfill Buffer for browser environment (required by @react-pdf/renderer)
+if (typeof window !== "undefined" && typeof window.Buffer === "undefined") {
+  // @ts-ignore
+  window.Buffer = {
+    from: (data: unknown, encoding?: string) => {
+      if (typeof data === "string") {
+        const encoder = new TextEncoder();
+        return encoder.encode(data);
+      }
+      return new Uint8Array(data as ArrayBuffer);
+    },
+    isBuffer: () => false,
+    alloc: (size: number) => new Uint8Array(size),
+  };
+}
+
 import {
   Document,
   Page,
@@ -80,8 +97,18 @@ Font.register({
       fontWeight: 400,
     },
     {
+      src: "https://cdn.jsdelivr.net/fontsource/fonts/playfair-display@latest/latin-400-italic.ttf",
+      fontWeight: 400,
+      fontStyle: "italic",
+    },
+    {
       src: "https://cdn.jsdelivr.net/fontsource/fonts/playfair-display@latest/latin-500-normal.ttf",
       fontWeight: 500,
+    },
+    {
+      src: "https://cdn.jsdelivr.net/fontsource/fonts/playfair-display@latest/latin-500-italic.ttf",
+      fontWeight: 500,
+      fontStyle: "italic",
     },
     {
       src: "https://cdn.jsdelivr.net/fontsource/fonts/playfair-display@latest/latin-700-normal.ttf",
@@ -507,6 +534,7 @@ const styles = StyleSheet.create({
     marginTop: 18,
   },
   testimonialQuote: {
+    fontFamily: "Playfair",
     fontSize: 11,
     fontStyle: "italic",
     color: colors.fog,
