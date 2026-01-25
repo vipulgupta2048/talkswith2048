@@ -962,7 +962,7 @@ const WorkshopPDF = () => (
     </Page>
 
     {/* Page 2: About + Outcomes - Content from workshopData.ts */}
-    <Page size="A4" style={[styles.page, styles.contentPage]}>
+    <Page size="A4" style={[styles.page, styles.contentPage]} wrap={false}>
       <Text style={styles.pageLabel}>About the Instructor</Text>
       <Text style={styles.pageTitle}>Learn from a Practitioner</Text>
       <Text style={styles.pageSubtitle}>
@@ -985,7 +985,7 @@ const WorkshopPDF = () => (
               </Text>
             ))}
           </View>
-          {instructor.bio.map((paragraph, i) => (
+          {instructor.bio.slice(0, 1).map((paragraph, i) => (
             <Text key={i} style={styles.bioText}>{paragraph.text}</Text>
           ))}
         </View>
@@ -1007,23 +1007,6 @@ const WorkshopPDF = () => (
           <Text style={styles.capstoneTitle}>{capstone.title}</Text>
         </View>
         <Text style={styles.capstoneDesc}>{capstone.description}</Text>
-        <View style={styles.capstoneExamples}>
-          {capstone.options.map((option, i) => (
-            <View key={i} style={styles.capstoneExample}>
-              <Text style={styles.capstoneIcon}>{option.icon}</Text>
-              <View style={styles.capstoneExampleText}>
-                <Text style={styles.capstoneExampleTitle}>{option.title}</Text>
-                <Text style={styles.capstoneExampleDetail}>{option.detail}</Text>
-              </View>
-            </View>
-          ))}
-        </View>
-      </View>
-
-      <View style={styles.testimonial}>
-        <Text style={styles.testimonialQuote}>"{testimonials[0].quote}"</Text>
-        <Text style={styles.testimonialAuthor}>{testimonials[0].author}</Text>
-        <Text style={styles.testimonialRole}>{testimonials[0].role}</Text>
       </View>
 
       <View style={styles.pageFooter}>
@@ -1033,16 +1016,15 @@ const WorkshopPDF = () => (
     </Page>
 
     {/* Page 3: Agenda Part 1 - Content from workshopData.ts */}
-    <Page size="A4" style={[styles.page, styles.contentPage]}>
+    <Page size="A4" style={[styles.page, styles.contentPage]} wrap={false}>
       <Text style={styles.pageLabel}>Workshop Agenda</Text>
       <Text style={styles.pageTitle}>Session Overview</Text>
       <Text style={styles.pageSubtitle}>
-        Structured progression from fundamentals to implementation. Every session
-        includes working code you take home.
+        Structured progression from fundamentals to implementation.
       </Text>
 
       {sessions.slice(0, 2).map((session) => (
-        <View key={session.number} style={styles.sessionCard}>
+        <View key={session.number} style={styles.sessionCard} wrap={false}>
           <View style={styles.sessionHeader}>
             <View style={styles.sessionTopBar}>
               <Text style={styles.sessionNumber}>
@@ -1069,12 +1051,12 @@ const WorkshopPDF = () => (
             <Text style={styles.sessionIntro}>{session.intro}</Text>
             <Text style={styles.sectionLabel}>{session.sectionLabel}</Text>
             <View style={styles.topicsGrid}>
-              {session.topics.map((topic, i) => (
+              {session.topics.slice(0, 4).map((topic, i) => (
                 <Text key={i} style={styles.topicItem}>{topic.text}</Text>
               ))}
             </View>
             <View style={styles.deliverablesRow}>
-              {session.deliverables.map((d, i) => (
+              {session.deliverables.slice(0, 2).map((d, i) => (
                 <Text key={i} style={styles.deliverableChip}>{d.text}</Text>
               ))}
             </View>
@@ -1089,9 +1071,9 @@ const WorkshopPDF = () => (
     </Page>
 
     {/* Page 4: Agenda Part 2 - Content from workshopData.ts */}
-    <Page size="A4" style={[styles.page, styles.contentPage]}>
+    <Page size="A4" style={[styles.page, styles.contentPage]} wrap={false}>
       {sessions.slice(2, 4).map((session) => (
-        <View key={session.number} style={styles.sessionCard}>
+        <View key={session.number} style={styles.sessionCard} wrap={false}>
           <View style={styles.sessionHeader}>
             <View style={styles.sessionTopBar}>
               <Text style={styles.sessionNumber}>
@@ -1118,24 +1100,12 @@ const WorkshopPDF = () => (
             <Text style={styles.sessionIntro}>{session.intro}</Text>
             <Text style={styles.sectionLabel}>{session.sectionLabel}</Text>
             <View style={styles.topicsGrid}>
-              {session.topics.map((topic, i) => (
+              {session.topics.slice(0, 4).map((topic, i) => (
                 <Text key={i} style={styles.topicItem}>{topic.text}</Text>
               ))}
             </View>
-            {session.demos && (
-              <>
-                <Text style={styles.sectionLabel}>Live Demo</Text>
-                {session.demos.map((demo, i) => (
-                  <View key={i} style={styles.demoItem}>
-                    <Text>
-                      <Text style={styles.bold}>{demo.title}:</Text> {demo.description}
-                    </Text>
-                  </View>
-                ))}
-              </>
-            )}
             <View style={styles.deliverablesRow}>
-              {session.deliverables.map((d, i) => (
+              {session.deliverables.slice(0, 2).map((d, i) => (
                 <Text key={i} style={styles.deliverableChip}>{d.text}</Text>
               ))}
             </View>
@@ -1143,45 +1113,37 @@ const WorkshopPDF = () => (
         </View>
       ))}
 
-      <View style={styles.testimonial}>
-        <Text style={styles.testimonialQuote}>"{testimonials[1].quote}"</Text>
-        <Text style={styles.testimonialAuthor}>{testimonials[1].author}</Text>
-        <Text style={styles.testimonialRole}>{testimonials[1].role}</Text>
-      </View>
-
       <View style={styles.pageFooter}>
         <Text>AI Workshop Proposal - {instructor.name}</Text>
         <Text>Page 3</Text>
       </View>
     </Page>
 
-    {/* Page 5: Deliverables + Premium - Content from workshopData.ts */}
-    <Page size="A4" style={[styles.page, styles.contentPage]}>
+    {/* Page 5: Deliverables - Content from workshopData.ts */}
+    <Page size="A4" style={[styles.page, styles.contentPage]} wrap={false}>
       <Text style={styles.pageLabel}>What You Get</Text>
       <Text style={styles.pageTitle}>Workshop Deliverables</Text>
       <Text style={styles.pageSubtitle}>
-        Everything included in the base workshop, plus optional services for deeper
-        implementation support.
+        Everything included in the base workshop.
       </Text>
 
       <Text style={styles.tierLabel}>Included in Workshop</Text>
 
       <View style={styles.deliverablesGrid}>
         {deliverables.map((item, i) => (
-          <View key={i} style={styles.deliverableCard}>
+          <View key={i} style={styles.deliverableCard} wrap={false}>
             <Text style={styles.deliverableTitle}>{item.title}</Text>
             <View style={styles.deliverableList}>
-              {item.items.map((li, j) => (
-                <Text key={j} style={styles.deliverableListItem}>* {li}</Text>
+              {item.items.slice(0, 3).map((li, j) => (
+                <Text key={j} style={styles.deliverableListItem}>• {li}</Text>
               ))}
             </View>
           </View>
         ))}
       </View>
 
-      <View style={styles.supportHighlight}>
+      <View style={styles.supportHighlight} wrap={false}>
         <View style={styles.supportHeader}>
-          <Text style={styles.supportIcon}>{postWorkshopSupport.icon}</Text>
           <View>
             <Text style={styles.supportTitle}>
               {postWorkshopSupport.title}{" "}
@@ -1191,34 +1153,12 @@ const WorkshopPDF = () => (
           </View>
         </View>
         <View style={styles.supportItems}>
-          {postWorkshopSupport.items.map((item, i) => (
+          {postWorkshopSupport.items.slice(0, 2).map((item, i) => (
             <View key={i} style={styles.supportItem}>
               <Text style={styles.checkIcon}>✓</Text>
               <View>
                 <Text style={styles.supportItemTitle}>{item.title}</Text>
-                <Text style={styles.supportItemDesc}>{item.description}</Text>
               </View>
-            </View>
-          ))}
-        </View>
-        <Text style={styles.supportUpgrade}>{postWorkshopSupport.upgradeText}</Text>
-      </View>
-
-      <View style={styles.premiumSection}>
-        <View style={styles.premiumHeader}>
-          <View>
-            <Text style={styles.premiumTitle}>Premium Add-Ons</Text>
-            <Text style={styles.premiumSubtitle}>
-              For teams that want hands-on implementation support. Priced separately.
-            </Text>
-          </View>
-          <Text style={styles.premiumBadge}>Optional</Text>
-        </View>
-        <View style={styles.premiumGrid}>
-          {premiumAddons.slice(0, 4).map((addon, i) => (
-            <View key={i} style={styles.premiumCard}>
-              <Text style={styles.premiumCardTitle}>{addon.title}</Text>
-              <Text style={styles.premiumCardDesc}>{addon.description}</Text>
             </View>
           ))}
         </View>
@@ -1230,9 +1170,9 @@ const WorkshopPDF = () => (
       </View>
     </Page>
 
-    {/* Page 6: ROI + Contact */}
-    <Page size="A4" style={[styles.page, styles.contentPage]}>
-      <View style={styles.roiSection}>
+    {/* Page 5: ROI + Contact */}
+    <Page size="A4" style={[styles.page, styles.contentPage]} wrap={false}>
+      <View style={styles.roiSection} wrap={false}>
         <View style={styles.roiHeader}>
           <Text style={styles.roiTitle}>Expected Results</Text>
           <Text style={styles.roiSubtitle}>
@@ -1251,7 +1191,7 @@ const WorkshopPDF = () => (
         </View>
       </View>
 
-      <View style={styles.ctaSection}>
+      <View style={styles.ctaSection} wrap={false}>
         <View style={styles.ctaHeader}>
           <Text style={styles.ctaTitle}>{ctaContent.title}</Text>
           <Text style={styles.ctaSubtitle}>{ctaContent.subtitle}</Text>
@@ -1264,7 +1204,6 @@ const WorkshopPDF = () => (
               <Link style={styles.contactLink} src={contact.link}>
                 {contact.linkText}
               </Link>
-              <Text style={styles.contactDesc}>{contact.description}</Text>
             </View>
           ))}
         </View>
@@ -1275,7 +1214,6 @@ const WorkshopPDF = () => (
             <Link style={styles.ctaLink} src={siteConfig.socialLinks.blog}>Blog</Link>
             <Link style={styles.ctaLink} src={siteConfig.socialLinks.linkedin}>LinkedIn</Link>
             <Link style={styles.ctaLink} src={siteConfig.socialLinks.github}>GitHub</Link>
-            <Link style={styles.ctaLink} src={siteConfig.socialLinks.docs}>Open Source</Link>
           </View>
         </View>
       </View>
