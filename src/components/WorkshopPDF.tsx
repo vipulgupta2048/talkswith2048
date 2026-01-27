@@ -272,18 +272,18 @@ const styles = StyleSheet.create({
     height: 24,
     backgroundColor: colors.steel,
   },
-  // Logo Bar - As Seen At
+  // Logo Bar - As Seen At (dark theme to match proof bar)
   logoBar: {
-    backgroundColor: colors.snow,
-    padding: "20pt 45pt",
+    backgroundColor: colors.graphite,
+    padding: "18pt 45pt",
     borderBottomWidth: 1,
-    borderBottomColor: colors.mist,
+    borderBottomColor: colors.steel,
   },
   logoBarLabel: {
     fontFamily: "IBMPlexMono",
     fontSize: 8,
     fontWeight: 500,
-    letterSpacing: 1.5,
+    letterSpacing: 2,
     textTransform: "uppercase",
     color: colors.ash,
     textAlign: "center",
@@ -293,18 +293,26 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "center",
     alignItems: "center",
-    gap: 24,
+    gap: 10,
     flexWrap: "wrap",
   },
   logoItem: {
-    fontSize: 10,
-    fontWeight: 600,
-    color: colors.slate,
-    padding: "6pt 12pt",
-    backgroundColor: colors.white,
-    borderRadius: 4,
+    padding: "8pt 12pt",
+    backgroundColor: "rgba(255,255,255,0.04)",
+    borderRadius: 5,
     borderWidth: 1,
-    borderColor: colors.mist,
+    borderColor: colors.steel,
+    textAlign: "center",
+  },
+  logoItemName: {
+    fontSize: 9,
+    fontWeight: 600,
+    color: colors.fog,
+    marginBottom: 2,
+  },
+  logoItemEvent: {
+    fontSize: 7,
+    color: colors.ash,
   },
   // ROI Section (moved up)
   roiSection: {
@@ -849,6 +857,63 @@ const styles = StyleSheet.create({
     color: "rgba(255,255,255,0.75)",
     textDecoration: "none",
   },
+  // Speaker Credentials Bar
+  speakerBar: {
+    backgroundColor: colors.charcoal,
+    padding: "16pt 40pt",
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
+    gap: 20,
+    flexWrap: "wrap",
+    borderTopWidth: 1,
+    borderTopColor: colors.steel,
+  },
+  speakerBarItem: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 10,
+  },
+  speakerBarAvatar: {
+    width: 32,
+    height: 32,
+    borderRadius: 16,
+    borderWidth: 2,
+    borderColor: colors.steel,
+  },
+  speakerBarInfo: {
+    flexDirection: "column",
+    gap: 2,
+  },
+  speakerBarName: {
+    fontSize: 10,
+    fontWeight: 600,
+    color: colors.fog,
+  },
+  speakerBarTitle: {
+    fontSize: 8,
+    color: colors.ash,
+  },
+  speakerCreds: {
+    flexDirection: "row",
+    gap: 8,
+    flexWrap: "wrap",
+  },
+  speakerCred: {
+    fontFamily: "IBMPlexMono",
+    fontSize: 7,
+    padding: "4pt 8pt",
+    backgroundColor: "rgba(255,255,255,0.05)",
+    borderWidth: 1,
+    borderColor: colors.steel,
+    borderRadius: 3,
+    color: colors.silver,
+  },
+  speakerCredHighlight: {
+    backgroundColor: "rgba(59, 130, 246, 0.12)",
+    borderColor: colors.electric,
+    color: colors.electricBright,
+  },
   // Footer
   footer: {
     padding: "14pt 40pt",
@@ -868,14 +933,14 @@ const socialProof = [
   { value: "7,800+", label: "Community Members" },
 ];
 
-// Logo bar - As Seen At (matching web page)
+// Logo bar - As Seen At (matching web page with event names)
 const seenAtLogos = [
-  "Google",
-  "GitHub",
-  "Microsoft",
-  "Mozilla",
-  "Linux Foundation",
-  "PyCon",
+  { name: "Google", event: "GDG DevFest" },
+  { name: "GitHub", event: "Constellation 2024" },
+  { name: "Microsoft", event: "GitTogether Meetup" },
+  { name: "Mozilla", event: "MozFest 2018" },
+  { name: "Linux Foundation", event: "Open Source Summit" },
+  { name: "PyCon", event: "PyDelhi Conf 2023" },
 ];
 
 const WorkshopPDF = () => (
@@ -951,7 +1016,10 @@ const WorkshopPDF = () => (
         <Text style={styles.logoBarLabel}>As Seen At</Text>
         <View style={styles.logoGrid}>
           {seenAtLogos.map((logo, i) => (
-            <Text key={i} style={styles.logoItem}>{logo}</Text>
+            <View key={i} style={styles.logoItem}>
+              <Text style={styles.logoItemName}>{logo.name}</Text>
+              <Text style={styles.logoItemEvent}>{logo.event}</Text>
+            </View>
           ))}
         </View>
       </View>
@@ -1180,6 +1248,26 @@ const WorkshopPDF = () => (
               <Link style={styles.ctaLink} src={siteConfig.socialLinks.github}>GitHub</Link>
             </View>
           </View>
+        </View>
+      </View>
+
+      {/* Speaker Credentials Bar */}
+      <View style={styles.speakerBar}>
+        <View style={styles.speakerBarItem}>
+          <Image
+            style={styles.speakerBarAvatar}
+            src={`${siteConfig.url}/img/avatar.png`}
+          />
+          <View style={styles.speakerBarInfo}>
+            <Text style={styles.speakerBarName}>{instructor.name}</Text>
+            <Text style={styles.speakerBarTitle}>127+ Sessions Delivered</Text>
+          </View>
+        </View>
+        <View style={styles.speakerCreds}>
+          <Text style={[styles.speakerCred, styles.speakerCredHighlight]}>GitHub Star 2025</Text>
+          <Text style={styles.speakerCred}>Open Source Summit Speaker</Text>
+          <Text style={styles.speakerCred}>GitHub Constellation Speaker</Text>
+          <Text style={styles.speakerCred}>GDG DevFest Speaker</Text>
         </View>
       </View>
 

@@ -414,12 +414,12 @@ export default function AIWorkshop() {
         }
 
         /* ============================================
-           LOGO BAR - As Seen At
+           LOGO BAR - As Seen At (Dark theme to flow with proof bar)
         ============================================ */
         .workshop-page .logo-bar {
-          background: var(--paper);
-          padding: 40px 24px;
-          border-bottom: 1px solid var(--mist);
+          background: var(--graphite);
+          padding: 32px 24px;
+          border-bottom: 1px solid var(--steel);
         }
 
         .workshop-page .logo-bar-inner {
@@ -430,19 +430,19 @@ export default function AIWorkshop() {
 
         .workshop-page .logo-bar-label {
           font-family: 'JetBrains Mono', monospace;
-          font-size: 11px;
+          font-size: 10px;
           font-weight: 500;
-          letter-spacing: 1.5px;
+          letter-spacing: 2px;
           text-transform: uppercase;
           color: var(--ash);
-          margin-bottom: 24px;
+          margin-bottom: 20px;
         }
 
         .workshop-page .logo-grid {
           display: flex;
           align-items: center;
           justify-content: center;
-          gap: 40px;
+          gap: 12px;
           flex-wrap: wrap;
         }
 
@@ -450,36 +450,150 @@ export default function AIWorkshop() {
           display: flex;
           align-items: center;
           gap: 8px;
-          opacity: 0.6;
-          transition: opacity 0.2s ease;
-          filter: grayscale(100%);
+          padding: 10px 16px;
+          background: rgba(255,255,255,0.04);
+          border: 1px solid var(--steel);
+          border-radius: 6px;
+          text-decoration: none;
+          transition: all 0.15s ease;
         }
 
         .workshop-page .logo-item:hover {
-          opacity: 1;
-          filter: grayscale(0%);
+          background: rgba(255,255,255,0.08);
+          border-color: var(--accent);
+          transform: translateY(-1px);
         }
 
         .workshop-page .logo-item svg {
-          height: 28px;
-          width: auto;
+          height: 20px;
+          width: 20px;
+          flex-shrink: 0;
         }
 
-        .workshop-page .logo-item span {
-          font-size: 15px;
+        .workshop-page .logo-item .logo-text {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 1px;
+        }
+
+        .workshop-page .logo-item .logo-name {
+          font-size: 13px;
           font-weight: 600;
-          color: var(--slate);
+          color: var(--fog);
+        }
+
+        .workshop-page .logo-item .logo-event {
+          font-size: 10px;
+          color: var(--ash);
         }
 
         @media (max-width: 900px) {
           .workshop-page .logo-grid {
-            gap: 24px;
+            gap: 8px;
+          }
+          .workshop-page .logo-item {
+            padding: 8px 12px;
           }
           .workshop-page .logo-item svg {
-            height: 24px;
+            height: 18px;
+            width: 18px;
           }
-          .workshop-page .logo-item span {
-            font-size: 13px;
+          .workshop-page .logo-item .logo-name {
+            font-size: 12px;
+          }
+          .workshop-page .logo-item .logo-event {
+            font-size: 9px;
+          }
+        }
+
+        /* ============================================
+           SPEAKER CREDENTIALS BAR - Bottom of page
+        ============================================ */
+        .workshop-page .speaker-bar {
+          background: var(--charcoal);
+          padding: 24px;
+          border-top: 1px solid var(--steel);
+        }
+
+        .workshop-page .speaker-bar-inner {
+          max-width: 1100px;
+          margin: 0 auto;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 32px;
+          flex-wrap: wrap;
+        }
+
+        .workshop-page .speaker-bar-item {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          text-decoration: none;
+        }
+
+        .workshop-page .speaker-bar-item img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          border: 2px solid var(--steel);
+        }
+
+        .workshop-page .speaker-bar-item .speaker-info {
+          display: flex;
+          flex-direction: column;
+          gap: 2px;
+        }
+
+        .workshop-page .speaker-bar-item .speaker-name {
+          font-size: 14px;
+          font-weight: 600;
+          color: var(--fog);
+        }
+
+        .workshop-page .speaker-bar-item .speaker-title {
+          font-size: 11px;
+          color: var(--ash);
+        }
+
+        .workshop-page .speaker-creds {
+          display: flex;
+          gap: 16px;
+          flex-wrap: wrap;
+        }
+
+        .workshop-page .speaker-cred {
+          font-family: 'JetBrains Mono', monospace;
+          font-size: 11px;
+          padding: 6px 12px;
+          background: rgba(255,255,255,0.05);
+          border: 1px solid var(--steel);
+          border-radius: 4px;
+          color: var(--silver);
+          text-decoration: none;
+          transition: all 0.15s ease;
+        }
+
+        .workshop-page .speaker-cred:hover {
+          background: rgba(59, 130, 246, 0.15);
+          border-color: var(--accent);
+          color: var(--accent-bright);
+        }
+
+        .workshop-page .speaker-cred.highlight {
+          background: rgba(59, 130, 246, 0.12);
+          border-color: var(--accent);
+          color: var(--accent-bright);
+        }
+
+        @media (max-width: 768px) {
+          .workshop-page .speaker-bar-inner {
+            flex-direction: column;
+            gap: 16px;
+          }
+          .workshop-page .speaker-creds {
+            justify-content: center;
           }
         }
 
@@ -1403,60 +1517,78 @@ export default function AIWorkshop() {
           </div>
         </div>
 
-        {/* Logo Bar - As Seen At */}
+        {/* Logo Bar - As Seen At (with links to talks) */}
         <div className="logo-bar">
           <div className="logo-bar-inner">
             <div className="logo-bar-label">As Seen At</div>
             <div className="logo-grid">
-              {/* Google */}
-              <div className="logo-item">
-                <svg viewBox="0 0 24 24" fill="#4285F4">
-                  <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+              {/* GDG DevFest - Google */}
+              <a href="/Talks#-gdg-devfest-noida-2025-continuous-ai" className="logo-item">
+                <svg viewBox="0 0 24 24">
+                  <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
                   <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
                   <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
                   <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
                 </svg>
-                <span>Google</span>
-              </div>
-              {/* GitHub */}
-              <div className="logo-item">
-                <svg viewBox="0 0 24 24" fill="#181717">
+                <div className="logo-text">
+                  <span className="logo-name">Google</span>
+                  <span className="logo-event">GDG DevFest</span>
+                </div>
+              </a>
+              {/* GitHub Constellation */}
+              <a href="/Talks#github-constellation-2024-how-balena-releases-100s-of-embedded-operating-systems-with-github-actions-in-hours-not-weeks" className="logo-item">
+                <svg viewBox="0 0 24 24" fill="#fff">
                   <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
                 </svg>
-                <span>GitHub</span>
-              </div>
-              {/* Microsoft */}
-              <div className="logo-item">
-                <svg viewBox="0 0 24 24" fill="none">
+                <div className="logo-text">
+                  <span className="logo-name">GitHub</span>
+                  <span className="logo-event">Constellation 2024</span>
+                </div>
+              </a>
+              {/* Microsoft - GitTogether */}
+              <a href="/Talks#-gittogether-anniversary-meetup" className="logo-item">
+                <svg viewBox="0 0 24 24">
                   <rect x="1" y="1" width="10" height="10" fill="#F25022"/>
                   <rect x="13" y="1" width="10" height="10" fill="#7FBA00"/>
                   <rect x="1" y="13" width="10" height="10" fill="#00A4EF"/>
                   <rect x="13" y="13" width="10" height="10" fill="#FFB900"/>
                 </svg>
-                <span>Microsoft</span>
-              </div>
-              {/* Mozilla */}
-              <div className="logo-item">
-                <svg viewBox="0 0 24 24" fill="#000">
-                  <path d="M21.5 15.48c-.34-1.94-1.27-3.64-2.5-4.93.12-.47.18-.95.18-1.42 0-3.09-2.55-5.6-5.68-5.6-1.04 0-2.02.27-2.87.74A9.93 9.93 0 006.5 3c-2.97 0-5.66 1.27-7.53 3.3l1.74 1.42A7.46 7.46 0 016.5 5c1.5 0 2.9.44 4.07 1.2a5.66 5.66 0 00-1.25 3.93c0 .47.06.95.18 1.42-1.23 1.29-2.16 2.99-2.5 4.93-.66.13-1.15.7-1.15 1.39 0 .78.64 1.42 1.42 1.42.65 0 1.2-.45 1.36-1.05a9.94 9.94 0 004.87 1.26c1.81 0 3.51-.48 4.97-1.32.17.57.7.98 1.33.98.78 0 1.42-.64 1.42-1.42 0-.65-.45-1.2-1.05-1.36zm-9-7.35c1.9 0 3.45 1.54 3.45 3.45 0 .52-.12 1.01-.33 1.45a9.87 9.87 0 00-6.24 0 3.42 3.42 0 01-.33-1.45c0-1.91 1.55-3.45 3.45-3.45z"/>
+                <div className="logo-text">
+                  <span className="logo-name">Microsoft</span>
+                  <span className="logo-event">GitTogether Meetup</span>
+                </div>
+              </a>
+              {/* Mozilla Festival */}
+              <a href="/Talks#green-dots-doesnt-matter-contributing-does" className="logo-item">
+                <svg viewBox="0 0 24 24" fill="#ff4f5e">
+                  <path d="M11.943.006c-1.063.039-1.995.479-2.727 1.21C8.487 1.943 8.039 2.88 8 3.943v.006h-.006c-2.206 0-4 1.794-4 4 0 2.153 1.71 3.906 3.844 3.993-.01.02-.013.039-.023.058a4.486 4.486 0 00-.477 2.006c0 2.206 1.794 4 4 4h.006v.006c0 1.063.448 2 1.175 2.727.728.728 1.665 1.177 2.728 1.216h.052c1.063-.039 2-.488 2.728-1.216.727-.727 1.176-1.664 1.215-2.727v-.006h.006c2.206 0 4-1.794 4-4a3.994 3.994 0 00-3.844-3.993c.01-.02.013-.039.023-.058.308-.612.477-1.29.477-2.006 0-2.206-1.794-4-4-4h-.006v-.006c0-1.063-.448-2-1.175-2.727C14.994.488 14.057.04 12.994 0h-.052z"/>
                 </svg>
-                <span>Mozilla</span>
-              </div>
-              {/* Linux Foundation */}
-              <div className="logo-item">
-                <svg viewBox="0 0 24 24" fill="#000">
-                  <path d="M12.503 0c-.155 0-.31.004-.463.012C6.476.283 2.095 4.64 2.095 10.2c0 2.15.684 4.144 1.844 5.78-.204.207-.328.49-.328.803 0 .636.52 1.152 1.16 1.152.322 0 .613-.13.822-.342 1.62 1.138 3.598 1.807 5.736 1.807 2.04 0 3.937-.61 5.52-1.655.206.168.47.27.76.27.64 0 1.16-.516 1.16-1.152 0-.372-.176-.702-.448-.915 1.092-1.61 1.733-3.552 1.733-5.64C20.054 4.87 16.677.502 12.503 0zm.006 1.798c3.485.42 6.216 3.4 6.216 7.002 0 1.63-.553 3.13-1.482 4.33-.264-.124-.56-.194-.872-.194-.42 0-.81.126-1.137.34-1.22-.86-2.7-1.37-4.297-1.37-1.534 0-2.962.472-4.146 1.277-.34-.248-.758-.396-1.21-.396-.23 0-.45.04-.655.113-.91-1.19-1.448-2.67-1.448-4.27 0-3.74 2.94-6.798 6.64-7.02.13-.007.26-.01.39-.01zm-.01 3.06a3.94 3.94 0 00-3.945 3.934 3.94 3.94 0 003.944 3.934 3.94 3.94 0 003.944-3.934 3.94 3.94 0 00-3.944-3.934zm0 1.494c1.35 0 2.446 1.09 2.446 2.44s-1.096 2.442-2.446 2.442-2.447-1.092-2.447-2.442 1.097-2.44 2.447-2.44z"/>
+                <div className="logo-text">
+                  <span className="logo-name">Mozilla</span>
+                  <span className="logo-event">MozFest 2018</span>
+                </div>
+              </a>
+              {/* Open Source Summit */}
+              <a href="/Talks#open-source-summit-europe-2023-lets-build-our-own-virtual-raspberrypi-using-qemu-virtualization" className="logo-item">
+                <svg viewBox="0 0 24 24" fill="#fff">
+                  <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 17.559c-.227.38-.618.574-1.015.574-.21 0-.422-.054-.619-.167L12 15.268l-4.26 2.698c-.197.113-.409.167-.619.167-.397 0-.788-.194-1.015-.574a1.19 1.19 0 01.411-1.634L10.5 13.5l-3.983-2.425a1.19 1.19 0 01-.411-1.634 1.19 1.19 0 011.634-.411L12 11.732l4.26-2.702a1.19 1.19 0 011.634.411 1.19 1.19 0 01-.411 1.634L13.5 13.5l3.983 2.425a1.19 1.19 0 01.411 1.634z"/>
                 </svg>
-                <span>Linux Foundation</span>
-              </div>
-              {/* PyCon */}
-              <div className="logo-item">
-                <svg viewBox="0 0 24 24" fill="none">
+                <div className="logo-text">
+                  <span className="logo-name">Linux Foundation</span>
+                  <span className="logo-event">Open Source Summit</span>
+                </div>
+              </a>
+              {/* PyCon India */}
+              <a href="/Talks#pydelhi-conf-2023-deploying-python-on-the-edge-mistakes-pain-and-learnings-of-scaling-python-applications-on-millions-of-iot-devices" className="logo-item">
+                <svg viewBox="0 0 24 24">
                   <path fill="#3776AB" d="M9.585 11.692h4.328s2.432.039 2.432-2.35V5.391S16.714 3 11.936 3C7.362 3 7.647 4.983 7.647 4.983l.006 2.055h4.363v.617H5.92S3 7.283 3 11.886s2.55 4.425 2.55 4.425h1.521v-2.13s-.082-2.489 2.514-2.489zm-.253-5.679a.807.807 0 110-1.614.807.807 0 010 1.614z"/>
                   <path fill="#FFD43B" d="M14.415 12.308h-4.328s-2.432-.039-2.432 2.35v3.951S7.286 21 12.064 21c4.574 0 4.289-1.983 4.289-1.983l-.006-2.055h-4.363v-.617h6.096S21 16.717 21 12.114s-2.55-4.425-2.55-4.425h-1.521v2.13s.082 2.489-2.514 2.489zm.253 5.679a.807.807 0 110 1.614.807.807 0 010-1.614z"/>
                 </svg>
-                <span>PyCon</span>
-              </div>
+                <div className="logo-text">
+                  <span className="logo-name">PyCon</span>
+                  <span className="logo-event">PyDelhi Conf 2023</span>
+                </div>
+              </a>
             </div>
           </div>
         </div>
@@ -1680,6 +1812,25 @@ export default function AIWorkshop() {
             </div>
           </div>
         </section>
+
+        {/* Speaker Credentials Bar */}
+        <div className="speaker-bar">
+          <div className="speaker-bar-inner">
+            <a href="/Talks" className="speaker-bar-item">
+              <img src={instructor.avatar} alt={instructor.name} />
+              <div className="speaker-info">
+                <span className="speaker-name">{instructor.name}</span>
+                <span className="speaker-title">127+ Sessions Delivered</span>
+              </div>
+            </a>
+            <div className="speaker-creds">
+              <a href="/Talks" className="speaker-cred highlight">GitHub Star 2025</a>
+              <a href="/Conferences" className="speaker-cred">Open Source Summit Speaker</a>
+              <a href="/Talks#github-constellation-2024-how-balena-releases-100s-of-embedded-operating-systems-with-github-actions-in-hours-not-weeks" className="speaker-cred">GitHub Constellation Speaker</a>
+              <a href="/Talks#-gdg-devfest-noida-2025-continuous-ai" className="speaker-cred">GDG DevFest Speaker</a>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
