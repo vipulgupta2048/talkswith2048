@@ -27,6 +27,12 @@ The AI Workshop page has **two rendering targets** that share content:
 2. Both web and PDF will reflect changes
 3. Do NOT edit content directly in the TSX files
 
+**CRITICAL**: Always sync changes between web page and PDF:
+- Any visual/layout change to `ai-workshop.tsx` MUST also be applied to `WorkshopPDF.tsx`
+- Any visual/layout change to `WorkshopPDF.tsx` MUST also be applied to `ai-workshop.tsx`
+- This includes: stats, logo bars, sections, styling changes, new components
+- The web and PDF should always show the same information
+
 ### PDF Generation Notes
 
 - **@react-pdf/renderer** does NOT support:

@@ -272,6 +272,40 @@ const styles = StyleSheet.create({
     height: 24,
     backgroundColor: colors.steel,
   },
+  // Logo Bar - As Seen At
+  logoBar: {
+    backgroundColor: colors.snow,
+    padding: "20pt 45pt",
+    borderBottomWidth: 1,
+    borderBottomColor: colors.mist,
+  },
+  logoBarLabel: {
+    fontFamily: "IBMPlexMono",
+    fontSize: 8,
+    fontWeight: 500,
+    letterSpacing: 1.5,
+    textTransform: "uppercase",
+    color: colors.ash,
+    textAlign: "center",
+    marginBottom: 14,
+  },
+  logoGrid: {
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
+    gap: 24,
+    flexWrap: "wrap",
+  },
+  logoItem: {
+    fontSize: 10,
+    fontWeight: 600,
+    color: colors.slate,
+    padding: "6pt 12pt",
+    backgroundColor: colors.white,
+    borderRadius: 4,
+    borderWidth: 1,
+    borderColor: colors.mist,
+  },
   // ROI Section (moved up)
   roiSection: {
     padding: 24,
@@ -834,6 +868,16 @@ const socialProof = [
   { value: "7,800+", label: "Community Members" },
 ];
 
+// Logo bar - As Seen At (matching web page)
+const seenAtLogos = [
+  "Google",
+  "GitHub",
+  "Microsoft",
+  "Mozilla",
+  "Linux Foundation",
+  "PyCon",
+];
+
 const WorkshopPDF = () => (
   <Document
     title={pdfMetadata.title}
@@ -900,6 +944,16 @@ const WorkshopPDF = () => (
             </View>
           </React.Fragment>
         ))}
+      </View>
+
+      {/* Logo Bar - As Seen At */}
+      <View style={styles.logoBar}>
+        <Text style={styles.logoBarLabel}>As Seen At</Text>
+        <View style={styles.logoGrid}>
+          {seenAtLogos.map((logo, i) => (
+            <Text key={i} style={styles.logoItem}>{logo}</Text>
+          ))}
+        </View>
       </View>
 
       {/* ROI Section - Moved up to match web page */}
