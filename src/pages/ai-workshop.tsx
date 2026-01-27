@@ -32,7 +32,7 @@ export default function AIWorkshop() {
       />
       <Head>
         <link
-          href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&family=Outfit:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+          href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500;600&display=swap"
           rel="stylesheet"
         />
         {/* Course/Event structured data for rich snippets */}
@@ -103,1453 +103,1137 @@ export default function AIWorkshop() {
         </script>
       </Head>
       <style>{`
-        @keyframes fadeUp {
-            from { opacity: 0; transform: translateY(24px); }
-            to { opacity: 1; transform: translateY(0); }
+        /* ============================================
+           CONVERSION-OPTIMIZED WORKSHOP PAGE
+           Aesthetic: Executive Editorial
+        ============================================ */
+
+        @keyframes fadeIn {
+          from { opacity: 0; transform: translateY(16px); }
+          to { opacity: 1; transform: translateY(0); }
         }
 
         @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.5; }
+          0%, 100% { opacity: 1; }
+          50% { opacity: 0.6; }
+        }
+
+        @keyframes float {
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(-4px); }
         }
 
         .workshop-page * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
         }
 
         .workshop-page {
-            --black: #0a0a0a;
-            --graphite: #141414;
-            --charcoal: #1f1f1f;
-            --iron: #2a2a2a;
-            --steel: #3d3d3d;
-            --slate: #525252;
-            --ash: #737373;
-            --silver: #a3a3a3;
-            --fog: #d4d4d4;
-            --mist: #e5e5e5;
-            --cloud: #f0f0f0;
-            --snow: #fafafa;
-            --white: #ffffff;
+          --ink: #0f0f0f;
+          --charcoal: #1a1a1a;
+          --graphite: #262626;
+          --steel: #404040;
+          --slate: #525252;
+          --ash: #737373;
+          --silver: #a3a3a3;
+          --fog: #d4d4d4;
+          --mist: #e5e5e5;
+          --cloud: #f5f5f5;
+          --paper: #fafafa;
+          --white: #ffffff;
 
-            --electric: #3b82f6;
-            --electric-bright: #60a5fa;
-            --electric-dim: #1d4ed8;
-            --mint: #10b981;
-            --mint-bright: #34d399;
-            --coral: #f43f5e;
-            --amber: #f59e0b;
-            --violet: #8b5cf6;
+          --accent: #2563eb;
+          --accent-bright: #3b82f6;
+          --accent-dim: #1d4ed8;
+          --success: #059669;
+          --success-bright: #10b981;
+          --warning: #d97706;
 
-            font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
-            line-height: 1.65;
-            color: var(--charcoal);
-            background: var(--snow);
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            font-size: 15px;
-            letter-spacing: -0.01em;
-        }
-
-        .workshop-page .page {
-            width: 210mm;
-            min-height: 297mm;
-            margin: 0 auto;
-            background: var(--white);
-            position: relative;
-            page-break-after: always;
-            overflow: hidden;
+          font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+          line-height: 1.6;
+          color: var(--charcoal);
+          background: var(--paper);
+          -webkit-font-smoothing: antialiased;
+          font-size: 16px;
         }
 
         /* ============================================
-           COVER PAGE
+           STICKY CTA BAR - Always visible
         ============================================ */
-        .workshop-page .cover {
-            background: var(--black);
-            padding: 0;
-            color: var(--white);
-            display: grid;
-            grid-template-rows: 1fr auto;
-            position: relative;
-            overflow: hidden;
+        .workshop-page .sticky-cta {
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          z-index: 1000;
+          background: var(--ink);
+          padding: 16px 24px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 16px;
+          box-shadow: 0 -4px 24px rgba(0,0,0,0.15);
+          animation: fadeIn 0.4s ease-out 0.5s both;
         }
 
-        .workshop-page .cover::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            right: -30%;
-            width: 120%;
-            height: 120%;
-            background: radial-gradient(ellipse at center, rgba(59, 130, 246, 0.08) 0%, transparent 60%);
-            pointer-events: none;
+        .workshop-page .sticky-cta-text {
+          color: var(--silver);
+          font-size: 14px;
+          font-weight: 500;
         }
 
-        .workshop-page .cover::after {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-            opacity: 0.03;
-            pointer-events: none;
+        .workshop-page .sticky-cta-text strong {
+          color: var(--white);
         }
 
-        .workshop-page .cover-content {
-            padding: 64px 64px 48px;
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            z-index: 2;
+        .workshop-page .sticky-cta-btn {
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          padding: 12px 24px;
+          background: var(--accent);
+          color: var(--white);
+          font-family: 'JetBrains Mono', monospace;
+          font-size: 13px;
+          font-weight: 600;
+          text-decoration: none;
+          border-radius: 8px;
+          transition: transform 0.15s ease, background 0.15s ease;
         }
 
-        .workshop-page .cover-eyebrow {
-            display: inline-flex;
-            align-items: center;
-            gap: 12px;
-            margin-bottom: 48px;
-            animation: fadeUp 0.8s ease-out both;
+        .workshop-page .sticky-cta-btn:hover {
+          background: var(--accent-bright);
+          transform: translateY(-1px);
         }
 
-        .workshop-page .cover-eyebrow span {
-            font-family: 'IBM Plex Mono', monospace;
-            font-size: 11px;
-            font-weight: 500;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            color: var(--silver);
+        .workshop-page .sticky-cta-btn svg {
+          width: 16px;
+          height: 16px;
         }
 
-        .workshop-page .live-dot {
-            width: 8px;
-            height: 8px;
-            background: var(--mint);
-            border-radius: 50%;
-            animation: pulse 2s ease-in-out infinite;
-            box-shadow: 0 0 12px var(--mint);
+        /* ============================================
+           HERO SECTION - High impact
+        ============================================ */
+        .workshop-page .hero {
+          background: var(--ink);
+          color: var(--white);
+          padding: 80px 24px 60px;
+          position: relative;
+          overflow: hidden;
         }
 
-        .workshop-page .cover h1 {
-            font-family: 'Playfair Display', Georgia, serif;
-            font-size: 58px;
-            font-weight: 500;
-            line-height: 1.08;
-            margin-bottom: 32px;
-            max-width: 560px;
-            letter-spacing: -0.03em;
-            animation: fadeUp 0.8s ease-out 0.1s both;
+        .workshop-page .hero::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 50%;
+          height: 100%;
+          background: radial-gradient(ellipse at top right, rgba(37, 99, 235, 0.15) 0%, transparent 60%);
+          pointer-events: none;
         }
 
-        .workshop-page .cover-description {
-            font-size: 18px;
-            font-weight: 400;
-            color: var(--silver);
-            max-width: 480px;
-            line-height: 1.7;
-            margin-bottom: 48px;
-            animation: fadeUp 0.8s ease-out 0.2s both;
+        .workshop-page .hero-inner {
+          max-width: 1100px;
+          margin: 0 auto;
+          position: relative;
+          z-index: 1;
         }
 
-        .workshop-page .cover-meta {
-            display: flex;
-            gap: 48px;
-            padding-top: 32px;
-            border-top: 1px solid var(--iron);
-            animation: fadeUp 0.8s ease-out 0.3s both;
+        .workshop-page .hero-badge {
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          padding: 8px 16px;
+          background: rgba(255,255,255,0.08);
+          border: 1px solid rgba(255,255,255,0.12);
+          border-radius: 100px;
+          font-family: 'JetBrains Mono', monospace;
+          font-size: 11px;
+          font-weight: 500;
+          letter-spacing: 0.5px;
+          text-transform: uppercase;
+          color: var(--silver);
+          margin-bottom: 32px;
+          animation: fadeIn 0.6s ease-out both;
+        }
+
+        .workshop-page .hero-badge .dot {
+          width: 6px;
+          height: 6px;
+          background: var(--success-bright);
+          border-radius: 50%;
+          animation: pulse 2s ease-in-out infinite;
+        }
+
+        .workshop-page .hero h1 {
+          font-family: 'DM Serif Display', Georgia, serif;
+          font-size: clamp(40px, 6vw, 64px);
+          font-weight: 400;
+          line-height: 1.1;
+          margin-bottom: 24px;
+          max-width: 720px;
+          animation: fadeIn 0.6s ease-out 0.1s both;
+        }
+
+        .workshop-page .hero h1 em {
+          font-style: italic;
+          color: var(--accent-bright);
+        }
+
+        .workshop-page .hero-desc {
+          font-size: 18px;
+          color: var(--silver);
+          max-width: 560px;
+          line-height: 1.7;
+          margin-bottom: 40px;
+          animation: fadeIn 0.6s ease-out 0.2s both;
+        }
+
+        .workshop-page .hero-cta-row {
+          display: flex;
+          gap: 16px;
+          flex-wrap: wrap;
+          margin-bottom: 48px;
+          animation: fadeIn 0.6s ease-out 0.3s both;
+        }
+
+        .workshop-page .btn-primary {
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
+          padding: 16px 28px;
+          background: var(--accent);
+          color: var(--white);
+          font-family: 'DM Sans', sans-serif;
+          font-size: 15px;
+          font-weight: 600;
+          text-decoration: none;
+          border-radius: 10px;
+          transition: all 0.2s ease;
+          box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+        }
+
+        .workshop-page .btn-primary:hover {
+          background: var(--accent-bright);
+          transform: translateY(-2px);
+          box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+        }
+
+        .workshop-page .btn-secondary {
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
+          padding: 16px 28px;
+          background: transparent;
+          color: var(--white);
+          font-family: 'DM Sans', sans-serif;
+          font-size: 15px;
+          font-weight: 600;
+          text-decoration: none;
+          border-radius: 10px;
+          border: 1px solid var(--steel);
+          transition: all 0.2s ease;
+        }
+
+        .workshop-page .btn-secondary:hover {
+          background: rgba(255,255,255,0.05);
+          border-color: var(--ash);
+        }
+
+        .workshop-page .hero-meta {
+          display: flex;
+          gap: 40px;
+          padding-top: 32px;
+          border-top: 1px solid var(--graphite);
+          animation: fadeIn 0.6s ease-out 0.4s both;
         }
 
         .workshop-page .meta-item {
-            display: flex;
-            flex-direction: column;
-            gap: 6px;
+          display: flex;
+          flex-direction: column;
+          gap: 4px;
         }
 
         .workshop-page .meta-label {
-            font-family: 'IBM Plex Mono', monospace;
-            font-size: 10px;
-            font-weight: 500;
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
-            color: var(--slate);
+          font-family: 'JetBrains Mono', monospace;
+          font-size: 10px;
+          font-weight: 500;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          color: var(--ash);
         }
 
         .workshop-page .meta-value {
-            font-size: 15px;
-            font-weight: 600;
-            color: var(--fog);
-        }
-
-        .workshop-page .cover-footer {
-            background: var(--graphite);
-            padding: 32px 64px;
-            display: flex;
-            align-items: center;
-            gap: 28px;
-            position: relative;
-            z-index: 2;
-            animation: fadeUp 0.8s ease-out 0.4s both;
-            border-top: 1px solid var(--iron);
-        }
-
-        .workshop-page .instructor-avatar {
-            width: 72px;
-            height: 72px;
-            border-radius: 50%;
-            border: 2px solid var(--steel);
-            object-fit: cover;
-            flex-shrink: 0;
-        }
-
-        .workshop-page .instructor-preview-info {
-            flex: 1;
-        }
-
-        .workshop-page .instructor-preview-info h3 {
-            font-family: 'Playfair Display', Georgia, serif;
-            font-size: 20px;
-            font-weight: 500;
-            margin-bottom: 4px;
-            color: var(--white);
-        }
-
-        .workshop-page .instructor-preview-info p {
-            font-size: 13px;
-            color: var(--silver);
-            line-height: 1.5;
-        }
-
-        .workshop-page .instructor-preview-info .credential-pills {
-            margin-top: 12px;
-        }
-
-        .workshop-page .credential-pills {
-            display: flex;
-            gap: 8px;
-            flex-wrap: wrap;
-        }
-
-        .workshop-page .pill {
-            font-family: 'IBM Plex Mono', monospace;
-            font-size: 10px;
-            font-weight: 500;
-            letter-spacing: 0.5px;
-            padding: 6px 12px;
-            border-radius: 4px;
-            background: var(--iron);
-            color: var(--fog);
-            border: 1px solid var(--steel);
-        }
-
-        .workshop-page .pill.highlight {
-            background: linear-gradient(135deg, var(--electric-dim) 0%, var(--electric) 100%);
-            border-color: var(--electric);
-            color: var(--white);
+          font-size: 15px;
+          font-weight: 600;
+          color: var(--fog);
         }
 
         /* ============================================
-           CONTENT PAGES
+           SOCIAL PROOF BAR - Build trust early
         ============================================ */
-        .workshop-page .content-page {
-            padding: 52px 60px;
-            background: var(--white);
+        .workshop-page .proof-bar {
+          background: var(--charcoal);
+          padding: 20px 24px;
+          border-bottom: 1px solid var(--graphite);
         }
 
-        .workshop-page .page-header {
-            margin-bottom: 36px;
-            animation: fadeUp 0.6s ease-out both;
+        .workshop-page .proof-inner {
+          max-width: 1100px;
+          margin: 0 auto;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 40px;
+          flex-wrap: wrap;
         }
 
-        .workshop-page .page-label {
-            font-family: 'IBM Plex Mono', monospace;
-            font-size: 11px;
-            font-weight: 600;
-            letter-spacing: 2.5px;
-            text-transform: uppercase;
-            color: var(--electric);
-            margin-bottom: 12px;
-            display: flex;
-            align-items: center;
-            gap: 12px;
+        .workshop-page .proof-stat {
+          display: flex;
+          align-items: baseline;
+          gap: 8px;
         }
 
-        .workshop-page .page-label::after {
-            content: '';
-            flex: 1;
-            height: 1px;
-            background: linear-gradient(90deg, var(--electric), transparent);
-            max-width: 100px;
+        .workshop-page .proof-stat strong {
+          font-family: 'DM Serif Display', serif;
+          font-size: 28px;
+          color: var(--accent-bright);
         }
 
-        .workshop-page .page-title {
-            font-family: 'Playfair Display', Georgia, serif;
-            font-size: 38px;
-            font-weight: 500;
-            color: var(--black);
-            letter-spacing: -0.02em;
-            line-height: 1.15;
+        .workshop-page .proof-stat span {
+          font-size: 13px;
+          color: var(--silver);
         }
 
-        .workshop-page .page-subtitle {
-            font-size: 17px;
-            color: var(--slate);
-            margin-top: 12px;
-            max-width: 580px;
-            line-height: 1.7;
-        }
-
-        /* Instructor Section */
-        .workshop-page .instructor-card {
-            display: grid;
-            grid-template-columns: 130px 1fr;
-            gap: 32px;
-            padding: 32px;
-            background: linear-gradient(135deg, var(--cloud) 0%, var(--snow) 100%);
-            border-radius: 16px;
-            margin-bottom: 32px;
-            border: 1px solid var(--mist);
-            animation: fadeUp 0.6s ease-out 0.1s both;
-        }
-
-        .workshop-page .instructor-photo-section {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .workshop-page .instructor-photo {
-            width: 130px;
-            height: 130px;
-            border-radius: 12px;
-            object-fit: cover;
-            border: 3px solid var(--white);
-            box-shadow: 0 8px 32px rgba(0,0,0,0.12);
-        }
-
-        .workshop-page .photo-caption {
-            font-family: 'IBM Plex Mono', monospace;
-            font-size: 9px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: var(--ash);
-            text-align: center;
-        }
-
-        .workshop-page .instructor-content h3 {
-            font-family: 'Playfair Display', Georgia, serif;
-            font-size: 26px;
-            font-weight: 500;
-            color: var(--black);
-            margin-bottom: 4px;
-        }
-
-        .workshop-page .instructor-role {
-            font-size: 14px;
-            color: var(--slate);
-            margin-bottom: 14px;
-            font-weight: 500;
-        }
-
-        .workshop-page .instructor-tags {
-            display: flex;
-            gap: 8px;
-            margin-bottom: 18px;
-            flex-wrap: wrap;
-        }
-
-        .workshop-page .tag {
-            font-family: 'IBM Plex Mono', monospace;
-            font-size: 10px;
-            font-weight: 600;
-            letter-spacing: 0.3px;
-            padding: 6px 12px;
-            border-radius: 6px;
-            background: var(--white);
-            color: var(--charcoal);
-            border: 1px solid var(--fog);
-        }
-
-        .workshop-page .tag.accent {
-            background: var(--electric);
-            color: var(--white);
-            border-color: var(--electric);
-        }
-
-        .workshop-page .instructor-bio {
-            font-size: 14px;
-            line-height: 1.85;
-            color: var(--slate);
-        }
-
-        .workshop-page .instructor-bio p {
-            margin-bottom: 12px;
-        }
-
-        .workshop-page .instructor-bio strong {
-            color: var(--charcoal);
-            font-weight: 600;
-        }
-
-        /* Learning Outcomes */
-        .workshop-page .outcomes-section {
-            margin-top: 28px;
-            animation: fadeUp 0.6s ease-out 0.2s both;
-        }
-
-        .workshop-page .outcomes-header {
-            font-family: 'Playfair Display', Georgia, serif;
-            font-size: 24px;
-            font-weight: 500;
-            color: var(--black);
-            margin-bottom: 18px;
-        }
-
-        .workshop-page .outcomes-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 14px;
-        }
-
-        .workshop-page .outcome-card {
-            padding: 22px;
-            background: var(--white);
-            border-radius: 12px;
-            border: 2px solid var(--mist);
-            transition: all 0.3s ease;
-        }
-
-        .workshop-page .outcome-card:hover {
-            border-color: var(--electric);
-            box-shadow: 0 4px 20px rgba(59, 130, 246, 0.12);
-            transform: translateY(-2px);
-        }
-
-        .workshop-page .outcome-icon {
-            font-size: 28px;
-            margin-bottom: 12px;
-            display: block;
-        }
-
-        .workshop-page .outcome-card h4 {
-            font-size: 16px;
-            font-weight: 700;
-            color: var(--charcoal);
-            margin-bottom: 8px;
-        }
-
-        .workshop-page .outcome-card p {
-            font-size: 13px;
-            color: var(--slate);
-            line-height: 1.6;
+        .workshop-page .proof-divider {
+          width: 1px;
+          height: 32px;
+          background: var(--steel);
         }
 
         /* ============================================
-           SESSION CARDS - BIGGER, BOLDER
+           ROI SECTION - Moved up for desire
         ============================================ */
-        .workshop-page .session-card {
-            background: var(--white);
-            border: 2px solid var(--mist);
-            border-radius: 16px;
-            margin-bottom: 22px;
-            overflow: hidden;
-            transition: all 0.3s ease;
-            animation: fadeUp 0.6s ease-out both;
+        .workshop-page .roi-section {
+          background: var(--ink);
+          padding: 80px 24px;
         }
 
-        .workshop-page .session-card:hover {
-            border-color: var(--electric);
-            box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+        .workshop-page .roi-inner {
+          max-width: 1100px;
+          margin: 0 auto;
         }
 
-        .workshop-page .session-header {
-            padding: 24px 28px;
-            background: linear-gradient(135deg, var(--electric) 0%, var(--electric-dim) 100%);
-            color: var(--white);
+        .workshop-page .roi-header {
+          text-align: center;
+          margin-bottom: 48px;
         }
 
-        .workshop-page .session-top-bar {
-            display: flex;
-            align-items: center;
-            gap: 14px;
-            margin-bottom: 12px;
+        .workshop-page .roi-header h2 {
+          font-family: 'DM Serif Display', serif;
+          font-size: 36px;
+          color: var(--white);
+          margin-bottom: 12px;
         }
 
-        .workshop-page .session-number {
-            font-family: 'IBM Plex Mono', monospace;
-            font-size: 12px;
-            font-weight: 600;
-            letter-spacing: 1px;
-            color: rgba(255,255,255,0.85);
-            display: flex;
-            align-items: center;
-            gap: 8px;
+        .workshop-page .roi-header p {
+          font-size: 16px;
+          color: var(--silver);
+          max-width: 480px;
+          margin: 0 auto;
         }
 
-        .workshop-page .session-number::before {
-            content: '';
-            width: 8px;
-            height: 8px;
-            background: var(--white);
-            border-radius: 50%;
+        .workshop-page .roi-grid {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 20px;
         }
 
-        .workshop-page .session-badges {
-            display: flex;
-            gap: 8px;
-            margin-left: auto;
+        .workshop-page .roi-card {
+          background: rgba(255,255,255,0.03);
+          border: 1px solid var(--graphite);
+          border-radius: 16px;
+          padding: 32px 24px;
+          text-align: center;
+          transition: all 0.2s ease;
         }
 
-        .workshop-page .badge {
-            font-family: 'IBM Plex Mono', monospace;
-            font-size: 10px;
-            font-weight: 700;
-            padding: 6px 14px;
-            border-radius: 100px;
-            letter-spacing: 0.5px;
-            text-transform: uppercase;
+        .workshop-page .roi-card:hover {
+          background: rgba(255,255,255,0.06);
+          border-color: var(--accent);
+          transform: translateY(-4px);
         }
 
-        .workshop-page .badge-labs {
-            background: var(--mint);
-            color: var(--white);
+        .workshop-page .roi-value {
+          font-family: 'DM Serif Display', serif;
+          font-size: 48px;
+          color: var(--accent-bright);
+          margin-bottom: 8px;
+          font-variant-numeric: tabular-nums;
         }
 
-        .workshop-page .badge-demo {
-            background: var(--white);
-            color: var(--electric-dim);
+        .workshop-page .roi-label {
+          font-family: 'JetBrains Mono', monospace;
+          font-size: 11px;
+          font-weight: 600;
+          letter-spacing: 0.5px;
+          text-transform: uppercase;
+          color: var(--fog);
+          margin-bottom: 8px;
         }
 
-        .workshop-page .badge-qa {
-            background: var(--amber);
-            color: var(--white);
+        .workshop-page .roi-desc {
+          font-size: 13px;
+          color: var(--ash);
+          line-height: 1.5;
         }
 
-        .workshop-page .session-title {
-            font-family: 'Playfair Display', Georgia, serif;
-            font-size: 26px;
-            font-weight: 500;
-            color: var(--white);
-            margin-bottom: 4px;
+        /* ============================================
+           CONTENT SECTIONS
+        ============================================ */
+        .workshop-page .section {
+          padding: 80px 24px;
         }
 
-        .workshop-page .session-type {
-            font-size: 14px;
-            color: rgba(255,255,255,0.8);
-            font-weight: 500;
+        .workshop-page .section-inner {
+          max-width: 1100px;
+          margin: 0 auto;
         }
 
-        .workshop-page .session-body {
-            padding: 28px;
-        }
-
-        .workshop-page .session-intro {
-            font-size: 16px;
-            color: var(--charcoal);
-            line-height: 1.7;
-            margin-bottom: 24px;
-            padding-bottom: 20px;
-            border-bottom: 2px solid var(--mist);
-            font-weight: 500;
-        }
-
-        .workshop-page .content-section {
-            margin-bottom: 24px;
-        }
-
-        .workshop-page .content-section:last-child {
-            margin-bottom: 0;
+        .workshop-page .section-header {
+          margin-bottom: 48px;
         }
 
         .workshop-page .section-label {
-            font-family: 'IBM Plex Mono', monospace;
-            font-size: 11px;
-            font-weight: 700;
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
-            color: var(--electric);
-            margin-bottom: 14px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
+          font-family: 'JetBrains Mono', monospace;
+          font-size: 11px;
+          font-weight: 600;
+          letter-spacing: 1.5px;
+          text-transform: uppercase;
+          color: var(--accent);
+          margin-bottom: 12px;
         }
 
-        .workshop-page .section-label::before {
-            content: '';
-            width: 4px;
-            height: 18px;
-            background: var(--electric);
-            border-radius: 2px;
+        .workshop-page .section-title {
+          font-family: 'DM Serif Display', serif;
+          font-size: 36px;
+          color: var(--ink);
+          margin-bottom: 12px;
+        }
+
+        .workshop-page .section-subtitle {
+          font-size: 17px;
+          color: var(--slate);
+          max-width: 560px;
+          line-height: 1.7;
+        }
+
+        /* Instructor Card */
+        .workshop-page .instructor-card {
+          display: grid;
+          grid-template-columns: 160px 1fr;
+          gap: 40px;
+          padding: 40px;
+          background: var(--white);
+          border: 1px solid var(--mist);
+          border-radius: 20px;
+          margin-bottom: 48px;
+        }
+
+        .workshop-page .instructor-photo {
+          width: 160px;
+          height: 160px;
+          border-radius: 12px;
+          object-fit: cover;
+          box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+        }
+
+        .workshop-page .instructor-content h3 {
+          font-family: 'DM Serif Display', serif;
+          font-size: 28px;
+          color: var(--ink);
+          margin-bottom: 4px;
+        }
+
+        .workshop-page .instructor-role {
+          font-size: 15px;
+          color: var(--slate);
+          margin-bottom: 16px;
+        }
+
+        .workshop-page .instructor-tags {
+          display: flex;
+          gap: 8px;
+          flex-wrap: wrap;
+          margin-bottom: 20px;
+        }
+
+        .workshop-page .tag {
+          font-family: 'JetBrains Mono', monospace;
+          font-size: 11px;
+          font-weight: 500;
+          padding: 6px 12px;
+          border-radius: 6px;
+          background: var(--cloud);
+          color: var(--charcoal);
+        }
+
+        .workshop-page .tag.accent {
+          background: var(--accent);
+          color: var(--white);
+        }
+
+        .workshop-page .instructor-bio {
+          font-size: 15px;
+          color: var(--slate);
+          line-height: 1.8;
+        }
+
+        .workshop-page .instructor-bio strong {
+          color: var(--charcoal);
+          font-weight: 600;
+        }
+
+        /* Outcomes Grid */
+        .workshop-page .outcomes-grid {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 20px;
+        }
+
+        .workshop-page .outcome-card {
+          padding: 28px;
+          background: var(--white);
+          border: 1px solid var(--mist);
+          border-radius: 16px;
+          transition: all 0.2s ease;
+        }
+
+        .workshop-page .outcome-card:hover {
+          border-color: var(--accent);
+          box-shadow: 0 8px 32px rgba(37, 99, 235, 0.08);
+        }
+
+        .workshop-page .outcome-icon {
+          font-size: 32px;
+          margin-bottom: 16px;
+        }
+
+        .workshop-page .outcome-card h4 {
+          font-size: 17px;
+          font-weight: 700;
+          color: var(--charcoal);
+          margin-bottom: 8px;
+        }
+
+        .workshop-page .outcome-card p {
+          font-size: 14px;
+          color: var(--slate);
+          line-height: 1.6;
+        }
+
+        /* Session Cards */
+        .workshop-page .sessions-list {
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+        }
+
+        .workshop-page .session-card {
+          background: var(--white);
+          border: 1px solid var(--mist);
+          border-radius: 16px;
+          overflow: hidden;
+        }
+
+        .workshop-page .session-header {
+          background: var(--accent);
+          padding: 24px 32px;
+          color: var(--white);
+        }
+
+        .workshop-page .session-top {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          margin-bottom: 8px;
+        }
+
+        .workshop-page .session-number {
+          font-family: 'JetBrains Mono', monospace;
+          font-size: 12px;
+          font-weight: 500;
+          color: rgba(255,255,255,0.8);
+        }
+
+        .workshop-page .session-badges {
+          display: flex;
+          gap: 8px;
+          margin-left: auto;
+        }
+
+        .workshop-page .badge {
+          font-family: 'JetBrains Mono', monospace;
+          font-size: 10px;
+          font-weight: 600;
+          padding: 4px 10px;
+          border-radius: 100px;
+          text-transform: uppercase;
+          letter-spacing: 0.3px;
+        }
+
+        .workshop-page .badge-demo {
+          background: var(--white);
+          color: var(--accent-dim);
+        }
+
+        .workshop-page .badge-labs {
+          background: var(--success);
+          color: var(--white);
+        }
+
+        .workshop-page .badge-qa {
+          background: var(--warning);
+          color: var(--white);
+        }
+
+        .workshop-page .session-title {
+          font-family: 'DM Serif Display', serif;
+          font-size: 24px;
+          margin-bottom: 4px;
+        }
+
+        .workshop-page .session-type {
+          font-size: 14px;
+          color: rgba(255,255,255,0.8);
+        }
+
+        .workshop-page .session-body {
+          padding: 28px 32px;
+        }
+
+        .workshop-page .session-intro {
+          font-size: 15px;
+          color: var(--charcoal);
+          line-height: 1.7;
+          margin-bottom: 24px;
+          padding-bottom: 20px;
+          border-bottom: 1px solid var(--mist);
+        }
+
+        .workshop-page .content-label {
+          font-family: 'JetBrains Mono', monospace;
+          font-size: 10px;
+          font-weight: 600;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          color: var(--accent);
+          margin-bottom: 12px;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }
+
+        .workshop-page .content-label::before {
+          content: '';
+          width: 3px;
+          height: 14px;
+          background: var(--accent);
+          border-radius: 2px;
         }
 
         .workshop-page .topics-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 10px;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 10px;
+          margin-bottom: 20px;
         }
 
         .workshop-page .topic-item {
-            font-size: 14px;
-            font-weight: 500;
-            color: var(--charcoal);
-            padding: 14px 18px;
-            background: linear-gradient(135deg, var(--snow) 0%, var(--cloud) 100%);
-            border-radius: 10px;
-            border-left: 4px solid var(--electric);
-            transition: all 0.2s ease;
-        }
-
-        .workshop-page .topic-item:hover {
-            background: linear-gradient(135deg, var(--cloud) 0%, var(--mist) 100%);
-            transform: translateX(4px);
-        }
-
-        .workshop-page .demo-list {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-
-        .workshop-page .demo-item {
-            padding: 18px 22px;
-            background: linear-gradient(135deg, var(--snow) 0%, var(--white) 100%);
-            border-radius: 12px;
-            border: 2px solid var(--mist);
-            font-size: 15px;
-            color: var(--slate);
-            line-height: 1.6;
-        }
-
-        .workshop-page .demo-item strong {
-            color: var(--charcoal);
-            font-weight: 700;
-        }
-
-        .workshop-page .demo-item.compact {
-            padding: 14px 18px;
-            font-size: 14px;
+          font-size: 14px;
+          font-weight: 500;
+          color: var(--charcoal);
+          padding: 12px 16px;
+          background: var(--cloud);
+          border-radius: 8px;
+          border-left: 3px solid var(--accent);
         }
 
         .workshop-page .deliverables-row {
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-            margin-top: 20px;
-            padding-top: 20px;
-            border-top: 2px dashed var(--fog);
+          display: flex;
+          gap: 10px;
+          flex-wrap: wrap;
+          padding-top: 16px;
+          border-top: 1px dashed var(--mist);
         }
 
         .workshop-page .deliverable-chip {
-            font-family: 'IBM Plex Mono', monospace;
-            font-size: 11px;
-            font-weight: 600;
-            padding: 10px 16px;
-            background: linear-gradient(135deg, rgba(16, 185, 129, 0.15) 0%, rgba(16, 185, 129, 0.08) 100%);
-            color: var(--mint);
-            border-radius: 8px;
-            border: 2px solid rgba(16, 185, 129, 0.3);
-        }
-
-        /* Capstone Section */
-        .workshop-page .capstone-section {
-            margin-top: 24px;
-            padding: 24px 28px;
-            background: linear-gradient(135deg, rgba(59, 130, 246, 0.08) 0%, rgba(139, 92, 246, 0.06) 100%);
-            border-radius: 14px;
-            border: 2px solid rgba(59, 130, 246, 0.2);
-            animation: fadeUp 0.6s ease-out 0.3s both;
-        }
-
-        .workshop-page .capstone-header {
-            display: flex;
-            align-items: center;
-            gap: 14px;
-            margin-bottom: 14px;
-        }
-
-        .workshop-page .capstone-badge {
-            font-family: 'IBM Plex Mono', monospace;
-            font-size: 10px;
-            font-weight: 700;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            padding: 6px 14px;
-            background: linear-gradient(135deg, var(--electric) 0%, var(--violet) 100%);
-            color: var(--white);
-            border-radius: 6px;
-        }
-
-        .workshop-page .capstone-header h3 {
-            font-family: 'Playfair Display', Georgia, serif;
-            font-size: 22px;
-            font-weight: 500;
-            color: var(--black);
-            margin: 0;
-        }
-
-        .workshop-page .capstone-description {
-            font-size: 14px;
-            color: var(--slate);
-            line-height: 1.7;
-            margin-bottom: 18px;
-        }
-
-        .workshop-page .capstone-examples {
-            display: flex;
-            gap: 16px;
-        }
-
-        .workshop-page .capstone-example {
-            flex: 1;
-            display: flex;
-            gap: 12px;
-            padding: 16px;
-            background: var(--white);
-            border-radius: 10px;
-            border: 1px solid var(--mist);
-        }
-
-        .workshop-page .capstone-icon {
-            font-size: 24px;
-        }
-
-        .workshop-page .capstone-example strong {
-            display: block;
-            font-size: 13px;
-            color: var(--charcoal);
-            margin-bottom: 4px;
-        }
-
-        .workshop-page .capstone-detail {
-            display: block;
-            font-size: 11px;
-            color: var(--ash);
-        }
-
-        /* Post-Workshop Support Highlight */
-        .workshop-page .support-highlight {
-            margin-top: 20px;
-            padding: 24px 28px;
-            background: linear-gradient(135deg, var(--snow) 0%, rgba(16, 185, 129, 0.06) 100%);
-            border-radius: 14px;
-            border: 2px solid rgba(16, 185, 129, 0.25);
-        }
-
-        .workshop-page .support-highlight-header {
-            display: flex;
-            align-items: flex-start;
-            gap: 16px;
-            margin-bottom: 18px;
-        }
-
-        .workshop-page .support-icon {
-            font-size: 32px;
-        }
-
-        .workshop-page .support-highlight-header h4 {
-            font-size: 18px;
-            font-weight: 700;
-            color: var(--charcoal);
-            margin: 0 0 4px 0;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .workshop-page .free-badge {
-            font-family: 'IBM Plex Mono', monospace;
-            font-size: 9px;
-            font-weight: 700;
-            letter-spacing: 0.5px;
-            text-transform: uppercase;
-            padding: 4px 10px;
-            background: var(--mint);
-            color: var(--white);
-            border-radius: 4px;
-        }
-
-        .workshop-page .support-highlight-header p {
-            font-size: 13px;
-            color: var(--slate);
-            margin: 0;
-        }
-
-        .workshop-page .support-items {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            margin-bottom: 16px;
-        }
-
-        .workshop-page .support-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 12px;
-            padding: 14px 16px;
-            background: var(--white);
-            border-radius: 10px;
-            border: 1px solid var(--mist);
-        }
-
-        .workshop-page .check-icon {
-            font-size: 16px;
-            font-weight: 700;
-            color: var(--mint);
-            flex-shrink: 0;
-        }
-
-        .workshop-page .support-item strong {
-            display: block;
-            font-size: 13px;
-            color: var(--charcoal);
-            margin-bottom: 2px;
-        }
-
-        .workshop-page .support-item span {
-            display: block;
-            font-size: 11px;
-            color: var(--ash);
-        }
-
-        .workshop-page .support-upgrade {
-            font-size: 12px;
-            color: var(--slate);
-            text-align: center;
-            padding-top: 12px;
-            border-top: 1px dashed var(--fog);
-            margin: 0;
+          font-family: 'JetBrains Mono', monospace;
+          font-size: 11px;
+          font-weight: 500;
+          padding: 8px 14px;
+          background: rgba(5, 150, 105, 0.1);
+          color: var(--success);
+          border-radius: 6px;
         }
 
         /* Testimonial */
         .workshop-page .testimonial {
-            padding: 28px 32px;
-            background: linear-gradient(135deg, var(--graphite) 0%, var(--black) 100%);
-            border-radius: 16px;
-            margin: 28px 0;
-            position: relative;
-            animation: fadeUp 0.6s ease-out both;
-            color: var(--white);
+          background: var(--ink);
+          border-radius: 16px;
+          padding: 32px 40px;
+          margin: 32px 0;
+          position: relative;
         }
 
         .workshop-page .testimonial::before {
-            content: '"';
-            font-family: 'Playfair Display', Georgia, serif;
-            font-size: 80px;
-            color: var(--electric);
-            opacity: 0.3;
-            position: absolute;
-            top: 5px;
-            left: 24px;
-            line-height: 1;
+          content: '"';
+          font-family: 'DM Serif Display', serif;
+          font-size: 80px;
+          color: var(--accent);
+          opacity: 0.3;
+          position: absolute;
+          top: 10px;
+          left: 28px;
+          line-height: 1;
         }
 
         .workshop-page .testimonial-quote {
-            font-size: 16px;
-            font-style: italic;
-            color: var(--fog);
-            line-height: 1.8;
-            margin-bottom: 16px;
-            position: relative;
-            z-index: 1;
+          font-size: 17px;
+          font-style: italic;
+          color: var(--fog);
+          line-height: 1.8;
+          margin-bottom: 16px;
+          position: relative;
+          z-index: 1;
         }
 
         .workshop-page .testimonial-author {
-            font-size: 14px;
-            font-weight: 700;
-            color: var(--white);
+          font-size: 15px;
+          font-weight: 600;
+          color: var(--white);
         }
 
         .workshop-page .testimonial-role {
-            font-size: 12px;
-            color: var(--silver);
+          font-size: 13px;
+          color: var(--ash);
         }
 
-        /* Deliverables Page */
-        .workshop-page .tier-header {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            margin-bottom: 20px;
+        /* Capstone Section */
+        .workshop-page .capstone-section {
+          background: rgba(37, 99, 235, 0.04);
+          border: 1px solid rgba(37, 99, 235, 0.15);
+          border-radius: 16px;
+          padding: 32px;
+          margin-top: 32px;
         }
 
-        .workshop-page .tier-label {
-            font-family: 'IBM Plex Mono', monospace;
-            font-size: 11px;
-            font-weight: 700;
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
-            padding: 10px 18px;
-            border-radius: 8px;
+        .workshop-page .capstone-header {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+          margin-bottom: 16px;
         }
 
-        .workshop-page .tier-included {
-            background: var(--mint);
-            color: var(--white);
+        .workshop-page .capstone-badge {
+          font-family: 'JetBrains Mono', monospace;
+          font-size: 10px;
+          font-weight: 600;
+          letter-spacing: 0.5px;
+          text-transform: uppercase;
+          padding: 6px 12px;
+          background: var(--accent);
+          color: var(--white);
+          border-radius: 6px;
         }
 
+        .workshop-page .capstone-header h3 {
+          font-family: 'DM Serif Display', serif;
+          font-size: 22px;
+          color: var(--ink);
+        }
+
+        .workshop-page .capstone-desc {
+          font-size: 15px;
+          color: var(--slate);
+          line-height: 1.7;
+          margin-bottom: 20px;
+        }
+
+        .workshop-page .capstone-examples {
+          display: flex;
+          gap: 16px;
+        }
+
+        .workshop-page .capstone-example {
+          flex: 1;
+          display: flex;
+          gap: 12px;
+          padding: 16px;
+          background: var(--white);
+          border-radius: 10px;
+          border: 1px solid var(--mist);
+        }
+
+        .workshop-page .capstone-icon {
+          font-size: 24px;
+        }
+
+        .workshop-page .capstone-example strong {
+          display: block;
+          font-size: 14px;
+          color: var(--charcoal);
+          margin-bottom: 4px;
+        }
+
+        .workshop-page .capstone-detail {
+          font-size: 12px;
+          color: var(--ash);
+        }
+
+        /* Deliverables Grid */
         .workshop-page .deliverables-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 16px;
-            margin-bottom: 32px;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 20px;
+          margin-bottom: 32px;
         }
 
         .workshop-page .deliverable-card {
-            padding: 24px;
-            background: var(--white);
-            border: 2px solid var(--mist);
-            border-radius: 14px;
-            transition: all 0.3s ease;
-        }
-
-        .workshop-page .deliverable-card:hover {
-            border-color: var(--mint);
-            transform: translateY(-2px);
+          padding: 28px;
+          background: var(--white);
+          border: 1px solid var(--mist);
+          border-radius: 16px;
         }
 
         .workshop-page .deliverable-icon {
-            font-size: 32px;
-            margin-bottom: 14px;
+          font-size: 32px;
+          margin-bottom: 16px;
         }
 
         .workshop-page .deliverable-card h4 {
-            font-size: 16px;
-            font-weight: 700;
-            color: var(--charcoal);
-            margin-bottom: 14px;
+          font-size: 17px;
+          font-weight: 700;
+          color: var(--charcoal);
+          margin-bottom: 16px;
         }
 
         .workshop-page .deliverable-card ul {
-            list-style: none;
+          list-style: none;
         }
 
         .workshop-page .deliverable-card li {
-            font-size: 14px;
-            padding: 7px 0;
-            padding-left: 24px;
-            position: relative;
-            color: var(--slate);
-            line-height: 1.5;
+          font-size: 14px;
+          padding: 8px 0;
+          padding-left: 24px;
+          position: relative;
+          color: var(--slate);
         }
 
         .workshop-page .deliverable-card li::before {
-            content: '✓';
-            position: absolute;
-            left: 0;
-            color: var(--mint);
-            font-weight: 700;
+          content: '✓';
+          position: absolute;
+          left: 0;
+          color: var(--success);
+          font-weight: 700;
         }
 
-        /* Premium Section */
-        .workshop-page .premium-section {
-            padding: 36px;
-            background: linear-gradient(145deg, #1e1b4b 0%, #312e81 50%, #4338ca 100%);
-            border-radius: 18px;
-            position: relative;
-            overflow: hidden;
+        /* Support Section */
+        .workshop-page .support-card {
+          background: rgba(5, 150, 105, 0.04);
+          border: 1px solid rgba(5, 150, 105, 0.2);
+          border-radius: 16px;
+          padding: 32px;
         }
 
-        .workshop-page .premium-section::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-            opacity: 0.05;
-            pointer-events: none;
+        .workshop-page .support-header {
+          display: flex;
+          align-items: flex-start;
+          gap: 16px;
+          margin-bottom: 20px;
         }
 
-        .workshop-page .premium-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 24px;
-            position: relative;
-            z-index: 1;
+        .workshop-page .support-icon {
+          font-size: 32px;
         }
 
-        .workshop-page .premium-header h3 {
-            font-family: 'Playfair Display', Georgia, serif;
-            font-size: 26px;
-            font-weight: 500;
-            color: var(--white);
-            margin-bottom: 6px;
+        .workshop-page .support-header h4 {
+          font-size: 18px;
+          font-weight: 700;
+          color: var(--charcoal);
+          display: flex;
+          align-items: center;
+          gap: 10px;
         }
 
-        .workshop-page .premium-header p {
-            font-size: 15px;
-            color: rgba(255,255,255,0.75);
+        .workshop-page .free-badge {
+          font-family: 'JetBrains Mono', monospace;
+          font-size: 9px;
+          font-weight: 600;
+          letter-spacing: 0.3px;
+          text-transform: uppercase;
+          padding: 4px 8px;
+          background: var(--success);
+          color: var(--white);
+          border-radius: 4px;
         }
 
-        .workshop-page .premium-badge {
-            font-family: 'IBM Plex Mono', monospace;
-            font-size: 10px;
-            font-weight: 700;
-            letter-spacing: 1px;
-            padding: 8px 16px;
-            background: rgba(255,255,255,0.15);
-            border: 1px solid rgba(255,255,255,0.25);
-            border-radius: 6px;
-            color: var(--white);
+        .workshop-page .support-header p {
+          font-size: 14px;
+          color: var(--slate);
+          margin-top: 4px;
         }
 
-        .workshop-page .premium-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 14px;
-            position: relative;
-            z-index: 1;
+        .workshop-page .support-items {
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
         }
 
-        .workshop-page .premium-card {
-            padding: 22px;
-            background: rgba(255,255,255,0.1);
-            border: 1px solid rgba(255,255,255,0.15);
-            border-radius: 12px;
-            backdrop-filter: blur(10px);
-            transition: all 0.3s ease;
+        .workshop-page .support-item {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          padding: 14px 16px;
+          background: var(--white);
+          border-radius: 10px;
+          border: 1px solid var(--mist);
         }
 
-        .workshop-page .premium-card:hover {
-            background: rgba(255,255,255,0.15);
-            border-color: rgba(255,255,255,0.25);
-            transform: translateY(-2px);
+        .workshop-page .check-icon {
+          color: var(--success);
+          font-weight: 700;
         }
 
-        .workshop-page .premium-card h4 {
-            font-size: 15px;
-            font-weight: 700;
-            color: var(--white);
-            margin-bottom: 8px;
+        .workshop-page .support-item strong {
+          font-size: 14px;
+          color: var(--charcoal);
         }
 
-        .workshop-page .premium-card p {
-            font-size: 13px;
-            color: rgba(255,255,255,0.75);
-            line-height: 1.6;
+        /* Final CTA Section */
+        .workshop-page .final-cta {
+          background: var(--accent);
+          padding: 80px 24px 120px;
+          text-align: center;
         }
 
-        /* ============================================
-           ROI SECTION - FIXED NUMBERS
-        ============================================ */
-        .workshop-page .roi-section {
-            padding: 44px;
-            background: var(--black);
-            border-radius: 18px;
-            margin-bottom: 28px;
-            position: relative;
-            overflow: hidden;
+        .workshop-page .final-cta-inner {
+          max-width: 640px;
+          margin: 0 auto;
         }
 
-        .workshop-page .roi-section::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 60%;
-            height: 100%;
-            background: radial-gradient(ellipse at top right, rgba(59, 130, 246, 0.12) 0%, transparent 60%);
+        .workshop-page .final-cta h2 {
+          font-family: 'DM Serif Display', serif;
+          font-size: 40px;
+          color: var(--white);
+          margin-bottom: 16px;
         }
 
-        .workshop-page .roi-header {
-            text-align: center;
-            margin-bottom: 36px;
-            position: relative;
-            z-index: 1;
+        .workshop-page .final-cta p {
+          font-size: 17px;
+          color: rgba(255,255,255,0.9);
+          margin-bottom: 32px;
         }
 
-        .workshop-page .roi-header h3 {
-            font-family: 'Playfair Display', Georgia, serif;
-            font-size: 32px;
-            font-weight: 500;
-            color: var(--white);
-            margin-bottom: 10px;
-        }
-
-        .workshop-page .roi-header p {
-            font-size: 15px;
-            color: var(--silver);
-            max-width: 480px;
-            margin: 0 auto;
-        }
-
-        .workshop-page .roi-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 16px;
-            position: relative;
-            z-index: 1;
-        }
-
-        .workshop-page .roi-card {
-            padding: 28px 22px;
-            background: rgba(255,255,255,0.05);
-            border: 1px solid rgba(255,255,255,0.1);
-            border-radius: 14px;
-            text-align: center;
-            transition: all 0.3s ease;
-        }
-
-        .workshop-page .roi-card:hover {
-            background: rgba(255,255,255,0.1);
-            border-color: var(--electric);
-            transform: translateY(-3px);
-        }
-
-        .workshop-page .roi-value {
-            font-family: 'Outfit', sans-serif;
-            font-size: 44px;
-            font-weight: 800;
-            color: var(--electric-bright);
-            margin-bottom: 6px;
-            letter-spacing: -0.02em;
-        }
-
-        .workshop-page .roi-label {
-            font-family: 'Outfit', sans-serif;
-            font-size: 13px;
-            font-weight: 700;
-            letter-spacing: 0.5px;
-            text-transform: uppercase;
-            color: var(--fog);
-            margin-bottom: 8px;
-        }
-
-        .workshop-page .roi-desc {
-            font-size: 12px;
-            color: var(--silver);
-            line-height: 1.5;
-        }
-
-        /* CTA Section */
-        .workshop-page .cta-section {
-            padding: 44px;
-            background: linear-gradient(135deg, var(--electric) 0%, var(--electric-dim) 100%);
-            border-radius: 18px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .workshop-page .cta-section::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-            opacity: 0.05;
-        }
-
-        .workshop-page .cta-header {
-            text-align: center;
-            margin-bottom: 32px;
-            position: relative;
-            z-index: 1;
-        }
-
-        .workshop-page .cta-header h3 {
-            font-family: 'Playfair Display', Georgia, serif;
-            font-size: 32px;
-            font-weight: 500;
-            color: var(--white);
-            margin-bottom: 10px;
-        }
-
-        .workshop-page .cta-header p {
-            font-size: 16px;
-            color: rgba(255,255,255,0.9);
-        }
-
-        .workshop-page .contact-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 16px;
-            position: relative;
-            z-index: 1;
+        .workshop-page .contact-cards {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 16px;
+          margin-bottom: 32px;
         }
 
         .workshop-page .contact-card {
-            padding: 28px;
-            background: rgba(255,255,255,0.12);
-            border: 1px solid rgba(255,255,255,0.18);
-            border-radius: 14px;
-            backdrop-filter: blur(10px);
+          padding: 24px;
+          background: rgba(255,255,255,0.1);
+          border: 1px solid rgba(255,255,255,0.15);
+          border-radius: 12px;
+          text-align: left;
+          text-decoration: none;
+          transition: all 0.2s ease;
+        }
+
+        .workshop-page .contact-card:hover {
+          background: rgba(255,255,255,0.15);
+          transform: translateY(-2px);
         }
 
         .workshop-page .contact-card h4 {
-            font-size: 15px;
-            font-weight: 700;
-            color: var(--white);
-            margin-bottom: 8px;
+          font-size: 14px;
+          font-weight: 600;
+          color: var(--white);
+          margin-bottom: 6px;
         }
 
-        .workshop-page .contact-card a {
-            color: rgba(255,255,255,0.95);
-            text-decoration: none;
-            font-size: 16px;
-            font-weight: 600;
-            transition: color 0.2s ease;
-        }
-
-        .workshop-page .contact-card a:hover {
-            color: var(--white);
-            text-decoration: underline;
+        .workshop-page .contact-card .link-text {
+          font-size: 15px;
+          font-weight: 600;
+          color: rgba(255,255,255,0.95);
         }
 
         .workshop-page .contact-card p {
-            font-size: 13px;
-            color: rgba(255,255,255,0.75);
-            margin-top: 10px;
-            line-height: 1.5;
+          font-size: 13px;
+          color: rgba(255,255,255,0.7);
+          margin-top: 8px;
+          margin-bottom: 0;
         }
 
-        .workshop-page .cta-footer {
-            margin-top: 28px;
-            padding-top: 24px;
-            border-top: 1px solid rgba(255,255,255,0.18);
-            text-align: center;
-            position: relative;
-            z-index: 1;
+        .workshop-page .footer-links {
+          display: flex;
+          justify-content: center;
+          gap: 24px;
+          padding-top: 24px;
+          border-top: 1px solid rgba(255,255,255,0.15);
         }
 
-        .workshop-page .cta-footer p {
-            font-size: 14px;
-            color: rgba(255,255,255,0.9);
-            line-height: 1.7;
+        .workshop-page .footer-links a {
+          font-family: 'JetBrains Mono', monospace;
+          font-size: 12px;
+          color: rgba(255,255,255,0.7);
+          text-decoration: none;
+          transition: color 0.15s ease;
         }
 
-        .workshop-page .cta-links {
-            margin-top: 14px;
-            display: flex;
-            justify-content: center;
-            gap: 28px;
-        }
-
-        .workshop-page .cta-links a {
-            font-family: 'IBM Plex Mono', monospace;
-            font-size: 12px;
-            color: rgba(255,255,255,0.75);
-            text-decoration: none;
-            transition: color 0.2s ease;
-        }
-
-        .workshop-page .cta-links a:hover {
-            color: var(--white);
-        }
-
-        /* Page Footer */
-        .workshop-page .page-footer {
-            position: absolute;
-            bottom: 28px;
-            left: 60px;
-            right: 60px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-family: 'IBM Plex Mono', monospace;
-            font-size: 10px;
-            color: var(--ash);
-            letter-spacing: 0.5px;
+        .workshop-page .footer-links a:hover {
+          color: var(--white);
         }
 
         /* Download Button */
         .workshop-page .download-btn {
-            position: fixed;
-            top: 80px;
-            right: 24px;
-            z-index: 1000;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            padding: 14px 24px;
-            background: linear-gradient(135deg, var(--electric) 0%, var(--electric-dim) 100%);
-            color: var(--white);
-            border: none;
-            border-radius: 12px;
-            font-family: 'IBM Plex Mono', monospace;
-            font-size: 13px;
-            font-weight: 600;
-            letter-spacing: 0.5px;
-            cursor: pointer;
-            box-shadow: 0 4px 20px rgba(59, 130, 246, 0.4), 0 2px 8px rgba(0,0,0,0.2);
-            transition: all 0.3s ease;
+          position: fixed;
+          top: 80px;
+          right: 24px;
+          z-index: 999;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          padding: 12px 20px;
+          background: var(--ink);
+          color: var(--white);
+          border: none;
+          border-radius: 10px;
+          font-family: 'JetBrains Mono', monospace;
+          font-size: 12px;
+          font-weight: 500;
+          cursor: pointer;
+          box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+          transition: all 0.2s ease;
+          text-decoration: none;
         }
 
         .workshop-page .download-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 28px rgba(59, 130, 246, 0.5), 0 4px 12px rgba(0,0,0,0.25);
-        }
-
-        .workshop-page .download-btn:active {
-            transform: translateY(0);
-        }
-
-        .workshop-page .download-btn:disabled {
-            opacity: 0.7;
-            cursor: not-allowed;
-            transform: none;
+          transform: translateY(-2px);
+          box-shadow: 0 6px 24px rgba(0,0,0,0.25);
         }
 
         .workshop-page .download-btn svg {
-            width: 18px;
-            height: 18px;
-            fill: currentColor;
+          width: 16px;
+          height: 16px;
+          fill: currentColor;
         }
 
         .workshop-page .download-btn .spinner {
-            width: 18px;
-            height: 18px;
-            border: 2px solid rgba(255,255,255,0.3);
-            border-top-color: white;
-            border-radius: 50%;
-            animation: spin 0.8s linear infinite;
+          width: 16px;
+          height: 16px;
+          border: 2px solid rgba(255,255,255,0.3);
+          border-top-color: white;
+          border-radius: 50%;
+          animation: spin 0.8s linear infinite;
         }
 
         @keyframes spin {
-            to { transform: rotate(360deg); }
+          to { transform: rotate(360deg); }
         }
 
-        @media print {
-            /* Reset everything for print */
-            * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
-
-            html, body {
-                margin: 0 !important;
-                padding: 0 !important;
-                background: white !important;
-            }
-
-            /* Hide Docusaurus chrome */
-            nav, .navbar, .footer, .theme-doc-sidebar-container,
-            [class*="docSidebar"], [class*="navbar"], [class*="footer"],
-            .pagination-nav, .theme-doc-footer {
-                display: none !important;
-            }
-
-            .workshop-page {
-                background: white !important;
-                padding: 0 !important;
-                margin: 0 !important;
-            }
-
-            .workshop-page .page {
-                width: 210mm !important;
-                height: 297mm !important;
-                min-height: 297mm !important;
-                max-height: 297mm !important;
-                margin: 0 !important;
-                padding: 0 !important;
-                box-shadow: none !important;
-                page-break-after: always !important;
-                page-break-inside: avoid !important;
-                overflow: hidden !important;
-                position: relative !important;
-            }
-
-            .workshop-page .page:last-child {
-                page-break-after: auto !important;
-            }
-
-            /* Ensure cover page prints correctly */
-            .workshop-page .cover {
-                height: 297mm !important;
-            }
-
-            /* Ensure content pages fit */
-            .workshop-page .content-page {
-                height: 297mm !important;
-                padding: 40px 50px !important;
-            }
-
-            .workshop-page .download-btn { display: none !important; }
-
-            /* Remove animations for print */
-            .workshop-page * {
-                animation: none !important;
-                transition: none !important;
-            }
-
-            @page {
-                size: A4 portrait;
-                margin: 0;
-            }
-        }
-
+        /* Responsive */
         @media (max-width: 900px) {
-            .workshop-page .page {
-                width: 100%;
-                min-height: auto;
-            }
-            .workshop-page .cover-content {
-                padding: 32px;
-            }
-            .workshop-page .cover h1 {
-                font-size: 36px;
-            }
-            .workshop-page .cover-meta {
-                flex-direction: column;
-                gap: 16px;
-            }
-            .workshop-page .cover-footer {
-                padding: 24px 32px;
-                flex-wrap: wrap;
-            }
-            .workshop-page .content-page {
-                padding: 32px 24px;
-            }
-            .workshop-page .instructor-card {
-                grid-template-columns: 1fr;
-            }
-            .workshop-page .outcomes-grid,
-            .workshop-page .topics-grid,
-            .workshop-page .deliverables-grid,
-            .workshop-page .premium-grid,
-            .workshop-page .contact-grid {
-                grid-template-columns: 1fr;
-            }
-            .workshop-page .roi-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            .workshop-page .cover h1 {
-                max-width: 100%;
-            }
-            .workshop-page .cover-description {
-                max-width: 100%;
-            }
-            .workshop-page .page-footer {
-                position: relative;
-                bottom: auto;
-                left: auto;
-                right: auto;
-                margin-top: 32px;
-                padding: 0 24px;
-            }
-            .workshop-page .download-btn {
-                top: auto;
-                bottom: 24px;
-                right: 16px;
-                padding: 12px 18px;
-                font-size: 12px;
-                border-radius: 10px;
-            }
+          .workshop-page .hero {
+            padding: 60px 20px 48px;
+          }
+          .workshop-page .hero h1 {
+            font-size: 36px;
+          }
+          .workshop-page .hero-meta {
+            flex-direction: column;
+            gap: 16px;
+          }
+          .workshop-page .proof-inner {
+            flex-direction: column;
+            gap: 20px;
+          }
+          .workshop-page .proof-divider {
+            display: none;
+          }
+          .workshop-page .roi-grid {
+            grid-template-columns: repeat(2, 1fr);
+          }
+          .workshop-page .instructor-card {
+            grid-template-columns: 1fr;
+            text-align: center;
+          }
+          .workshop-page .instructor-photo {
+            margin: 0 auto;
+          }
+          .workshop-page .instructor-tags {
+            justify-content: center;
+          }
+          .workshop-page .outcomes-grid,
+          .workshop-page .topics-grid,
+          .workshop-page .deliverables-grid,
+          .workshop-page .contact-cards {
+            grid-template-columns: 1fr;
+          }
+          .workshop-page .capstone-examples {
+            flex-direction: column;
+          }
+          .workshop-page .sticky-cta {
+            flex-direction: column;
+            gap: 12px;
+            padding: 16px;
+          }
+          .workshop-page .sticky-cta-text {
+            text-align: center;
+          }
+          .workshop-page .download-btn {
+            top: auto;
+            bottom: 80px;
+            right: 16px;
+          }
         }
 
         @media (max-width: 600px) {
-            .workshop-page .roi-grid {
-                grid-template-columns: 1fr;
-            }
-            .workshop-page .roi-card {
-                padding: 20px 16px;
-            }
-            .workshop-page .roi-value {
-                font-size: 36px;
-            }
-            .workshop-page .capstone-examples {
-                flex-direction: column;
-            }
+          .workshop-page .roi-grid {
+            grid-template-columns: 1fr;
+          }
+          .workshop-page .roi-value {
+            font-size: 40px;
+          }
+          .workshop-page .section {
+            padding: 60px 20px;
+          }
         }
       `}</style>
       <div className="workshop-page">
-        {/* Download PDF Button - Only render in browser */}
+        {/* Sticky CTA Bar */}
+        <div className="sticky-cta">
+          <span className="sticky-cta-text">
+            <strong>Ready to accelerate your team?</strong> Book a free discovery call
+          </span>
+          <a href={siteConfig.calLink} target="_blank" rel="noopener noreferrer" className="sticky-cta-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+              <line x1="16" y1="2" x2="16" y2="6" />
+              <line x1="8" y1="2" x2="8" y2="6" />
+              <line x1="3" y1="10" x2="21" y2="10" />
+            </svg>
+            Schedule Call
+          </a>
+        </div>
+
+        {/* Download PDF Button */}
         <BrowserOnly fallback={<div className="download-btn">Loading...</div>}>
           {() => {
-            // Dynamic imports for browser-only PDF components
             const { PDFDownloadLink } = require("@react-pdf/renderer");
             const WorkshopPDF = require("../components/WorkshopPDF").default;
             return (
@@ -1561,19 +1245,19 @@ export default function AIWorkshop() {
                 {({ loading, error }: { loading: boolean; error: Error | null }) =>
                   error ? (
                     <>
-                      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <svg viewBox="0 0 24 24">
                         <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z" />
                       </svg>
-                      Retry Download
+                      Retry
                     </>
                   ) : loading ? (
                     <>
                       <span className="spinner" />
-                      Generating...
+                      PDF...
                     </>
                   ) : (
                     <>
-                      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <svg viewBox="0 0 24 24">
                         <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" />
                       </svg>
                       Download PDF
@@ -1585,21 +1269,40 @@ export default function AIWorkshop() {
           }}
         </BrowserOnly>
 
-        {/* Page 1: Cover - Content from workshopData.ts */}
-        <div className="page cover">
-          <div className="cover-content">
-            <div className="cover-eyebrow">
-              <div className="live-dot"></div>
-              <span>{coverContent.eyebrow}</span>
+        {/* Hero Section */}
+        <section className="hero">
+          <div className="hero-inner">
+            <div className="hero-badge">
+              <span className="dot"></span>
+              {coverContent.eyebrow}
             </div>
 
             <h1>
               {coverContent.title} <em>{coverContent.titleEmphasis}</em>
             </h1>
 
-            <p className="cover-description">{coverContent.description}</p>
+            <p className="hero-desc">{coverContent.description}</p>
 
-            <div className="cover-meta">
+            <div className="hero-cta-row">
+              <a href={siteConfig.calLink} target="_blank" rel="noopener noreferrer" className="btn-primary">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="18" height="18">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                  <line x1="16" y1="2" x2="16" y2="6" />
+                  <line x1="8" y1="2" x2="8" y2="6" />
+                  <line x1="3" y1="10" x2="21" y2="10" />
+                </svg>
+                Schedule Discovery Call
+              </a>
+              <a href={`mailto:${siteConfig.email}`} className="btn-secondary">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="18" height="18">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+                Email Me
+              </a>
+            </div>
+
+            <div className="hero-meta">
               {coverContent.meta.map((item, i) => (
                 <div className="meta-item" key={i}>
                   <span className="meta-label">{item.label}</span>
@@ -1608,348 +1311,34 @@ export default function AIWorkshop() {
               ))}
             </div>
           </div>
+        </section>
 
-          <div className="cover-footer">
-            <img
-              src={instructor.avatar}
-              alt={instructor.name}
-              className="instructor-avatar"
-            />
-            <div className="instructor-preview-info">
-              <h3>{instructor.name}</h3>
-              <p>{instructor.shortDescription}</p>
-              <div className="credential-pills">
-                {instructor.credentials.map((cred, i) => (
-                  <span
-                    key={i}
-                    className={`pill ${cred.highlight ? "highlight" : ""}`}
-                  >
-                    {cred.text}
-                  </span>
-                ))}
-              </div>
+        {/* Social Proof Bar */}
+        <div className="proof-bar">
+          <div className="proof-inner">
+            <div className="proof-stat">
+              <strong>127+</strong>
+              <span>Technical Sessions Delivered</span>
+            </div>
+            <div className="proof-divider"></div>
+            <div className="proof-stat">
+              <strong>$270K+</strong>
+              <span>Saved in AI infra costs</span>
+            </div>
+            <div className="proof-divider"></div>
+            <div className="proof-stat">
+              <strong>25,000+</strong>
+              <span>Community Members</span>
             </div>
           </div>
         </div>
 
-        {/* Page 2: About + Outcomes - Content from workshopData.ts */}
-        <div className="page content-page">
-          <div className="page-header">
-            <div className="page-label">About the Instructor</div>
-            <h2 className="page-title">Learn from a Practitioner</h2>
-            <p className="page-subtitle">
-              Production-tested techniques from someone who builds AI systems
-              daily, not just talks about them.
-            </p>
-          </div>
-
-          <div className="instructor-card">
-            <div className="instructor-photo-section">
-              <img
-                src={instructor.avatar}
-                alt={instructor.name}
-                className="instructor-photo"
-              />
-              <span className="photo-caption">
-                {instructor.credentials[0].text}
-              </span>
-            </div>
-            <div className="instructor-content">
-              <h3>{instructor.name}</h3>
-              <p className="instructor-role">{instructor.role}</p>
-              <div className="instructor-tags">
-                {instructor.credentials.slice(0, 2).map((cred, i) => (
-                  <span key={i} className={`tag ${i === 0 ? "accent" : ""}`}>
-                    {cred.text}
-                  </span>
-                ))}
-              </div>
-              <div className="instructor-bio">
-                {instructor.bio.map((paragraph, i) => (
-                  <p key={i}>{paragraph.text}</p>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          <div className="outcomes-section">
-            <h3 className="outcomes-header">What Your Team Will Learn</h3>
-            <div className="outcomes-grid">
-              {outcomes.map((outcome, i) => (
-                <div className="outcome-card" key={i}>
-                  <span className="outcome-icon">{outcome.icon}</span>
-                  <h4>{outcome.title}</h4>
-                  <p>{outcome.description}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="capstone-section">
-            <div className="capstone-header">
-              <span className="capstone-badge">{capstone.badge}</span>
-              <h3>{capstone.title}</h3>
-            </div>
-            <p className="capstone-description">{capstone.description}</p>
-            <div className="capstone-examples">
-              {capstone.options.map((option, i) => (
-                <div className="capstone-example" key={i}>
-                  <span className="capstone-icon">{option.icon}</span>
-                  <div>
-                    <strong>{option.title}</strong>
-                    <span className="capstone-detail">{option.detail}</span>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="testimonial">
-            <p className="testimonial-quote">{testimonials[0].quote}</p>
-            <p className="testimonial-author">{testimonials[0].author}</p>
-            <p className="testimonial-role">{testimonials[0].role}</p>
-          </div>
-
-          <div className="page-footer">
-            <span>AI Workshop Proposal · {instructor.name}</span>
-            <span>Page 1</span>
-          </div>
-        </div>
-
-        {/* Page 3: Agenda Part 1 - Content from workshopData.ts */}
-        <div className="page content-page">
-          <div className="page-header">
-            <div className="page-label">Workshop Agenda</div>
-            <h2 className="page-title">Session Overview</h2>
-            <p className="page-subtitle">
-              Structured progression from fundamentals to implementation. Every
-              session includes working code you take home.
-            </p>
-          </div>
-
-          {sessions.slice(0, 2).map((session) => (
-            <div className="session-card" key={session.number}>
-              <div className="session-header">
-                <div className="session-top-bar">
-                  <div className="session-number">
-                    Session {session.number} · {session.duration}
-                  </div>
-                  <div className="session-badges">
-                    {session.badges.map((badge, i) => (
-                      <span key={i} className={`badge badge-${badge.variant}`}>
-                        {badge.text}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-                <div className="session-title">{session.title}</div>
-                <div className="session-type">{session.type}</div>
-              </div>
-              <div className="session-body">
-                <p className="session-intro">{session.intro}</p>
-
-                <div className="content-section">
-                  <div className="section-label">{session.sectionLabel}</div>
-                  <div className="topics-grid">
-                    {session.topics.map((topic, i) => (
-                      <div className="topic-item" key={i}>
-                        {topic.text}
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                {session.demos && (
-                  <div className="content-section">
-                    <div className="section-label">Live Demo</div>
-                    {session.demos.map((demo, i) => (
-                      <div className="demo-item" key={i}>
-                        <strong>{demo.title}:</strong> {demo.description}
-                      </div>
-                    ))}
-                  </div>
-                )}
-
-                <div className="deliverables-row">
-                  {session.deliverables.map((d, i) => (
-                    <span className="deliverable-chip" key={i}>
-                      {d.text}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
-          ))}
-
-          <div className="page-footer">
-            <span>AI Workshop Proposal · {instructor.name}</span>
-            <span>Page 2</span>
-          </div>
-        </div>
-
-        {/* Page 4: Agenda Part 2 - Content from workshopData.ts */}
-        <div className="page content-page">
-          {sessions.slice(2, 4).map((session) => (
-            <div className="session-card" key={session.number}>
-              <div className="session-header">
-                <div className="session-top-bar">
-                  <div className="session-number">
-                    Session {session.number} · {session.duration}
-                  </div>
-                  <div className="session-badges">
-                    {session.badges.map((badge, i) => (
-                      <span key={i} className={`badge badge-${badge.variant}`}>
-                        {badge.text}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-                <div className="session-title">{session.title}</div>
-                <div className="session-type">{session.type}</div>
-              </div>
-              <div className="session-body">
-                <p className="session-intro">{session.intro}</p>
-
-                <div className="content-section">
-                  <div className="section-label">{session.sectionLabel}</div>
-                  <div className="topics-grid">
-                    {session.topics.map((topic, i) => (
-                      <div className="topic-item" key={i}>
-                        {topic.text}
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                {session.demos && (
-                  <div className="content-section">
-                    <div className="section-label">Live Demo</div>
-                    {session.demos.map((demo, i) => (
-                      <div className="demo-item" key={i}>
-                        <strong>{demo.title}:</strong> {demo.description}
-                      </div>
-                    ))}
-                  </div>
-                )}
-
-                <div className="deliverables-row">
-                  {session.deliverables.map((d, i) => (
-                    <span className="deliverable-chip" key={i}>
-                      {d.text}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
-          ))}
-
-          <div className="testimonial">
-            <p className="testimonial-quote">{testimonials[1].quote}</p>
-            <p className="testimonial-author">{testimonials[1].author}</p>
-            <p className="testimonial-role">{testimonials[1].role}</p>
-          </div>
-
-          <div className="page-footer">
-            <span>AI Workshop Proposal · {instructor.name}</span>
-            <span>Page 3</span>
-          </div>
-        </div>
-
-        {/* Page 5: Deliverables + Premium - Content from workshopData.ts */}
-        <div className="page content-page">
-          <div className="page-header">
-            <div className="page-label">What You Get</div>
-            <h2 className="page-title">Workshop Deliverables</h2>
-            <p className="page-subtitle">
-              Everything included in the base workshop, plus optional services
-              for deeper implementation support.
-            </p>
-          </div>
-
-          <div className="tier-header">
-            <span className="tier-label tier-included">
-              Included in Workshop
-            </span>
-          </div>
-
-          <div className="deliverables-grid">
-            {deliverables.map((item, i) => (
-              <div className="deliverable-card" key={i}>
-                <div className="deliverable-icon">{item.icon}</div>
-                <h4>{item.title}</h4>
-                <ul>
-                  {item.items.map((li, j) => (
-                    <li key={j}>{li}</li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-
-          <div className="support-highlight">
-            <div className="support-highlight-header">
-              <div className="support-icon">{postWorkshopSupport.icon}</div>
-              <div>
-                <h4>
-                  {postWorkshopSupport.title}{" "}
-                  <span className="free-badge">{postWorkshopSupport.badge}</span>
-                </h4>
-                <p>{postWorkshopSupport.subtitle}</p>
-              </div>
-            </div>
-            <div className="support-items">
-              {postWorkshopSupport.items.map((item, i) => (
-                <div className="support-item" key={i}>
-                  <span className="check-icon">✓</span>
-                  <div>
-                    <strong>{item.title}</strong>
-                    <span>{item.description}</span>
-                  </div>
-                </div>
-              ))}
-            </div>
-            <p className="support-upgrade">{postWorkshopSupport.upgradeText}</p>
-          </div>
-
-          <div className="premium-section">
-            <div className="premium-header">
-              <div>
-                <h3>Premium Add-Ons</h3>
-                <p>
-                  For teams that want hands-on implementation support. Priced
-                  separately.
-                </p>
-              </div>
-              <span className="premium-badge">Optional</span>
-            </div>
-
-            <div className="premium-grid">
-              {premiumAddons.map((addon, i) => (
-                <div className="premium-card" key={i}>
-                  <h4>
-                    {addon.icon} {addon.title}
-                  </h4>
-                  <p>{addon.description}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="page-footer">
-            <span>AI Workshop Proposal · {instructor.name}</span>
-            <span>Page 4</span>
-          </div>
-        </div>
-
-        {/* Page 6: ROI + Contact - Content from workshopData.ts */}
-        <div className="page content-page">
-          <div className="roi-section">
+        {/* ROI Section - Moved up */}
+        <section className="roi-section">
+          <div className="roi-inner">
             <div className="roi-header">
-              <h3>Expected Results</h3>
-              <p>
-                Based on implementations at Balena and teams trained. These are
-                measured outcomes, not projections.
-              </p>
+              <h2>Expected Results</h2>
+              <p>Based on implementations at Balena and teams trained. Measured outcomes, not projections.</p>
             </div>
             <div className="roi-grid">
               {roiMetrics.map((metric, i) => (
@@ -1961,73 +1350,208 @@ export default function AIWorkshop() {
               ))}
             </div>
           </div>
+        </section>
 
-          <div className="cta-section">
-            <div className="cta-header">
-              <h3>{ctaContent.title}</h3>
-              <p>{ctaContent.subtitle}</p>
+        {/* About Section */}
+        <section className="section">
+          <div className="section-inner">
+            <div className="section-header">
+              <div className="section-label">About the Instructor</div>
+              <h2 className="section-title">Learn from a Practitioner</h2>
+              <p className="section-subtitle">
+                Production-tested techniques from someone who builds AI systems daily, not just talks about them.
+              </p>
             </div>
 
-            <div className="contact-grid">
+            <div className="instructor-card">
+              <img src={instructor.avatar} alt={instructor.name} className="instructor-photo" />
+              <div className="instructor-content">
+                <h3>{instructor.name}</h3>
+                <p className="instructor-role">{instructor.role}</p>
+                <div className="instructor-tags">
+                  {instructor.credentials.map((cred, i) => (
+                    <span key={i} className={`tag ${cred.highlight ? "accent" : ""}`}>
+                      {cred.text}
+                    </span>
+                  ))}
+                </div>
+                <div className="instructor-bio">
+                  {instructor.bio.map((p, i) => (
+                    <p key={i} style={{ marginBottom: i < instructor.bio.length - 1 ? 12 : 0 }}>{p.text}</p>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            <div className="section-header" style={{ marginTop: 48 }}>
+              <h2 className="section-title">What Your Team Will Learn</h2>
+            </div>
+            <div className="outcomes-grid">
+              {outcomes.map((outcome, i) => (
+                <div className="outcome-card" key={i}>
+                  <span className="outcome-icon">{outcome.icon}</span>
+                  <h4>{outcome.title}</h4>
+                  <p>{outcome.description}</p>
+                </div>
+              ))}
+            </div>
+
+            <div className="capstone-section">
+              <div className="capstone-header">
+                <span className="capstone-badge">{capstone.badge}</span>
+                <h3>{capstone.title}</h3>
+              </div>
+              <p className="capstone-desc">{capstone.description}</p>
+              <div className="capstone-examples">
+                {capstone.options.map((option, i) => (
+                  <div className="capstone-example" key={i}>
+                    <span className="capstone-icon">{option.icon}</span>
+                    <div>
+                      <strong>{option.title}</strong>
+                      <span className="capstone-detail">{option.detail}</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="testimonial">
+              <p className="testimonial-quote">"{testimonials[0].quote}"</p>
+              <p className="testimonial-author">{testimonials[0].author}</p>
+              <p className="testimonial-role">{testimonials[0].role}</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Agenda Section */}
+        <section className="section" style={{ background: "var(--cloud)" }}>
+          <div className="section-inner">
+            <div className="section-header">
+              <div className="section-label">Workshop Agenda</div>
+              <h2 className="section-title">Session Overview</h2>
+              <p className="section-subtitle">
+                Structured progression from fundamentals to implementation. Every session includes working code you take home.
+              </p>
+            </div>
+
+            <div className="sessions-list">
+              {sessions.map((session) => (
+                <div className="session-card" key={session.number}>
+                  <div className="session-header">
+                    <div className="session-top">
+                      <span className="session-number">Session {session.number} · {session.duration}</span>
+                      <div className="session-badges">
+                        {session.badges.map((badge, i) => (
+                          <span key={i} className={`badge badge-${badge.variant}`}>{badge.text}</span>
+                        ))}
+                      </div>
+                    </div>
+                    <div className="session-title">{session.title}</div>
+                    <div className="session-type">{session.type}</div>
+                  </div>
+                  <div className="session-body">
+                    <p className="session-intro">{session.intro}</p>
+                    <div className="content-label">{session.sectionLabel}</div>
+                    <div className="topics-grid">
+                      {session.topics.map((topic, i) => (
+                        <div className="topic-item" key={i}>{topic.text}</div>
+                      ))}
+                    </div>
+                    <div className="deliverables-row">
+                      {session.deliverables.map((d, i) => (
+                        <span className="deliverable-chip" key={i}>{d.text}</span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="testimonial">
+              <p className="testimonial-quote">"{testimonials[1].quote}"</p>
+              <p className="testimonial-author">{testimonials[1].author}</p>
+              <p className="testimonial-role">{testimonials[1].role}</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Deliverables Section */}
+        <section className="section">
+          <div className="section-inner">
+            <div className="section-header">
+              <div className="section-label">What You Get</div>
+              <h2 className="section-title">Workshop Deliverables</h2>
+              <p className="section-subtitle">
+                Everything included in the base workshop.
+              </p>
+            </div>
+
+            <div className="deliverables-grid">
+              {deliverables.map((item, i) => (
+                <div className="deliverable-card" key={i}>
+                  <div className="deliverable-icon">{item.icon}</div>
+                  <h4>{item.title}</h4>
+                  <ul>
+                    {item.items.map((li, j) => (
+                      <li key={j}>{li}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+
+            <div className="support-card">
+              <div className="support-header">
+                <div className="support-icon">{postWorkshopSupport.icon}</div>
+                <div>
+                  <h4>
+                    {postWorkshopSupport.title}
+                    <span className="free-badge">{postWorkshopSupport.badge}</span>
+                  </h4>
+                  <p>{postWorkshopSupport.subtitle}</p>
+                </div>
+              </div>
+              <div className="support-items">
+                {postWorkshopSupport.items.map((item, i) => (
+                  <div className="support-item" key={i}>
+                    <span className="check-icon">✓</span>
+                    <strong>{item.title}</strong>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Final CTA Section */}
+        <section className="final-cta">
+          <div className="final-cta-inner">
+            <h2>{ctaContent.title}</h2>
+            <p>{ctaContent.subtitle}</p>
+
+            <div className="contact-cards">
               {ctaContent.contacts.map((contact, i) => (
                 <a
                   key={i}
                   href={contact.link}
                   className="contact-card"
                   target={contact.link.startsWith("mailto") ? undefined : "_blank"}
-                  rel={
-                    contact.link.startsWith("mailto")
-                      ? undefined
-                      : "noopener noreferrer"
-                  }
+                  rel={contact.link.startsWith("mailto") ? undefined : "noopener noreferrer"}
                 >
                   <h4>{contact.title}</h4>
-                  <span className="contact-link">{contact.linkText}</span>
+                  <span className="link-text">{contact.linkText}</span>
                   <p>{contact.description}</p>
                 </a>
               ))}
             </div>
 
-            <div className="cta-footer">
-              <p>{ctaContent.footer}</p>
-              <div className="cta-links">
-                <a
-                  href={siteConfig.socialLinks.blog}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Blog
-                </a>
-                <a
-                  href={siteConfig.socialLinks.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  LinkedIn
-                </a>
-                <a
-                  href={siteConfig.socialLinks.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  GitHub
-                </a>
-                <a
-                  href={siteConfig.socialLinks.docs}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Open Source
-                </a>
-              </div>
+            <div className="footer-links">
+              <a href={siteConfig.socialLinks.blog} target="_blank" rel="noopener noreferrer">Blog</a>
+              <a href={siteConfig.socialLinks.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a href={siteConfig.socialLinks.github} target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
           </div>
-
-          <div className="page-footer">
-            <span>AI Workshop Proposal · {instructor.name}</span>
-            <span>{new Date().getFullYear()} {instructor.name} · Mixster</span>
-          </div>
-        </div>
+        </section>
       </div>
     </>
   );

@@ -127,10 +127,10 @@ export const siteConfig = {
 
 export const coverContent = {
   eyebrow: "Workshop Proposal",
-  title: "AI-Powered Development &",
-  titleEmphasis: "Test Automation",
+  title: "From Prompts to Production:",
+  titleEmphasis: "AI Engineering Mastery",
   description:
-    "A decade of experience building hard-tech systems. Now an AI Engineer teaching teams how to ship faster with tools that actually work in production.",
+    "AI-Accelerated Development, Self-Healing CI/CD Loops & Adaptive Tests. A decade of experience building hard-tech systems. Now an AI Engineer teaching teams how to ship faster with tools that actually work in production.",
   meta: [
     { label: "Duration", value: "Half Day (4 Hours)" },
     { label: "Format", value: "Live Coding + Labs" },
@@ -147,7 +147,7 @@ export const instructor = {
   avatar: "/img/avatar.webp",
   role: "AI Engineer @ Command Code · Founder, Mixster · Ex-Balena",
   shortDescription:
-    "AI Engineer building production agents. Previously shipped systems at Balena that saved $250K+ annually.",
+    "AI Engineer building production agents. Previously shipped systems at Balena that saved $250K+ annually. 127+ technical sessions delivered at global conferences including PyCon, Open Source Summit, and Mozilla Festival.",
   credentials: [
     { text: "GitHub Star 2025", highlight: true },
     { text: "Google Cloud Architect", highlight: false },
@@ -565,7 +565,7 @@ export const ctaContent = {
 // =============================================================================
 
 export const seoContent = {
-  title: "AI-Powered Development & Test Automation Workshop",
+  title: "From Prompts to Production: AI Engineering Mastery Workshop",
   description:
     "Half-day hands-on workshop teaching teams AI-assisted coding, self-healing test automation, and CI/CD integration. Led by Vipul Gupta, GitHub Star 2025 with 10 years of open source experience. Live coding, practical labs, and take-home frameworks.",
   keywords: [
@@ -592,7 +592,7 @@ export const seoContent = {
 // =============================================================================
 
 export const pdfMetadata = {
-  title: "AI-Powered Development Workshop Proposal - Vipul Gupta",
+  title: "From Prompts to Production: AI Engineering Mastery - Vipul Gupta",
   author: "Vipul Gupta",
   subject: "Workshop Proposal",
   keywords: "AI, workshop, development, test automation",
