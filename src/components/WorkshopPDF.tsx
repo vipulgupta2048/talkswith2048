@@ -831,7 +831,7 @@ const styles = StyleSheet.create({
 const socialProof = [
   { value: "127+", label: "Technical Sessions Delivered" },
   { value: "$250K+", label: "Saved at Balena" },
-  { value: "5,000+", label: "Community Members" },
+  { value: "7,800+", label: "Community Members" },
 ];
 
 const WorkshopPDF = () => (

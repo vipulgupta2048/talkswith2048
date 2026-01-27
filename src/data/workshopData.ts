@@ -166,7 +166,7 @@ export const instructor = {
       text: "Over the past decade, he has delivered 127+ technical sessions at conferences including GDG DevFest, OpenSSF India, Open Source Summit (Europe & Japan), PyCon India, and Mozilla Festival. He has contributed to open source since 2016, completed Google Summer of Code twice, and helped grow GitTogether Delhi to 5,000+ members.",
       highlights: [
         "127+ technical sessions",
-        "GitTogether Delhi to 5,000+ members",
+        "GitTogether Delhi to 7,800+ members",
       ],
     },
   ],
