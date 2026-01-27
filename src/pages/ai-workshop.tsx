@@ -1327,7 +1327,7 @@ export default function AIWorkshop() {
             </div>
             <div className="proof-divider"></div>
             <div className="proof-stat">
-              <strong>25,000+</strong>
+              <strong>7,800+</strong>
               <span>Community Members</span>
             </div>
           </div>
