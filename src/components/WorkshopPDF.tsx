@@ -297,22 +297,74 @@ const styles = StyleSheet.create({
     flexWrap: "wrap",
   },
   logoItem: {
-    padding: "8pt 12pt",
+    padding: "8pt 14pt",
     backgroundColor: "rgba(255,255,255,0.04)",
     borderRadius: 5,
     borderWidth: 1,
     borderColor: colors.steel,
-    textAlign: "center",
   },
   logoItemName: {
-    fontSize: 9,
+    fontSize: 10,
     fontWeight: 600,
     color: colors.fog,
-    marginBottom: 2,
   },
-  logoItemEvent: {
+  // Author Bar styles (right after hero)
+  authorBar: {
+    backgroundColor: colors.graphite,
+    padding: "18pt 45pt",
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 14,
+    borderTopWidth: 1,
+    borderTopColor: colors.steel,
+    flexWrap: "wrap",
+  },
+  authorBarProfile: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 12,
+    flex: 1,
+  },
+  authorBarAvatar: {
+    width: 50,
+    height: 50,
+    borderRadius: 8,
+    borderWidth: 2,
+    borderColor: colors.steel,
+  },
+  authorBarName: {
+    fontFamily: "Playfair",
+    fontSize: 16,
+    fontWeight: 500,
+    color: colors.white,
+    marginBottom: 3,
+  },
+  authorBarDesc: {
+    fontSize: 8,
+    color: colors.silver,
+    lineHeight: 1.4,
+    maxWidth: 280,
+  },
+  authorBarCreds: {
+    flexDirection: "row",
+    gap: 6,
+    flexWrap: "wrap",
+  },
+  authorCred: {
+    fontFamily: "IBMPlexMono",
     fontSize: 7,
-    color: colors.ash,
+    fontWeight: 500,
+    padding: "5pt 10pt",
+    backgroundColor: "rgba(255,255,255,0.06)",
+    borderWidth: 1,
+    borderColor: colors.steel,
+    borderRadius: 4,
+    color: colors.fog,
+  },
+  authorCredHighlight: {
+    backgroundColor: colors.electric,
+    borderColor: colors.electric,
+    color: colors.white,
   },
   // ROI Section (moved up)
   roiSection: {
@@ -857,63 +909,6 @@ const styles = StyleSheet.create({
     color: "rgba(255,255,255,0.75)",
     textDecoration: "none",
   },
-  // Speaker Credentials Bar
-  speakerBar: {
-    backgroundColor: colors.charcoal,
-    padding: "16pt 40pt",
-    flexDirection: "row",
-    justifyContent: "center",
-    alignItems: "center",
-    gap: 20,
-    flexWrap: "wrap",
-    borderTopWidth: 1,
-    borderTopColor: colors.steel,
-  },
-  speakerBarItem: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 10,
-  },
-  speakerBarAvatar: {
-    width: 32,
-    height: 32,
-    borderRadius: 16,
-    borderWidth: 2,
-    borderColor: colors.steel,
-  },
-  speakerBarInfo: {
-    flexDirection: "column",
-    gap: 2,
-  },
-  speakerBarName: {
-    fontSize: 10,
-    fontWeight: 600,
-    color: colors.fog,
-  },
-  speakerBarTitle: {
-    fontSize: 8,
-    color: colors.ash,
-  },
-  speakerCreds: {
-    flexDirection: "row",
-    gap: 8,
-    flexWrap: "wrap",
-  },
-  speakerCred: {
-    fontFamily: "IBMPlexMono",
-    fontSize: 7,
-    padding: "4pt 8pt",
-    backgroundColor: "rgba(255,255,255,0.05)",
-    borderWidth: 1,
-    borderColor: colors.steel,
-    borderRadius: 3,
-    color: colors.silver,
-  },
-  speakerCredHighlight: {
-    backgroundColor: "rgba(59, 130, 246, 0.12)",
-    borderColor: colors.electric,
-    color: colors.electricBright,
-  },
   // Footer
   footer: {
     padding: "14pt 40pt",
@@ -929,19 +924,12 @@ const styles = StyleSheet.create({
 // Social proof data matching the web page
 const socialProof = [
   { value: "127+", label: "Technical Sessions Delivered" },
-  { value: "$250K+", label: "Saved at Balena" },
-  { value: "7,800+", label: "Community Members" },
+  { value: "$270K+", label: "Saved in AI infra costs" },
+  { value: "45,000+", label: "People Educated" },
 ];
 
-// Logo bar - As Seen At (matching web page with event names)
-const seenAtLogos = [
-  { name: "Google", event: "GDG DevFest" },
-  { name: "GitHub", event: "Constellation 2024" },
-  { name: "Microsoft", event: "GitTogether Meetup" },
-  { name: "Mozilla", event: "MozFest 2018" },
-  { name: "Linux Foundation", event: "Open Source Summit" },
-  { name: "PyCon", event: "PyDelhi Conf 2023" },
-];
+// Logo bar - As Seen At (simplified, matching web page)
+const seenAtLogos = ["Google", "GitHub", "Microsoft", "Mozilla", "Linux Foundation", "PyCon", "KubeCon"];
 
 const WorkshopPDF = () => (
   <Document
@@ -1011,14 +999,32 @@ const WorkshopPDF = () => (
         ))}
       </View>
 
-      {/* Logo Bar - As Seen At */}
+      {/* Author Bar - Right after cover footer */}
+      <View style={styles.authorBar}>
+        <View style={styles.authorBarProfile}>
+          <Image
+            style={styles.authorBarAvatar}
+            src={`${siteConfig.url}/img/avatar.png`}
+          />
+          <View>
+            <Text style={styles.authorBarName}>{instructor.name}</Text>
+            <Text style={styles.authorBarDesc}>AI Engineer building production agents. Previously shipped systems at Balena that saved $250K+ annually.</Text>
+          </View>
+        </View>
+        <View style={styles.authorBarCreds}>
+          <Text style={[styles.authorCred, styles.authorCredHighlight]}>GitHub Star 2025</Text>
+          <Text style={styles.authorCred}>Google Cloud Architect</Text>
+          <Text style={styles.authorCred}>10 Years OSS</Text>
+        </View>
+      </View>
+
+      {/* Logo Bar - As Seen At (simplified) */}
       <View style={styles.logoBar}>
         <Text style={styles.logoBarLabel}>As Seen At</Text>
         <View style={styles.logoGrid}>
-          {seenAtLogos.map((logo, i) => (
+          {seenAtLogos.map((name, i) => (
             <View key={i} style={styles.logoItem}>
-              <Text style={styles.logoItemName}>{logo.name}</Text>
-              <Text style={styles.logoItemEvent}>{logo.event}</Text>
+              <Text style={styles.logoItemName}>{name}</Text>
             </View>
           ))}
         </View>
@@ -1248,26 +1254,6 @@ const WorkshopPDF = () => (
               <Link style={styles.ctaLink} src={siteConfig.socialLinks.github}>GitHub</Link>
             </View>
           </View>
-        </View>
-      </View>
-
-      {/* Speaker Credentials Bar */}
-      <View style={styles.speakerBar}>
-        <View style={styles.speakerBarItem}>
-          <Image
-            style={styles.speakerBarAvatar}
-            src={`${siteConfig.url}/img/avatar.png`}
-          />
-          <View style={styles.speakerBarInfo}>
-            <Text style={styles.speakerBarName}>{instructor.name}</Text>
-            <Text style={styles.speakerBarTitle}>127+ Sessions Delivered</Text>
-          </View>
-        </View>
-        <View style={styles.speakerCreds}>
-          <Text style={[styles.speakerCred, styles.speakerCredHighlight]}>GitHub Star 2025</Text>
-          <Text style={styles.speakerCred}>Open Source Summit Speaker</Text>
-          <Text style={styles.speakerCred}>GitHub Constellation Speaker</Text>
-          <Text style={styles.speakerCred}>GDG DevFest Speaker</Text>
         </View>
       </View>
 
