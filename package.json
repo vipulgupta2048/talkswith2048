@@ -35,7 +35,7 @@
     "clsx": "^2.1.1",
     "docusaurus-plugin-sass": "^0.2.6",
     "html2canvas": "^1.4.1",
-    "jspdf": "^4.0.0",
+    "jspdf": "^4.1.0",
     "prism-react-renderer": "^2.4.1",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
