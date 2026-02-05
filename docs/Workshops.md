@@ -1,7 +1,6 @@
 ---
 title: "Workshops"
 description: "Vipul Gupta (vipulgupta2048) workshops on Git, GitHub, CI, and developer education with hands-on sessions."
-description: "Vipul Gupta (vipulgupta2048) workshops on Git, GitHub, CI, and developer education with hands-on sessions."
 ---
 
 Through my workshops, I strive to not just inform but to connect, making each concept relatable and each session memorable. I still have a lot to learn, and you can find me collecting feedback from the audience after the talk. I intend to bring my unqiue brand of firestarter into each session I execute. No repeats, no boring monologue, and if I can help it - then a good story. Served on a stage near you.
