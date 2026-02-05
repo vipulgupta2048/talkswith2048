@@ -1,5 +1,5 @@
 ---
-title: "Communities by Vipul Gupta"
+title: "Communities"
 description: "Vipul Gupta (vipulgupta2048) community building, meetups, and organizing work across Delhi and global OSS groups."
 ---
 

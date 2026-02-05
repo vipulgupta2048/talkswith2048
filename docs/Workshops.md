@@ -1,6 +1,6 @@
-
 ---
-title: "Workshops by Vipul Gupta"
+title: "Workshops"
+description: "Vipul Gupta (vipulgupta2048) workshops on Git, GitHub, CI, and developer education with hands-on sessions."
 description: "Vipul Gupta (vipulgupta2048) workshops on Git, GitHub, CI, and developer education with hands-on sessions."
 ---
 

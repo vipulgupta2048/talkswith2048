@@ -1,5 +1,5 @@
 ---
-title: "Hackathons by Vipul Gupta"
+title: "Hackathons"
 description: "Vipul Gupta (vipulgupta2048) hackathon participation, wins, judging, and mentorship highlights."
 ---
 

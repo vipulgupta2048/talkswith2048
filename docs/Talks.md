@@ -1,5 +1,5 @@
 ---
-title: "Talks by Vipul Gupta"
+title: "Talks"
 description: "Vipul Gupta (vipulgupta2048) talks, workshops, and conferences across supply chain security, AI evals, and hard-tech."
 ---
 
@@ -167,7 +167,7 @@ Hands-on workshop introducing Git fundamentals, GitHub collaboration, branching,
 | Open Source Summit China 2023 | [Selected] | Talk got selected. Couldn't go due to visa issues. Maybe next year. |
 | Linux Plumbers 2023 | [Selected] | THE Linux Kernel conference to attend in the world. 2023 was my first year stepping back into conferencing and another journey to United States to attend this would have stretched me a bit too far.  |
 | Open Source Summit Japan 2023 [Testing 100's of OS images with Jenkins: Exploring the architecture from Pull Request to Release](https://sched.co/1TzRx) | [Slides](https://slides.com/vipulgupta2048/cdcon-japan-2023/) [Certificate](https://www.credly.com/badges/2e9936ba-60b7-4255-baf3-21d2fe530f92/) | Presenting my session at CDCon Japan 2023, going deeper into the hardware in the loop testing implemented at balena by my team. Discussed architecture and implementation details of the project. Received a lot of feedback from 50+ CI experts attending. The conference agenda was very well formulated and the schedule was one of the rare ones where each talk brought in something interesting <img alt="Vipul Gupta sharing Jenkins hardware-in-the-loop testing architecture at Open Source Summit Japan 2023" src={require("./img/oss/oss-open-source-summit-japan-2023-vipul-gupta.webp").default} height="{358}" width="{400}" /> |
-
+| Linux Plumbers 2024 EU | [Selected, Couldn't Attend](https://lpc.events/event/18/contributions/1931/) | THE Linux Kernel conference to attend in the world. 2024 I couldn't get my funding together.  |
 </details>
 
 <details>

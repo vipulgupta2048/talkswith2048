@@ -1,6 +1,6 @@
 
 ---
-title: "Projects by Vipul Gupta"
+title: "Projects"
 description: "Vipul Gupta (vipulgupta2048) projects, products, and prototypes spanning hard-tech, automation, and documentation tooling."
 ---
 

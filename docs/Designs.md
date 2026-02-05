@@ -1,5 +1,5 @@
 ---
-title: "Designs by Vipul Gupta"
+title: "Designs"
 description: "Vipul Gupta (vipulgupta2048) design explorations, posters, and visual experiments for meetups and blogs."
 ---
 

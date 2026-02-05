@@ -1,5 +1,5 @@
 ---
-title: "Mentoring by Vipul Gupta"
+title: "Mentoring"
 description: "Vipul Gupta (vipulgupta2048) mentoring programs, peer guidance, and open-source contributor coaching."
 ---
 
