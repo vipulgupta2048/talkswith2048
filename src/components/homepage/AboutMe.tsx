@@ -1,111 +1,224 @@
-import React, { FunctionComponent, memo } from "react";
+import React, { FunctionComponent, memo, useState } from "react";
 import clsx from "clsx";
 import styles from "./AboutMe.module.scss";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 
 export const AboutMe: FunctionComponent = memo(() => {
+  const [expandedSection, setExpandedSection] = useState<string | null>(null);
+
+  const toggleSection = (section: string) => {
+    setExpandedSection(expandedSection === section ? null : section);
+  };
+
   return (
-    <div className="margin-top--lg">
-      <h2>Little about me</h2>
-      <div className="row">
-        <div className="col col--6">
-          <p>
-            I am a product owner with 7+ years of niche expertise in building
-            hard-tech applications, scaling open-source communities and leading
-            developer education efforts.
+    <div className={styles.aboutSection}>
+      <div className="container">
+        <div className={styles.hook}>
+          <h2 className={styles.hookTitle}>
+            Solving problems at the root, not symptoms
+          </h2>
+          <p className={styles.hookText}>
+            7+ years shipping hard-tech systems, contributing to open source, and 
+            building developer tools. GitHub Star 2025 for contributions to global 
+            open-source communities — not by myself, but with thousands of contributors 
+            who make these communities what they are.
           </p>
-
-          <p>
-            My diverse experience comes from wearing multiple hats at startups,
-            taking ownership in uncertainty and solving complex problems with
-            first principles thinking. I am a generalist, excelling in full
-            stack development, product management, release engineering, DevOps,
-            documentation, developer education, community management, and
-            growth.
-          </p>
-
-          <blockquote>
-            With each pivot in my career, I have delivered my best work from
-            taking on new challenges, embracing the uncertainty, and excelling
-            against the odds.
-          </blockquote>
-
-          <h2>Technical Expertise: Scaling from 0 to 1 to 100</h2>
-          <p>
-            As a skilled operator, my core engineering experience lies in
-            building highly scalable, reliable applications with
-            Node.js/TypeScript/Python for resource-constrained environments. I
-            built and maintained the first-ever open-source Hardware in the Loop
-            system for a leading IoT fleet management company.
-          </p>
-
-          <p>
-            While mastering hardware, firmware, and operating systems during
-            this stint, I also created a fully automated generative
-            documentation system before LLMs became mainstream, saved millions
-            of dollars in cloud & engineering costs through strategic projects,
-            and presented my learnings (and mistakes too) at major international
-            conferences as a speaker.
-          </p>
-
-          <h2>Open Source Leader: GitHub Star ⭐</h2>
-          <p>
-            Contributing since 2016, my origin story starts with open-source. I
-            initially aspired to be an architect in urban planning, but fell in
-            love with the idea of a community coming together on a grassroots
-            level to build software — for everyone, for free. I've collaborated
-            with the best minds in the industry through Mozilla Festival,
-            HackMIT, Google Summer of Code, AMA Mentorship program & Google
-            Code-in. I was recognized as a GitHub Star in July 2025 for my
-            contributions to the online and offline open-source communities.
-          </p>
-
-          <blockquote>
-            I bring a strong sense of ownership with a unique blend of
-            "firestarter" energy to any collective I join. My guiding principle
-            is eliminating problems, not just continually solving them. Working
-            remotely for over 8 years, I have driven teams to achieve measurable
-            results in every organization I've been part of.
-          </blockquote>
-
-          <h2>Present day</h2>
-          <p>
-            I am the Senior Software Engineer & Developer Education lead at
-            Balena. I also run Mixster, an initiative to "right" the docs, build
-            scalable content pipelines, and do friction logging for startups and
-            organizations. I'm always exploring new challenges at the
-            intersection of product, people, and code.
-          </p>
-          <p>
-            On the weekend, I am the community lead for GitTogether Delhi-NCR
-            community and scaling up the Open Hardware in the Loop community. My
-            weekends are split volunteering for PyCon India as comms lead,
-            mentoring college students through ALiAS, a 3000+ early-career
-            developer community focused on ethical open-source contributions.
-            Previously, I was the lead organizer for PyDelhi and iLuGD.
+          <p className={styles.hookText}>
+            Built the first open-source Hardware in the Loop system. Helped grow 
+            communities from zero with dedicated volunteers and organizers. 
+            Focus on shipping code that eliminates recurring problems.
           </p>
         </div>
-        <div className={clsx("col col--5", styles.avatarContainer)}>
-          <div className={styles.avatar}>
-            <img
-              src={useBaseUrl("/img/avatar.webp")}
-              alt="Avatar"
-              loading="lazy"
-            />
+
+        <div className={styles.currentFocus}>
+          <h3 className={styles.focusTitle}>Currently Working On</h3>
+          <div className={styles.focusGrid}>
+            <div className={styles.focusCard}>
+              <span className={styles.focusLabel}>Day Job</span>
+              <p className={styles.focusContent}>
+                Senior Software Engineer & Developer Education Lead at <strong>Balena</strong>
+              </p>
+            </div>
+            <div className={styles.focusCard}>
+              <span className={styles.focusLabel}>Side Projects</span>
+              <p className={styles.focusContent}>
+                <strong>Mixster</strong> - Helping startups fix their documentation
+              </p>
+            </div>
+            <div className={styles.focusCard}>
+              <span className={styles.focusLabel}>Community</span>
+              <p className={styles.focusContent}>
+                Organizing GitTogether Delhi-NCR, volunteering with PyCon India
+              </p>
+            </div>
           </div>
-          <div className={styles.hackmitImage}>
-            <img
-              src={useBaseUrl("/img/cropped_image.webp")}
-              alt="HackMIT Experience"
-              loading="lazy"
-            />
+        </div>
+
+        <div className={styles.expandableSection}>
+          <h3 className={styles.expandTitle}>More Details</h3>
+          <div className={styles.accordions}>
+            <div
+              className={clsx(styles.accordion, {
+                [styles.expanded]: expandedSection === "technical",
+              })}
+            >
+              <button
+                className={styles.accordionHeader}
+                onClick={() => toggleSection("technical")}
+              >
+                <span className={styles.accordionIcon}>🔧</span>
+                <span className={styles.accordionTitle}>
+                  Technical Work
+                </span>
+                <span className={styles.accordionArrow}>
+                  {expandedSection === "technical" ? "−" : "+"}
+                </span>
+              </button>
+              {expandedSection === "technical" && (
+                <div className={styles.accordionContent}>
+                  <p>
+                    Built scalable applications with Node.js/TypeScript/Python for 
+                    resource-constrained environments. Created the first open-source 
+                    Hardware in the Loop system for IoT fleet management.
+                  </p>
+                  <p>
+                    Worked on hardware, firmware, and OS-level systems. Built automated 
+                    documentation generation before LLMs. Shipped automation projects 
+                    that eliminated recurring costs and reduced manual work.
+                  </p>
+                </div>
+              )}
+            </div>
+
+            <div
+              className={clsx(styles.accordion, {
+                [styles.expanded]: expandedSection === "community",
+              })}
+            >
+              <button
+                className={styles.accordionHeader}
+                onClick={() => toggleSection("community")}
+              >
+                <span className={styles.accordionIcon}>👥</span>
+                <span className={styles.accordionTitle}>
+                  Community Work
+                </span>
+                <span className={styles.accordionArrow}>
+                  {expandedSection === "community" ? "−" : "+"}
+                </span>
+              </button>
+              {expandedSection === "community" && (
+                <div className={styles.accordionContent}>
+                  <p>
+                    Contributing to open source since 2016. Started with Mozilla Festival, 
+                    HackMIT, Google Summer of Code, and Google Code-in. Learned from 
+                    amazing mentors and contributors in these communities.
+                  </p>
+                  <p>
+                    Help organize GitTogether Delhi-NCR — grew from 0 to 5,000+ members 
+                    with dedicated volunteers and organizers (it's never just one person). 
+                    Volunteer for PyCon India as comms lead. Mentor students through ALiAS. 
+                    Previously organized PyDelhi and iLuGD with other community members.
+                  </p>
+                </div>
+              )}
+            </div>
+
+            <div
+              className={clsx(styles.accordion, {
+                [styles.expanded]: expandedSection === "speaking",
+              })}
+            >
+              <button
+                className={styles.accordionHeader}
+                onClick={() => toggleSection("speaking")}
+              >
+                <span className={styles.accordionIcon}>🎤</span>
+                <span className={styles.accordionTitle}>
+                  Talks & Workshops
+                </span>
+                <span className={styles.accordionArrow}>
+                  {expandedSection === "speaking" ? "−" : "+"}
+                </span>
+              </button>
+              {expandedSection === "speaking" && (
+                <div className={styles.accordionContent}>
+                  <p>
+                    Presented at 50+ conferences on HIL systems, LLM evaluations, 
+                    GitHub Copilot, system design, and automation. Share what worked, 
+                    what failed, and the lessons learned.
+                  </p>
+                  <p>
+                    Focus on practical takeaways backed by real implementations. 
+                    Make technical topics accessible through hands-on examples. 
+                    Attendees can apply the concepts immediately in their work.
+                  </p>
+                </div>
+              )}
+            </div>
+
+            <div
+              className={clsx(styles.accordion, {
+                [styles.expanded]: expandedSection === "journey",
+              })}
+            >
+              <button
+                className={styles.accordionHeader}
+                onClick={() => toggleSection("journey")}
+              >
+                <span className={styles.accordionIcon}>🚀</span>
+                <span className={styles.accordionTitle}>
+                  How I Got Here
+                </span>
+                <span className={styles.accordionArrow}>
+                  {expandedSection === "journey" ? "−" : "+"}
+                </span>
+              </button>
+              {expandedSection === "journey" && (
+                <div className={styles.accordionContent}>
+                  <p>
+                    Started wanting to be an urban planning architect. Discovered 
+                    open source and fell in love with the idea of people building 
+                    software together, for everyone, for free.
+                  </p>
+                  <p>
+                    GitHub Star 2025 for contributions to online and offline OSS 
+                    communities — recognizing work done with thousands of contributors. 
+                    Remote work for 8+ years. Focus on eliminating problems rather than 
+                    continuously patching them.
+                  </p>
+                </div>
+              )}
+            </div>
           </div>
-          <div className={styles.hackmitImage}>
-            <img
-              src={useBaseUrl("/img/1.webp")}
-              alt="GitHub GitTogether Constellation"
-              loading="lazy"
-            />
+        </div>
+
+        <div className={styles.visualSection}>
+          <div className={styles.imageGrid}>
+            <div className={styles.imageCard}>
+              <img
+                src={useBaseUrl("/img/avatar.webp")}
+                alt="Vipul Gupta"
+                loading="lazy"
+              />
+              <p className={styles.imageCaption}>GitHub Star 2025</p>
+            </div>
+            <div className={styles.imageCard}>
+              <img
+                src={useBaseUrl("/img/cropped_image.webp")}
+                alt="HackMIT Experience"
+                loading="lazy"
+              />
+              <p className={styles.imageCaption}>HackMIT</p>
+            </div>
+            <div className={styles.imageCard}>
+              <img
+                src={useBaseUrl("/img/1.webp")}
+                alt="GitTogether Event"
+                loading="lazy"
+              />
+              <p className={styles.imageCaption}>GitTogether Delhi</p>
+            </div>
           </div>
         </div>
       </div>
