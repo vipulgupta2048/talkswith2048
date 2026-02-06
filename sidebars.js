@@ -19,82 +19,74 @@ const sidebars = {
   // But you can create a sidebar manually
 
   tutorialSidebar: [
+    // Main narrative pages
     "Introduction",
+    "Career-Highlights",
+    "Speaking",
+    "Community",
+
+    // Work & Projects
     {
       type: "category",
-      label: "Sharing what I know",
+      label: "Work & Projects",
       link: {
         type: "generated-index",
-        title: "Sharing what I know",
+        title: "Work & Projects",
         description:
-          "Documenting talks, podcast, conferences where I share openly about my work, the friction, and the journey of whatever I am building/learning/struggling with that year.",
-        keywords: ["talks", "conferences", "podcast"],
-      },
-      collapsed: false,
-      items: ["Talks", "Podcasts", "Conferences", "Workshops"],
-    },
-    {
-      type: "category",
-      label: "Paying it forward",
-      link: {
-        type: "generated-index",
-        title: "Paying it Forward",
-        description:
-          "A list of initiatives I am part of, where I am helping others to grow and learn. This includes mentoring, organizing events, and other community-driven activities.",
-        keywords: ["mentoring", "organizing", "community"],
-      },
-      collapsed: false,
-      items: ["Communities", "Mentoring"],
-    },
-    {
-      type: "category",
-      label: "Constantly building",
-      link: {
-        type: "generated-index",
-        title: "Constantly Building",
-        description:
-          "An exhaustive list of constantly building & purchasing domain names for side projects.",
-        keywords: ["products", "designs", "hackathons"],
-      },
-      collapsed: false,
-      items: ["Projects", "Hackathons", "Designs"],
-    },
-    {
-      type: "category",
-      label: "Work",
-      link: {
-        type: "generated-index",
-        title: "Work",
-        description:
-          "A collection of all my work experiences, across programs, timezone, my initiatives, research and full-time positions.",
-        keywords: ["gsoc", "balena", "google summer of code", "open-source"],
+          "Professional work, side projects, and technical contributions across my career.",
+        keywords: ["balena", "projects", "hackathons", "work"],
       },
       collapsed: false,
       items: [
         "Balena",
-        "interview-questions",
+        "Projects",
+        "Hackathons",
         {
           type: "link",
           label: "Mixster",
-          description:
-            "Initiative to 'right' the docs for startups and organizations.",
+          description: "Initiative to 'right' the docs for startups.",
           href: "https://mixster.dev/2019/05/24/mixster/",
         },
+      ],
+    },
+
+    // The Human Side
+    {
+      type: "category",
+      label: "The Human Side",
+      link: {
+        type: "generated-index",
+        title: "Beyond the Code",
+        description:
+          "The roads not taken, side quests, and what makes me human.",
+        keywords: ["multiverse", "side quests", "personal"],
+      },
+      collapsed: true,
+      items: ["Multiverse"],
+    },
+
+    // Archive (collapsed by default)
+    {
+      type: "category",
+      label: "Archive",
+      link: {
+        type: "generated-index",
+        title: "Archive",
+        description:
+          "Historical content preserved for completeness. Earlier talks, communities, and programs.",
+        keywords: ["archive", "history", "gsoc"],
+      },
+      collapsed: true,
+      items: [
         "Google Summer of Code",
-        {
-          type: "link",
-          label: "2018: Mozilla Foundation - Mozfest",
-          description:
-            "My experience at Mozfest 2018, where I worked on the Mozilla Foundation's open-source projects.",
-          href: "https://mixster.dev/2018/11/20/mozfest2018/",
-        },
-        {
-          type: "link",
-          label: "2018: IBM at HackMIT",
-          description:
-            "Built Wats'On The Roof; Used later for IBM Watson's onboarding guides.",
-          href: "https://mixster.dev/2018/09/28/hackmit-2018/",
-        },
+        "Talks",
+        "Conferences",
+        "Podcasts",
+        "Workshops",
+        "Communities",
+        "Mentoring",
+        "Designs",
+        "interview-questions",
       ],
     },
   ],
