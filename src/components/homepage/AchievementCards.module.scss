@@ -1,0 +1,157 @@
+@use "../../css/mixins" as *;
+
+.achievementsSection {
+  padding: 6rem 0;
+  background: var(--vg-bg-primary);
+  color: var(--vg-text-primary);
+
+  @include small-size {
+    padding: 4rem 0;
+  }
+}
+
+.sectionHeader {
+  margin-bottom: 3rem;
+  text-align: center;
+
+  @include small-size {
+    margin-bottom: 2rem;
+  }
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 0.75rem;
+  color: var(--vg-text-primary);
+  letter-spacing: -0.02em;
+
+  @include small-size {
+    font-size: 2rem;
+  }
+}
+
+.highlight {
+  color: var(--vg-accent);
+  background: none;
+  -webkit-text-fill-color: var(--vg-accent);
+}
+
+.sectionSubtitle {
+  font-size: 1.1rem;
+  color: var(--vg-text-muted);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.7;
+
+  @include small-size {
+    font-size: 1rem;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+
+  @include small-size {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+.card {
+  background: var(--vg-bg-card);
+  border: 1px solid var(--vg-border);
+  border-radius: 12px;
+  padding: 1.75rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: var(--vg-accent);
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 0.3s ease;
+  }
+
+  &:hover {
+    background: var(--vg-bg-elevated);
+    border-color: var(--vg-border-hover);
+    transform: translateY(-4px);
+    
+    &::before {
+      transform: scaleY(1);
+    }
+    
+    .cardIcon {
+      transform: scale(1.1);
+    }
+  }
+
+  @include small-size {
+    padding: 1.5rem;
+  }
+}
+
+.cardIcon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  display: block;
+  transition: transform 0.3s ease;
+
+  @include small-size {
+    font-size: 2rem;
+  }
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--vg-text-primary);
+  margin: 0;
+  letter-spacing: -0.01em;
+
+  @include small-size {
+    font-size: 1.15rem;
+  }
+}
+
+.cardSubtitle {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--vg-accent);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.cardDescription {
+  font-size: 0.95rem;
+  color: var(--vg-text-muted);
+  line-height: 1.6;
+  margin: 0;
+
+  @include small-size {
+    font-size: 0.9rem;
+  }
+}
+

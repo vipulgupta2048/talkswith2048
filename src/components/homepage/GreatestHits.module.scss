@@ -1,0 +1,317 @@
+@use "../../css/mixins" as *;
+
+.section {
+  padding: clamp(5rem, 10vw, 8rem) 0;
+  background: var(--vg-bg-primary);
+  position: relative;
+
+  // Top divider line - simple, no gradient
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(800px, 70%);
+    height: 1px;
+    background: var(--vg-border);
+  }
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 clamp(1.5rem, 4vw, 3rem);
+  position: relative;
+  z-index: 1;
+}
+
+// Header Section
+.header {
+  text-align: center;
+  margin-bottom: clamp(4rem, 8vw, 6rem);
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--vg-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  margin-bottom: 1.25rem;
+
+  &::before,
+  &::after {
+    content: '';
+    width: 24px;
+    height: 1px;
+    background: var(--vg-accent);
+    opacity: 0.5;
+  }
+}
+
+.title {
+  font-size: clamp(2.25rem, 5vw, 3.5rem);
+  font-weight: 700;
+  margin: 0 0 1rem;
+  color: var(--vg-text-primary);
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+.subtitle {
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
+  color: var(--vg-text-muted);
+  max-width: 480px;
+  margin: 0 auto;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+// Cards Container - Horizontal Row
+.cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+
+  @media (max-width: 1100px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include small-size {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+// Individual Card - Rectangular Vertical Layout
+.card {
+  display: flex;
+  flex-direction: column;
+  background: var(--vg-bg-card);
+  border: 1px solid var(--vg-border);
+  border-radius: 16px;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(24px);
+  animation: cardSlideUp 0.4s ease-out forwards;
+  transition: transform 0.15s ease-out, border-color 0.15s ease-out, box-shadow 0.15s ease-out;
+  position: relative;
+
+  &:hover {
+    transform: translateY(-4px);
+    border-color: var(--vg-accent);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+
+    .image {
+      transform: scale(1.03);
+    }
+
+    .cardTitle {
+      color: var(--vg-accent);
+    }
+
+    .readMoreBtn {
+      background: var(--vg-accent);
+      color: var(--vg-bg-primary);
+
+      svg {
+        transform: translateX(3px);
+      }
+    }
+  }
+}
+
+@keyframes cardSlideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Image Section - Top of Card
+.imageSection {
+  position: relative;
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+
+  @include small-size {
+    height: 200px;
+  }
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.2s ease-out;
+}
+
+.imageOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 50%, rgba(5, 5, 5, 0.8) 100%);
+  pointer-events: none;
+}
+
+.year {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--vg-text-primary);
+  background: rgba(5, 5, 5, 0.9);
+  padding: 0.35rem 0.6rem;
+  border-radius: 4px;
+  border: 1px solid var(--vg-border);
+  letter-spacing: 0.03em;
+}
+
+// Content Section
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  gap: 0.75rem;
+  flex: 1;
+}
+
+.categoryBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: var(--vg-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.categoryDot {
+  width: 5px;
+  height: 5px;
+  background: var(--vg-accent);
+  border-radius: 50%;
+}
+
+.cardTitle {
+  font-size: clamp(1.3rem, 2.5vw, 1.5rem);
+  font-weight: 700;
+  margin: 0;
+  color: var(--vg-text-primary);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  transition: color 0.15s ease-out;
+}
+
+.description {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--vg-text-muted);
+  margin: 0;
+  flex: 1;
+}
+
+// Footer with Impact + Button
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 1rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--vg-border);
+  gap: 1rem;
+}
+
+.impactMetric {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.impactLabel {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  font-weight: 500;
+  color: var(--vg-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.impactValue {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--vg-accent);
+  letter-spacing: -0.02em;
+}
+
+.readMoreBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--vg-text-primary);
+  background: transparent;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--vg-border);
+  text-decoration: none;
+  transition: background 0.15s ease-out, color 0.15s ease-out;
+  white-space: nowrap;
+
+  svg {
+    transition: transform 0.15s ease-out;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+// View All Link
+.viewAllContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: clamp(4rem, 6vw, 5rem);
+}
+
+.viewAllLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--vg-text-secondary);
+  text-decoration: none;
+  padding: 0.875rem 1.5rem;
+  border-radius: 10px;
+  border: 1px solid var(--vg-border);
+  background: transparent;
+  transition: color 0.15s ease-out, border-color 0.15s ease-out;
+
+  svg {
+    transition: transform 0.15s ease-out;
+  }
+
+  &:hover {
+    color: var(--vg-accent);
+    border-color: var(--vg-accent);
+    text-decoration: none;
+
+    svg {
+      transform: translateX(4px);
+    }
+  }
+}

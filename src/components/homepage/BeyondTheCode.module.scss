@@ -1,0 +1,258 @@
+@use "../../css/mixins" as *;
+
+.section {
+  padding: clamp(5rem, 10vw, 8rem) 0;
+  background: var(--vg-bg-secondary);
+  position: relative;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 clamp(1.5rem, 4vw, 3rem);
+  position: relative;
+  z-index: 1;
+}
+
+// Header
+.header {
+  text-align: center;
+  margin-bottom: clamp(4rem, 8vw, 6rem);
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--vg-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  margin-bottom: 1.25rem;
+
+  &::before,
+  &::after {
+    content: '';
+    width: 24px;
+    height: 1px;
+    background: var(--vg-border);
+  }
+}
+
+.title {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 900;
+  margin: 0 0 1.25rem;
+  color: var(--vg-text-primary);
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+.subtitle {
+  font-size: clamp(1rem, 1.8vw, 1.15rem);
+  color: var(--vg-text-muted);
+  max-width: 520px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+// Facets Grid
+.facetsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include small-size {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+}
+
+// Individual Facet Card
+.facetCard {
+  position: relative;
+  background: var(--vg-bg-card);
+  border: 1px solid var(--vg-border);
+  border-radius: 16px;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: cardFadeUp 0.4s ease-out forwards;
+  transition: transform 0.15s ease-out, border-color 0.15s ease-out, box-shadow 0.15s ease-out;
+
+  &:hover {
+    transform: translateY(-4px);
+    border-color: var(--facet-accent, var(--vg-accent));
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+
+    .iconWrapper {
+      background: var(--facet-accent, var(--vg-accent));
+      color: var(--vg-bg-primary);
+    }
+
+    .cardTitle {
+      color: var(--facet-accent, var(--vg-accent));
+    }
+
+    .cardLink {
+      color: var(--facet-accent, var(--vg-accent));
+
+      svg {
+        transform: translateX(3px);
+      }
+    }
+  }
+}
+
+@keyframes cardFadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cardInner {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  height: 100%;
+}
+
+// Icon
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--vg-border);
+  color: var(--facet-accent, var(--vg-accent));
+  margin-bottom: 1.25rem;
+  transition: background 0.15s ease-out, color 0.15s ease-out;
+
+  svg {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+// Content
+.cardContent {
+  flex: 1;
+}
+
+.cardSubtitle {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--vg-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: 0.5rem;
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--vg-text-primary);
+  margin: 0 0 0.75rem;
+  letter-spacing: -0.02em;
+  transition: color 0.3s ease;
+}
+
+.cardDescription {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--vg-text-muted);
+  margin: 0;
+}
+
+// Card Link
+.cardLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--vg-text-secondary);
+  text-decoration: none;
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--vg-border);
+  transition: color 0.15s ease-out;
+
+  svg {
+    transition: transform 0.15s ease-out;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+// Corner Accent - removed, using border-color instead
+
+// Philosophy Quote Block
+.philosophyBlock {
+  margin-top: clamp(4rem, 8vw, 6rem);
+  padding: clamp(2rem, 4vw, 3rem);
+  background: var(--vg-bg-card);
+  border: 1px solid var(--vg-border);
+  border-radius: 16px;
+  text-align: center;
+}
+
+.quote {
+  position: relative;
+  margin: 0;
+  padding: 0;
+
+  p {
+    font-size: clamp(1.15rem, 2.5vw, 1.5rem);
+    font-weight: 500;
+    color: var(--vg-text-primary);
+    line-height: 1.6;
+    max-width: 720px;
+    margin: 0 auto;
+    font-style: italic;
+  }
+}
+
+.quoteMarks {
+  position: absolute;
+  top: -1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 5rem;
+  font-weight: 900;
+  color: var(--vg-accent);
+  opacity: 0.15;
+  line-height: 1;
+  font-family: Georgia, serif;
+}
+
+.quoteSource {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--vg-text-muted);
+}
+
+.dash {
+  color: var(--vg-accent);
+  font-weight: 700;
+}

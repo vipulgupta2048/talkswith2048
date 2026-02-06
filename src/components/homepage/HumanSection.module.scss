@@ -1,0 +1,199 @@
+@use "../../css/mixins" as *;
+
+.humanSection {
+  padding: clamp(3rem, 5vw, 5rem) clamp(1.5rem, 3vw, 3rem);
+  background: linear-gradient(180deg, var(--vg-bg-primary, #050505) 0%, var(--vg-bg-secondary, #0a0a0a) 100%);
+  border-bottom: 1px solid var(--vg-border-subtle, rgba(255, 255, 255, 0.04));
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -30%;
+    right: -10%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(ellipse, rgba(184, 251, 60, 0.04) 0%, transparent 60%);
+    pointer-events: none;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.headerRow {
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--vg-accent, #b8fb3c);
+  margin-bottom: 0.5rem;
+}
+
+.humanSection h2 {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 800;
+  margin: 0 0 0.75rem;
+  color: var(--vg-text-primary, #fafaf9);
+  letter-spacing: -0.02em;
+}
+
+.summary {
+  color: var(--vg-text-secondary, #a1a1aa);
+  max-width: 540px;
+  margin: 0 auto;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+
+  @include small-size {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 580px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  background: var(--vg-bg-card, #0d0d0d);
+  border: 1px solid var(--vg-border, rgba(255, 255, 255, 0.08));
+  border-radius: 16px;
+  padding: 1.5rem;
+  opacity: 0;
+  transform: translateY(16px);
+  animation: cardFadeIn 0.5s ease forwards;
+  transition: all 0.3s ease;
+
+  &:hover {
+    border-color: rgba(184, 251, 60, 0.3);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3), 0 0 30px rgba(184, 251, 60, 0.1);
+  }
+}
+
+@keyframes cardFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.cardIcon {
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.cardStat {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--vg-accent, #b8fb3c);
+  background: rgba(184, 251, 60, 0.1);
+  padding: 0.35rem 0.65rem;
+  border-radius: 8px;
+  border: 1px solid rgba(184, 251, 60, 0.2);
+}
+
+.cardTitle {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 0 0 0.25rem;
+  color: var(--vg-text-primary, #fafaf9);
+}
+
+.cardSubtitle {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--vg-accent, #b8fb3c);
+  margin: 0 0 0.75rem;
+}
+
+.cardDescription {
+  font-size: 0.9rem;
+  color: var(--vg-text-secondary, #a1a1aa);
+  line-height: 1.5;
+  margin: 0 0 1rem;
+}
+
+.cardLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--vg-accent, #b8fb3c);
+  text-decoration: none;
+  transition: all 0.2s ease;
+
+  &:hover {
+    color: #c8ff5c;
+    text-decoration: none;
+    
+    svg {
+      transform: translate(2px, -2px);
+    }
+  }
+
+  svg {
+    transition: transform 0.2s ease;
+  }
+}
+
+.funFact {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-top: 3rem;
+  padding: 1.25rem 1.5rem;
+  background: rgba(184, 251, 60, 0.05);
+  border: 1px solid rgba(184, 251, 60, 0.15);
+  border-radius: 12px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include small-size {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.funFactIcon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.funFact p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--vg-text-secondary, #a1a1aa);
+  line-height: 1.6;
+
+  strong {
+    color: var(--vg-accent, #b8fb3c);
+  }
+}

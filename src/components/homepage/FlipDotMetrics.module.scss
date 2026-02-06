@@ -1,0 +1,131 @@
+@use "../../css/mixins" as *;
+
+.tickerSection {
+  padding: clamp(1rem, 2vw, 1.5rem) clamp(1.5rem, 3vw, 3rem);
+  background: var(--vg-bg-primary);
+  border-top: 1px solid var(--vg-border);
+  border-bottom: 1px solid var(--vg-border);
+}
+
+.tickerContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 12px;
+  border: 1px solid var(--vg-border, rgba(255, 255, 255, 0.08));
+  background: var(--vg-bg-card, #0d0d0d);
+  overflow: hidden;
+}
+
+.tickerHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  border-bottom: 1px solid var(--vg-border, rgba(255, 255, 255, 0.08));
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--vg-text-secondary, #a1a1aa);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.tickerDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--vg-accent, #b8fb3c);
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.85); }
+}
+
+.tickerTrack {
+  overflow: hidden;
+  position: relative;
+
+  &::before, &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 60px;
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  &::before {
+    left: 0;
+    background: linear-gradient(90deg, var(--vg-bg-card, #0d0d0d) 0%, transparent 100%);
+  }
+
+  &::after {
+    right: 0;
+    background: linear-gradient(-90deg, var(--vg-bg-card, #0d0d0d) 0%, transparent 100%);
+  }
+}
+
+.tickerScroll {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1rem 1.25rem;
+  animation: scrollFeed 50s linear infinite;
+  width: max-content;
+
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes scrollFeed {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.tickerItem {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  white-space: nowrap;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--vg-border);
+  text-decoration: none;
+  transition: border-color 0.15s ease-out, background 0.15s ease-out;
+
+  &:hover {
+    border-color: var(--vg-accent);
+    background: rgba(184, 251, 60, 0.08);
+    text-decoration: none;
+  }
+}
+
+.tickerIcon {
+  font-size: 1rem;
+}
+
+.tickerText {
+  font-size: 0.85rem;
+  color: var(--vg-text-primary, #fafaf9);
+  font-weight: 500;
+}
+
+.tickerDate {
+  font-size: 0.75rem;
+  color: var(--vg-text-muted, #71717a);
+  padding-left: 0.75rem;
+  border-left: 1px solid var(--vg-border, rgba(255, 255, 255, 0.08));
+}
+
+@include small-size {
+  .tickerSection {
+    padding: 1rem;
+  }
+
+  .tickerScroll {
+    animation-duration: 60s;
+  }
+}
