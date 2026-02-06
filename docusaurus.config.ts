@@ -360,6 +360,8 @@ const config = {
           // Enhanced docs config for SEO
           editCurrentVersion: true,
         },
+        // Disable blog - not used
+        blog: false,
         theme: { customCss: [require.resolve("./src/css/custom.scss")] },
       },
     ],
@@ -421,7 +423,7 @@ const config = {
         { name: "twitter:creator", content: "@vipulgupta2048" },
 
         // Global Open Graph site info
-        { property: "og:site_name", content: "Vipul Gupta Portfolio & Docs" },
+        { property: "og:site_name", content: "Vipul Gupta Portfolio" },
         { property: "og:locale", content: "en_US" },
 
         // Search engine directives
