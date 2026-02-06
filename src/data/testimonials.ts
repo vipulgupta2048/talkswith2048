@@ -79,4 +79,13 @@ export const testimonials: TestimonialData[] = [
     content:
       "A big thank you to the amazing organizer, Vipul Gupta for putting together such a fantastic GitTogether. Your hard work and dedication made this possible, and I can’t wait to see what you plan for the next one!",
   },
+  {
+    id: "9",
+    name: "Anjali Rout",
+    role: "Student",
+    company: "Guru Gobind Singh University, New Delhi",
+    avatar: "/img/avatars/marcus.jpg",
+    content:
+      "Listening to Vipul Sir was the highlight at Devfest Noida 2025: he shared deep, mind-opening insights on building agentic workflows from the absolute basics. Providing a peek into how AI will reshape development, streamline workflows, and help developers build smarter and faster.",
+  },
 ];
