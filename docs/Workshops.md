@@ -3,28 +3,6 @@ title: "Workshops"
 description: "Vipul Gupta (vipulgupta2048) workshops on Git, GitHub, CI, and developer education with hands-on sessions."
 ---
 
-<<<<<<< Updated upstream
-Through my workshops, I strive to not just inform but to connect, making each concept relatable and each session memorable. I still have a lot to learn, and you can find me collecting feedback from the audience after the talk. I intend to bring my unqiue brand of firestarter into each session I execute. No repeats, no boring monologue, and if I can help it - then a good story. Served on a stage near you.
-
----
-
-## Book a Paid Workshop for Your Team
-
-**Looking to upskill your engineering team on AI-powered development?**
-
-I offer a comprehensive **[AI-Powered Development & Test Automation Workshop](/ai-workshop)** designed for engineering teams, QA professionals, and technical leadership. This half-day hands-on session covers:
-
-- Production code generation with GitHub Copilot, Claude, and Cursor
-- Self-healing test automation frameworks
-- CI/CD integration with AI tools
-- Adoption strategy and ROI metrics
-
-**[View the full workshop proposal and book a session →](/ai-workshop)**
-
----
-
-## Past Workshops 
-=======
 {/* Hero Section with Editorial Layout */}
 <div className="workshop-hero" style={{
   background: 'linear-gradient(135deg, #1e3a5f 0%, #0f2744 100%)',
@@ -70,7 +48,6 @@ I offer a comprehensive **[AI-Powered Development & Test Automation Workshop](/a
     }}>Through my workshops, I strive to not just inform but to <strong>connect</strong>, making each concept relatable and each session memorable. No repeats, no boring monologue. Just a good story, served on a stage near you.</p>
   </div>
 </div>
->>>>>>> Stashed changes
 
 {/* Stats Bar */}
 <div className="stats-grid" style={{
@@ -444,4 +421,3 @@ I offer a comprehensive **[AI-Powered Development & Test Automation Workshop](/a
     transition: 'transform 0.2s ease, box-shadow 0.2s ease'
   }}>📧 Get in Touch</a>
 </div>
-
