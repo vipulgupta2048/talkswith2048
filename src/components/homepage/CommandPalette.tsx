@@ -1,6 +1,20 @@
 import React, { useState, useEffect, useCallback, memo, useRef } from "react";
 import styles from "./CommandPalette.module.scss";
 
+// Holi festival color palette — vibrant, festive, and joyful
+const HOLI_COLORS = [
+  { accent: "#FF3CAC", hover: "#FF5CC0", rgb: "255, 60, 172" },   // Magenta pink
+  { accent: "#F9A825", hover: "#FFB740", rgb: "249, 168, 37" },   // Marigold yellow
+  { accent: "#00E5FF", hover: "#33EAFF", rgb: "0, 229, 255" },    // Sky cyan
+  { accent: "#76FF03", hover: "#96FF33", rgb: "118, 255, 3" },    // Lime green
+  { accent: "#FF6D00", hover: "#FF8A33", rgb: "255, 109, 0" },    // Blazing orange
+  { accent: "#E040FB", hover: "#EA60FC", rgb: "224, 64, 251" },   // Electric purple
+  { accent: "#FF1744", hover: "#FF4569", rgb: "255, 23, 68" },    // Festival red
+  { accent: "#00E676", hover: "#33EB91", rgb: "0, 230, 118" },    // Emerald green
+  { accent: "#FFEA00", hover: "#FFEE33", rgb: "255, 234, 0" },    // Turmeric yellow
+  { accent: "#40C4FF", hover: "#66CFFF", rgb: "64, 196, 255" },   // Peacock blue
+];
+
 interface Command {
   id: string;
   icon: React.ReactNode;
@@ -31,6 +45,19 @@ interface SearchHit {
 }
 
 const quickActions: Command[] = [
+  {
+    id: "holi",
+    icon: (
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+        <circle cx="12" cy="12" r="4" />
+        <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+      </svg>
+    ),
+    label: "Holi Mode 🎨",
+    description: "Toggle festive random colors — Happy Holi!",
+    action: "toggle-holi",
+    type: "action",
+  },
   {
     id: "work",
     icon: (
@@ -96,17 +123,76 @@ export const CommandPalette: React.FC = memo(() => {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [searchResults, setSearchResults] = useState<SearchHit[]>([]);
   const [isSearching, setIsSearching] = useState(false);
+  const [holiMode, setHoliMode] = useState(false);
+  const holiIntervalRef = useRef<number | null>(null);
   const inputRef = useRef<HTMLInputElement>(null);
   const searchTimeoutRef = useRef<number | null>(null);
 
-  // Filter quick actions based on query
-  const filteredActions = query
+  // Apply a random Holi color to CSS custom properties
+  const applyHoliColor = useCallback(() => {
+    const color = HOLI_COLORS[Math.floor(Math.random() * HOLI_COLORS.length)];
+    const root = document.documentElement;
+    root.style.setProperty("--vg-accent", color.accent);
+    root.style.setProperty("--vg-accent-hover", color.hover);
+    root.style.setProperty("--vg-accent-dim", `rgba(${color.rgb}, 0.15)`);
+    root.style.setProperty("--vg-accent-glow", `0 0 40px rgba(${color.rgb}, 0.35)`);
+    root.style.setProperty("--vg-accent-glow-strong", `0 0 60px rgba(${color.rgb}, 0.5)`);
+    root.style.setProperty("--vg-border-hover", `rgba(${color.rgb}, 0.4)`);
+    root.style.setProperty("--vg-border-accent", `rgba(${color.rgb}, 0.6)`);
+    root.style.setProperty("--ifm-color-primary", color.accent);
+  }, []);
+
+  // Reset to the original Electric Mint palette
+  const resetHoliColors = useCallback(() => {
+    const root = document.documentElement;
+    root.style.removeProperty("--vg-accent");
+    root.style.removeProperty("--vg-accent-hover");
+    root.style.removeProperty("--vg-accent-dim");
+    root.style.removeProperty("--vg-accent-glow");
+    root.style.removeProperty("--vg-accent-glow-strong");
+    root.style.removeProperty("--vg-border-hover");
+    root.style.removeProperty("--vg-border-accent");
+    root.style.removeProperty("--ifm-color-primary");
+  }, []);
+
+  // Start / stop Holi Mode color cycling
+  useEffect(() => {
+    if (holiMode) {
+      applyHoliColor();
+      holiIntervalRef.current = window.setInterval(applyHoliColor, 800);
+    } else {
+      if (holiIntervalRef.current) {
+        clearInterval(holiIntervalRef.current);
+        holiIntervalRef.current = null;
+      }
+      resetHoliColors();
+    }
+    return () => {
+      if (holiIntervalRef.current) {
+        clearInterval(holiIntervalRef.current);
+      }
+    };
+  }, [holiMode, applyHoliColor, resetHoliColors]);
+
+  // Filter quick actions based on query, patching Holi command label dynamically
+  const filteredActions = (query
     ? quickActions.filter(
         (cmd) =>
           cmd.label.toLowerCase().includes(query.toLowerCase()) ||
           cmd.description.toLowerCase().includes(query.toLowerCase())
       )
-    : quickActions;
+    : quickActions
+  ).map((cmd) =>
+    cmd.id === "holi"
+      ? {
+          ...cmd,
+          label: holiMode ? "Holi Mode 🎨 — ON" : "Holi Mode 🎨",
+          description: holiMode
+            ? "Click to turn off — Happy Holi! 🌈"
+            : "Toggle festive random colors — Happy Holi!",
+        }
+      : cmd
+  );
 
   // Combined results: filtered actions + search results
   const allResults = [
@@ -243,6 +329,8 @@ export const CommandPalette: React.FC = memo(() => {
   const executeCommand = (command: Command) => {
     if (typeof command.action === "function") {
       command.action();
+    } else if (command.action === "toggle-holi") {
+      setHoliMode((prev) => !prev);
     } else if (command.action.startsWith("http")) {
       window.open(command.action, "_blank");
     } else {
@@ -263,7 +351,7 @@ export const CommandPalette: React.FC = memo(() => {
     <>
       {/* Floating trigger button */}
       <button
-        className={styles.trigger}
+        className={`${styles.trigger} ${holiMode ? styles.holiActive : ""}`}
         onClick={() => setIsOpen(true)}
         aria-label="Open command palette"
       >
@@ -272,14 +360,14 @@ export const CommandPalette: React.FC = memo(() => {
             <path d="M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3H6a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 3 3 0 0 0-3-3z" />
           </svg>
         </span>
-        <span className={styles.triggerText}>Quick Actions</span>
+        <span className={styles.triggerText}>{holiMode ? "🎨 Holi!" : "Quick Actions"}</span>
         <kbd className={styles.kbd}>⌘K</kbd>
       </button>
 
       {/* Modal */}
       {isOpen && (
         <div className={styles.overlay} onClick={closeAndReset}>
-          <div className={styles.modal} onClick={(e) => e.stopPropagation()}>
+          <div className={`${styles.modal} ${holiMode ? styles.holiActive : ""}`} onClick={(e) => e.stopPropagation()}>
             <div className={styles.header}>
               <div className={styles.searchIcon}>
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
