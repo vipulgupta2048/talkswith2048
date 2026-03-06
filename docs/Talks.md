@@ -12,10 +12,6 @@ From local meetups to global conferences, I've aimed to weave technical concepts
 - **Audience Reach:** 100,000+ senior engineers, early-career devs, and engineering students.
 - **Geographic Reach:** 15+ countries, US, Canada, Japan, India, Spain, China, and more.
 
-:::tip Looking for hands-on training for your team?
-I offer a **[paid AI-Powered Development Workshop](/ai-workshop)** for engineering teams looking to upskill on AI-assisted coding and test automation. [Learn more →](/ai-workshop)
-:::
-
 <details>
   <summary>2026</summary>
 

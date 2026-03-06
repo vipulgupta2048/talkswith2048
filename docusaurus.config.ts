@@ -174,26 +174,7 @@ const config = {
 
   plugins: [
     ["docusaurus-plugin-sass", {}],
-    // Webpack plugin to provide Buffer polyfill for @react-pdf/renderer
-    function bufferPolyfillPlugin() {
-      return {
-        name: "buffer-polyfill",
-        configureWebpack() {
-          return {
-            resolve: {
-              fallback: {
-                buffer: require.resolve("buffer/"),
-              },
-            },
-            plugins: [
-              new (require("webpack").ProvidePlugin)({
-                Buffer: ["buffer", "Buffer"],
-              }),
-            ],
-          };
-        },
-      };
-    },
+
     // Client-side redirects for trailing slashes (SEO best practice)
     // Since trailingSlash: false, redirect /path/ → /path for all pages
     [
@@ -201,7 +182,7 @@ const config = {
       {
         createRedirects(existingPath: string) {
           // For every page without trailing slash, create redirect from trailing slash version
-          // e.g., /ai-workshop exists → redirect /ai-workshop/ to /ai-workshop
+          // e.g., /Talks exists → redirect /Talks/ to /Talks
           if (existingPath !== "/" && !existingPath.endsWith("/")) {
             return [`${existingPath}/`];
           }
@@ -293,9 +274,6 @@ const config = {
               "/Introduction": 0.9,
               "/Projects": 0.6,
               "/Communities": 0.6,
-
-              // Professional services - highest priority (paid offerings)
-              "/ai-workshop": 0.95,
 
               // Professional content - medium-high priority
               "/Talks": 0.9,
