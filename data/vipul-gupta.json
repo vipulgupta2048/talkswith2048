@@ -1,0 +1,244 @@
+{
+  "meta": {
+    "name": "Vipul Gupta",
+    "handle": "vipulgupta2048",
+    "title": "Product Engineer & Open Source Leader",
+    "location": "Delhi, India",
+    "github_star_year": 2025,
+    "years_in_oss": 9,
+    "current_employer": "Balena",
+    "website": "https://docs.mixster.dev",
+    "blog": "https://mixster.dev",
+    "email": "vipulgupta2048@gmail.com",
+    "last_updated": "2025-01-17"
+  },
+
+  "narrative": {
+    "one_liner": "I build hardware testing infrastructure, scale developer communities, and create documentation systems that actually work.",
+    "origin_story": "Started wanting to be an urban planning architect. Discovered open source and fell in love with people building software together, for everyone, for free.",
+    "philosophy": "Document everything. Build in public. Communities over connections. Everything I build, I document. Everything I learn, I share.",
+    "what_drives_me": "Open source isn't just code. It's the reason I've spoken at conferences across four continents, mentored students through GSoC, co-founded communities, and built infrastructure that tests thousands of releases weekly."
+  },
+
+  "pillars": [
+    {
+      "id": "oss-leadership",
+      "title": "Open Source Leadership",
+      "description": "9 years contributing to open source, from student contributor to GitHub Star",
+      "proof_points": [
+        "GitHub Star 2025",
+        "9 years active contribution",
+        "GSoC student (2018-2019) and mentor (2018-2019)",
+        "Speaker at 100+ sessions across 15+ countries"
+      ]
+    },
+    {
+      "id": "leviathan",
+      "title": "Hardware-in-the-Loop Testing",
+      "description": "Built the first open-source HiL testing system for IoT at Balena",
+      "proof_points": [
+        "200+ device types supported",
+        "2000+ weekly automated tests",
+        "Release cycles: 6 weeks → 3 hours",
+        "$250K yearly savings",
+        "4+ years ownership"
+      ]
+    },
+    {
+      "id": "community",
+      "title": "Community Building",
+      "description": "Growing developer communities from zero to thousands",
+      "proof_points": [
+        "GitTogether Delhi: 0 → 7,800+ developers",
+        "PyCon India organizer (2018-present)",
+        "ALiAS founder (2016) - helped 20+ students get into GSoC",
+        "Monthly city meetups organizer"
+      ]
+    },
+    {
+      "id": "documentation",
+      "title": "Documentation Systems",
+      "description": "Building scalable documentation infrastructure",
+      "proof_points": [
+        "DocuBuilder: powers 30+ documentation sites",
+        "$18K/year saved migrating off Netlify/Heroku",
+        "Led company's first docs sprint",
+        "Champion of Documentation Driven Development"
+      ]
+    }
+  ],
+
+  "skills": {
+    "languages": ["TypeScript", "JavaScript", "Python", "Bash", "Go"],
+    "frontend": ["React", "Next.js", "Docusaurus"],
+    "backend": ["Node.js", "Express", "Flask"],
+    "infrastructure": ["GitHub Actions", "Jenkins", "Docker", "QEMU", "Ansible"],
+    "cloud": ["AWS (EC2, S3)", "Azure Serverless", "Cloudflare Pages"],
+    "databases": ["PostgreSQL", "Redis"],
+    "testing": ["TAP", "Playwright", "Puppeteer"],
+    "observability": ["OpenTelemetry", "Grafana"],
+    "domains": [
+      "Hardware-in-the-Loop Testing",
+      "CI/CD Pipelines",
+      "Documentation Systems",
+      "IoT/Embedded Systems",
+      "Supply Chain Security",
+      "Developer Education"
+    ]
+  },
+
+  "work_experience": [
+    {
+      "company": "Balena",
+      "role": "Software Engineer / Product Owner",
+      "period": "April 2020 - Present",
+      "highlights": [
+        "Owner of Leviathan - open-source hardware-in-the-loop testing system",
+        "Led Jenkins to GitHub Actions migration for entire CI/CD",
+        "Documentation Lead - built DocuBuilder, powers 30+ sites",
+        "Building CI/CD observability with OpenTelemetry"
+      ]
+    }
+  ],
+
+  "key_projects": [
+    {
+      "name": "Leviathan",
+      "type": "Infrastructure",
+      "year_started": 2020,
+      "status": "Active",
+      "description": "First open-source hardware-in-the-loop testing system for IoT",
+      "impact": "Release cycles from 6 weeks to 3 hours, 2000+ weekly tests",
+      "github": "https://github.com/balena-os/leviathan",
+      "blog": "https://blog.balena.io/from-pr-to-release-os-testing-at-balena/"
+    },
+    {
+      "name": "DocuBuilder",
+      "type": "Developer Tools",
+      "year_started": 2022,
+      "status": "Active",
+      "description": "Zero-config Docusaurus deployment framework",
+      "impact": "30+ documentation sites, $18K/year savings",
+      "github": "https://github.com/product-os/docusaurus-builder"
+    },
+    {
+      "name": "Autokit",
+      "type": "Hardware",
+      "year_started": 2021,
+      "status": "Active",
+      "description": "Open-source off-the-shelf HiL testing hardware",
+      "impact": "Replaced expensive proprietary test jigs",
+      "github": "https://github.com/balena-io-hardware/autokit-info-doc"
+    },
+    {
+      "name": "OpenHiL Community",
+      "type": "Community",
+      "year_started": 2024,
+      "status": "Active",
+      "description": "Forum for hardware-in-the-loop engineers",
+      "website": "https://openhil.github.io"
+    }
+  ],
+
+  "communities": [
+    {
+      "name": "GitTogether Delhi NCR",
+      "role": "Lead Organizer",
+      "period": "2024 - Present",
+      "size": "7,800+ developers",
+      "link": "https://www.meetup.com/gittogether-delhi/"
+    },
+    {
+      "name": "PyCon India",
+      "role": "Multi-year Organizer",
+      "period": "2018 - Present",
+      "roles": ["Web Dev 2017", "Volunteer 2018-19", "Content Lead 2020-21"]
+    },
+    {
+      "name": "ALiAS",
+      "role": "Founder",
+      "period": "2016 - Present",
+      "impact": "20+ students selected for GSoC through ALiAS AMA",
+      "link": "https://asetalias.in"
+    }
+  ],
+
+  "speaking": {
+    "total_sessions": "100+",
+    "years_speaking": 8,
+    "countries": 15,
+    "audience_reach": "100,000+",
+    "topics": [
+      "Hardware-in-the-Loop Testing",
+      "CI/CD Pipelines",
+      "Supply Chain Security",
+      "AI Evals / LLM Evaluation",
+      "Open Source",
+      "Documentation",
+      "Developer Education"
+    ],
+    "featured_talks": [
+      {
+        "title": "How Insecure Defaults Led to Undetected Supply Chain Incidents",
+        "event": "OpenSSF India 2025",
+        "recording": "https://www.youtube.com/watch?v=cSqEn2ulasE"
+      },
+      {
+        "title": "How Balena Releases 100's of Embedded OS with GitHub Actions",
+        "event": "GitHub Constellation 2024",
+        "recording": "https://youtu.be/MTwvt2uV9YE"
+      },
+      {
+        "title": "Testing 100's of OS Images with Jenkins",
+        "event": "CDCon + gitOpsCon Vancouver 2023",
+        "recording": "https://youtu.be/Dhl61ZQ63WY?t=164"
+      }
+    ]
+  },
+
+  "education": {
+    "degree": "B.Tech Computer Science",
+    "university": "Amity University, Noida",
+    "achievements": [
+      "Founded ALiAS community",
+      "HackMIT 2018 selectee",
+      "Created Abroad Opportunities Fund Scholarship"
+    ]
+  },
+
+  "travel": {
+    "countries_visited": 27,
+    "philosophy": "Hostels > Hotels. Conferences are cheat codes. Work remotely, live locally.",
+    "conference_countries": ["USA", "Canada", "Japan", "UK", "Spain", "Germany", "Netherlands", "India"]
+  },
+
+  "side_quests": {
+    "architect_dreams": "Wanted to be an urban planning architect before discovering code",
+    "design": "Makes conference stickers, community posters, visual identities",
+    "collecting": ["Mechanical keyboards", "Conference badges", "Raspberry Pis", "Vintage radios"],
+    "hobbies": ["Cheesecake reviewing (27 countries)", "Calvin & Hobbes collecting", "Solo backpacking"]
+  },
+
+  "faq": [
+    {
+      "question": "What's Vipul's experience with CI/CD?",
+      "answer": "5+ years building and migrating CI/CD pipelines. Led Jenkins to GitHub Actions migration at Balena. Built hardware-in-the-loop testing pipelines that run 2000+ tests weekly."
+    },
+    {
+      "question": "What topics can Vipul speak about?",
+      "answer": "Hardware-in-the-Loop Testing, CI/CD Pipelines, Supply Chain Security, AI/LLM Evaluation, Open Source Culture, Documentation Systems, Developer Education. 100+ sessions delivered across 15+ countries."
+    },
+    {
+      "question": "What's Vipul's most impressive project?",
+      "answer": "Leviathan - the first open-source hardware-in-the-loop testing system for IoT. Took ownership when the project was nearly abandoned, grew it over 4 years. Now tests 2000+ OS releases weekly, reduced release cycles from 6 weeks to 3 hours."
+    },
+    {
+      "question": "What communities has Vipul built?",
+      "answer": "Co-founded GitTogether Delhi (5000+ developers), founded ALiAS at university (helped 20+ students get into GSoC), organized PyCon India for multiple years. Philosophy: communities over connections."
+    },
+    {
+      "question": "What's Vipul's background?",
+      "answer": "9 years in open source. Started as a GSoC student with Sugar Labs (2018-2019), now a GitHub Star (2025). Currently at Balena as Product Owner for hardware testing infrastructure. Spoken at conferences across 15+ countries."
+    }
+  ]
+}
