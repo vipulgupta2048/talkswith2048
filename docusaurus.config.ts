@@ -362,13 +362,13 @@ const config = {
         insights: true, // Enable search insights
       },
 
-      announcementBar: {
-        id: "support_us",
-        content: `Actively interviewing for new opportunities. <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1fwsRgQNhwp4vv23FjbRB3MGHbjWhoh9r/view">Reach out!</a>`,
-        backgroundColor: "#1a1c1e",
-        textColor: "#FFFFFF",
-        isCloseable: true,
-      },
+      // announcementBar: {
+      //   id: "support_us",
+      //   content: `Let's work together: <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1fwsRgQNhwp4vv23FjbRB3MGHbjWhoh9r/view">Reach out!</a>`,
+      //   backgroundColor: "#1a1c1e",
+      //   textColor: "#FFFFFF",
+      //   isCloseable: true,
+      // },
       colorMode: {
         defaultMode: "dark",
         disableSwitch: false,

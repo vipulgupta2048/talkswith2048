@@ -24,9 +24,29 @@
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5), 0 0 30px rgba(184, 251, 60, 0.1);
   }
   
+  &.holiActive {
+    border-color: transparent;
+    background-clip: padding-box;
+    animation: holiRainbow 1.6s linear infinite;
+    box-shadow:
+      0 8px 32px rgba(0, 0, 0, 0.4),
+      0 0 24px var(--vg-accent);
+  }
+  
   @include small-size {
     display: none;
   }
+}
+
+@keyframes holiRainbow {
+  0%   { border-color: #FF3CAC; box-shadow: 0 8px 32px rgba(0,0,0,0.4), 0 0 24px #FF3CAC; }
+  14%  { border-color: #F9A825; box-shadow: 0 8px 32px rgba(0,0,0,0.4), 0 0 24px #F9A825; }
+  28%  { border-color: #00E5FF; box-shadow: 0 8px 32px rgba(0,0,0,0.4), 0 0 24px #00E5FF; }
+  42%  { border-color: #76FF03; box-shadow: 0 8px 32px rgba(0,0,0,0.4), 0 0 24px #76FF03; }
+  57%  { border-color: #FF6D00; box-shadow: 0 8px 32px rgba(0,0,0,0.4), 0 0 24px #FF6D00; }
+  71%  { border-color: #E040FB; box-shadow: 0 8px 32px rgba(0,0,0,0.4), 0 0 24px #E040FB; }
+  85%  { border-color: #FF1744; box-shadow: 0 8px 32px rgba(0,0,0,0.4), 0 0 24px #FF1744; }
+  100% { border-color: #FF3CAC; box-shadow: 0 8px 32px rgba(0,0,0,0.4), 0 0 24px #FF3CAC; }
 }
 
 .triggerIcon {
@@ -83,10 +103,25 @@
     0 0 60px rgba(184, 251, 60, 0.05);
   animation: slideUp 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   
+  &.holiActive {
+    animation: slideUp 0.2s cubic-bezier(0.4, 0, 0.2, 1), holiModalBorder 1.6s linear infinite;
+  }
+  
   @include small-size {
     max-width: calc(100% - 2rem);
     margin: 0 1rem;
   }
+}
+
+@keyframes holiModalBorder {
+  0%   { border-color: #FF3CAC; box-shadow: 0 24px 80px rgba(0,0,0,0.6), 0 0 40px #FF3CAC55; }
+  14%  { border-color: #F9A825; box-shadow: 0 24px 80px rgba(0,0,0,0.6), 0 0 40px #F9A82555; }
+  28%  { border-color: #00E5FF; box-shadow: 0 24px 80px rgba(0,0,0,0.6), 0 0 40px #00E5FF55; }
+  42%  { border-color: #76FF03; box-shadow: 0 24px 80px rgba(0,0,0,0.6), 0 0 40px #76FF0355; }
+  57%  { border-color: #FF6D00; box-shadow: 0 24px 80px rgba(0,0,0,0.6), 0 0 40px #FF6D0055; }
+  71%  { border-color: #E040FB; box-shadow: 0 24px 80px rgba(0,0,0,0.6), 0 0 40px #E040FB55; }
+  85%  { border-color: #FF1744; box-shadow: 0 24px 80px rgba(0,0,0,0.6), 0 0 40px #FF174455; }
+  100% { border-color: #FF3CAC; box-shadow: 0 24px 80px rgba(0,0,0,0.6), 0 0 40px #FF3CAC55; }
 }
 
 @keyframes slideUp {

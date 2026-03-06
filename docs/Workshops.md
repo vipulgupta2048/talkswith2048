@@ -421,4 +421,3 @@ description: "Vipul Gupta (vipulgupta2048) workshops on Git, GitHub, CI, and dev
     transition: 'transform 0.2s ease, box-shadow 0.2s ease'
   }}>📧 Get in Touch</a>
 </div>
-

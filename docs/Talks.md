@@ -35,6 +35,28 @@ An introduction to the RALPH technique pioneered by George Bentley—a powerful 
 </details>
 
 <details>
+  <summary>2026</summary>
+
+2026: Agentic coding, Claude Code workflows, and developer productivity through AI-assisted development.
+
+---
+
+### 🔄 Claude Code New Delhi Meetup
+#### Ralphing Around with Claude Code
+
+• 📊 [Slides](#)  
+• 📝 [Feedback](#)  
+• 📸 [Event Photos](#)  
+
+An introduction to the RALPH technique pioneered by George Bentley—a powerful methodology for running Claude Code in autonomous loops to maximize productivity while you're away from the keyboard. This session covers how to structure prompts, set up guardrails, and let Claude Code iterate on your codebase overnight, waking up to pull requests ready for review.
+
+**Highlight:** Live demonstration of setting up a RALPH loop to tackle a real feature request, showing how developers can get more done while they sleep.
+
+---
+
+</details>
+
+<details>
   <summary>2025</summary>
 
 2025: Supply chain security, agentic workflows, AI evals, and developer education spanning meetups to summits.
